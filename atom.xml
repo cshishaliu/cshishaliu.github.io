@@ -4,7 +4,7 @@
   <title><![CDATA[Gnoloac发布资料的地方。。。]]></title>
   <link href="cshishaliu.github.io/atom.xml" rel="self"/>
   <link href="cshishaliu.github.io/"/>
-  <updated>2017-10-05T21:11:13+08:00</updated>
+  <updated>2017-10-05T21:48:13+08:00</updated>
   <id>cshishaliu.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -24,53 +24,53 @@
 <h5 id="toc_0">一、选择题</h5>
 
 <ol>
-<li><p>若集合 \(A = \{ x | x^2 - 1 &lt; 0 \}\), \(B = \{ x | 0 &lt; x &lt; 4 \}\), 则 \(A \cup B = \) (    )</p>
+<li><p>若集合 \(A = \{ x | x^2 - 1 &lt; 0 \}\), \(B = \{ x | 0 &lt; x &lt; 4 \}\), 则 \(A \cup B = \) <code>(    )</code></p>
 
 <p>A. \(\{x| 0&lt;x&lt;1 \}\)<br/>
 B. \(\{x| -1&lt;x&lt;1 \}\)<br/>
 C. \(\{x| -1&lt;x&lt;4 \}\)<br/>
 D. \(\{x| 1&lt;x&lt;4 \}\)</p></li>
-<li><p>设集合 \(A = \{ x | 0 \le x \le 3 \}\), \(B = \{ y| y \le 0 \le 1\}\), 则下列对应法则中, 是从 \(A\) 到 \(B\) 的映射的是 (    )<br/>
+<li><p>设集合 \(A = \{ x | 0 \le x \le 3 \}\), \(B = \{ y| y \le 0 \le 1\}\), 则下列对应法则中, 是从 \(A\) 到 \(B\) 的映射的是 <code>(    )</code><br/>
 A. \(x \to y = \sqrt{x}\)<br/>
 B. \(x \to y^2 = \dfrac12 x\)<br/>
 C. \(x \to y = \dfrac13 x​\) <br/>
 D. \(x \to y = \dfrac1{2^x - 1}\)</p></li>
-<li><p>已知函数 \(f(x) = \begin{cases} \sqrt{x} , &amp; x \ge 2 \\ 3-x ,&amp; x &lt; 2 \end{cases}\), 则 \(f(f(-1)) = \) (    )<br/>
+<li><p>已知函数 \(f(x) = \begin{cases} \sqrt{x} , &amp; x \ge 2 \\ 3-x ,&amp; x &lt; 2 \end{cases}\), 则 \(f(f(-1)) = \) <code>(    )</code><br/>
 A. \(-1\)<br/>
 B. \(0\)<br/>
 C. \(1\)<br/>
 D. \(2\)</p></li>
-<li><p>设 \(A = \{ x \in \mathbb Z | |x| \le 2 \}\), \(B = \{ y | y = x^2 + 1, x \in A \}\), 则 \(B\) 中的元素个数是 (    )<br/>
+<li><p>设 \(A = \{ x \in \mathbb Z | |x| \le 2 \}\), \(B = \{ y | y = x^2 + 1, x \in A \}\), 则 \(B\) 中的元素个数是 <code>(    )</code><br/>
 A. \(5\)<br/>
 B. \(4\)<br/>
 C. \(3\)<br/>
 D. 无数个</p></li>
-<li><p>已知 \(P = \{a,b\}\), \(Q = \{ -1,0,1,2 \}\), \(f\) 是从 \(P\) 到 \(Q\) 的映射, 则满足 \(f(a) = 0\) 的映射个数为 (    )<br/>
+<li><p>已知 \(P = \{a,b\}\), \(Q = \{ -1,0,1,2 \}\), \(f\) 是从 \(P\) 到 \(Q\) 的映射, 则满足 \(f(a) = 0\) 的映射个数为 <code>(    )</code><br/>
 A. \(3\)<br/>
 B. \(4\)<br/>
 C. \(6\)<br/>
 D. \(8\)</p></li>
-<li><p>若函数 \(f(x) = \dfrac{x-1}x\), 则方程 \(f(4x) = x\) 的根是 (    )<br/>
+<li><p>若函数 \(f(x) = \dfrac{x-1}x\), 则方程 \(f(4x) = x\) 的根是 <code>(    )</code><br/>
 A. \(\dfrac12\)<br/>
 B. \(-\dfrac12\)<br/>
 C. \(2\)<br/>
 D. \(-2\)</p></li>
-<li><p>已知 \(f(x) = \begin{cases} x+2, &amp; x \le -1 \\ x^2, &amp; -1 &lt; x &lt; 2 \\ 2x, &amp; x \ge 2 \end{cases}\), 若 \(f(x)  = 3\), 则 \(x\) 的值是 (    )<br/>
+<li><p>已知 \(f(x) = \begin{cases} x+2, &amp; x \le -1 \\ x^2, &amp; -1 &lt; x &lt; 2 \\ 2x, &amp; x \ge 2 \end{cases}\), 若 \(f(x)  = 3\), 则 \(x\) 的值是 <code>(    )</code><br/>
 A. \(1\)<br/>
 B. \(\sqrt3\)<br/>
 C. \(1\), \(\dfrac32\) 或 \(\pm \sqrt3\)<br/>
 D. \(\sqrt3\) 或 \(\dfrac32\)</p></li>
-<li><p>设 \(U\) 为全集, \(P\), \(Q\) 为非空集合, 且 \(P \subsetneqq Q \subsetneqq U\), 下面结论中不正确的是 (    )<br/>
+<li><p>设 \(U\) 为全集, \(P\), \(Q\) 为非空集合, 且 \(P \subsetneqq Q \subsetneqq U\), 下面结论中不正确的是 <code>(    )</code><br/>
 A. \((\complement_U P) \cup Q = U\)<br/>
 B. \((\complement_U Q) \cap P = \varnothing\)<br/>
 C. \(P \cup Q = Q\)<br/>
 D. \((\complement_U P) \cap Q = \varnothing\)</p></li>
-<li><p>已知函数 \(f(x)\) 是定义在 \(\mathbb R\) 上的奇函数, 它的图像关于直线 \(x = 1\) 对称, 且 \(f(x) = x\) (\(0 &lt; x \le 1\)), 则当 \(x \in (5,7]\) 时, \(y = f(x)\) 的解析式是 (    )<br/>
+<li><p>已知函数 \(f(x)\) 是定义在 \(\mathbb R\) 上的奇函数, 它的图像关于直线 \(x = 1\) 对称, 且 \(f(x) = x\) (\(0 &lt; x \le 1\)), 则当 \(x \in (5,7]\) 时, \(y = f(x)\) 的解析式是 <code>(    )</code><br/>
 A. \(f(x) = 2 - x\)<br/>
 B. \(f(x) = x - 4\)<br/>
 C. \(f(x) = 6-x\)<br/>
 D. \(f(x) = x - 8\)</p></li>
-<li><p>已知函数 \(f(x)\) 是奇函数, 且在 \((0, +\infty)\) 上单调递增, 则以下结论正确的是 (    )<br/>
+<li><p>已知函数 \(f(x)\) 是奇函数, 且在 \((0, +\infty)\) 上单调递增, 则以下结论正确的是 <code>(    )</code><br/>
 A. 函数 \(f(|x|)\) 为奇函数, 且在 \((0, +\infty)\) 上单调递增<br/>
 B. 函数 \(f(|x|)\) 为偶函数, 且在 \((0, +\infty)\) 上单调递增<br/>
 C. 函数 \(|f(x)|\) 为偶函数, 且在 \((-\infty, 0)\) 上单调递增<br/>
@@ -80,31 +80,31 @@ D. 函数 \(|f(x)|\) 为奇函数, 且在 \((-\infty, 0)\) 上单调递增</p></
 <h5 id="toc_1">二、填空题</h5>
 
 <ol>
-<li>已知集合 \(M = \{ (x,y) | x+y=2 \}\), \(N = \{ (x,y) | x-y=4 \}\), 则集合 \(M \cup N =\) \(\underline{\qquad\qquad}\).</li>
-<li>已知函数 \(f(x) = \dfrac{\sqrt{1-2x}}{x^2 - 1}\) 的定义域是 \(\underline{\qquad\qquad}\).</li>
-<li>已知集合 \(A = \{ x | x^2 - 2x - 3 \le 0, x \in \mathbb R \}\), \(B = \{ x | m - 2 \le x \le m + 2 \}\). 若 \(A \subseteq \complement_{\mathbb R} B\), 则实数 \(m\) 的取值的范围是 \(\underline{\qquad\qquad}\).</li>
-<li>已知函数 \(f(x) = -x^2 + 4x\), \(x \in [m,5]\) 的值域是 \([-5,4]\), 则实数 \(m\) 的取值范围是 \(\underline{\qquad\qquad}\).</li>
-<li>已知函数 \(f(x) = ax^3 + bx - 4\), 若 \(f(2) = 6\), 则 \(f(-2) = \) \(\underline{\qquad\qquad}\).</li>
-<li>已知函数 \(f(\sqrt{x} + 1) = x+1\), 则 \(f(2) = \) \(\underline{\qquad\qquad}\).</li>
-<li>已知函数 \(f(x)\) 是定义在 \(\mathbb R\) 上的奇函数, 且当 \(x &gt; 0\) 时, \(f(x) = x-1\), 则不等式 \(f(x) \ge 0\) 的解集为 \(\underline{\qquad\qquad}\).</li>
+<li>已知集合 \(M = \{ (x,y) | x+y=2 \}\), \(N = \{ (x,y) | x-y=4 \}\), 则集合 \(M \cup N =\) <code>________</code>.</li>
+<li>已知函数 \(f(x) = \dfrac{\sqrt{1-2x}}{x^2 - 1}\) 的定义域是 <code>________</code>.</li>
+<li>已知集合 \(A = \{ x | x^2 - 2x - 3 \le 0, x \in \mathbb R \}\), \(B = \{ x | m - 2 \le x \le m + 2 \}\). 若 \(A \subseteq \complement_{\mathbb R} B\), 则实数 \(m\) 的取值的范围是 <code>________</code>.</li>
+<li>已知函数 \(f(x) = -x^2 + 4x\), \(x \in [m,5]\) 的值域是 \([-5,4]\), 则实数 \(m\) 的取值范围是 <code>________</code>.</li>
+<li>已知函数 \(f(x) = ax^3 + bx - 4\), 若 \(f(2) = 6\), 则 \(f(-2) = \) <code>________</code>.</li>
+<li>已知函数 \(f(\sqrt{x} + 1) = x+1\), 则 \(f(2) = \) <code>________</code>.</li>
+<li>已知函数 \(f(x)\) 是定义在 \(\mathbb R\) 上的奇函数, 且当 \(x &gt; 0\) 时, \(f(x) = x-1\), 则不等式 \(f(x) \ge 0\) 的解集为 <code>________</code>.</li>
 <li>某市出租汽车收费标准如下:
 ① \(3\) 公里以内收费 \(12\) 元;
 ② 超过 \(3\) 公里但不超过 \(15\) 公里, 超过的部分每公里收费 \(2.4\) 元;
 ③ 超过 \(15\) 公里, 超过的部分每公里收费 \(3.6\) 元.
-张先生某次乘坐出租车结算时, 发现出租车费恰好平均每公里 \(3\) 元, 则张先生乘坐出租车行驶的里程为 \(\underline{\qquad\qquad}\) 公里.</li>
+张先生某次乘坐出租车结算时, 发现出租车费恰好平均每公里 \(3\) 元, 则张先生乘坐出租车行驶的里程为 <code>________</code> 公里.</li>
 <li>已知函数 \(f(x) = |x^2 - 2ax + b|\) (\(x \in \mathbb R\)). 给出下列命题:
 ① \(f(x)\) 是偶函数;
 ② 当 \(f(0) = f(2)\) 时, \(f(x)\) 的图像关于直线 \(x = 1\) 对称;
 ③ 若 \(a^2 - b \le 0\), 则 \(f(x)\) 在区间 \([a, +\infty)\) 上是增函数;
 ④ \(f(x)\) 有最小值 \(|a^2-b|\);
 ⑤ 若方程 \(f(x) = 3\) 恰有 \(3\) 个不相等的实数根, 则 \(a^2 = b+3\).
-其中正确命题的序号是 \(\underline{\qquad\qquad}\).</li>
+其中正确命题的序号是 <code>________</code>.</li>
 <li>德国著名数学家狄利克雷 (Dirichlet) 在数学领域成就显著, 以其名命名的函数 \(f(x) = \begin{cases} 1, &amp; x \in \mathbb Q \\ 0, &amp; x \in \complement_{\mathbb R} \mathbb Q \end{cases}\) 被称为狄利克雷函数. 其中, \(\mathbb R\) 为实数集, \(\mathbb Q\) 为有理数集. 则关于函数 \(f(x)\) 的如下四个命题:
 ① \(f(f(x)) = 0\);
 ② 函数 \(f(x)\) 是偶函数;
 ③ 任取一个不为零的有理数 \(T\), \(f(x+T) = f(x)\) 对任意的 \(x \in \mathbb R\) 恒成立;
 ④ 存在三个点 \(A (x_1, f(x_1))\), \(B (x_2, f(x_2))\), \(C (x_3, f(x_3))\), 使得 \(\triangle ABC\) 为等边三角形.
-其中, 真命题的序号是 \(\underline{\qquad\qquad}\).</li>
+其中, 真命题的序号是 <code>________</code>.</li>
 </ol>
 
 <h5 id="toc_2">三、解答题</h5>
@@ -215,55 +215,55 @@ D. 函数 \(|f(x)|\) 为奇函数, 且在 \((-\infty, 0)\) 上单调递增</p></
 <h5 id="toc_0">一、选择题</h5>
 
 <ol>
-<li><p>若下列命题正确的是 (    )</p>
+<li><p>若下列命题正确的是 <code>(    )</code></p>
 
 <p>A. 两两相交且不共点的三条直线确定一个平面<br/>
 B. 经过一条直线和一个点确定一个平面<br/>
 C. 经过三点确定一个平面<br/>
 D. 四边形确定一个平面</p></li>
-<li><p>若直线 \(l_1\) 和 \(l_2\) 是异面直线, \(l_1\) 在平面 \(\alpha\) 内, \(l_2\) 在平面 \(\beta\) 内, \(l\) 是平面 \(\alpha\) 与平面 \(\beta\) 的交线, 则下列命题正确的是 (    )</p>
+<li><p>若直线 \(l_1\) 和 \(l_2\) 是异面直线, \(l_1\) 在平面 \(\alpha\) 内, \(l_2\) 在平面 \(\beta\) 内, \(l\) 是平面 \(\alpha\) 与平面 \(\beta\) 的交线, 则下列命题正确的是 <code>(    )</code></p>
 
 <p>A. \(l\) 与 \(l_1, l_2\) 都不相交<br/>
 B. \(l\) 与 \(l_1, l_2\) 都相交<br/>
 C. \(l\) 至多与 \(l_1, l_2\) 中的一条相交<br/>
 D. \(l\) 至少与 \(l_1, l_2\) 中的一条相交</p></li>
-<li><p>如图所示, \(O\) 是正方体 \(ABCD-A_1B_1C_1D_1\) 的中心, \(E\) 为棱 \(BB_1\) 的中点, 则空间四边形 \(OEC_1D_1\) 在正方体各个面上的投影不可能是 (    )<br/>
+<li><p>如图所示, \(O\) 是正方体 \(ABCD-A_1B_1C_1D_1\) 的中心, \(E\) 为棱 \(BB_1\) 的中点, 则空间四边形 \(OEC_1D_1\) 在正方体各个面上的投影不可能是 <code>(    )</code><br/>
 <img src="https://ws4.sinaimg.cn/large/006tNc79ly1fk7p818t7bj30rs067jrw.jpg" alt=""/></p></li>
-<li><p>已知一个水平放置的正方形用斜二测画法做出的直观图是一个平行四边形, 平行四边形有一条边长是 \(4\), 则此正方形的面积是 (    )</p>
+<li><p>已知一个水平放置的正方形用斜二测画法做出的直观图是一个平行四边形, 平行四边形有一条边长是 \(4\), 则此正方形的面积是 <code>(    )</code></p>
 
 <p>A. \(16\)<br/>
 B. \(64\)<br/>
 C. \(16\) 或 \(64\)<br/>
 D. \(8\sqrt2\)</p></li>
-<li><p>如图, 在平行四边形 \(ABCD\) 中, \(AD = 2AB = 2\), \(\angle BAC = 90^\circ\). 将 \(\triangle ACD\) 沿 \(AC\) 折起, 使得 \(BD = \sqrt5\). 在三棱锥 \(D-ABC\) 的四个面中, 下列结论错误的是 (    )<br/>
+<li><p>如图, 在平行四边形 \(ABCD\) 中, \(AD = 2AB = 2\), \(\angle BAC = 90^\circ\). 将 \(\triangle ACD\) 沿 \(AC\) 折起, 使得 \(BD = \sqrt5\). 在三棱锥 \(D-ABC\) 的四个面中, 下列结论错误的是 <code>(    )</code><br/>
 <img src="https://ws4.sinaimg.cn/large/006tNc79ly1fk7p9kichbj30fl064jrm.jpg" alt="M11F5"/><br/>
 A. 面 \(ABD \perp\) 面 \(BCD\)<br/>
 B. 面 \(ABD \perp\) 面 \(ACD\)<br/>
 C. 面 \(ABC \perp\) 面 \(ACD\)<br/>
 D. 面 \(ABC \perp\) 面 \(BCD\)</p></li>
-<li><p>正方体 \(ABCD-A_1B_1C_1D_1\) 棱长为 \(1\), 线段 \(B_1D_1\) 上有两个动点 \(E\), \(F\), 且 \(EF = \dfrac12\), 则下列结论错误的是 (    )<br/>
+<li><p>正方体 \(ABCD-A_1B_1C_1D_1\) 棱长为 \(1\), 线段 \(B_1D_1\) 上有两个动点 \(E\), \(F\), 且 \(EF = \dfrac12\), 则下列结论错误的是 <code>(    )</code><br/>
 A. \(AC \perp BE\)<br/>
 B. \(EF \parallel {}\) 平面 \(ABCD\)<br/>
 C. 三棱锥 \(A-BEF\) 的体积为定值<br/>
 D. \(\triangle AEF\) 的面积与 \(\triangle BEF\) 的面积相等</p></li>
-<li><p>某空间几何体的三视图如图所示, 则此几何体的体积 (    )<br/>
+<li><p>某空间几何体的三视图如图所示, 则此几何体的体积 <code>(    )</code><br/>
 <img src="https://ws4.sinaimg.cn/large/006tNc79ly1fk7pbodn3uj305g066wel.jpg" alt="M11F7"/><br/>
 A. 有最小值 \(2\)<br/>
 B. 有最大值 \(2\)<br/>
 C. 有最大值 \(6\)<br/>
 D. 有最大值 \(4\)</p></li>
-<li><p>三棱锥 \(P-ABC\) 的侧棱 \(PA,PB,PC\) 两两垂直, 侧面积分别是 \(6,4,3\), 则三棱锥的体积是 (    )<br/>
+<li><p>三棱锥 \(P-ABC\) 的侧棱 \(PA,PB,PC\) 两两垂直, 侧面积分别是 \(6,4,3\), 则三棱锥的体积是 <code>(    )</code><br/>
 A. \(4\)<br/>
 B. \(6\)<br/>
 C. \(8\)<br/>
 D. \(10\)</p></li>
-<li><p>在四面体 \(ABCD\) 中, 界面 \(PQMN\) 是正方形, 则下列结论错误的是 (    )<br/>
+<li><p>在四面体 \(ABCD\) 中, 界面 \(PQMN\) 是正方形, 则下列结论错误的是 <code>(    )</code><br/>
 <img src="https://ws3.sinaimg.cn/large/006tNc79ly1fk7pcmfwiej306t05ot8u.jpg" alt=""/><br/>
 A. \(AC=BD\)<br/>
 B. \(PM\) 与 \(BD\) 异面<br/>
 C. \(AC \parallel{}\) 截面 \(PQMN\)<br/>
 D.  \(AC \perp BD\)</p></li>
-<li><p>已知直线 \(l_1 \parallel {}\) 平面 \(\alpha\), 直线 \(l_2 \subset \alpha\), 且 \(l_1 \parallel l_2\), 点 \(A \in l_1\), 点 \(B \in l_2\). 记 \(A\) 到 \(\alpha\) 的距离为 \(a\), \(A\) 到 \(l_2\) 的距离为 \(b\), \(A,B\) 两点间的距离为 \(c\), 则 (    )<br/>
+<li><p>已知直线 \(l_1 \parallel {}\) 平面 \(\alpha\), 直线 \(l_2 \subset \alpha\), 且 \(l_1 \parallel l_2\), 点 \(A \in l_1\), 点 \(B \in l_2\). 记 \(A\) 到 \(\alpha\) 的距离为 \(a\), \(A\) 到 \(l_2\) 的距离为 \(b\), \(A,B\) 两点间的距离为 \(c\), 则 <code>(    )</code><br/>
 A. \(b \le a \le c\)<br/>
 B. \(b \le c \le a\)<br/>
 C. \(a \le b \le c\)<br/>
@@ -273,16 +273,16 @@ D. \(a \le c \le b\)</p></li>
 <h5 id="toc_1">二、填空题</h5>
 
 <ol>
-<li>已知 \(a \parallel \alpha\), \(b \parallel \alpha\), 则直线 \(a,b\) 的位置关系①平行; ②相交; ③异面. 其中可能成立的序号为 <code>________</code>\(\underline{\qquad\qquad}\).</li>
-<li>若正三棱柱所有棱长都为 \(a\) 且体积为 \(16\sqrt3\), 则 \(a = \) \(\underline{\qquad\qquad}\).</li>
-<li>已知正四棱锥的底面边长和高均为 \(2\), 则它的侧棱长等于 \(\underline{\qquad\qquad}\).</li>
+<li>已知 \(a \parallel \alpha\), \(b \parallel \alpha\), 则直线 \(a,b\) 的位置关系①平行; ②相交; ③异面. 其中可能成立的序号为 <code>________</code>.</li>
+<li>若正三棱柱所有棱长都为 \(a\) 且体积为 \(16\sqrt3\), 则 \(a = \) <code>________</code>.</li>
+<li>已知正四棱锥的底面边长和高均为 \(2\), 则它的侧棱长等于 <code>________</code>.</li>
 <li>三棱锥 \(D-ABC\) 中, \(E,F,G\) 分别在侧棱 \(DA,DB,DC\) 上, 且平面 \(EFG \parallel {}\) 平面 \(ABC\), 给出下列三个结论:
 ① \(EF \parallel AB\);
 ② \(BC \parallel{}\) 平面 \(EFG\);
 ③ \(EF \parallel {}\) 平面 \(ABC\).
-其中正确的命题序号是 \(\underline{\qquad\qquad}\). </li>
-<li>点 \(P\) 是正方体 \(ABCD-A&#39;B&#39;C&#39;D&#39;\) 的棱 \(DD&#39;\) 上一点, 若平面 \(APC&#39; \perp\) 平面 \(ACC&#39;\), 则 \(\dfrac{D&#39;P}{D&#39;D} = \) \(\underline{\qquad\qquad}\).</li>
-<li>在四面体 \(ABCD\) 中, 以 \(A\) 为顶点的三条棱两两垂直, 其长分别为 \(1, \sqrt6,3\), 则这个四面体的外接球体积为 \(\underline{\qquad\qquad}\).</li>
+其中正确的命题序号是 <code>________</code>. </li>
+<li>点 \(P\) 是正方体 \(ABCD-A&#39;B&#39;C&#39;D&#39;\) 的棱 \(DD&#39;\) 上一点, 若平面 \(APC&#39; \perp\) 平面 \(ACC&#39;\), 则 \(\dfrac{D&#39;P}{D&#39;D} = \) <code>________</code>.</li>
+<li>在四面体 \(ABCD\) 中, 以 \(A\) 为顶点的三条棱两两垂直, 其长分别为 \(1, \sqrt6,3\), 则这个四面体的外接球体积为 <code>________</code>.</li>
 </ol>
 
 <h5 id="toc_2">三、解答题</h5>
