@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>  
+	  
+  	鲁列斯三角形问题 - Gnoloac发布资料的地方。。。
+  	
+	</title>
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="atom.xml" rel="alternate" title="Gnoloac发布资料的地方。。。" type="application/atom+xml">
+
+	<link href="asset/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="asset/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<script src="asset/javascripts/jquery.min.js"></script>
+	<script src="asset/highlightjs/highlight.pack.js"></script>
+	<link href="asset/highlightjs/styles/solarized_dark.css" media="screen, projection" rel="stylesheet" type="text/css">
+<script>hljs.initHighlightingOnLoad();</script>
+
+	<!--[if lt IE 9]><script src="asset/javascripts/html5.js"></script><![endif]-->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'> -->
+	<style type="text/css">
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Nunito-Light'), url(asset/font/1TiHc9yag0wq3lDO9cw0voX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito-Regular'), url(asset/font/6TbRXKWJjpj6V2v_WyRbMX-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito-Bold'), url(asset/font/TttUCfJ272GBgSKaOaD7KoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+	</style>
+	
+	<style type="text/css">
+	.container .left-col{ opacity: 1;}
+	#pagenavi a{ font-size: 1.3em;}
+	#pagenavi .next:before{ top: 3px;}
+	#pagenavi .prev:before{ top: 3px;}
+	.container .mid-col .mid-col-container #content .archives .title{ font-size: 1.5em;}
+	.container .mid-col .mid-col-container #content article{ padding: 15px 0px;}
+	#header .subtitle {
+		line-height: 1.2em;
+		padding-top: 8px;
+	}
+	article pre{ background: none; border: none; padding: 0;}
+	article .entry-content{text-align: left;}
+	.share-comment{ padding: 25px 0px; clear: both;}
+	hr{ margin: 20px 0px;border: 0; border-top:solid 1px #ddd;}
+	</style>
+  
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+				<header id="header" class="inner">
+				 
+					
+					<h1><a href="index.html">Gnoloac发布资料的地方。。。</a></h1>
+					<p class="subtitle"></p>
+					<nav id="main-nav">
+						<ul class="main">
+						
+						  <li id=""><a target="self" href="index.html">Home</a></li>
+						
+						  <li id=""><a target="_self" href="archives.html">Archives</a></li>
+						
+						</ul>
+					</nav>
+
+					<nav id="sub-nav">
+						<div class="social">
+
+
+
+
+
+
+
+
+
+
+
+
+
+								
+
+								<a class="rss" href="atom.xml" title="RSS">RSS</a>
+							
+						</div>
+					</nav>
+				</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			<div class="mid-col-container"> <div id="content" class="inner">
+
+	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+		<h1 class="title" itemprop="name">鲁列斯三角形问题</h1>
+		<div class="entry-content" itemprop="articleBody">
+			<h2 id="toc_0">原题</h2>
+
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fkbsjwg6hzj30ic0lxq7u.jpg" alt=""/></p>
+
+<h2 id="toc_1">分析</h2>
+
+<p>首先，一个回避不掉的问题是<strong>鲁列斯三角形</strong>与外接正方形的接触关系。仔细思考后可以想到以下几点（也许你想不到这么多，或者还能想出更多）：</p>
+
+<span id="more"></span><!-- more -->
+
+<ul>
+<li>鲁列斯三角形与正方形的四边都各有一个公共点；</li>
+<li>通常鲁列斯三角形只有两个顶点在正方形的两条临边上，而这两个顶点的对弧分别于正方形的另外两条边相切，如下左图，而原来题图中三个顶点都在正方形边上的情况只是一种（比较少见的）临界情况；</li>
+<li>如下左图，
+
+<ul>
+<li>图示情况中，顶点 \(A\)、\(B\) 在正方形的边上，有 \(\angle ABH \ge 30^\circ\)，\(\angle BAH \ge 30^\circ\)，而顶点 \(C\) 在正方形内部，边 \(AC\) 和 \(BC\) 均与正方形某条边的夹角在 \(30^\circ\) 以内；</li>
+<li>角 \(\alpha\) 和 \(\beta\) 定义如图，\(\alpha + \beta = \angle BAC = 60^\circ\)，图示情况中 \(AC\) 与 \(EF\) 不接触，必定有 \(\beta &lt; 30^\circ &lt; \alpha\)，考虑如果 \(\beta\) 增加，\(\alpha\) 减小（相应的点 \(A\) 向下移动），当 \(\beta\) 增加到比 \(30^\circ\) 大时，\(\alpha\) 就比 \(30^\circ\) 小，此时顶点 \(C\) 将与 \(EF\) 接触上，而顶点 \(B\) 则将脱离 \(HG\)；</li>
+<li>_你应该自己认真琢磨一下鲁列斯三角形完整旋转一周的过程当中，旋转到不同方位时，它的顶点和弧边与外界正方形的位置关系，以及正 \(\triangle ABC\) 的三条边与正方形各边的角度关系，注意体会当正三角形一边与正方形一边成 \(30^\circ\) 角时的临界情。_</li>
+</ul></li>
+</ul>
+
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fkbskn7dm0j30gb07dwf2.jpg" alt=""/></p>
+
+<h2 id="toc_2">第一问</h2>
+
+<p>有了上面这些分析，大致够我们做这个问题了。按上右图所示建立坐标系，由正方形的对称性，这应该最直接容易想到的坐标系定义方式。</p>
+
+<p>图示情况下， 顶点 \(A\)、\(B\) 在正方形的边上，\(30^\circ \le \angle BAH \le 60^\circ\)，\(60^\circ \le \angle BAT \le 90^\circ\)，点 \(T\) 到 \(EH\) 的距离为 \(|AT| \cdot \sin\angle BAT\)，而 \(|AT| = \frac{\sqrt3}3\)，因此点 \(T\) 到 \(EH\) 距离的取值范围是 \([\frac12, \frac{\sqrt3}3]\)，于是点 \(T\) 的横坐标取值范围是 \([\frac12 - \frac12 , \frac{\sqrt3}3 - \frac12]\) 即 \([0,\frac{2\sqrt3 - 3}6]\)（不难得到图示情况下纵坐标的取值范围也是它）。</p>
+
+<p>类似的可以分析另外三种情况，</p>
+
+<ul>
+<li>三角形有两个顶点位于 \(HG\)、\(FG\) 边上；</li>
+<li>三角形有两个顶点位于 \(EF\)、\(FG\) 边上；</li>
+<li>三角形有两个顶点位于 \(EF\)、\(EH\) 边上。</li>
+</ul>
+
+<p>综合起来最终的结论应该是：<strong>点 \(T\) 的横坐标 \(x\) 和纵坐标 \(y\) 的取值范围都是</strong><br/>
+\[<br/>
+[-\frac{2\sqrt3 - 3}6,\frac{2\sqrt3 - 3}6]<br/>
+\]</p>
+
+<h2 id="toc_3">第二问</h2>
+
+<p>仍然考虑顶点 \(A\)、\(B\) 位于正方形边上的图示情况，仍采用上面的角度定义：\(\alpha = \angle ABH\)。考虑 \(AB\) 的中点 \(D\)，则 \(\angle DHB = \alpha\)，\(|DH| = \frac12 |AB| = \frac12\)，于是<br/>
+\[<br/>
+\overrightarrow{HD} = \left( \frac12 \cos\alpha, \frac12 \sin\alpha \right)<br/>
+\]<br/>
+注意 \(DT \perp AB\)，故 \(DT\) 与 \(y\) 轴夹角也是 \(\alpha\)，另有 \(|DT| = \frac{\sqrt3}6\)，于是<br/>
+\[<br/>
+\overrightarrow{DT} = \left( \frac{\sqrt3}6 \sin\alpha, \frac{\sqrt3}6 \cos\alpha \right)<br/>
+\]<br/>
+另外显然有 \(\overrightarrow{OH} = \left( -\frac12, -\frac12 \right)\)，故<br/>
+\[<br/>
+\overrightarrow{OT} = \overrightarrow{OH} + \overrightarrow{HD} + \overrightarrow{DT}<br/>
+= \left(<br/>
+\frac12 \cos\alpha + \frac{\sqrt3}6 \sin\alpha - \frac12, \ <br/>
+\frac12 \sin\alpha + \frac{\sqrt3}6 \cos\alpha - \frac12<br/>
+\right)<br/>
+\]<br/>
+即点 \(T\) 的坐标 \((x,y)\) 满足<br/>
+\[<br/>
+\begin{cases}<br/>
+x&amp;=\frac12 \cos\alpha + \frac{\sqrt3}6 \sin\alpha - \frac12 \\<br/>
+y&amp;=\frac12 \sin\alpha + \frac{\sqrt3}6 \cos\alpha - \frac12<br/>
+\end{cases}<br/>
+\]<br/>
+反解得<br/>
+\[<br/>
+\begin{cases}<br/>
+\cos\alpha &amp;= 3 \left(x + \frac12 \right) -\sqrt3  \left(y + \frac12 \right) \\<br/>
+\sin\alpha &amp;= 3 \left(y + \frac12 \right)-\sqrt3  \left(x + \frac12 \right)<br/>
+\end{cases}<br/>
+\]<br/>
+由 \(\sin^2\alpha + \cos^2 \alpha = 1\) 可得 \((x,y)\) 满足的方程为<br/>
+\[<br/>
+\left[ 3 \left(x + \frac12 \right) -\sqrt3  \left(y + \frac12 \right) \right]^2<br/>
++ \left[ 3 \left(y + \frac12 \right)-\sqrt3  \left(x + \frac12 \right) \right]^2<br/>
+=1<br/>
+\]<br/>
+化简得<br/>
+\[<br/>
+12 \left[<br/>
+\left(x + \frac12\right)^2<br/>
+- \sqrt3 \left(x + \frac12\right) \left(y  + \frac12\right)<br/>
++ \left(y + \frac12\right)^2<br/>
+\right] = 1<br/>
+\]<br/>
+或<br/>
+\[<br/>
+12 \left( x^2 - \sqrt3 xy + y^2 \right)<br/>
++ 6 \left( 2 - \sqrt3 \right) \left( x + y \right)<br/>
++ 3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
+\]<br/>
+以上讨论仅限于“<strong>三角形有两个顶点位于 \(HG\)、\(EH\) 边上</strong>”时才成立，从第一问的讨论过程中，不难推断此时点 \(T\) 位于第一象限，因而对应的轨迹是上述方程所定义的曲线位于第一象限的部分。</p>
+
+<p>【​<mark>高能预警</mark>​】</p>
+
+<p>另外还有三种情况，由对称性不难得到它们的轨迹方程：</p>
+
+<ul>
+<li><p>三角形有两个顶点位于 \(HG\)、\(FG\) 边上时，轨迹是</p>
+
+<p>$$<br/>
+12 \left( x<sup>2</sup> + \sqrt3 xy + y<sup>2</sup> \right)</p>
+
+<ul>
+<li>6 \left( 2 - \sqrt3 \right) \left( x - y \right)</li>
+<li>3 \left( 2 - \sqrt3 \right) - 1 = 0
+$$</li>
+</ul>
+
+<p>在第二象限的部分；</p>
+
+<p>（根据对称性，把原来曲线方程中的 \(y\) 换成 \(-y\)，想一想为什么？）</p></li>
+<li><p>三角形有两个顶点位于 \(EF\)、\(FG\) 边上时，轨迹是</p>
+
+<p>$$<br/>
+12 \left( x<sup>2</sup> - \sqrt3 xy + y<sup>2</sup> \right)</p>
+
+<ul>
+<li>6 \left( 2 - \sqrt3 \right) \left( x + y \right)</li>
+<li>3 \left( 2 - \sqrt3 \right) - 1 = 0
+$$</li>
+</ul>
+
+<p>在第三象限的部分；</p>
+
+<p>（根据对称性，把原来曲线方程中的 \(x\) 换成 \(-x\)，\(y\) 换成 \(-y\)）</p></li>
+<li><p>三角形有两个顶点位于 \(EF\)、\(EH\) 边上时，轨迹是</p></li>
+<li><p>$$<br/>
+12 \left( x<sup>2</sup> + \sqrt3 xy + y<sup>2</sup> \right)</p>
+
+<ul>
+<li>6 \left( 2 - \sqrt3 \right) \left( -x + y \right)</li>
+<li>3 \left( 2 - \sqrt3 \right) - 1 = 0
+$$</li>
+</ul>
+
+<p>在第四象限的部分。</p>
+
+<p>（根据对称性，把原来曲线方程中的 \(x\) 换成 \(-x\)）</p></li>
+</ul>
+
+<p><u>如果你不知道应该怎么用对称性推导这些结论，那就按照前面的方法，分别把这三种情况的图形画出来，做三次详细的推导计算</u></p>
+
+<h2 id="toc_4">\(T\) 的轨迹的形状【<mark>超高能预警</mark>】</h2>
+
+<p>三角形有两个顶点位于 \(HG\)、\(EH\) 边上时，方程<br/>
+\[<br/>
+12 \left( x^2 - \sqrt3 xy + y^2 \right)<br/>
++ 6 \left( 2 - \sqrt3 \right) \left( x + y \right)<br/>
++ 3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
+\]<br/>
+描述的是一个椭圆，如下图中左下侧的椭圆，它在第一象限的部分其实只占整个椭圆的很小一部分。下图中的另外三个椭圆则分别是另外三种情况下，所得到的轨迹方程对应的曲线图像。</p>
+
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fkbskw7draj30g00cwgm5.jpg" alt=""/></p>
+
+<p>每个方程的椭圆图像上都只取很小的一部分，我们把上面这幅图局部放大，可以得到下面这幅图，鲁列斯三角形中心（在直角坐标系中）的完整轨迹是下图中最内侧的这条长得很像圆，但并不是正圆的、对称、封闭的曲线。</p>
+
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fkbsksvoczj30fy0cwdgq.jpg" alt=""/></p>
+
+<p>从图中能很明显看到，这条曲线上的点，横、纵坐标都在 \(0.08\) 以内，而在第一问中，我们已经得到点 \(T\) 的横、纵坐标取值范围的上限是 \(\frac{2\sqrt3 - 3}6 \approx 0.07735\)，这一结论也与图像吻合。</p>
+
+		</div>
+	</article>
+	<div class="share-comment">
+	 
+
+	  
+
+	  
+
+	</div>
+</div>        </div>
+			<footer id="footer" class="inner">Copyright &copy; 2014
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
+Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
+      </footer>
+		</div>
+	</div>
+
+  
+    
+<script src="asset/chart/all-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
+
+</body>
+</html>
