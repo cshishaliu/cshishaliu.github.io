@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Gnoloac发布资料的地方。。。]]></title>
-  <link href="cshishaliu.github.io/atom.xml" rel="self"/>
-  <link href="cshishaliu.github.io/"/>
-  <updated>2017-10-09T10:14:25+08:00</updated>
-  <id>cshishaliu.github.io/</id>
+  <link href="https://cshishaliu.github.io/atom.xml" rel="self"/>
+  <link href="https://cshishaliu.github.io/"/>
+  <updated>2017-10-09T12:38:50+08:00</updated>
+  <id>https://cshishaliu.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
     
@@ -14,14 +14,265 @@
 
   
   <entry>
-    <title type="html"><![CDATA[mawentao 20170914]]></title>
-    <link href="cshishaliu.github.io/15075145910644.html"/>
-    <updated>2017-10-09T10:03:11+08:00</updated>
-    <id>cshishaliu.github.io/15075145910644.html</id>
+    <title type="html"><![CDATA[zhuxirun 20171008]]></title>
+    <link href="https://cshishaliu.github.io/15075212298147.html"/>
+    <updated>2017-10-09T11:53:49+08:00</updated>
+    <id>https://cshishaliu.github.io/15075212298147.html</id>
     <content type="html"><![CDATA[
-<h2 id="toc_0">问题</h2>
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fkbuvmlkh4j311c0emwh1.jpg" alt=""/></p>
 
-<p>\(a,b,c \ge 0\), 求证:<br/>
+<span id="more"></span><!-- more -->
+
+<p>(1) \(c = \sqrt3\), \(a = 2\), \(a = 1\). 椭圆方程为 \(\dfrac{x^2}4 + y^2 = 1\).</p>
+
+<p>(2) 设 \(M\) 的坐标为 \((x, y)\), 则 \(P\) 的坐标为 \(\left( 2x-1, 2y - \dfrac12 \right)\).<br/>
+由于点 \(P\) 在椭圆上, 故<br/>
+\[<br/>
+\dfrac{(2x-1)^2}4 + \left(2y - \dfrac12 \right)^2 = 1<br/>
+\]<br/>
+或<br/>
+\[<br/>
+x^2 - x + 4y^2 - 2y - \dfrac12 = 0<br/>
+\]</p>
+
+<p>(3) 显然 \(B, C\) 两点关于圆点 \(O\) 对称, 故 \(S_{\triangle ABC} = 2 S_{\triangle AOB}\).<br/>
+\(|OA| = \dfrac{\sqrt5}2\), \(OA\) 所在直线方程为 \(x - 2y = 0\), 设点 \(B\) 的坐标为 \((2\cos\theta, \sin\theta)\), 则 \(B\) 到直线 \(OA\) 的距离为<br/>
+\[<br/>
+d = \dfrac{|2\cos\theta - 2\sin\theta|}{\sqrt5} = \dfrac2{\sqrt5} |\cos\theta - \sin\theta| \le \dfrac2{\sqrt5} \cdot \sqrt2<br/>
+\]<br/>
+故 \(S_{\triangle AOB} = \dfrac12 \cdot |AO| \cdot d \le \dfrac{\sqrt2}2\), \(\triangle ABC\) 面积的最大值为 \(\sqrt2\).</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[lushuo 20170914]]></title>
+    <link href="https://cshishaliu.github.io/15075209588965.html"/>
+    <updated>2017-10-09T11:49:18+08:00</updated>
+    <id>https://cshishaliu.github.io/15075209588965.html</id>
+    <content type="html"><![CDATA[
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fkbuq4ynbjj30zk0k00u6.jpg" alt=""/></p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">习题 1</h2>
+
+<p>\(f \left( x + \dfrac1x \right)\) 定义域为 \([1,2]\), 求 \(f \left( x^2 + \dfrac1{x^2} \right)\) 的定义域.</p>
+
+<blockquote>
+<p>这个题我觉得有值得商榷之处, 若 \(f \left( x + \dfrac1x \right)\) 中, \(x\) 可取闭区间 \([1,2]\) 中的任意值, 那么应该也可以取闭区间 \(\left[ \dfrac12, 1 \right]\) 中的任意值.</p>
+
+<p>我认为正确的解法是这样的:</p>
+</blockquote>
+
+<p>由 \(x \in [1,2]\) 得 \(x+\dfrac1x \in \left[ 2, \dfrac52 \right]\). 故函数 \(f(x)\) 的定义域为 \(\left[ 2, \dfrac52 \right]\), 即对于函数 \(f(x)\) 而言, 其 \(x\) 的取值必须在这个范围内.</p>
+
+<p>于是对于函数 \(f \left( x^2 + \dfrac1{x^2} \right)\) 而言, 就要求 \(x^2 + \dfrac1{x^2} \in \left[ 2, \dfrac52 \right]\), 故 \(x^2 \in \left[ \dfrac12, 2 \right]\), 解得 \(x \in \left[ -\sqrt2, -\dfrac{\sqrt2}2\right] \cup \left[ \dfrac{\sqrt2}2, \sqrt2 \right]\).</p>
+
+<blockquote>
+<p>可能会出现的另一个解答是: 由于函数 \(f \left( x + \dfrac1x \right)\) 中, \(x \in [1,2]\), 因此在函数 \(f \left( x^2 + \dfrac1{x^2} \right)\) 中, \(x^2 \in [1,2]\), 从而得到 \(x \in [-\sqrt2, -1] \cup [1, \sqrt2]\).</p>
+
+<p>我认为这个解答是错误的.</p>
+
+<p>但我不确定卢硕的老师如何看待这个问题, 所以, 还需讨论吧.</p>
+</blockquote>
+
+<h2 id="toc_1">习题 5</h2>
+
+<p>\(f \left( 1 - x^{\frac16} + x^{\frac13} - x^{\frac12} \right)\) 的定义域为 \([1,64]\), 求 \(f(x-1)\) 的定义域.</p>
+
+<p>设 \(t = x^{\frac16}\), 则 \(x \in [1,64]\) 时, \(t \in [1,2]\).</p>
+
+<p>又 \(1 - x^{\frac16} + x^{\frac13} - x^{\frac12} = 1 - t + t^2 - t^3 = (1-t)(1+t^2)\),</p>
+
+<p>\(t \in [1,2]\) 时, \(t\) 越大, \(1-t\) 负的越多, 而 \(1+t^2\) 正的越大, 故 \((1-t)(1+t^2)\) 在这个区间上随 \(t\) 单调减, 其取值范围也就是 \([-5, 0]\).</p>
+
+<p>也就是说,  \(x \in [1,64]\) 时, \(1 - x^{\frac16} + x^{\frac13} - x^{\frac12} \in [-5,0]\).</p>
+
+<p>因此, 在函数 \(f(x-1)\) 中, 也要求 \(x-1 \in [-5,0]\), 于是 \(x \in [-4,1]\).</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[鲁列斯三角形问题]]></title>
+    <link href="https://cshishaliu.github.io/15075156363610.html"/>
+    <updated>2017-10-09T10:20:36+08:00</updated>
+    <id>https://cshishaliu.github.io/15075156363610.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">原题</h2>
+
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fkbsjwg6hzj30ic0lxq7u.jpg" alt=""/></p>
+
+<h2 id="toc_1">分析</h2>
+
+<p>首先，一个回避不掉的问题是<strong>鲁列斯三角形</strong>与外接正方形的接触关系。仔细思考后可以想到以下几点（也许你想不到这么多，或者还能想出更多）：</p>
+
+<span id="more"></span><!-- more -->
+
+<ul>
+<li>鲁列斯三角形与正方形的四边都各有一个公共点；</li>
+<li>通常鲁列斯三角形只有两个顶点在正方形的两条临边上，而这两个顶点的对弧分别于正方形的另外两条边相切，如下左图，而原来题图中三个顶点都在正方形边上的情况只是一种（比较少见的）临界情况；</li>
+<li>如下左图，
+
+<ul>
+<li>图示情况中，顶点 \(A\)、\(B\) 在正方形的边上，有 \(\angle ABH \ge 30^\circ\)，\(\angle BAH \ge 30^\circ\)，而顶点 \(C\) 在正方形内部，边 \(AC\) 和 \(BC\) 均与正方形某条边的夹角在 \(30^\circ\) 以内；</li>
+<li>角 \(\alpha\) 和 \(\beta\) 定义如图，\(\alpha + \beta = \angle BAC = 60^\circ\)，图示情况中 \(AC\) 与 \(EF\) 不接触，必定有 \(\beta &lt; 30^\circ &lt; \alpha\)，考虑如果 \(\beta\) 增加，\(\alpha\) 减小（相应的点 \(A\) 向下移动），当 \(\beta\) 增加到比 \(30^\circ\) 大时，\(\alpha\) 就比 \(30^\circ\) 小，此时顶点 \(C\) 将与 \(EF\) 接触上，而顶点 \(B\) 则将脱离 \(HG\)；</li>
+<li>_你应该自己认真琢磨一下鲁列斯三角形完整旋转一周的过程当中，旋转到不同方位时，它的顶点和弧边与外界正方形的位置关系，以及正 \(\triangle ABC\) 的三条边与正方形各边的角度关系，注意体会当正三角形一边与正方形一边成 \(30^\circ\) 角时的临界情。_</li>
+</ul></li>
+</ul>
+
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fkbskn7dm0j30gb07dwf2.jpg" alt=""/></p>
+
+<h2 id="toc_2">第一问</h2>
+
+<p>有了上面这些分析，大致够我们做这个问题了。按上右图所示建立坐标系，由正方形的对称性，这应该最直接容易想到的坐标系定义方式。</p>
+
+<p>图示情况下， 顶点 \(A\)、\(B\) 在正方形的边上，\(30^\circ \le \angle BAH \le 60^\circ\)，\(60^\circ \le \angle BAT \le 90^\circ\)，点 \(T\) 到 \(EH\) 的距离为 \(|AT| \cdot \sin\angle BAT\)，而 \(|AT| = \frac{\sqrt3}3\)，因此点 \(T\) 到 \(EH\) 距离的取值范围是 \([\frac12, \frac{\sqrt3}3]\)，于是点 \(T\) 的横坐标取值范围是 \([\frac12 - \frac12 , \frac{\sqrt3}3 - \frac12]\) 即 \([0,\frac{2\sqrt3 - 3}6]\)（不难得到图示情况下纵坐标的取值范围也是它）。</p>
+
+<p>类似的可以分析另外三种情况，</p>
+
+<ul>
+<li>三角形有两个顶点位于 \(HG\)、\(FG\) 边上；</li>
+<li>三角形有两个顶点位于 \(EF\)、\(FG\) 边上；</li>
+<li>三角形有两个顶点位于 \(EF\)、\(EH\) 边上。</li>
+</ul>
+
+<p>综合起来最终的结论应该是：<strong>点 \(T\) 的横坐标 \(x\) 和纵坐标 \(y\) 的取值范围都是</strong><br/>
+\[<br/>
+[-\frac{2\sqrt3 - 3}6,\frac{2\sqrt3 - 3}6]<br/>
+\]</p>
+
+<h2 id="toc_3">第二问</h2>
+
+<p>仍然考虑顶点 \(A\)、\(B\) 位于正方形边上的图示情况，仍采用上面的角度定义：\(\alpha = \angle ABH\)。考虑 \(AB\) 的中点 \(D\)，则 \(\angle DHB = \alpha\)，\(|DH| = \frac12 |AB| = \frac12\)，于是<br/>
+\[<br/>
+\overrightarrow{HD} = \left( \frac12 \cos\alpha, \frac12 \sin\alpha \right)<br/>
+\]<br/>
+注意 \(DT \perp AB\)，故 \(DT\) 与 \(y\) 轴夹角也是 \(\alpha\)，另有 \(|DT| = \frac{\sqrt3}6\)，于是<br/>
+\[<br/>
+\overrightarrow{DT} = \left( \frac{\sqrt3}6 \sin\alpha, \frac{\sqrt3}6 \cos\alpha \right)<br/>
+\]<br/>
+另外显然有 \(\overrightarrow{OH} = \left( -\frac12, -\frac12 \right)\)，故<br/>
+\[<br/>
+\overrightarrow{OT} = \overrightarrow{OH} + \overrightarrow{HD} + \overrightarrow{DT}<br/>
+= \left(<br/>
+\frac12 \cos\alpha + \frac{\sqrt3}6 \sin\alpha - \frac12, \ <br/>
+\frac12 \sin\alpha + \frac{\sqrt3}6 \cos\alpha - \frac12<br/>
+\right)<br/>
+\]<br/>
+即点 \(T\) 的坐标 \((x,y)\) 满足<br/>
+\[<br/>
+\begin{cases}<br/>
+x&amp;=\frac12 \cos\alpha + \frac{\sqrt3}6 \sin\alpha - \frac12 \\<br/>
+y&amp;=\frac12 \sin\alpha + \frac{\sqrt3}6 \cos\alpha - \frac12<br/>
+\end{cases}<br/>
+\]<br/>
+反解得<br/>
+\[<br/>
+\begin{cases}<br/>
+\cos\alpha &amp;= 3 \left(x + \frac12 \right) -\sqrt3  \left(y + \frac12 \right) \\<br/>
+\sin\alpha &amp;= 3 \left(y + \frac12 \right)-\sqrt3  \left(x + \frac12 \right)<br/>
+\end{cases}<br/>
+\]<br/>
+由 \(\sin^2\alpha + \cos^2 \alpha = 1\) 可得 \((x,y)\) 满足的方程为<br/>
+\[<br/>
+\left[ 3 \left(x + \frac12 \right) -\sqrt3  \left(y + \frac12 \right) \right]^2<br/>
++ \left[ 3 \left(y + \frac12 \right)-\sqrt3  \left(x + \frac12 \right) \right]^2<br/>
+=1<br/>
+\]<br/>
+化简得<br/>
+\[<br/>
+12 \left[<br/>
+\left(x + \frac12\right)^2<br/>
+- \sqrt3 \left(x + \frac12\right) \left(y  + \frac12\right)<br/>
++ \left(y + \frac12\right)^2<br/>
+\right] = 1<br/>
+\]<br/>
+或<br/>
+\[<br/>
+12 \left( x^2 - \sqrt3 xy + y^2 \right)<br/>
++ 6 \left( 2 - \sqrt3 \right) \left( x + y \right)<br/>
++ 3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
+\]<br/>
+以上讨论仅限于“<strong>三角形有两个顶点位于 \(HG\)、\(EH\) 边上</strong>”时才成立，从第一问的讨论过程中，不难推断此时点 \(T\) 位于第一象限，因而对应的轨迹是上述方程所定义的曲线位于第一象限的部分。</p>
+
+<p>【​<mark>高能预警</mark>​】</p>
+
+<p>另外还有三种情况，由对称性不难得到它们的轨迹方程：</p>
+
+<ul>
+<li>三角形有两个顶点位于 \(HG\)、\(FG\) 边上时，轨迹是</li>
+</ul>
+
+<p>\[<br/>
+12 \left( x^2 + \sqrt3 xy + y^2 \right)<br/>
++ 6 \left( 2 - \sqrt3 \right) \left( x - y \right)<br/>
++ 3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
+\]</p>
+
+<p>在第二象限的部分；</p>
+
+<p>（根据对称性，把原来曲线方程中的 \(y\) 换成 \(-y\)，想一想为什么？）</p>
+
+<ul>
+<li>三角形有两个顶点位于 \(EF\)、\(FG\) 边上时，轨迹是</li>
+</ul>
+
+<p>\[<br/>
+12 \left( x^2 - \sqrt3 xy + y^2 \right)<br/>
+- 6 \left( 2 - \sqrt3 \right) \left( x + y \right)<br/>
++ 3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
+\]</p>
+
+<p>在第三象限的部分；</p>
+
+<p>（根据对称性，把原来曲线方程中的 \(x\) 换成 \(-x\)，\(y\) 换成 \(-y\)）</p>
+
+<ul>
+<li>三角形有两个顶点位于 \(EF\)、\(EH\) 边上时，轨迹是</li>
+</ul>
+
+<p>\[<br/>
+12 \left( x^2 + \sqrt3 xy + y^2 \right)<br/>
++ 6 \left( 2 - \sqrt3 \right) \left( -x + y \right)<br/>
++ 3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
+\]</p>
+
+<p>在第四象限的部分。</p>
+
+<p>（根据对称性，把原来曲线方程中的 \(x\) 换成 \(-x\)）</p>
+
+<p><u>如果你不知道应该怎么用对称性推导这些结论，那就按照前面的方法，分别把这三种情况的图形画出来，做三次详细的推导计算</u></p>
+
+<h2 id="toc_4">\(T\) 的轨迹的形状【<mark>超高能预警</mark>】</h2>
+
+<p>三角形有两个顶点位于 \(HG\)、\(EH\) 边上时，方程<br/>
+\[<br/>
+12 \left( x^2 - \sqrt3 xy + y^2 \right)<br/>
++ 6 \left( 2 - \sqrt3 \right) \left( x + y \right)<br/>
++ 3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
+\]<br/>
+描述的是一个椭圆，如下图中左下侧的椭圆，它在第一象限的部分其实只占整个椭圆的很小一部分。下图中的另外三个椭圆则分别是另外三种情况下，所得到的轨迹方程对应的曲线图像。</p>
+
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fkbskw7draj30g00cwgm5.jpg" alt=""/></p>
+
+<p>每个方程的椭圆图像上都只取很小的一部分，我们把上面这幅图局部放大，可以得到下面这幅图，鲁列斯三角形中心（在直角坐标系中）的完整轨迹是下图中最内侧的这条长得很像圆，但并不是正圆的、对称、封闭的曲线。</p>
+
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fkbsksvoczj30fy0cwdgq.jpg" alt=""/></p>
+
+<p>从图中能很明显看到，这条曲线上的点，横、纵坐标都在 \(0.08\) 以内，而在第一问中，我们已经得到点 \(T\) 的横、纵坐标取值范围的上限是 \(\frac{2\sqrt3 - 3}6 \approx 0.07735\)，这一结论也与图像吻合。</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[mawentao 20170914]]></title>
+    <link href="https://cshishaliu.github.io/15075145910644.html"/>
+    <updated>2017-10-09T10:03:11+08:00</updated>
+    <id>https://cshishaliu.github.io/15075145910644.html</id>
+    <content type="html"><![CDATA[
+<p><code>问题</code> \(a,b,c \ge 0\), 求证:<br/>
 \[<br/>
 \begin{aligned}<br/>
 &amp;\sqrt{a^2 - ab + b^2} \cdot \sqrt{b^2 - bc + c^2} \\<br/>
@@ -33,9 +284,8 @@
 
 <span id="more"></span><!-- more -->
 
-<h2 id="toc_1">解答 (郭建任老师的方法)</h2>
-
-<p>\[<br/>
+<p><code>解答 (郭建任老师的方法)</code><br/>
+\[<br/>
 \begin{aligned}<br/>
 &amp;<br/>
 \sum \sqrt{a^2 - ab + b^2} \cdot \sqrt{b^2 - bc + c^2} \\<br/>
@@ -55,9 +305,9 @@
   
   <entry>
     <title type="html"><![CDATA[201710月考复习 高一]]></title>
-    <link href="cshishaliu.github.io/15072010715807.html"/>
+    <link href="https://cshishaliu.github.io/15072010715807.html"/>
     <updated>2017-10-05T18:57:51+08:00</updated>
-    <id>cshishaliu.github.io/15072010715807.html</id>
+    <id>https://cshishaliu.github.io/15072010715807.html</id>
     <content type="html"><![CDATA[
 <span id="more"></span><!-- more -->
 
@@ -70,48 +320,57 @@
 B. \(\{x| -1&lt;x&lt;1 \}\)<br/>
 C. \(\{x| -1&lt;x&lt;4 \}\)<br/>
 D. \(\{x| 1&lt;x&lt;4 \}\)</p></li>
-<li><p>设集合 \(A = \{ x | 0 \le x \le 3 \}\), \(B = \{ y| y \le 0 \le 1\}\), 则下列对应法则中, 是从 \(A\) 到 \(B\) 的映射的是 <code>(    )</code><br/>
-A. \(x \to y = \sqrt{x}\)<br/>
+<li><p>设集合 \(A = \{ x | 0 \le x \le 3 \}\), \(B = \{ y| y \le 0 \le 1\}\), 则下列对应法则中, 是从 \(A\) 到 \(B\) 的映射的是 <code>(    )</code></p>
+
+<p>A. \(x \to y = \sqrt{x}\)<br/>
 B. \(x \to y^2 = \dfrac12 x\)<br/>
 C. \(x \to y = \dfrac13 x​\) <br/>
 D. \(x \to y = \dfrac1{2^x - 1}\)</p></li>
-<li><p>已知函数 \(f(x) = \begin{cases} \sqrt{x} , &amp; x \ge 2 \\ 3-x ,&amp; x &lt; 2 \end{cases}\), 则 \(f(f(-1)) = \) <code>(    )</code><br/>
-A. \(-1\)<br/>
+<li><p>已知函数 \(f(x) = \begin{cases} \sqrt{x} , &amp; x \ge 2 \\ 3-x ,&amp; x &lt; 2 \end{cases}\), 则 \(f(f(-1)) = \) <code>(    )</code></p>
+
+<p>A. \(-1\)<br/>
 B. \(0\)<br/>
 C. \(1\)<br/>
 D. \(2\)</p></li>
-<li><p>设 \(A = \{ x \in \mathbb Z | |x| \le 2 \}\), \(B = \{ y | y = x^2 + 1, x \in A \}\), 则 \(B\) 中的元素个数是 <code>(    )</code><br/>
-A. \(5\)<br/>
+<li><p>设 \(A = \{ x \in \mathbb Z | |x| \le 2 \}\), \(B = \{ y | y = x^2 + 1, x \in A \}\), 则 \(B\) 中的元素个数是 <code>(    )</code></p>
+
+<p>A. \(5\)<br/>
 B. \(4\)<br/>
 C. \(3\)<br/>
 D. 无数个</p></li>
-<li><p>已知 \(P = \{a,b\}\), \(Q = \{ -1,0,1,2 \}\), \(f\) 是从 \(P\) 到 \(Q\) 的映射, 则满足 \(f(a) = 0\) 的映射个数为 <code>(    )</code><br/>
-A. \(3\)<br/>
+<li><p>已知 \(P = \{a,b\}\), \(Q = \{ -1,0,1,2 \}\), \(f\) 是从 \(P\) 到 \(Q\) 的映射, 则满足 \(f(a) = 0\) 的映射个数为 <code>(    )</code></p>
+
+<p>A. \(3\)<br/>
 B. \(4\)<br/>
 C. \(6\)<br/>
 D. \(8\)</p></li>
-<li><p>若函数 \(f(x) = \dfrac{x-1}x\), 则方程 \(f(4x) = x\) 的根是 <code>(    )</code><br/>
-A. \(\dfrac12\)<br/>
+<li><p>若函数 \(f(x) = \dfrac{x-1}x\), 则方程 \(f(4x) = x\) 的根是 <code>(    )</code></p>
+
+<p>A. \(\dfrac12\)<br/>
 B. \(-\dfrac12\)<br/>
 C. \(2\)<br/>
 D. \(-2\)</p></li>
-<li><p>已知 \(f(x) = \begin{cases} x+2, &amp; x \le -1 \\ x^2, &amp; -1 &lt; x &lt; 2 \\ 2x, &amp; x \ge 2 \end{cases}\), 若 \(f(x)  = 3\), 则 \(x\) 的值是 <code>(    )</code><br/>
-A. \(1\)<br/>
+<li><p>已知 \(f(x) = \begin{cases} x+2, &amp; x \le -1 \\ x^2, &amp; -1 &lt; x &lt; 2 \\ 2x, &amp; x \ge 2 \end{cases}\), 若 \(f(x)  = 3\), 则 \(x\) 的值是 <code>(    )</code></p>
+
+<p>A. \(1\)<br/>
 B. \(\sqrt3\)<br/>
 C. \(1\), \(\dfrac32\) 或 \(\pm \sqrt3\)<br/>
 D. \(\sqrt3\) 或 \(\dfrac32\)</p></li>
-<li><p>设 \(U\) 为全集, \(P\), \(Q\) 为非空集合, 且 \(P \subsetneqq Q \subsetneqq U\), 下面结论中不正确的是 <code>(    )</code><br/>
-A. \((\complement_U P) \cup Q = U\)<br/>
+<li><p>设 \(U\) 为全集, \(P\), \(Q\) 为非空集合, 且 \(P \subsetneqq Q \subsetneqq U\), 下面结论中不正确的是 <code>(    )</code></p>
+
+<p>A. \((\complement_U P) \cup Q = U\)<br/>
 B. \((\complement_U Q) \cap P = \varnothing\)<br/>
 C. \(P \cup Q = Q\)<br/>
 D. \((\complement_U P) \cap Q = \varnothing\)</p></li>
-<li><p>已知函数 \(f(x)\) 是定义在 \(\mathbb R\) 上的奇函数, 它的图像关于直线 \(x = 1\) 对称, 且 \(f(x) = x\) (\(0 &lt; x \le 1\)), 则当 \(x \in (5,7]\) 时, \(y = f(x)\) 的解析式是 <code>(    )</code><br/>
-A. \(f(x) = 2 - x\)<br/>
+<li><p>已知函数 \(f(x)\) 是定义在 \(\mathbb R\) 上的奇函数, 它的图像关于直线 \(x = 1\) 对称, 且 \(f(x) = x\) (\(0 &lt; x \le 1\)), 则当 \(x \in (5,7]\) 时, \(y = f(x)\) 的解析式是 <code>(    )</code></p>
+
+<p>A. \(f(x) = 2 - x\)<br/>
 B. \(f(x) = x - 4\)<br/>
 C. \(f(x) = 6-x\)<br/>
 D. \(f(x) = x - 8\)</p></li>
-<li><p>已知函数 \(f(x)\) 是奇函数, 且在 \((0, +\infty)\) 上单调递增, 则以下结论正确的是 <code>(    )</code><br/>
-A. 函数 \(f(|x|)\) 为奇函数, 且在 \((0, +\infty)\) 上单调递增<br/>
+<li><p>已知函数 \(f(x)\) 是奇函数, 且在 \((0, +\infty)\) 上单调递增, 则以下结论正确的是 <code>(    )</code></p>
+
+<p>A. 函数 \(f(|x|)\) 为奇函数, 且在 \((0, +\infty)\) 上单调递增<br/>
 B. 函数 \(f(|x|)\) 为偶函数, 且在 \((0, +\infty)\) 上单调递增<br/>
 C. 函数 \(|f(x)|\) 为偶函数, 且在 \((-\infty, 0)\) 上单调递增<br/>
 D. 函数 \(|f(x)|\) 为奇函数, 且在 \((-\infty, 0)\) 上单调递增</p></li>
@@ -120,54 +379,54 @@ D. 函数 \(|f(x)|\) 为奇函数, 且在 \((-\infty, 0)\) 上单调递增</p></
 <h5 id="toc_1">二、填空题</h5>
 
 <ol>
-<li>已知集合 \(M = \{ (x,y) | x+y=2 \}\), \(N = \{ (x,y) | x-y=4 \}\), 则集合 \(M \cup N =\) <code>________</code>.</li>
-<li>已知函数 \(f(x) = \dfrac{\sqrt{1-2x}}{x^2 - 1}\) 的定义域是 <code>________</code>.</li>
-<li>已知集合 \(A = \{ x | x^2 - 2x - 3 \le 0, x \in \mathbb R \}\), \(B = \{ x | m - 2 \le x \le m + 2 \}\). 若 \(A \subseteq \complement_{\mathbb R} B\), 则实数 \(m\) 的取值的范围是 <code>________</code>.</li>
-<li>已知函数 \(f(x) = -x^2 + 4x\), \(x \in [m,5]\) 的值域是 \([-5,4]\), 则实数 \(m\) 的取值范围是 <code>________</code>.</li>
-<li>已知函数 \(f(x) = ax^3 + bx - 4\), 若 \(f(2) = 6\), 则 \(f(-2) = \) <code>________</code>.</li>
-<li>已知函数 \(f(\sqrt{x} + 1) = x+1\), 则 \(f(2) = \) <code>________</code>.</li>
-<li>已知函数 \(f(x)\) 是定义在 \(\mathbb R\) 上的奇函数, 且当 \(x &gt; 0\) 时, \(f(x) = x-1\), 则不等式 \(f(x) \ge 0\) 的解集为 <code>________</code>.</li>
-<li>某市出租汽车收费标准如下:
-① \(3\) 公里以内收费 \(12\) 元;
-② 超过 \(3\) 公里但不超过 \(15\) 公里, 超过的部分每公里收费 \(2.4\) 元;
-③ 超过 \(15\) 公里, 超过的部分每公里收费 \(3.6\) 元.
-张先生某次乘坐出租车结算时, 发现出租车费恰好平均每公里 \(3\) 元, 则张先生乘坐出租车行驶的里程为 <code>________</code> 公里.</li>
-<li>已知函数 \(f(x) = |x^2 - 2ax + b|\) (\(x \in \mathbb R\)). 给出下列命题:
-① \(f(x)\) 是偶函数;
-② 当 \(f(0) = f(2)\) 时, \(f(x)\) 的图像关于直线 \(x = 1\) 对称;
-③ 若 \(a^2 - b \le 0\), 则 \(f(x)\) 在区间 \([a, +\infty)\) 上是增函数;
-④ \(f(x)\) 有最小值 \(|a^2-b|\);
-⑤ 若方程 \(f(x) = 3\) 恰有 \(3\) 个不相等的实数根, 则 \(a^2 = b+3\).
-其中正确命题的序号是 <code>________</code>.</li>
-<li>德国著名数学家狄利克雷 (Dirichlet) 在数学领域成就显著, 以其名命名的函数 \(f(x) = \begin{cases} 1, &amp; x \in \mathbb Q \\ 0, &amp; x \in \complement_{\mathbb R} \mathbb Q \end{cases}\) 被称为狄利克雷函数. 其中, \(\mathbb R\) 为实数集, \(\mathbb Q\) 为有理数集. 则关于函数 \(f(x)\) 的如下四个命题:
-① \(f(f(x)) = 0\);
-② 函数 \(f(x)\) 是偶函数;
-③ 任取一个不为零的有理数 \(T\), \(f(x+T) = f(x)\) 对任意的 \(x \in \mathbb R\) 恒成立;
-④ 存在三个点 \(A (x_1, f(x_1))\), \(B (x_2, f(x_2))\), \(C (x_3, f(x_3))\), 使得 \(\triangle ABC\) 为等边三角形.
-其中, 真命题的序号是 <code>________</code>.</li>
+<li><p>已知集合 \(M = \{ (x,y) | x+y=2 \}\), \(N = \{ (x,y) | x-y=4 \}\), 则集合 \(M \cup N =\) <code>________</code>.</p></li>
+<li><p>已知函数 \(f(x) = \dfrac{\sqrt{1-2x}}{x^2 - 1}\) 的定义域是 <code>________</code>.</p></li>
+<li><p>已知集合 \(A = \{ x | x^2 - 2x - 3 \le 0, x \in \mathbb R \}\), \(B = \{ x | m - 2 \le x \le m + 2 \}\). 若 \(A \subseteq \complement_{\mathbb R} B\), 则实数 \(m\) 的取值的范围是 <code>________</code>.</p></li>
+<li><p>已知函数 \(f(x) = -x^2 + 4x\), \(x \in [m,5]\) 的值域是 \([-5,4]\), 则实数 \(m\) 的取值范围是 <code>________</code>.</p></li>
+<li><p>已知函数 \(f(x) = ax^3 + bx - 4\), 若 \(f(2) = 6\), 则 \(f(-2) = \) <code>________</code>.</p></li>
+<li><p>已知函数 \(f(\sqrt{x} + 1) = x+1\), 则 \(f(2) = \) <code>________</code>.</p></li>
+<li><p>已知函数 \(f(x)\) 是定义在 \(\mathbb R\) 上的奇函数, 且当 \(x &gt; 0\) 时, \(f(x) = x-1\), 则不等式 \(f(x) \ge 0\) 的解集为 <code>________</code>.</p></li>
+<li><p>某市出租汽车收费标准如下:<br/>
+① \(3\) 公里以内收费 \(12\) 元;<br/>
+② 超过 \(3\) 公里但不超过 \(15\) 公里, 超过的部分每公里收费 \(2.4\) 元;<br/>
+③ 超过 \(15\) 公里, 超过的部分每公里收费 \(3.6\) 元.<br/>
+张先生某次乘坐出租车结算时, 发现出租车费恰好平均每公里 \(3\) 元, 则张先生乘坐出租车行驶的里程为 <code>________</code> 公里.</p></li>
+<li><p>已知函数 \(f(x) = |x^2 - 2ax + b|\) (\(x \in \mathbb R\)). 给出下列命题:<br/>
+① \(f(x)\) 是偶函数;<br/>
+② 当 \(f(0) = f(2)\) 时, \(f(x)\) 的图像关于直线 \(x = 1\) 对称;<br/>
+③ 若 \(a^2 - b \le 0\), 则 \(f(x)\) 在区间 \([a, +\infty)\) 上是增函数;<br/>
+④ \(f(x)\) 有最小值 \(|a^2-b|\);<br/>
+⑤ 若方程 \(f(x) = 3\) 恰有 \(3\) 个不相等的实数根, 则 \(a^2 = b+3\).<br/>
+其中正确命题的序号是 <code>________</code>.</p></li>
+<li><p>德国著名数学家狄利克雷 (Dirichlet) 在数学领域成就显著, 以其名命名的函数 \(f(x) = \begin{cases} 1, &amp; x \in \mathbb Q \\ 0, &amp; x \in \complement_{\mathbb R} \mathbb Q \end{cases}\) 被称为狄利克雷函数. 其中, \(\mathbb R\) 为实数集, \(\mathbb Q\) 为有理数集. 则关于函数 \(f(x)\) 的如下四个命题:<br/>
+① \(f(f(x)) = 0\);<br/>
+② 函数 \(f(x)\) 是偶函数;<br/>
+③ 任取一个不为零的有理数 \(T\), \(f(x+T) = f(x)\) 对任意的 \(x \in \mathbb R\) 恒成立;<br/>
+④ 存在三个点 \(A (x_1, f(x_1))\), \(B (x_2, f(x_2))\), \(C (x_3, f(x_3))\), 使得 \(\triangle ABC\) 为等边三角形.<br/>
+其中, 真命题的序号是 <code>________</code>.</p></li>
 </ol>
 
 <h5 id="toc_2">三、解答题</h5>
 
 <ol>
-<li>已知集合 \(A = \{ -1, a^2 + 1, a^2 - 3 \}\), \(B = \{ a-3, a-1, a+1 \}\), \(A \cap B = \{-2\}\), 求实数 \(a\) 的值.</li>
-<li>设集合 \(A = \{ x | x^2 - 8x + 15 = 0 \}\), \(B = \{ x | ax - 1 = 0\}\).
-(1) 若 \(a = \dfrac15\), 判断集合 \(A\) 与 \(B\) 的关系;
-(2) 若 \(A \cap B = B\), 求实数 \(a\) 组成的集合 \(C\).</li>
-<li>已知函数 \(f(x) = x^2 + ax + b\) 是偶函数, 且 \(f(2) = 0\).
-(1) 求实数 \(a,b\) 的值;
-(2) 若 \(g(x) = f(x) - kx\) 在 \([0,3]\) 上的最小值为 \(-5\), 求实数 \(k\) 的值.</li>
-<li>已知二次函数 \(y = f(x)\) 满足: \(f(0) = 1\), \(f(x+1) - f(x) = 2x\).
-(1) 求 \(f(x)\) 的解析式;
-(2) 当 \(f(x) \ge 3\) 时, 求实数 \(x\) 的取值范围.</li>
-<li>已知函数 \(y = f(x)\) 的定义域为 \(D\), 若存在区间 \([a,b] \subseteq D\), 使得 \(\{ y | y = f(x), x \in [a,b] \} = [a,b]\), 称区间 \([a,b]\) 为函数 \(y=f(x)\) 的“和谐区间”.
-(1) 请直接写出函数 \(f(x) = x^3\) 的所有和谐区间;
-(2) 若 \([0,m]\) (\(m&gt;0\)) 是函数 \(f(x) = \left| \dfrac32 x - 1 \right|\) 的一个和谐区间, 求 \(m\) 的值;
-(3) 求函数 \(f(x) = x^2-2x\) 的所有和谐区间.</li>
-<li>已知函数 \(f(x) = \begin{cases} |x|, &amp; x \in P \\ -x^2+2x, &amp; x \in M \end{cases}\), 其中 \(P,M\) 是非空数集, 且 \(P \cap M = \varnothing\), 设 \(f(P) = \{ y | y = f(x), x \in P\}\), \(f(M) = \{ y | y = f(x), x \in M\}\).
-(1) 若 \(P = (-\infty,0)\), \(M = [0,4]\), 求 \(f(P) \cup f(M)\);
-(2) 是否存在实数 \(a &gt; -3\), 使得 \(P \cup M = [-3, a]\), 且 \(f(P) \cup f(M) = [-3, 2a-3]\)? 若存在, 请求出满足条件的实数 \(a\); 若不存在, 请说明理由;
-(3) 若 \(P \cup M  = \mathbb R\), 且 \(0 \in M, 1\in P\), \(f(x)\) 是单调递增函数, 求集合 \(P,M\).</li>
+<li><p>已知集合 \(A = \{ -1, a^2 + 1, a^2 - 3 \}\), \(B = \{ a-3, a-1, a+1 \}\), \(A \cap B = \{-2\}\), 求实数 \(a\) 的值.</p></li>
+<li><p>设集合 \(A = \{ x | x^2 - 8x + 15 = 0 \}\), \(B = \{ x | ax - 1 = 0\}\).<br/>
+(1) 若 \(a = \dfrac15\), 判断集合 \(A\) 与 \(B\) 的关系;<br/>
+(2) 若 \(A \cap B = B\), 求实数 \(a\) 组成的集合 \(C\).</p></li>
+<li><p>已知函数 \(f(x) = x^2 + ax + b\) 是偶函数, 且 \(f(2) = 0\).<br/>
+(1) 求实数 \(a,b\) 的值;<br/>
+(2) 若 \(g(x) = f(x) - kx\) 在 \([0,3]\) 上的最小值为 \(-5\), 求实数 \(k\) 的值.</p></li>
+<li><p>已知二次函数 \(y = f(x)\) 满足: \(f(0) = 1\), \(f(x+1) - f(x) = 2x\).<br/>
+(1) 求 \(f(x)\) 的解析式;<br/>
+(2) 当 \(f(x) \ge 3\) 时, 求实数 \(x\) 的取值范围.</p></li>
+<li><p>已知函数 \(y = f(x)\) 的定义域为 \(D\), 若存在区间 \([a,b] \subseteq D\), 使得 \(\{ y | y = f(x), x \in [a,b] \} = [a,b]\), 称区间 \([a,b]\) 为函数 \(y=f(x)\) 的“和谐区间”.<br/>
+(1) 请直接写出函数 \(f(x) = x^3\) 的所有和谐区间;<br/>
+(2) 若 \([0,m]\) (\(m&gt;0\)) 是函数 \(f(x) = \left| \dfrac32 x - 1 \right|\) 的一个和谐区间, 求 \(m\) 的值;<br/>
+(3) 求函数 \(f(x) = x^2-2x\) 的所有和谐区间.</p></li>
+<li><p>已知函数 \(f(x) = \begin{cases} |x|, &amp; x \in P \\ -x^2+2x, &amp; x \in M \end{cases}\), 其中 \(P,M\) 是非空数集, 且 \(P \cap M = \varnothing\), 设 \(f(P) = \{ y | y = f(x), x \in P\}\), \(f(M) = \{ y | y = f(x), x \in M\}\).<br/>
+(1) 若 \(P = (-\infty,0)\), \(M = [0,4]\), 求 \(f(P) \cup f(M)\);<br/>
+(2) 是否存在实数 \(a &gt; -3\), 使得 \(P \cup M = [-3, a]\), 且 \(f(P) \cup f(M) = [-3, 2a-3]\)? 若存在, 请求出满足条件的实数 \(a\); 若不存在, 请说明理由;<br/>
+(3) 若 \(P \cup M  = \mathbb R\), 且 \(0 \in M, 1\in P\), \(f(x)\) 是单调递增函数, 求集合 \(P,M\).</p></li>
 </ol>
 
 <h4 id="toc_3">答案</h4>
@@ -246,9 +505,9 @@ D. 函数 \(|f(x)|\) 为奇函数, 且在 \((-\infty, 0)\) 上单调递增</p></
   
   <entry>
     <title type="html"><![CDATA[201710月考复习 高二]]></title>
-    <link href="cshishaliu.github.io/15072010188759.html"/>
+    <link href="https://cshishaliu.github.io/15072010188759.html"/>
     <updated>2017-10-05T18:56:58+08:00</updated>
-    <id>cshishaliu.github.io/15072010188759.html</id>
+    <id>https://cshishaliu.github.io/15072010188759.html</id>
     <content type="html"><![CDATA[
 <span id="more"></span><!-- more -->
 
@@ -267,44 +526,54 @@ D. 四边形确定一个平面</p></li>
 B. \(l\) 与 \(l_1, l_2\) 都相交<br/>
 C. \(l\) 至多与 \(l_1, l_2\) 中的一条相交<br/>
 D. \(l\) 至少与 \(l_1, l_2\) 中的一条相交</p></li>
-<li><p>如图所示, \(O\) 是正方体 \(ABCD-A_1B_1C_1D_1\) 的中心, \(E\) 为棱 \(BB_1\) 的中点, 则空间四边形 \(OEC_1D_1\) 在正方体各个面上的投影不可能是 <code>(    )</code><br/>
-<img src="https://ws4.sinaimg.cn/large/006tNc79ly1fk7p818t7bj30rs067jrw.jpg" alt=""/></p></li>
+<li><p>如图所示, \(O\) 是正方体 \(ABCD-A_1B_1C_1D_1\) 的中心, \(E\) 为棱 \(BB_1\) 的中点, 则空间四边形 \(OEC_1D_1\) 在正方体各个面上的投影不可能是 <code>(    )</code></p>
+
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fk7p818t7bj30rs067jrw.jpg" alt=""/></p></li>
 <li><p>已知一个水平放置的正方形用斜二测画法做出的直观图是一个平行四边形, 平行四边形有一条边长是 \(4\), 则此正方形的面积是 <code>(    )</code></p>
 
 <p>A. \(16\)<br/>
 B. \(64\)<br/>
 C. \(16\) 或 \(64\)<br/>
 D. \(8\sqrt2\)</p></li>
-<li><p>如图, 在平行四边形 \(ABCD\) 中, \(AD = 2AB = 2\), \(\angle BAC = 90^\circ\). 将 \(\triangle ACD\) 沿 \(AC\) 折起, 使得 \(BD = \sqrt5\). 在三棱锥 \(D-ABC\) 的四个面中, 下列结论错误的是 <code>(    )</code><br/>
-<img src="https://ws4.sinaimg.cn/large/006tNc79ly1fk7p9kichbj30fl064jrm.jpg" alt="M11F5"/><br/>
-A. 面 \(ABD \perp\) 面 \(BCD\)<br/>
+<li><p>如图, 在平行四边形 \(ABCD\) 中, \(AD = 2AB = 2\), \(\angle BAC = 90^\circ\). 将 \(\triangle ACD\) 沿 \(AC\) 折起, 使得 \(BD = \sqrt5\). 在三棱锥 \(D-ABC\) 的四个面中, 下列结论错误的是 <code>(    )</code></p>
+
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fk7p9kichbj30fl064jrm.jpg" alt="M11F5"/></p>
+
+<p>A. 面 \(ABD \perp\) 面 \(BCD\)<br/>
 B. 面 \(ABD \perp\) 面 \(ACD\)<br/>
 C. 面 \(ABC \perp\) 面 \(ACD\)<br/>
 D. 面 \(ABC \perp\) 面 \(BCD\)</p></li>
-<li><p>正方体 \(ABCD-A_1B_1C_1D_1\) 棱长为 \(1\), 线段 \(B_1D_1\) 上有两个动点 \(E\), \(F\), 且 \(EF = \dfrac12\), 则下列结论错误的是 <code>(    )</code><br/>
-A. \(AC \perp BE\)<br/>
+<li><p>正方体 \(ABCD-A_1B_1C_1D_1\) 棱长为 \(1\), 线段 \(B_1D_1\) 上有两个动点 \(E\), \(F\), 且 \(EF = \dfrac12\), 则下列结论错误的是 <code>(    )</code></p>
+
+<p>A. \(AC \perp BE\)<br/>
 B. \(EF \parallel {}\) 平面 \(ABCD\)<br/>
 C. 三棱锥 \(A-BEF\) 的体积为定值<br/>
 D. \(\triangle AEF\) 的面积与 \(\triangle BEF\) 的面积相等</p></li>
-<li><p>某空间几何体的三视图如图所示, 则此几何体的体积 <code>(    )</code><br/>
-<img src="https://ws4.sinaimg.cn/large/006tNc79ly1fk7pbodn3uj305g066wel.jpg" alt="M11F7"/><br/>
-A. 有最小值 \(2\)<br/>
+<li><p>某空间几何体的三视图如图所示, 则此几何体的体积 <code>(    )</code></p>
+
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fk7pbodn3uj305g066wel.jpg" alt="M11F7"/></p>
+
+<p>A. 有最小值 \(2\)<br/>
 B. 有最大值 \(2\)<br/>
 C. 有最大值 \(6\)<br/>
 D. 有最大值 \(4\)</p></li>
-<li><p>三棱锥 \(P-ABC\) 的侧棱 \(PA,PB,PC\) 两两垂直, 侧面积分别是 \(6,4,3\), 则三棱锥的体积是 <code>(    )</code><br/>
-A. \(4\)<br/>
+<li><p>三棱锥 \(P-ABC\) 的侧棱 \(PA,PB,PC\) 两两垂直, 侧面积分别是 \(6,4,3\), 则三棱锥的体积是 <code>(    )</code></p>
+
+<p>A. \(4\)<br/>
 B. \(6\)<br/>
 C. \(8\)<br/>
 D. \(10\)</p></li>
-<li><p>在四面体 \(ABCD\) 中, 界面 \(PQMN\) 是正方形, 则下列结论错误的是 <code>(    )</code><br/>
-<img src="https://ws3.sinaimg.cn/large/006tNc79ly1fk7pcmfwiej306t05ot8u.jpg" alt=""/><br/>
-A. \(AC=BD\)<br/>
+<li><p>在四面体 \(ABCD\) 中, 界面 \(PQMN\) 是正方形, 则下列结论错误的是 <code>(    )</code></p>
+
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fk7pcmfwiej306t05ot8u.jpg" alt=""/></p>
+
+<p>A. \(AC=BD\)<br/>
 B. \(PM\) 与 \(BD\) 异面<br/>
 C. \(AC \parallel{}\) 截面 \(PQMN\)<br/>
 D.  \(AC \perp BD\)</p></li>
-<li><p>已知直线 \(l_1 \parallel {}\) 平面 \(\alpha\), 直线 \(l_2 \subset \alpha\), 且 \(l_1 \parallel l_2\), 点 \(A \in l_1\), 点 \(B \in l_2\). 记 \(A\) 到 \(\alpha\) 的距离为 \(a\), \(A\) 到 \(l_2\) 的距离为 \(b\), \(A,B\) 两点间的距离为 \(c\), 则 <code>(____)</code><br/>
-A. \(b \le a \le c\)<br/>
+<li><p>已知直线 \(l_1 \parallel {}\) 平面 \(\alpha\), 直线 \(l_2 \subset \alpha\), 且 \(l_1 \parallel l_2\), 点 \(A \in l_1\), 点 \(B \in l_2\). 记 \(A\) 到 \(\alpha\) 的距离为 \(a\), \(A\) 到 \(l_2\) 的距离为 \(b\), \(A,B\) 两点间的距离为 \(c\), 则 <code>(____)</code></p>
+
+<p>A. \(b \le a \le c\)<br/>
 B. \(b \le c \le a\)<br/>
 C. \(a \le b \le c\)<br/>
 D. \(a \le c \le b\)</p></li>
@@ -313,33 +582,36 @@ D. \(a \le c \le b\)</p></li>
 <h5 id="toc_1">二、填空题</h5>
 
 <ol>
-<li>已知 \(a \parallel \alpha\), \(b \parallel \alpha\), 则直线 \(a,b\) 的位置关系①平行; ②相交; ③异面. 其中可能成立的序号为 <code>________</code>.</li>
-<li>若正三棱柱所有棱长都为 \(a\) 且体积为 \(16\sqrt3\), 则 \(a = \) <code>________</code>.</li>
-<li>已知正四棱锥的底面边长和高均为 \(2\), 则它的侧棱长等于 <code>________</code>.</li>
-<li>三棱锥 \(D-ABC\) 中, \(E,F,G\) 分别在侧棱 \(DA,DB,DC\) 上, 且平面 \(EFG \parallel {}\) 平面 \(ABC\), 给出下列三个结论:
-① \(EF \parallel AB\);
-② \(BC \parallel{}\) 平面 \(EFG\);
-③ \(EF \parallel {}\) 平面 \(ABC\).
-其中正确的命题序号是 <code>________</code>. </li>
-<li>点 \(P\) 是正方体 \(ABCD-A&#39;B&#39;C&#39;D&#39;\) 的棱 \(DD&#39;\) 上一点, 若平面 \(APC&#39; \perp\) 平面 \(ACC&#39;\), 则 \(\dfrac{D&#39;P}{D&#39;D} = \) <code>________</code>.</li>
-<li>在四面体 \(ABCD\) 中, 以 \(A\) 为顶点的三条棱两两垂直, 其长分别为 \(1, \sqrt6,3\), 则这个四面体的外接球体积为 <code>________</code>.</li>
+<li><p>已知 \(a \parallel \alpha\), \(b \parallel \alpha\), 则直线 \(a,b\) 的位置关系①平行; ②相交; ③异面. 其中可能成立的序号为 <code>________</code>.</p></li>
+<li><p>若正三棱柱所有棱长都为 \(a\) 且体积为 \(16\sqrt3\), 则 \(a = \) <code>________</code>.</p></li>
+<li><p>已知正四棱锥的底面边长和高均为 \(2\), 则它的侧棱长等于 <code>________</code>.</p></li>
+<li><p>三棱锥 \(D-ABC\) 中, \(E,F,G\) 分别在侧棱 \(DA,DB,DC\) 上, 且平面 \(EFG \parallel {}\) 平面 \(ABC\), 给出下列三个结论:<br/>
+① \(EF \parallel AB\);<br/>
+② \(BC \parallel{}\) 平面 \(EFG\);<br/>
+③ \(EF \parallel {}\) 平面 \(ABC\).<br/>
+其中正确的命题序号是 <code>________</code>. </p></li>
+<li><p>点 \(P\) 是正方体 \(ABCD-A&#39;B&#39;C&#39;D&#39;\) 的棱 \(DD&#39;\) 上一点, 若平面 \(APC&#39; \perp\) 平面 \(ACC&#39;\), 则 \(\dfrac{D&#39;P}{D&#39;D} = \) <code>________</code>.</p></li>
+<li><p>在四面体 \(ABCD\) 中, 以 \(A\) 为顶点的三条棱两两垂直, 其长分别为 \(1, \sqrt6,3\), 则这个四面体的外接球体积为 <code>________</code>.</p></li>
 </ol>
 
 <h5 id="toc_2">三、解答题</h5>
 
 <ol>
-<li>四棱锥 \(P-ABCD\) 底面是正方形, \(PA \perp\) 底面 \(ABCD\), \(\angle PDA = 45^\circ\), \(E,F\) 分别为棱 \(AB, PD\) 的中点. 求证: (1) \(AF \parallel{}\) 平面 \(PCE\); (2) 平面 \(PCE \perp\) 平面 \(PCD\).</li>
-<li><p>已知一个正三棱锥 \(P-ABC\) 的正视图如图所示, 若图中 \(AC = BC = \dfrac32\), \(PC = \sqrt6\), 求此正三棱锥的表面积.<br/>
-<img src="https://ws2.sinaimg.cn/large/006tNc79ly1fk7pf1hykvj307407274d.jpg" alt=""/></p></li>
+<li><p>四棱锥 \(P-ABCD\) 底面是正方形, \(PA \perp\) 底面 \(ABCD\), \(\angle PDA = 45^\circ\), \(E,F\) 分别为棱 \(AB, PD\) 的中点. 求证: (1) \(AF \parallel{}\) 平面 \(PCE\); (2) 平面 \(PCE \perp\) 平面 \(PCD\).</p></li>
+<li><p>已知一个正三棱锥 \(P-ABC\) 的正视图如图所示, 若图中 \(AC = BC = \dfrac32\), \(PC = \sqrt6\), 求此正三棱锥的表面积.</p>
+
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fk7pf1hykvj307407274d.jpg" alt=""/></p></li>
 <li><p>如图, 在四棱锥 \(P-ABCD\) 中, 底面 \(ABCD\) 是平行四边形, 点 \(M\) 为棱 \(AB\) 上一点, 且 \(AM = 2MB\), 点 \(N\) 为棱 \(PC\) 上一点.<br/>
 (1) 若 \(PN = 2NC\), 求证: \(MN \parallel {}\) 平面 \(PAD\);<br/>
-(2) 若 \(MN \parallel {}\) 平面 \(PAD\), 求证: \(PN = 2NC\).<br/>
-<img src="https://ws3.sinaimg.cn/large/006tNc79ly1fk7pg67k22j3063065dfy.jpg" alt=""/></p></li>
+(2) 若 \(MN \parallel {}\) 平面 \(PAD\), 求证: \(PN = 2NC\).</p>
+
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fk7pg67k22j3063065dfy.jpg" alt=""/></p></li>
 <li><p>如图, 直三棱柱 \(ABC-A_1B_1C_1\) 中, \(\angle BAC = 90^\circ\), \(AB = AC = 2\), \(AA_1 = \sqrt3\), \(M,N\) 分别为 \(BC\) 和 \(CC_1\) 的中点, \(P\) 为侧棱 \(BB_1\) 上的动点.<br/>
-<img src="https://ws3.sinaimg.cn/large/006tNc79ly1fk7ph723j7j309708uq3b.jpg" alt=""/><br/>
 (1) 求证: 平面 \(APM \perp\) 平面 \(BB_1C_1C\);<br/>
 (2) 若 \(P\) 为线段 \(BB_1\) 的中点, 求证: \(A_1N \parallel{}\) 平面 \(APM\);<br/>
-(3) 试判断直线 \(BC_1\) 与平面 \(APM\) 是否能够垂直. 若能垂直, 求 \(PB\) 的值; 若不能垂直, 请说明理由.</p></li>
+(3) 试判断直线 \(BC_1\) 与平面 \(APM\) 是否能够垂直. 若能垂直, 求 \(PB\) 的值; 若不能垂直, 请说明理由.</p>
+
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fk7ph723j7j309708uq3b.jpg" alt=""/></p></li>
 </ol>
 
 <h4 id="toc_3">答案</h4>
