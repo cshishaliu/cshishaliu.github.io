@@ -4,7 +4,7 @@
   <title><![CDATA[Gnoloac发布资料的地方。。。]]></title>
   <link href="https://cshishaliu.github.io/atom.xml" rel="self"/>
   <link href="https://cshishaliu.github.io/"/>
-  <updated>2017-10-09T12:38:50+08:00</updated>
+  <updated>2017-10-09T12:39:46+08:00</updated>
   <id>https://cshishaliu.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[duyan 20171012]]></title>
+    <link href="https://cshishaliu.github.io/15078172804643.html"/>
+    <updated>2017-10-12T22:08:00+08:00</updated>
+    <id>https://cshishaliu.github.io/15078172804643.html</id>
+    <content type="html"><![CDATA[
+<p><img src="https://ws4.sinaimg.cn/large/006tKfTcly1fkftf2gjegj315g07k41b.jpg" alt=""/></p>
+
+<p>根据已知条件, \(n a_n = -2017^2 - 2017 S_{n-1}\),</p>
+
+<p>于是 \((n+1) a_{n+1} = -2017^2 - 2017 S_{n}\),</p>
+
+<p>两式相减得 \((n+1) a_{n+1} - n a_n = -2017 (S_n - S_{n-1}) = -2017 a_n\),</p>
+
+<p>变形得 \(a_{n+1} = \dfrac{n-2017}{n+1} \cdot a_n\),</p>
+
+<span id="more"></span><!-- more -->
+
+<p>于是 \(a_n = \dfrac{n-2018}{n} \cdot \dfrac{n-2019}{n-1} \cdot \dots \cdot \dfrac{-2016}{2} \cdot a_1\).</p>
+
+<p>注意从递推公式中就可以看到这个数列从 \(2018\) 项开始，后面全部等于 \(0\), 通项公式中也能看到这一点.</p>
+
+<p>不过, 通项公式可以进一步简化. 在 \(n \le 2017\) 时,<br/>
+\[<br/>
+\begin{aligned}<br/>
+a_n &amp;= \dfrac{n-2018}{n} \cdot \dfrac{n-2019}{n-1} \cdot \dots \cdot \dfrac{-2016}{2} \cdot a_1 \\<br/>
+&amp; = (-1)^{n-1} \cdot \dfrac{(n-2018) \cdot (n-2019) \cdot \dots \cdot 2016}{n \cdot (n-1) \cdot \dots \cdot 2} \cdot \dfrac{2017}1 \cdot \dfrac{a_1}{2017} \\<br/>
+&amp; = (-1)^{n-1} \cdot C_{2017}^n \cdot \dfrac{a_1}{2017}<br/>
+\end{aligned}<br/>
+\]<br/>
+其中, \(a_1 = -2017^2 - 2017 S_0 = -2017^2\), 故 \(a_n = 2017 \cdot C_{2017}^n \cdot (-1)^n\). 要求的式子为,<br/>
+\[<br/>
+\sum_{n=1}^{2017} 2^n a_n = 2017 \cdot \sum_{n=1}^{2017} C_{2017}^n \cdot (-2)^n = 2017 \cdot [(1-2)^{2017} - 1] = -4034<br/>
+\]</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[zhuxirun 20171008]]></title>
