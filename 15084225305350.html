@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>  
 	  
-  	duyan 20171012 - Gnoloac发布资料的地方。。。
+  	wangzhuoqi 20171016 - Gnoloac发布资料的地方。。。
   	
 	</title>
 
@@ -118,36 +118,60 @@
 			<div class="mid-col-container"> <div id="content" class="inner">
 
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-		<h1 class="title" itemprop="name">duyan 20171012</h1>
+		<h1 class="title" itemprop="name">wangzhuoqi 20171016</h1>
 		<div class="entry-content" itemprop="articleBody">
-			<p><img src="https://ws4.sinaimg.cn/large/006tKfTcly1fkftf2gjegj315g07k41b.jpg" alt=""/></p>
-
-<p>根据已知条件, \(n a_n = -2017^2 - 2017 S_{n-1}\),</p>
-
-<p>于是 \((n+1) a_{n+1} = -2017^2 - 2017 S_{n}\),</p>
-
-<p>两式相减得 \((n+1) a_{n+1} - n a_n = -2017 (S_n - S_{n-1}) = -2017 a_n\),</p>
-
-<p>变形得 \(a_{n+1} = \dfrac{n-2017}{n+1} \cdot a_n\),</p>
+			<p><em>《奥数教程》<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>上的一个不详细到诡异的答案</em></p>
 
 <span id="more"></span><!-- more -->
 
-<p>于是 \(a_n = \dfrac{n-2018}{n} \cdot \dfrac{n-2019}{n-1} \cdot \dots \cdot \dfrac{-2016}{2} \cdot a_1\).</p>
+<blockquote>
+<p>原题<br/>
+<img src="https://ws1.sinaimg.cn/large/006tKfTcly1fknx08as0vj31kw0fh0xq.jpg" alt=""/></p>
 
-<p>注意从递推公式中就可以看到这个数列从 \(2018\) 项开始，后面全部等于 \(0\), 通项公式中也能看到这一点.</p>
+<p>原答案<br/>
+<img src="https://ws4.sinaimg.cn/large/006tKfTcly1fknwzebuarj31020eowhx.jpg" alt=""/></p>
+</blockquote>
 
-<p>不过, 通项公式可以进一步简化. 在 \(n \le 2017\) 时,<br/>
+<hr/>
+
+<p>这道题的这个答案貌似“省略”了很多话.</p>
+
+<p>首先是, 不妨设 \(a_1 \le a_2 \le \dots \le a_n\), 于是 \(A_1 \ge A_2 \ge \dots \ge A_n\).</p>
+
+<p>然后是, 假设 \(b_1, b_2, \dots, b_n\), 按从大到小的顺序重排为 \(c_1, c_2, \dots, c_n\).</p>
+
+<p>那么排序不等式告诉我们<br/>
+\[<br/>
+\sum b_i A_i \le \sum c_i A_i<br/>
+\]</p>
+
+<p>按照题意, \(\{c_i\}\) 中的最大项 \(c_1 \le p\). 假设其前 \(k-1\) 项相加不大于 \(p\), 但再加上 \(k\) 项就大于 \(p\), 即<br/>
+\[<br/>
+c_1 + c_2 + \dots + c_{k-1} \le p &lt; c_1 + c_2 + \dots + c_{k-1} + c_{k}<br/>
+\]<br/>
+可以把 \(c_{k}\) 拆成 \(c&#39;+c&#39;&#39;\), 使得 \(c_1 + c_2 + \dots + c_{k-1} + c&#39; = p\), 于是 \(c&#39;&#39; + c_{k+1} + \dots c_n = 1-p\).</p>
+
+<p>那么<br/>
 \[<br/>
 \begin{aligned}<br/>
-a_n &amp;= \dfrac{n-2018}{n} \cdot \dfrac{n-2019}{n-1} \cdot \dots \cdot \dfrac{-2016}{2} \cdot a_1 \\<br/>
-&amp; = (-1)^{n-1} \cdot \dfrac{(2018-n) \cdot (2019-n) \cdot \dots \cdot 2016}{n \cdot (n-1) \cdot \dots \cdot 2} \cdot \dfrac{2017}1 \cdot \dfrac{a_1}{2017} \\<br/>
-&amp; = (-1)^{n-1} \cdot C_{2017}^n \cdot \dfrac{a_1}{2017}<br/>
+\sum c_i A_i &amp;= c_1 A_1 + c_2 A_2 + \dots + c_k A_k + \dots + c_n A_n \\<br/>
+&amp;= (c_1 A_1 + c_2 A_2 + \dots + c&#39; A_k) + (c&#39;&#39; A_k + \dots + c_n A_n) \\<br/>
+&amp;\le (c_1 A_1 +  c_2 A_1 + \dots + c&#39; A_1) + (c&#39;&#39; A_k + \dots + c_n A_k) \\<br/>
+&amp;= (c_1 + c_2 + \dots + c&#39;) A_1 + (c&#39;&#39; + \dots + c_n) A_k \\<br/>
+&amp;= p A_1 + (1-p) A_k \le p A_1 + (1-p) A_2<br/>
 \end{aligned}<br/>
-\]<br/>
-其中, \(a_1 = -2017^2 - 2017 S_0 = -2017^2\), 故 \(a_n = 2017 \cdot C_{2017}^n \cdot (-1)^n\). 要求的式子为,<br/>
-\[<br/>
-\sum_{n=1}^{2017} 2^n a_n = 2017 \cdot \sum_{n=1}^{2017} C_{2017}^n \cdot (-2)^n = 2017 \cdot [(1-2)^{2017} - 1] = -4034<br/>
 \]</p>
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>来源待确认, 不过我也懒得确认了, 姑且当做是《奥数教程》吧...&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
 
 		</div>
 	</article>
