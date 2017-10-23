@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>  
 	  
-  	zhuxirun 20171008 - Gnoloac发布资料的地方。。。
+  	zhuxirun 20171022 - Gnoloac发布资料的地方。。。
   	
 	</title>
 
@@ -122,30 +122,63 @@
 			<div class="mid-col-container"> <div id="content" class="inner">
 
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-		<h1 class="title" itemprop="name">zhuxirun 20171008</h1>
+		<h1 class="title" itemprop="name">zhuxirun 20171022</h1>
 		<div class="entry-content" itemprop="articleBody">
-			<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fkbuvmlkh4j311c0emwh1.jpg" alt=""/></p>
+			<p>两道关于向量定比分点的题</p>
 
 <span id="more"></span><!-- more -->
 
-<p>(1) \(c = \sqrt3\), \(a = 2\), \(a = 1\). 椭圆方程为 \(\dfrac{x^2}4 + y^2 = 1\).</p>
+<h2 id="toc_0">题 1</h2>
 
-<p>(2) 设 \(M\) 的坐标为 \((x, y)\), 则 \(P\) 的坐标为 \(\left( 2x-1, 2y - \dfrac12 \right)\).<br/>
-由于点 \(P\) 在椭圆上, 故<br/>
-\[<br/>
-\dfrac{(2x-1)^2}4 + \left(2y - \dfrac12 \right)^2 = 1<br/>
-\]<br/>
-或<br/>
-\[<br/>
-x^2 - x + 4y^2 - 2y - \dfrac12 = 0<br/>
-\]</p>
+<p><img src="https://ws4.sinaimg.cn/large/006tKfTcly1fksj1kpmh3j314403e74z.jpg" alt=""/></p>
 
-<p>(3) 显然 \(B, C\) 两点关于圆点 \(O\) 对称, 故 \(S_{\triangle ABC} = 2 S_{\triangle AOB}\).<br/>
-\(|OA| = \dfrac{\sqrt5}2\), \(OA\) 所在直线方程为 \(x - 2y = 0\), 设点 \(B\) 的坐标为 \((2\cos\theta, \sin\theta)\), 则 \(B\) 到直线 \(OA\) 的距离为<br/>
+<p>已知条件可变形为<br/>
 \[<br/>
-d = \dfrac{|2\cos\theta - 2\sin\theta|}{\sqrt5} = \dfrac2{\sqrt5} |\cos\theta - \sin\theta| \le \dfrac2{\sqrt5} \cdot \sqrt2<br/>
+(1+\alpha-\beta) \vec{PA} + \alpha (\vec{PB} - \vec{PA}) = \beta (\vec{PC} - \vec{PA})<br/>
 \]<br/>
-故 \(S_{\triangle AOB} = \dfrac12 \cdot |AO| \cdot d \le \dfrac{\sqrt2}2\), \(\triangle ABC\) 面积的最大值为 \(\sqrt2\).</p>
+即 \((1+\alpha-\beta) \vec{PA} + \alpha \vec{AB} = \beta \vec{AC}\), 故<br/>
+\[<br/>
+(1+\alpha-\beta) \vec{PA} = - \alpha \vec{AB} + \beta \vec{AC}<br/>
+\]<br/>
+由于 \(\vec{AB}\) 与 \(\vec{AC}\) 共线, 而它们与 \(\vec{PA}\) 都不共线, 故只能是<br/>
+\[<br/>
+(1+\alpha-\beta) \vec{PA} = \beta \vec{AC} - \alpha \vec{AB} = \vec 0<br/>
+\]<br/>
+因而 \(1 + \alpha - \beta = 0\), \(\alpha - \beta = -1\).</p>
+
+<h2 id="toc_1">题 2</h2>
+
+<p><img src="https://ws1.sinaimg.cn/large/006tKfTcly1fksja3t4fwj316604it9i.jpg" alt=""/></p>
+
+<p>类似于上一题的方法, 已知条件可以变形为<br/>
+\[<br/>
+\vec{OM} - \left( -\dfrac23 + 3 + m \right) \vec{OM} = -\dfrac23 (\vec{OA} - \vec{OM}) + 3 (\vec{OB} - \vec{OM}) + m (\vec{OC} - \vec{OM})<br/>
+\]<br/>
+即<br/>
+\[<br/>
+- \left( \dfrac43 + m \right) \vec{OM} = -\dfrac23 \vec{MA} + 3 \vec{MB} + m \vec{MC}<br/>
+\]<br/>
+注意到上式等号右边的向量一定在平面 \(ABC\) 内, 而左边的 \(\vec{OM}\) 不在该平面内, 故两边都必须等于零向量. 因此 \(\dfrac43 + m = 0\), \(m = \dfrac43\).</p>
+
+<h2 id="toc_2">关于向量的一个重要结论</h2>
+
+<p>向量中, 关于三点共线, 有如下结论:</p>
+
+<blockquote>
+<p>在已知 \(\vec{PA} = \lambda \vec{PB} + \mu \vec{PC}\) 的前提下,<br/>
+\(A,B,C\) 三点共线的<strong>充分必要条件</strong>是\(\lambda + \mu = 1\).</p>
+</blockquote>
+
+<p>此结论不仅对于平面中的三点共线是成立的, 对于空间中的三点共线也成立.</p>
+
+<p>另外, 对于空间中的四点共面问题也有一个极为类似的结论:</p>
+
+<blockquote>
+<p>在已知 \(\vec{PA} = \lambda \vec{PB} + \mu \vec{PC} + \nu \vec{PD}\) 的前提下,<br/>
+\(A,B,C,D\) 三点共面的<strong>充分必要条件</strong>是\(\lambda + \mu + \nu = 1\).</p>
+</blockquote>
+
+<p>用这两个结论解上面两道题, 几乎可以秒解 (自己试试看?).</p>
 
 		</div>
 	</article>
