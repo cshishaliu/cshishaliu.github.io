@@ -4,7 +4,7 @@
   <title><![CDATA[Gnoloac发布资料的地方。。。]]></title>
   <link href="https://cshishaliu.github.io/atom.xml" rel="self"/>
   <link href="https://cshishaliu.github.io/"/>
-  <updated>2017-10-25T10:01:13+08:00</updated>
+  <updated>2017-10-25T10:01:40+08:00</updated>
   <id>https://cshishaliu.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[libinglun 20171112]]></title>
+    <link href="https://cshishaliu.github.io/15107317542032.html"/>
+    <updated>2017-11-15T15:42:34+08:00</updated>
+    <id>https://cshishaliu.github.io/15107317542032.html</id>
+    <content type="html"><![CDATA[
+<p>设 \(p\) 和 \(q\) 是两个质数, 求不能表示为 \(mp + nq\) (其中, \(m,n\) 是自然数) 的最大正整数 (用 \(p\) 和 \(q\) 表示).</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">解答</h2>
+
+<p><strong>结论</strong>: 所求的最大正整数值为 \(pq - p - q\).</p>
+
+<ul>
+<li><p>首先证明 \(pq - p - q\) 无法表示为 \(mp + nq\), 且 \(m,n\) 是自然数.<br/>
+否则, 若 \(pq - p - q = mp + nq\), 则 \((m+1) p = (p-n-1) q\), 由于 \(p,q\) 都是质数, 必有 \(p | p-n-1\).<br/>
+若 \(n \ge 0\), 则设 \(p-n-1 = kp\) 时, \(kp &lt; p\), 有 \(k \le 0\), 于是 \(m+1 \le 0\), \(m \le -1\).<br/>
+否则 \(n \le -1\), 也就是说将 \(pq - p - q\) 表示为 \(mp + nq\) 时, \(m\) 和 \(n\) 中一定有一个是负数.</p></li>
+<li><p>下面证明大于 \(pq - p - q\) 的数都能表示为 \(mp + nq\), 且 \(m,n\) 是自然数.<br/>
+考虑 \(pq-p-q+r = mp+nq\), 其中 \(r \ge 1\). 有 \((m+1)p = r + (p-n-1) q\).<br/>
+考虑 \(n=0,1,2,\dots,p-1\) 时, 等号右边的值分别是 \(r + (p-1) q, r + (p-2) q, r + (p-3) q, \dots, r + 0 \cdot q\), 这 \(p\) 个数除以 \(p\) 的余数各不相同 (为什么?), 故其中必有一个是 \(p\) 的倍数, 它即所对应着我们需要的自然数 \(m,n\) 值. </p></li>
+</ul>
+
+<h2 id="toc_1">后记</h2>
+
+<p>这个问题需要对裴蜀定理有比较深的理解. 裴蜀定理的内容很简洁:</p>
+
+<ul>
+<li>\((p,q) = 1\) 的充分必要条件是存在正数 \(m,n\) 使得 \(mp+nq = 1\).</li>
+</ul>
+
+<p>充分性用反证法很容易证明. 若 \((p,q) = t &gt; 1\), 则无论 \(m,n\) 取何值, 都必有 \(t \mid mp+nq\), 故不可能有 \(mp+nq=1\).</p>
+
+<p>必要性稍稍难想一点点, 跟上面这道题用到的一个小技巧相同.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[kongyuqing 20171024]]></title>
@@ -31,7 +70,7 @@
 
 <p>这个题可以由简单情况逐渐推广而来，即先考虑一下 4 个数, 6 个数, 8 个数的情形, 总结一下规律.</p>
 
-<p>4 个数的情形比较好构造, 6 个和 8 个的情形稍微麻烦一点, 但最终应该也能构造出来. 下面给出一组精心设计的例子 (<em>可能需要总结很久才能得到这么整的例子, 但构造出跟它们等价的, 数字看上去不是那么好的例子应该不是很难的事情</em>).</p>
+<p>4 个数的情形比较好构造, 6 个和 8 个的情形稍微麻烦一点, 但最终应该也能构造出来. 下面给出一组精心设计的例子<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>.</p>
 
 <ul>
 <li><strong>4 个数</strong>: \(-8, 1, -6, -4\)</li>
@@ -87,11 +126,11 @@
 <p>将题设的所有不等式条件累加可得 \(\displaystyle \sum a_i &gt; 2 \cdot \sum a_i \), 因此必有 \(\displaystyle \sum a_i &lt; 0\).</p></li>
 <li><p>进一步, 数列中的所有奇数项之和必须为负, 所有偶数项之和也是. </p>
 
-<p>将题设的所有偶数项的不等式条件累加可得 \(\displaystyle \sum_{i = 2,4,6,\dots} a_i &gt; \sum_{i = 1,2,3,\dots} a_i \), 因此 \(\displaystyle \sum_{i = 1,3,5,\dots} a_i &lt; 0\). 同理不难证明 \(\displaystyle \sum_{i = 2,4,6,\dots} a_i\).</p></li>
+<p>将题设的所有偶数项的不等式条件累加可得 \(\displaystyle \sum_{i = 2,4,6,\dots} a_i &gt; \sum_{i = 1,2,3,\dots} a_i \), 因此 \(\displaystyle \sum_{i = 1,3,5,\dots} a_i &lt; 0\). 同理不难证明 \(\displaystyle \sum_{i = 2,4,6,\dots} a_i &lt; 0\).</p></li>
 <li><p>数列中, 不能有连续两项为正. 否则, 它们的下一项必须是正的 (因为大于两个正数之和), 以此类推, 下下一项, 再下一项, … 也都必须是正的, 那么数列中的所有项都必须是正的, 与上面的结论矛盾.</p></li>
 </ol>
 
-<p>综合上面的结论, 可以断言, 对于 100 个数的情况, 正数必须少于 50 个 (<em>否则要么有两个正数相邻, 要么所有正数正好相间分布, 导致所有奇数项 (或偶数项) 全为正</em>). </p>
+<p>综合上面的结论, 可以断言, 对于 100 个数的情况, 正数必须少于 50 个<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>.</p>
 
 <p>综上, 我们证明了:</p>
 
@@ -101,6 +140,21 @@
 </ul>
 
 <p>因此, 所求的最大正数个数就是 49.</p>
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>可能需要总结很久才能得到这么整的例子, 但构造出跟它们等价的, 数字看上去不是那么好的例子应该不是很难的事情.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>否则要么有两个正数相邻, 要么所有正数正好相间分布, 导致所有奇数项 (或偶数项) 全为正. &nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
 
 ]]></content>
   </entry>
