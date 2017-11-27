@@ -4,7 +4,7 @@
   <title><![CDATA[Gnoloac发布资料的地方。。。]]></title>
   <link href="https://cshishaliu.github.io/atom.xml" rel="self"/>
   <link href="https://cshishaliu.github.io/"/>
-  <updated>2017-11-19T23:28:36+08:00</updated>
+  <updated>2017-11-27T11:36:04+08:00</updated>
   <id>https://cshishaliu.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,190 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Todo]]></title>
+    <link href="https://cshishaliu.github.io/15117517873127.html"/>
+    <updated>2017-11-27T11:03:07+08:00</updated>
+    <id>https://cshishaliu.github.io/15117517873127.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">To be solved</h2>
+
+<h3 id="toc_1">zhangboxin 20171125</h3>
+
+<p><code>高斯函数, 不等式</code></p>
+
+<p>证明不等式: <br/>
+\[<br/>
+[nx] \ge \dfrac{[x]}1 + \dfrac{[2x]}2 + \dfrac{[3x]}3 + \dots +\dfrac{[nx]}n<br/>
+\]<br/>
+其中, \(n \in \mathbb N^*\), \([x]\) 表示不大于 \(x\) 的最大整数.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[zhangzhiyuan 20171125]]></title>
+    <link href="https://cshishaliu.github.io/15116623932028.html"/>
+    <updated>2017-11-26T10:13:13+08:00</updated>
+    <id>https://cshishaliu.github.io/15116623932028.html</id>
+    <content type="html"><![CDATA[
+<p>数列 \(\{a_n\}\) 满足 \(a_1 = 2\), \(a_{n+1} = \dfrac{a_n}2 + \dfrac1{a_n}\), 求其通项公式.</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">“不动点法”好像不好用</h2>
+
+<p>尝试采用不动点法: </p>
+
+<p>不动点方程为 <br/>
+\[<br/>
+x = \dfrac x2 + \dfrac1x<br/>
+\]<br/>
+解得 \(x = \pm \sqrt2\). 取不动点 \(\sqrt2\), 将递推公式改写为<br/>
+\[<br/>
+a_{n+1} - \sqrt2 = \dfrac{a_n}2 + \dfrac1{a_n} - \sqrt2 = \dfrac{(a_n - \sqrt2)^2}{2 a_n}<br/>
+\]<br/>
+到这里仍然没有特别好的办法.</p>
+
+<h2 id="toc_1">研究一下这个数列的前几项</h2>
+
+<p>已知 \(a_1 = 2\), 那么数列紧接下来的几项是<br/>
+\[<br/>
+\begin{aligned}<br/>
+a_2 &amp;= \dfrac22 + \dfrac12 = \dfrac32 \\<br/>
+a_3 &amp;= \dfrac34 + \dfrac23 = \dfrac{9+8}{4 \times 3} = \dfrac{17}{12}\\<br/>
+a_4 &amp;= \dfrac{17}{24} + \dfrac{12}{17} = \dfrac{289+288}{24 \times 17} = \cdots<br/>
+\end{aligned}<br/>
+\]</p>
+
+<p>显然, 这个数列中的每一项都是有理数, 但是到 \(a_4\) 的时候, 分子和分母都已经是非常大的数.</p>
+
+<p>观察一下 \(a_3\) 和 \(a_4\) 的计算过程, 会注意到一个有趣的现象, 就是通分以后的分子总是两个相邻的整除之和 (\(a_3\) 中是 \(9+8\), \(a_4\) 中是 \(289+288\)), 并且这两个相邻整数都跟前一项的分子和分母相关. 这就提示我们应该把 \(a_n\) 的分子和分母分开做一下研究.</p>
+
+<p>设 \(a_n = \dfrac{p_n}{q_n}\), \(p_n\) 和 \(q_n\) 都是正整数. 对于数列的前几项:<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> </p>
+
+<ul>
+<li>\(p_2 = 3\), \(q_2 = 2\), \(a_2 = \dfrac32\); </li>
+<li>\(p_3 = 17\), \(q_3 = 12\), \(a_3 = \dfrac{17}{12}\); </li>
+<li>\(p_4 = 289+288 = 577\), \(q_4 = 24 \times 17 = 408\), \(a_4 = \dfrac{577}{408}\) 等等.</li>
+</ul>
+
+<p>根据数列 \(\{a_n\}\) 的递推公式, <br/>
+\[a_{n+1} = \dfrac{a_n}2 + \dfrac1{a_n} = \dfrac{p_n}{2 q_n} + \dfrac{q_n}{p_n} = \dfrac{p_n^2 + 2 q_n^2}{2 p_n q_n}\]<br/>
+于是接下来有这么两个问题:</p>
+
+<ol>
+<li><p>对于 \(a_{n+1}\), 应该有 \(a_{n+1} = \dfrac{p_{n+1}}{q_{n+1}} = \dfrac{p_n^2 + 2 q_n^2}{2 p_n q_n}\), 那么这里我们是否就一定可以说 \(p_{n+1} = p_n^2 + 2 q_n^2\) 而 \(q_{n+1} = 2 p_n q_n\)?  </p>
+
+<ul>
+<li>或者说 \(p_n^2 + 2 q_n^2\) 和 \(2 p_n q_n\) 是否总是互质? 万一出现不互质的情况, \(\{p_n\}\) 和 \(\{q_n\}\) 的递推关系就有可能会变得很复杂.</li>
+</ul></li>
+<li><p>根据上面总结出来的规律, 这里分子中的 \(p_n^2\) 和 \(2 q_n^2\) 应该是两个相邻的整数. 这个结论是否总是成立呢?</p></li>
+</ol>
+
+<p>这两个问题单独拿出来都很难回答, 但如果注意到它们之间有联系, 问题其实要好解决的多.</p>
+
+<p>首先, 我们姑且忽略 \(p_n^2 + 2 q_n^2\) 和 \(2 p_n q_n\) 是否互质的问题, 强行采用这个递推关系: <br/>
+\[<br/>
+\begin{cases}<br/>
+p_{n+1} = p_n^2 + 2 q_n^2 \\<br/>
+q_{n+1} = 2 p_n q_n<br/>
+\end{cases}<br/>
+\]<br/>
+那么,<br/>
+\[<br/>
+p_{n+1}^2 - 2 q_{n+1}^2 = (p_n^2 + 2 q_n^2)^2 - 2 (2 p_n q_n)^2 = (p_n^2 - 2 q_n^2)^2<br/>
+\]<br/>
+于是, 只要一开始 \(p_n^2 - 2 q_n^2\) 等于 \(1\), 那么后面的 \(p_{n+1}^2 - 2 q_{n+1}^2\) 永远等于 \(1\). 而这个题里“凑巧”有<br/>
+\[<br/>
+p_2^2 - 2 q_3^2 = 3^2 - 2 \times 2^2 = 1<br/>
+\]<br/>
+也就是说, \(p_n^2\) 和 \(2 q_n^2\) 确实总是两个相邻的整数.</p>
+
+<p>有了这个结论, 也就不难证明 \(p_n^2 + 2 q_n^2\) 和 \(2 p_n q_n\) 是互质的. 但是, 当我们发现 \(\{p_n\}\) 和 \(\{q_n\}\) 的递推关系所具有的性质以后, 上面这两个问题其实也就不是那么重要了, 我们可以就研究这组递推数列, 看是否又能够借此找到 \(\{a_n\}\) 的通项公式.</p>
+
+<h2 id="toc_2">寻找通项公式</h2>
+
+<p>下面我们要研究这样一个递推数列组 \(\{p_n\}, \{q_n\}\), (\(n \in \mathbb N^*, n \ge 2\))<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>: \(p_2 = 3, q_2 = 2\), 且<br/>
+\[<br/>
+\begin{cases}<br/>
+p_{n+1} = p_n^2 + 2 q_n^2 \\<br/>
+q_{n+1} = 2 p_n q_n<br/>
+\end{cases}<br/>
+\]</p>
+
+<p>这组递推公式, 它的形式能够给我们的另一个提示就是, 可以设法构造完全平方公式. 只是这样的构造有一个代价, 就是会引入无理数. 但是我们尝试一下, 很快就能发现这个代价不算什么.<br/>
+\[<br/>
+p_{n+1} + \sqrt2 q_{n+1} <br/>
+= p_n^2 + 2 q_n^2 + 2 \sqrt2 p_n q_n <br/>
+= (p_n + \sqrt2 q_n)^2 <br/>
+\]<br/>
+另外还有一个是<br/>
+\[<br/>
+p_{n+1} - \sqrt2 q_{n+1} <br/>
+= p_n^2 + 2 q_n^2 - 2 \sqrt2 p_n q_n <br/>
+= (p_n - \sqrt2 q_n)^2 <br/>
+\]<br/>
+这两个递推关系都可以算是极为简单的<sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup>, 根据它们都可以直接写出 \(p_n \pm \sqrt2 q_n\) 的通项公式了:</p>
+
+<p>\[<br/>
+\begin{aligned}<br/>
+p_n + \sqrt2 q_n<br/>
+&amp;= (p_{n-1} + \sqrt2 q_{n-1})^2 \\<br/>
+&amp;= [(p_{n-2} + \sqrt2 q_{n-2})^2]^2 = (p_{n-2} + \sqrt2 q_{n-2})^{2^2} \\<br/>
+&amp;= \cdots \\<br/>
+&amp;= (p_2 + \sqrt2 q_2)^{2^{n-2}} = (3 + 2\sqrt2)^{2^{n-2}} = (\sqrt2+1)^{2^{n-1}} <br/>
+\\[1em]<br/>
+p_n - \sqrt2 q_n <br/>
+&amp;= (p_2 - \sqrt2 q_2)^{2^{n-2}} = (3 - 2\sqrt2)^{2^{n-2}} = (\sqrt2-1)^{2^{n-1}}<br/>
+\end{aligned}<br/>
+\]<br/>
+因此, <br/>
+\[<br/>
+\begin{cases}<br/>
+p_n = \dfrac{(\sqrt2+1)^{2^{n-1}} + (\sqrt2-1)^{2^{n-1}}}2 \\<br/>
+q_n = \dfrac{(\sqrt2+1)^{2^{n-1}} - (\sqrt2-1)^{2^{n-1}}}<br/>
+{2\sqrt2}<br/>
+\end{cases}<br/>
+\]<br/>
+于是,<br/>
+\[<br/>
+\begin{aligned}<br/>
+a_n = \dfrac{p_n}{q_n} <br/>
+&amp;= \sqrt2 \cdot \dfrac{(\sqrt2+1)^{2^{n-1}} + (\sqrt2-1)^{2^{n-1}}}{(\sqrt2+1)^{2^{n-1}} - (\sqrt2-1)^{2^{n-1}}} \\<br/>
+&amp;= \sqrt2 \cdot \dfrac{(\sqrt2+1)^{2^n} + 1}{(\sqrt2+1)^{2^n} - 1} \\<br/>
+\end{aligned}<br/>
+\]</p>
+
+<p>按照上面的推导过程, 这些递推公式仅对 \(n \ge 2\) 的情况成立, 但是我们可以强行计算一下 \(n=1\) 的情况, 此时<br/>
+\[<br/>
+p_1 = \sqrt2, q_1 = \dfrac1{\sqrt2}, a_1 = 2<br/>
+\]</p>
+
+<p>可以看到 \(a_n\) 的通项公式在 \(n = 1\) 的时候仍然满足, 只是 \(p_n\)  和 \(q_n\) 的通项公式会导致 \(p_1\) 和 \(q_1\) 计算出来都是无理数. 但就这个题目本身的要求而言, 我们的目标已经达到了.</p>
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>注意 \(a_1 = 2\) 似乎找不到对应的比较合理的整数 \(p_1\) 和 \(q_1\), 但这并不是一个特别致命的问题, 我们暂且忽略它.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>是的, 这个数列没有第“一”项, 但如上所述, 这个问题不致命.&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn3">
+<p>但是依然有两件事情非常值得注意: 一是, 把这两个递推式相乘得到的就是 \(p_{n+1}^2 - 2 q_{n+1}^2 = (p_n^2 - 2 q_n^2)^2\), 这个等式在前面推导过; 另外, 注意由于所有的 \(p_n,q_n\) 都是整数, 所以其实由 \(p_{n+1} + \sqrt2 q_{n+1} = (p_n + \sqrt2 q_n)^2\) 也能直接推导出 \(p_{n+1} - \sqrt2 q_{n+1} = (p_n - \sqrt2 q_n)^2\).&nbsp;<a href="#fnref3" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[lixinyi 20171119]]></title>
@@ -39,26 +223,33 @@ f(x) = \dfrac{\left( \sqrt{x^2+1} - x \right) \left( \sqrt{x^2+1} + x \right)}{\
 
 <h2 id="toc_1">第 (2) 问</h2>
 
-<p>第 (2) 问的难度可能相对就较大了.</p>
+<blockquote>
+<p><code>update 20171127</code></p>
 
-<p>首先有了第一问的结论，应该很容易判断: 当 \(a \ge 1\) 的时候肯定不行; 另外也应该不难看到 \(a \le 0\) 的时候肯定可以. 所以最后求出的 \(a\) 的取值范围肯定包含所有小于等于 \(0\) 的数, 但是一定不包含任何一个大于等于 \(1\) 的数.</p>
-
-<p>所以看上去, 接下来的问题在于 \((0,1)\) 区间中的值 \(a\) 能不能取? 或者说, 哪些能取, 哪些不能取? 但是想到这里, 继续往下也并没有特别好的办法.</p>
-
-<p>接下来我们从另外一种思路入手. 函数 \(f(x) = \sqrt{x^2+1} - ax\) 可以看作是函数 \(y = \sqrt{x^2+1}\) 和 \(y = -ax\) 的叠加. 注意到这样一个问题<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>: </p>
+<ol>
+<li><p>上一稿中, 我将第二问的题干错看成了</p>
 
 <blockquote>
-<p>\(y = \sqrt{x^2+1}\) 是偶函数, 在 \(x&gt;0\) 和 \(x&lt;0\) 时的单调性正好相反, 于是知道偶函数在 \(x=0\) 附近的变化趋势大致是“平”的.<br/>
-因此, 原来的函数 \(f(x)\) 在 \(x=0\) 附近的变化趋势完全由它的奇函数部分 \(y = -ax\) 决定.</p>
+<p>求实数 \(a\) 的取值范围, 使得函数 \(f(x)\) 在 \(\mathbb R^+\) 上是单调<mark><strong>增</strong></mark>函数.</p>
 </blockquote>
 
-<p>但是, 题目中要求, 只要 \(x&gt;0\), \(f(x)\) 就得单调增, 因此这个“奇函数分量” \(y=-ax\) 不可以是单调减. 这也就意味着必须有 \(-a \ge 0\), 也就是 \(a \le 0\).</p>
+<p>而得到了错误的结论, 在这里更正;</p></li>
+<li><p>Z. Q. Ren 老师提供了一种三角换元的方法, 使得这个题在不用导数的情况下, 有另一种更“优雅”的方法, 这里也分享一下.</p></li>
+</ol>
+</blockquote>
 
-<p>这个结论目前看可能暂时觉得怪怪的, 但是我们确实可以尝试验证一下它. 而目前我们进行验证的唯一手段, 就是采用单调性去证明.</p>
+<p>第 (2) 问的难度可能相对就较大了. 有了第 (1) 问的结论，首先应该很容易判断: </p>
 
-<p>假设 \(x_1\) 和 \(x_2\) 是取自 \(\mathbb R^+\) 上的两个不同的数, 如果我们希望 \(f(x)\) 单调增, 那么就要求无论 \(x_1, x_2\) 怎么选取, 只要满足 \(0&lt;x_1&lt;x_2\) 这个前提, 都得有 \(f(x_1) - f(x_2) &lt; 0\).</p>
+<ul>
+<li>\(a \ge 1\) 时, \(f(x)\) 一定单调减,</li>
+<li>\(a \le 0\) 时, \(f(x)\) 一定单调增.</li>
+</ul>
 
-<p>可以先做下面的计算:<br/>
+<p>因此, 这两个取值范围肯定可以. 所以接下来的问题在于 \((0,1)\) 区间中的值能不能取? </p>
+
+<p>对于一般的 (暂不知具体取值的) \(a\) 值, 没有比较好的技巧可用, 我们只能是从<strong>单调性的定义</strong>出发来研究一下.</p>
+
+<p>设 \(x_1, x_2 \in \mathbb R^+\), \(x_1&lt;x_2\). 可以先做下面的计算:<br/>
 \[<br/>
 \begin{aligned}<br/>
 f(x_1) - f(x_2) <br/>
@@ -68,29 +259,40 @@ f(x_1) - f(x_2) <br/>
 &amp;= \left( \dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}} - a \right) (x_1 - x_2)<br/>
 \end{aligned}<br/>
 \]<br/>
-这里的最后结果中, 第二个括号里的值已经小于 \(0\), 所以我们也就希望, 只要满足 \(0&lt;x_1&lt;x_2\) 这个前提, 第一个括号里的数都得是正的.</p>
+最后的结果中, 第二个括号里的值确定是小于 \(0\) 的, 所以我们也就希望第一个括号里的数在区间 \(\mathbb R^+\) 上不会变号. </p>
 
-<p>但是仔细思考一下, 应该可以发现在 \(a&gt;0\) 的时候, 这一点就是做不到. 因为在 \(a&gt;0\) 的时候, 我总能把 \(x_1, x_2\) 都取得特别小, 特别接近于 \(0\), 从而使得 \(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}} &lt; a\). </p>
+<p>就是说 \(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}}\) 要么永远大于 \(a\), 要么永远小于 \(a\). 但在函数 \(f(x)\) 里, \(a\) 是一个常数, 只是取值待定. 因此, 上面的结论可以说成:</p>
 
-<p>具体来说, 只要 \(x_1\) 和 \(x_2\) 都小于 \(a\) 就有<br/>
-\[<br/>
-\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}} &lt; \dfrac{x_1 + x_2}{\sqrt{1} + \sqrt{1}} &lt; \dfrac{a+a}2 = a<br/>
-\]</p>
+<blockquote>
+<p>\(a\) 得大于 \(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}}\) 能取到的最大值, 或者小于它能取到的最小值.</p>
+</blockquote>
 
-<p>以上, 我们相当于证明了当 \(a&gt;0\) 时, 函数 \(f(x)\) 在 \((0,a)\) 上单调递减<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>.</p>
+<p>于是接下来的问题就变成了 \(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}}\) 的取值范围. 这个问题看上去好像不是很容易, 但回顾一下我们已经得到过哪些结论? </p>
 
-<p><strong>总结一下</strong>, 在第 (2) 问里面, 我们能够证明下面两点:</p>
+<p>前面我们已经得到 \(a\ge1\) 或 \(a\le0\) 的时候, 都是满足题目要求的. 那么也就是说:</p>
 
-<ol>
-<li>在 \(a\le 0\) 时, 函数 \(f(x) = \sqrt{x^2+1} - ax\) 在 \(\mathbb R^+\) 上单调递增;</li>
-<li>在 \(a &gt; 0\) 时, 函数 \(f(x)\) 在区间 \((0,a)\) 上单调递减, 因而也就不可能在 \(\mathbb R^+\) 上单调递增.</li>
-</ol>
+<blockquote>
+<p>\(a\ge1\) 或 \(a\le0\) 的时候, \(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}} - a\) 要么恒为正数值, 要么恒为负数值 ( \(\forall x_1,x_2 \in \mathbb R^+, x_1 &lt; x_2\)). </p>
+</blockquote>
 
-<p>综合这两点, 我们就可以确定这里问里面所要求的 \(a\) 的取值范围就是 \((-\infty,0]\).</p>
+<p>或者说</p>
 
-<h2 id="toc_2">补记</h2>
+<blockquote>
+<p>\(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}}\) 的最大值一定小于 \(1\), 而最小值一定大于 \(0\).</p>
+</blockquote>
 
-<p>这个题的第二问, 我觉得应该是在学完<strong>导数</strong>以后再来做, 才是比较合理的. 不用导数的话, 大概只能做成上面这个样子, 有些勉强. 虽然题目还算能做, 但是这个思路和写出来的解题过程看上去就有点不是正常人能想出来的.</p>
+<p>仔细思考一下当 \(x_1\) 和 \(x_2\) 在 \(\mathbb R^+\) 上取不同值的时候, 不难发现 \(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}}\) 的取值确实总在 \((0,1)\) 上, 并且它能够取遍 \((0,1)\) 区间上的所有数值. 具体来说, </p>
+
+<ul>
+<li>当 \(x_1,x_2\) 取值无限小 (无限接近于零) 的时候,这个分式的值就会无限接近于 \(0\); </li>
+<li>而当 \(x_1,x_2\) 取值无限大, 越来越大的时候, 分母中两个根号下的 \(1\) 相对于 \(x_1\) 和 \(x_2\) 来说, 变得越来越微不足道, 分母与分子的值就会越来越接近, 分式值会无限接近于 \(1\) (但是永远小于 \(1\)).</li>
+</ul>
+
+<p>有了这些分析, 大致可以确认 \(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}}\) 的最值范围就是 \((0,1)\). 因此, 为使得函数 \(f(x)\) 单调, \(a\) 的取值范围应该是 \((-\infty, 0] \cup [1, +\infty)\).</p>
+
+<h3 id="toc_2">补记</h3>
+
+<p>这个题的第 (2) 问, 我觉得应该是在学完<strong>导数</strong>以后再来做, 才是比较合理的. 不用导数的话, 大概只能做成上面这个样子, 有些勉强. 虽然题目还算能做, 但是这个思路和写出来的解题过程看上去就有点不是正常人能想出来的.</p>
 
 <p>并且, 事实上我写的这个思考和分析过程, 带有很强的高等数学的研究学习技巧, 一个中学生很难面面俱到的思考出的所有方面. 如果能看懂这个这个分析过程, 并且在以后的学习和做题中加以模仿, 那就很好了.</p>
 
@@ -108,16 +310,29 @@ f(x_1) - f(x_2) <br/>
 </ul></li>
 </ul>
 
+<h3 id="toc_3">Z. Q. Ren 老师提供的三角换元法</h3>
+
+<p>注意到函数 \(f(x) = \sqrt{x^2+1}-ax\) 的形式, 可以设 \(x = \tan\theta\). 我们讨论的 \(x\) 的取值范围是 \(\mathbb R^+\), 因此只需关注 \(\theta \in (0, \dfrac\pi2)\) 这个区间即可. 那么 <br/>
+\[<br/>
+f(x) <br/>
+= \sqrt{\tan^2\theta+1} - a \tan\theta <br/>
+= \dots<br/>
+= (-a) \cdot \dfrac{\sin\theta - \frac1a}{\cos\theta - 0}<br/>
+\]<br/>
+由于 \(x\) 关于 \(\theta\) 的变化趋势是单调的 (\(x\) 是 \(\theta\) 的单调增函数), 因此只需 \(f(x)\) 关于 \(\theta\) 单调即可 (无论单调增或单调减都行), 或者其实只需 \(\dfrac{\sin\theta - \frac1a}{\cos\theta - 0}\) 关于 \(\theta\) 单调即可.</p>
+
+<p>而 \(\dfrac{\sin\theta - \frac1a}{\cos\theta - 0}\) 可以看成是平面直角坐标系上 \((\cos\theta, \sin\theta)\) 和 \(\left( 0, \dfrac1a \right)\) 两点连线的斜率. <strong>仔细</strong><sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>的考察并利用这个几何意义, 最终应该能得出结论: 只要第二个点的纵坐标 \(\dfrac1a \le 1\), 这个连线斜率随 \(\theta\) 的变化就是单调的. 因此, \(a\le 0\) 或 \(a\ge1\).<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup></p>
+
 <div class="footnotes">
 <hr/>
 <ol>
 
 <li id="fn1">
-<p>你可能注意不到这些, 这个也不用担心, 其实这个题不应该是刚学完高中数学必修一就来做的, 用到的知识点有点超纲.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+<p>真的得非常非常非常仔细.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
 </li>
 
 <li id="fn2">
-<p>自己花点时间整理一下, 写出一个完整的证明过程.&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+<p>注意由 \(\dfrac1a \le 1\) 直接能够导出的结果只是 \(a &lt; 0\) 或 \(a \ge 1\), 因此采用这种方法的时候, 应该先单独讨论 \(a=0\) 的情形.&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
 </li>
 
 </ol>
