@@ -4,7 +4,7 @@
   <title><![CDATA[Gnoloac发布资料的地方。。。]]></title>
   <link href="https://cshishaliu.github.io/atom.xml" rel="self"/>
   <link href="https://cshishaliu.github.io/"/>
-  <updated>2017-11-27T11:36:04+08:00</updated>
+  <updated>2017-11-28T10:45:11+08:00</updated>
   <id>https://cshishaliu.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -14,7 +14,187 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Todo]]></title>
+    <title type="html"><![CDATA[一个很有意思的数列变换问题]]></title>
+    <link href="https://cshishaliu.github.io/15141748760281.html"/>
+    <updated>2017-12-25T12:07:56+08:00</updated>
+    <id>https://cshishaliu.github.io/15141748760281.html</id>
+    <content type="html"><![CDATA[
+<p>已知数列 \(\{a_n\}\) 和 \(\{b_n\}\), 其中 \(n \ge 0\) (即两个数列的首项分别为 \(a_0\) 和 \(b_0\)). 若满足<br/>
+\[<br/>
+b_n = \sum_{k=0}^n (-1)^k C_n^k a_k<br/>
+\,, \quad \forall n \in \mathbb N.<br/>
+\]<br/>
+求证:<br/>
+\[<br/>
+a_n = \sum_{k=0}^n (-1)^k C_n^k b_k<br/>
+\,, \quad \forall n \in \mathbb N.<br/>
+\]</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">证明</h2>
+
+<p>这里先给出证明, 如果你读这个证明过程毫无压力, 那就说明你对 \(\sum\) 求和符号的理解和运用已经非常熟练了. <br/>
+如果觉得看不懂, 那么可以先跳过这一节, 看看后面的文字分析, 理解了以后再回来对照着看这个证明过程.<br/>
+\[<br/>
+\begin{aligned}<br/>
+\sum_{k=0}^n (-1)^k C_n^k b_k<br/>
+&amp;= \sum_{k=0}^n (-1)^k C_n^k \cdot \sum_{l=0}^k (-1)^l C_k^l a_l \\<br/>
+&amp;= \sum_{k=0}^n \sum_{l=0}^k (-1)^k C_n^k \cdot (-1)^l C_k^l a_l \\<br/>
+&amp;= \sum_{\color{red}{l=0}}^n \sum_{\color{red}{k=l}}^n (-1)^k C_n^k \cdot (-1)^l C_k^l a_l \\<br/>
+&amp;= \sum_{l=0}^n (-1)^l a_l \sum_{k=l}^n (-1)^k C_n^k C_k^l \\<br/>
+&amp;= \sum_{l=0}^n (-1)^l a_l \sum_{k=l}^n (-1)^k C_n^l C_{n-l}^{k-l} \\<br/>
+&amp;= \sum_{l=0}^n (-1)^l C_n^l a_l \sum_{k=l}^n (-1)^l (-1)^{k-l} C_{n-l}^{k-l} \\<br/>
+&amp;= \sum_{l=0}^n C_n^l a_l \sum_{k=l}^n (-1)^{k-l} C_{n-l}^{k-l}<br/>
+\end{aligned}<br/>
+\]<br/>
+注意最后一步中最后面的这个表达式 \(\sum\limits_{k=l}^n (-1)^{k-l} C_{n-l}^{k-l}\), 显然它的取值只跟 \(n\) 和 \(l\) 有关, 我们把它记作 \(F(n,l)\), 于是<br/>
+\[ \tag{1}<br/>
+\sum_{k=0}^n (-1)^k C_n^k b_k = \sum_{l=0}^n C_n^l a_l \cdot F(n,l)<br/>
+\]<br/>
+不妨做一下换元 \(j=k-l\), 那么<br/>
+\[<br/>
+F(n,l) = \sum_{j=0}^{n-l} (-1)^j C_{n-l}^j<br/>
+\]<br/>
+注意当 \(n-l &gt; 0\), \(F(n,l) = [1+(-1)]^{n-l} = 0\); 但如果 \(n-l =0\), 情况会有点不一样, 此时 \(F(n,l) = \sum\limits_{j=0}^{0} (-1)^j C_{n-l}^j = (-1)^0 C_0^0 = 1\). 也就是说<br/>
+\[<br/>
+F(n,l) = \begin{cases} 1, &amp; n=l \\ 0, &amp; n&gt;l \end{cases}<br/>
+\]<br/>
+因此, (1) 式右边的 \(\sum\) 和式中只有 \(l=n\) 时的那一项 (也就是最后一项) 非零, 因此<br/>
+\[<br/>
+\sum_{k=0}^n (-1)^k C_n^k b_k = C_n^n a_n \cdot F(n,n) = a_n<br/>
+\]<br/>
+这就完成了证明.</p>
+
+<h2 id="toc_1">问题浅析</h2>
+
+<p>如果你对 \(\sum\) 符号的性质和变换技巧不熟, 那么这个题目最大的问题还是题干的叙述方式看上去很晦涩, 复杂的公式符号隐藏了它想表达的数学本质. </p>
+
+<p>想解决这个问题其实也没有多么大的数学技巧, 就是不厌其烦, 勤勤恳恳, 简单粗暴的把这些公式的初等形式写出来.</p>
+
+<p>题目的已知条件就是: \(\forall n \in \mathbb N\),<br/>
+\[<br/>
+b_n = C_n^0 a_0 - C_n^1 a_1 + C_n^2 a_2 - \dots + (-1)^n C_n^n a_n<br/>
+\]<br/>
+这个式子中恐怕仍看不出什么所以然, 那么只好给 \(n\) 取几个简单值试试, 找找规律了:<br/>
+\[<br/>
+\begin{aligned}<br/>
+b_0 &amp;= a_0 \\<br/>
+b_1 &amp;= a_0 - a_1 \\<br/>
+b_2 &amp;= a_0 - 2 a_1 + a_2 \\<br/>
+b_3 &amp;= a_0 - 3 a_1 + 3 a_2 - a_3 \\<br/>
+&amp; \vdots<br/>
+\end{aligned}<br/>
+\]<br/>
+然后题目需要你证明的是 \(\forall n \in \mathbb N\),<br/>
+\[<br/>
+a_n = C_n^0 b_0 - C_n^1 b_1 + C_n^2 b_2 - \dots + (-1)^n C_n^n b_n<br/>
+\]<br/>
+也就是<br/>
+\[<br/>
+\begin{aligned}<br/>
+a_0 &amp;= b_0 \\<br/>
+a_1 &amp;= b_0 - b_1 \\<br/>
+a_2 &amp;= b_0 - 2 b_1 + b_2 \\<br/>
+a_3 &amp;= b_0 - 3 b_1 + 3 b_2 - b_3 \\<br/>
+&amp; \vdots<br/>
+\end{aligned}<br/>
+\]</p>
+
+<p>稍加尝试就会发现, 上面这组式子中的每一个证明起来都不是很难, 只不过越到后面的式子, 项数越多, 验证起来越繁琐. 并且最麻烦的问题在于, 我们不可能通过逐个一一验证的方式来证明这组式子, 因为它有无穷多个.</p>
+
+<p>所以必须得能够给出一个形式上统一的证明过程, 这个证明过程的每一步变形都会包含字母 \(n\), 从而能适用于待证结论中的所有项.</p>
+
+<p>但写到这里, 你也应该能发现, 这样一个证明过程的思路应该很明确了, 它需要的最关键的东西不是数学技巧, 而是耐心.</p>
+
+<p>要证明<br/>
+\[<br/>
+a_n = C_n^0 b_0 - C_n^1 b_1 + C_n^2 b_2 - \dots + (-1)^n C_n^n b_n<br/>
+\]<br/>
+这个式子的右边等于<br/>
+\[<br/>
+\begin{aligned}<br/>
+&amp; \phantom{{}+{}} C_n^0 (C_0^0 a_0) \\<br/>
+&amp; - C_n^1 (C_1^0 a_0 - C_1^1 a_1) \\<br/>
+&amp; + C_n^2 (C_2^0 a_0 - C_2^1 a_1 + C_2^2 a_2) \\<br/>
+&amp; - C_n^3 (C_3^0 a_0 - C_3^1 a_1 + C_3^2 a_2 - C_3^3 a_3) \\<br/>
+&amp; \vdots \\<br/>
+&amp; + (-1)^n C_n^n (C_n^0 a_0 - C_n^1 a_1 + C_n^2 a_2 - \dots + (-1)^n C_n^n a_n)<br/>
+\end{aligned}<br/>
+\]<br/>
+接下来显然应该按照数列 \(\{a_n\}\) 的项重新合并同类项<br/>
+\[<br/>
+\begin{aligned}<br/>
+&amp; \phantom{{}+{}} (C_n^0 C_0^0 - C_n^1 C_1^0 + C_n^2 C_2^0 - C_n^3 C_3^0 + \dots + (-1)^n C_n^n C_n^0) \cdot a_0 \\<br/>
+&amp; + (C_n^1 C_1^1 - C_n^2 C_2^1 + C_n^3 C_3^1 - \dots + (-1)^{n-1} C_n^n C_n^1) \cdot a_1 \\<br/>
+&amp; + (C_n^2 C_2^2 - C_n^3 C_3^2 + \dots + (-1)^{n-2} C_n^n C_n^2) \cdot a_2 \\<br/>
+&amp; \vdots \\<br/>
+&amp; + (C_n^{n-1} C_{n-1}^{n-1} - C_n^n C_n^{n-1}) \cdot a_{n-1} \\<br/>
+&amp; + (C_n^n C_n^n) \cdot a_n<br/>
+\end{aligned}<br/>
+\]<br/>
+这样, 我们需要证明的就是除了最后一项 \(a_n\) 以外, 其余各项的系数都恰好能抵消为零. 这些不用 \(\sum\) 符号的初等形式虽然繁琐, 但能帮助我们找到问题的本质. 上一小节中的那个晦涩的证明过程其实也就是在完成这些证明工作.</p>
+
+<h2 id="toc_2">一个有意思的矩阵性质</h2>
+
+<p>这个题目中所描述的两个数列之间的变换关系, 如果用矩阵形式来表示, 会得到一个有意思的结论. </p>
+
+<p>考虑两个数列的前 \(n+1\) 项 (\(a_0, \dots, a_n\) 以及 \(b_0, \dots, b_n\)), 根据已知条件有<br/>
+\[<br/>
+\begin{pmatrix}<br/>
+b_0 \\ b_1 \\ b_2 \\ \vdots \\ b_n<br/>
+\end{pmatrix}<br/>
+= \begin{pmatrix}<br/>
+C_0^0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\<br/>
+C_1^0 &amp; -C_1^1 &amp; 0 &amp; \cdots &amp; 0 \\<br/>
+C_2^0 &amp; -C_2^1 &amp; C_2^2 &amp; \cdots &amp; 0 \\<br/>
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\<br/>
+C_n^0 &amp; -C_n^1 &amp; C_n^2 &amp; \cdots &amp; C_n^n<br/>
+\end{pmatrix}<br/>
+\begin{pmatrix}<br/>
+a_0 \\ a_1 \\ a_2 \\ \vdots \\ a_n<br/>
+\end{pmatrix}<br/>
+\]<br/>
+下面把中间这个矩阵记作 \(\mathbf A_n\). 例如 \(\mathbf A_0 = \begin{pmatrix} 1 \end{pmatrix}\), \(\mathbf A_1 = \begin{pmatrix} 1 &amp; 0 \\ 1 &amp; -1\end{pmatrix}\), \(\mathbf A_2 = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 1 &amp; -1 &amp; 0 \\ 1 &amp; -2 &amp; 1 \end{pmatrix}\); 对于 \(n=3\) 的情况有<br/>
+\[<br/>
+\mathbf A_3 = \begin{pmatrix}<br/>
+1 &amp; 0 &amp; 0 &amp; 0 \\<br/>
+1 &amp; -1 &amp; 0 &amp; 0 \\<br/>
+1 &amp; -2 &amp; 1 &amp; 0 \\<br/>
+1 &amp; -3 &amp; 3 &amp; -1<br/>
+\end{pmatrix}<br/>
+\]<br/>
+根据已知条件有<br/>
+\[<br/>
+\begin{pmatrix}<br/>
+b_0 \\ b_1 \\ b_2 \\ b_3<br/>
+\end{pmatrix}<br/>
+= \mathbf A_3<br/>
+\begin{pmatrix}<br/>
+a_0 \\ a_1 \\ a_2 \\ a_3<br/>
+\end{pmatrix}<br/>
+\]<br/>
+而如果待证结论成立, 就有<br/>
+\[<br/>
+\begin{pmatrix}<br/>
+a_0 \\ a_1 \\ a_2 \\ a_3<br/>
+\end{pmatrix}<br/>
+= \mathbf A_3<br/>
+\begin{pmatrix}<br/>
+b_0 \\ b_1 \\ b_2 \\ b_3<br/>
+\end{pmatrix}<br/>
+= \mathbf A_3 \cdot \mathbf A_3<br/>
+\begin{pmatrix}<br/>
+a_0 \\ a_1 \\ a_2 \\ a_3<br/>
+\end{pmatrix}<br/>
+\]<br/>
+这就意味着 \(\mathbf A_3 \cdot \mathbf A_3\) 应该是 4 阶单位矩阵. 进一步我们知道所有的 \(\mathbf A_n \cdot \mathbf A_n\) 应该是 4 阶单位矩阵.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Todo (at github.io)]]></title>
     <link href="https://cshishaliu.github.io/15117517873127.html"/>
     <updated>2017-11-27T11:03:07+08:00</updated>
     <id>https://cshishaliu.github.io/15117517873127.html</id>
@@ -30,6 +210,14 @@
 [nx] \ge \dfrac{[x]}1 + \dfrac{[2x]}2 + \dfrac{[3x]}3 + \dots +\dfrac{[nx]}n<br/>
 \]<br/>
 其中, \(n \in \mathbb N^*\), \([x]\) 表示不大于 \(x\) 的最大整数.</p>
+
+<span id="more"></span><!-- more -->
+
+<h3 id="toc_2">duyan 20171127</h3>
+
+<p>设 \(M = \dfrac{a^2+b^2+c^2}{abc+1}\) (\(a,b,c \in \mathbb R^+\)). 若 \(a+b \le c+1\), \(b+c \le a+1\), \(c+a \le b+1\), 求 \(M\) 的最大值.</p>
+
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1flwztpr8esj30y80hu7wh.jpg" alt=""/></p>
 
 ]]></content>
   </entry>
@@ -175,6 +363,32 @@ p_1 = \sqrt2, q_1 = \dfrac1{\sqrt2}, a_1 = 2<br/>
 
 <p>可以看到 \(a_n\) 的通项公式在 \(n = 1\) 的时候仍然满足, 只是 \(p_n\)  和 \(q_n\) 的通项公式会导致 \(p_1\) 和 \(q_1\) 计算出来都是无理数. 但就这个题目本身的要求而言, 我们的目标已经达到了.</p>
 
+<h2 id="toc_3">采用不动点法的快速解法</h2>
+
+<blockquote>
+<p>update 20111128</p>
+
+<p>被同事老师提醒, 这个题其实还是不动点方法, 只是不动点法中的另一种技巧.</p>
+</blockquote>
+
+<p>上面已经得到过, 取不动点 \(\sqrt2\), 将递推公式改写为<br/>
+\[<br/>
+a_{n+1} - \sqrt2 = \dfrac{(a_n - \sqrt2)^2}{2 a_n}<br/>
+\]<br/>
+另取不动点 \(-\sqrt2\), 将递推公式改写为<br/>
+\[<br/>
+a_{n+1} + \sqrt2 = \dfrac{(a_n + \sqrt2)^2}{2 a_n}<br/>
+\]<br/>
+两式相除可得<br/>
+\[<br/>
+\dfrac{a_{n+1} - \sqrt2}{a_{n+1} + \sqrt2} = \left( \dfrac{a_n - \sqrt2}{a_n + \sqrt2} \right)^2<br/>
+\]<br/>
+因此,<br/>
+\[<br/>
+\dfrac{a_n - \sqrt2}{a_n + \sqrt2} = \left( \dfrac{a_1 - \sqrt2}{a_1 + \sqrt2} \right)^{2^{n-1}} = \left( \dfrac{2 - \sqrt2}{2 + \sqrt2} \right)^{2^{n-1}} = \left( \sqrt2-1 \right)^{2^n}<br/>
+\]<br/>
+将 \(a_n\) 反解出来即可.</p>
+
 <div class="footnotes">
 <hr/>
 <ol>
@@ -203,6 +417,11 @@ p_1 = \sqrt2, q_1 = \dfrac1{\sqrt2}, a_1 = 2<br/>
     <updated>2017-11-19T22:01:08+08:00</updated>
     <id>https://cshishaliu.github.io/15111000681752.html</id>
     <content type="html"><![CDATA[
+<p>已知函数 \(f(x) = \sqrt{x^2+1}-ax\) (\(a \in \mathbb R\)).</p>
+
+<p>(1) 当 \(a=1\) 时, 判断 \(f(x)\) 在 \(\mathbb R\) 上的点调性;<br/>
+(2) 求实数 \(a\) 的取值范围, 使得函数 \(f(x)\) 在 \(\mathbb R^+\) 上是单调函数.</p>
+
 <p><img src="https://ws2.sinaimg.cn/large/006tKfTcly1flnqqalu54j315207earo.jpg" alt=""/></p>
 
 <span id="more"></span><!-- more -->
@@ -660,7 +879,11 @@ x_1 x_2 = \dfrac{4(8k^2-1)}{2k^2+1}<br/>
     <updated>2017-10-12T22:08:00+08:00</updated>
     <id>https://cshishaliu.github.io/15078172804643.html</id>
     <content type="html"><![CDATA[
+<p>已知 \(S_n\) 为数列 \(\{a_n\}\) 的前 \(n\) 项和, 规定 \(S_0 = 0\), 若对任意 \(n \in \mathbb N^*\), 均有 \(\dfrac{a_n}{2017} = - \dfrac{2017+S_{n-1}}{n}\), 则 \(\sum\limits_{n=1}^{2017} 2^n a_n = \) <code>______</code>.</p>
+
 <p><img src="https://ws4.sinaimg.cn/large/006tKfTcly1fkftf2gjegj315g07k41b.jpg" alt=""/></p>
+
+<span id="more"></span><!-- more -->
 
 <p>根据已知条件, \(n a_n = -2017^2 - 2017 S_{n-1}\),</p>
 
@@ -669,8 +892,6 @@ x_1 x_2 = \dfrac{4(8k^2-1)}{2k^2+1}<br/>
 <p>两式相减得 \((n+1) a_{n+1} - n a_n = -2017 (S_n - S_{n-1}) = -2017 a_n\),</p>
 
 <p>变形得 \(a_{n+1} = \dfrac{n-2017}{n+1} \cdot a_n\),</p>
-
-<span id="more"></span><!-- more -->
 
 <p>于是 \(a_n = \dfrac{n-2018}{n} \cdot \dfrac{n-2019}{n-1} \cdot \dots \cdot \dfrac{-2016}{2} \cdot a_1\).</p>
 
@@ -963,8 +1184,9 @@ y&amp;=\frac12 \sin\alpha + \frac{\sqrt3}6 \cos\alpha - \frac12<br/>
 
 <span id="more"></span><!-- more -->
 
-<p><code>解答 (郭建任老师的方法)</code><br/>
-\[<br/>
+<h2 id="toc_0">解答 (By Tr. J. R. Guo)</h2>
+
+<p>\[<br/>
 \begin{aligned}<br/>
 &amp;<br/>
 \sum \sqrt{a^2 - ab + b^2} \cdot \sqrt{b^2 - bc + c^2} \\<br/>

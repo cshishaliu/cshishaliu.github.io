@@ -259,6 +259,32 @@ p_1 = \sqrt2, q_1 = \dfrac1{\sqrt2}, a_1 = 2<br/>
 
 <p>可以看到 \(a_n\) 的通项公式在 \(n = 1\) 的时候仍然满足, 只是 \(p_n\)  和 \(q_n\) 的通项公式会导致 \(p_1\) 和 \(q_1\) 计算出来都是无理数. 但就这个题目本身的要求而言, 我们的目标已经达到了.</p>
 
+<h2 id="toc_3">采用不动点法的快速解法</h2>
+
+<blockquote>
+<p>update 20111128</p>
+
+<p>被同事老师提醒, 这个题其实还是不动点方法, 只是不动点法中的另一种技巧.</p>
+</blockquote>
+
+<p>上面已经得到过, 取不动点 \(\sqrt2\), 将递推公式改写为<br/>
+\[<br/>
+a_{n+1} - \sqrt2 = \dfrac{(a_n - \sqrt2)^2}{2 a_n}<br/>
+\]<br/>
+另取不动点 \(-\sqrt2\), 将递推公式改写为<br/>
+\[<br/>
+a_{n+1} + \sqrt2 = \dfrac{(a_n + \sqrt2)^2}{2 a_n}<br/>
+\]<br/>
+两式相除可得<br/>
+\[<br/>
+\dfrac{a_{n+1} - \sqrt2}{a_{n+1} + \sqrt2} = \left( \dfrac{a_n - \sqrt2}{a_n + \sqrt2} \right)^2<br/>
+\]<br/>
+因此,<br/>
+\[<br/>
+\dfrac{a_n - \sqrt2}{a_n + \sqrt2} = \left( \dfrac{a_1 - \sqrt2}{a_1 + \sqrt2} \right)^{2^{n-1}} = \left( \dfrac{2 - \sqrt2}{2 + \sqrt2} \right)^{2^{n-1}} = \left( \sqrt2-1 \right)^{2^n}<br/>
+\]<br/>
+将 \(a_n\) 反解出来即可.</p>
+
 <div class="footnotes">
 <hr/>
 <ol>
