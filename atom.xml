@@ -4,7 +4,7 @@
   <title><![CDATA[Gnoloac发布资料的地方。。。]]></title>
   <link href="https://cshishaliu.github.io/atom.xml" rel="self"/>
   <link href="https://cshishaliu.github.io/"/>
-  <updated>2017-11-28T10:45:11+08:00</updated>
+  <updated>2018-01-23T15:59:54+08:00</updated>
   <id>https://cshishaliu.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,494 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Todo (at github.io)]]></title>
+    <link href="https://cshishaliu.github.io/15117517873127.html"/>
+    <updated>2017-11-27T11:03:07+08:00</updated>
+    <id>https://cshishaliu.github.io/15117517873127.html</id>
+    <content type="html"><![CDATA[
+<h2 id="toc_0">To be solved</h2>
+
+<h3 id="toc_1">duyan 20171127</h3>
+
+<p>设 \(M = \dfrac{a^2+b^2+c^2}{abc+1}\) (\(a,b,c \in \mathbb R^+\)). 若 \(a+b \le c+1\), \(b+c \le a+1\), \(c+a \le b+1\), 求 \(M\) 的最大值.</p>
+
+<span id="more"></span><!-- more -->
+
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1flwztpr8esj30y80hu7wh.jpg" alt=""/></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[duyan 20180123-2]]></title>
+    <link href="https://cshishaliu.github.io/15166882779923.html"/>
+    <updated>2018-01-23T14:17:57+08:00</updated>
+    <id>https://cshishaliu.github.io/15166882779923.html</id>
+    <content type="html"><![CDATA[
+<p>已知 \(H\) 为 \(\triangle ABC\) 的垂心, 过 \(H\) 的直线交 \(BC, AB\) 于 \(D,Z\), 过 \(H\) 且垂直于 \(ZH\) 的另一条直线交 \(BC, AC\) 于 \(E,X\), 点 \(Y\) 使得 \(DY \parallel AC, EY \parallel AB\). 求证: \(X,Y,Z\) 三点共线.</p>
+
+<p><img src="https://ws2.sinaimg.cn/large/006tKfTcly1fnqjnu4ou9j30iu0h7js7.jpg" alt=""/></p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">解答</h2>
+
+<p>延长 \(YD\) 交 \(AB\) 于 \(G\), 延长 \(YE\) 交 \(AC\) 于 \(F\). 比较 \(\triangle GYZ\) 和 \(\triangle FXY\), 已有两边对应平行, 故只需证明它们相似即可. 下面设法证明 \(\dfrac{GZ}{GY} = \dfrac{FY}{FX}\), 亦即证明 \(GZ \cdot FX = GY \cdot FY\).</p>
+
+<p>记 \(\angle HDE = \alpha\), \(\angle HED = \beta\), 有 \(\alpha + \beta = 90^\circ\). 另外, 下面直接将 \(\triangle ABC\) 的三内角简记为 \(A,B,C\).</p>
+
+<p><img src="https://ws1.sinaimg.cn/large/006tKfTcly1fnqjnwnkb2j30iu0h70to.jpg" alt=""/></p>
+
+<p>在 \(\triangle GDZ\) 中, 有 <br/>
+\[<br/>
+\dfrac{GZ}{GD} = \dfrac{\sin \angle GDZ}{\sin \angle GZD} = \dfrac{\sin (C+\alpha)}{\sin(B-\alpha)}<br/>
+\]<br/>
+在 \(\triangle FEX\) 中, 有<br/>
+\[<br/>
+\dfrac{FX}{FE} = \dfrac{\sin \angle FEX}{\sin \angle FXE} = \dfrac{\sin (B+\beta)}{\sin(C-\beta)}<br/>
+\]<br/>
+故<br/>
+\[<br/>
+\begin{aligned}<br/>
+\dfrac{GZ}{GD} \cdot \dfrac{FX}{FE} <br/>
+&amp;= \dfrac{\sin (C+\alpha)}{\sin(B-\alpha)} \cdot \dfrac{\sin (B+\beta)}{\sin(C-\beta)} = \dfrac{\cos (C-\beta)}{\sin(B-\alpha)} \cdot \dfrac{\cos (B-\alpha)}{\sin(C-\beta)} \\<br/>
+&amp;= \dfrac{\cos(B-C) + \cos(B+C-90^\circ)}{\cos(B-C) - \cos(B+C-90^\circ)} \\<br/>
+&amp;= \dfrac{\cos(B-C) + \sin A}{\cos(B-C) - \sin A}<br/>
+\end{aligned}<br/>
+\]<br/>
+下面只需证明 \(\dfrac{GY}{GD} \cdot \dfrac{FY}{FE} = \dfrac{\cos(B-C) + \sin A}{\cos(B-C) - \sin A}\).</p>
+
+<p>显然, \(\dfrac{GY}{GD} \cdot \dfrac{FY}{FE} = \dfrac{BE}{BD} \cdot \dfrac{CE}{CE}\), 考虑 \(B,D,E,C\) 四点的交比<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>, 有</p>
+
+<p>\[<br/>
+\begin{aligned}<br/>
+\dfrac{ED}{BD} \cdot \dfrac{BC}{EC} <br/>
+&amp;= \dfrac{\sin \angle EHD}{\sin \angle BHD} \cdot \dfrac{\sin \angle BHC}{\sin \angle EHC} \\<br/>
+&amp;= \dfrac{\sin 90^\circ}{\sin (\alpha-90^\circ+C)} \cdot \dfrac{\sin (180^\circ - A)}{\sin (\beta-90^\circ+B)} \\<br/>
+&amp;= \dfrac{\sin A}{\sin (B-\alpha) \sin (C-\beta)} \\<br/>
+&amp;= \dfrac{2\sin A}{\cos (B-C) - \sin A}<br/>
+\end{aligned}<br/>
+\]</p>
+
+<p>因此<br/>
+\[<br/>
+\begin{aligned}<br/>
+\dfrac{BE}{BD} \cdot \dfrac{CE}{CE} <br/>
+&amp;= \dfrac{(BD+ED) \cdot (DE+EC)}{BD \cdot EC} \\<br/>
+&amp;= \dfrac{ED \cdot (BD+DE+EC) + BD \cdot EC}{BD \cdot EC} \\<br/>
+&amp;= \dfrac{ED \cdot BC}{BD \cdot EC} +1 \\<br/>
+&amp;= \dfrac{2\sin A}{\cos (B-C) - \sin A} + 1 \\<br/>
+&amp;= \dfrac{\cos (B-C) + \sin A}{\cos (B-C) - \sin A}<br/>
+\end{aligned}<br/>
+\]<br/>
+证毕.</p>
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>交比的相关结论可用正弦定理证明.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[zhangboxin 20171125]]></title>
+    <link href="https://cshishaliu.github.io/15166821516457.html"/>
+    <updated>2018-01-23T12:35:51+08:00</updated>
+    <id>https://cshishaliu.github.io/15166821516457.html</id>
+    <content type="html"><![CDATA[
+<p>证明不等式: <br/>
+\[<br/>
+[nx] \ge \dfrac{[x]}1 + \dfrac{[2x]}2 + \dfrac{[3x]}3 + \dots +\dfrac{[nx]}n<br/>
+\]<br/>
+其中, \(n \in \mathbb N^*\), \([x]\) 表示不大于 \(x\) 的最大整数.</p>
+
+<blockquote>
+<p><em>本题为第十届美国数学奥林匹克第五题</em></p>
+</blockquote>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">解答</h2>
+
+<p>令<br/>
+\[<br/>
+A_n = \dfrac{[x]}1 + \dfrac{[2x]}2 + \dfrac{[3x]}3 + \dots +\dfrac{[nx]}n<br/>
+\]<br/>
+需证明 \([nx] \ge A_n\), 对 \(n\) 进行归纳 (第二数学归纳法).</p>
+
+<p>当 \(n=1\) 时显然成立.</p>
+
+<p>设 \(n \le k\) 时, 不等式均成立, 即<br/>
+\[<br/>
+A_1 \le [x], A_2 \le [2x], \dots, A_k \le [kx]<br/>
+\]<br/>
+由于<br/>
+\[<br/>
+\begin{aligned}<br/>
+(k+1) A_{k+1} - (k+1) A_k &amp;= [(k+1)x] \\<br/>
+k A_k - k A_{k-1} &amp;= [kx] \\<br/>
+\vdots\\<br/>
+2 A_2 - 2 A_1 &amp;= [2x] \\<br/>
+A_1 &amp;= [x]<br/>
+\end{aligned}<br/>
+\]<br/>
+全部累加起来有<br/>
+\[<br/>
+\begin{gathered}<br/>
+(k+1) A_{k+1} - (A_1 + A_2 + \dots + A_k) \le [x] + [2x] + \dots +[(k+1)x] \\<br/>
+(k+1) A_{k+1} \le (A_1 + A_2 + \dots + A_k) + [x] + [2x] + \dots +[(k+1)x]<br/>
+\end{gathered}<br/>
+\]<br/>
+而 <br/>
+\[<br/>
+\begin{gathered}<br/>
+A_1 + [kx] \le [x] + [kx] \le [(k+1)x] \\<br/>
+A_2 + [(k-1)x] \le [2x] + [(k-1)x] \le [(k+1)x] \\<br/>
+\vdots \\<br/>
+A_k + [x] \le [kx] + [x] \le [(k+1)x] \\<br/>
+\end{gathered}<br/>
+\]<br/>
+因此,<br/>
+\[<br/>
+\begin{gathered}<br/>
+(k+1) A_{k+1} \le (k+1) \cdot [(k+1)x] \\<br/>
+A_{k+1} \le [(k+1)x]<br/>
+\end{gathered}<br/>
+\]<br/>
+证毕.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[duyan 20180123]]></title>
+    <link href="https://cshishaliu.github.io/15166764942559.html"/>
+    <updated>2018-01-23T11:01:34+08:00</updated>
+    <id>https://cshishaliu.github.io/15166764942559.html</id>
+    <content type="html"><![CDATA[
+<p>如图, 已知, \(BH\) 为 \(\triangle ABC\) 的高线, \(D,E\) 为中点, \(H\) 关于 \(DE\) 的对称点为 \(F\), \(O\) 为 \(\triangle ABC\) 的外心. 求证: \(B,O,F\) 三点共线.</p>
+
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fnqczqq9rjj30j60h7dgp.jpg" alt=""/></p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">解答</h2>
+
+<p>连接 \(DH\), \(DF\), \(EF\), \(AF\). 有 \(DA = DB = DH = DF\), 故 \(\angle AFB = 90^\circ\).</p>
+
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fnqczwmvw8j30j60h7wfh.jpg" alt=""/></p>
+
+<p>由 \(\angle DFE = \angle DHE = \angle DAE\) 知 \(A,D,E,F\) 四点共圆, 故 \(\angle DAF = \angle DFA = \angle DEA = \angle C\), 因此 \(\angle ABF = 90^\circ - \angle BAF = 90^\circ - \angle C = \angle ABO\), 所以 \(B,O,F\) 三点共线.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[zhangboxin 20171218]]></title>
+    <link href="https://cshishaliu.github.io/15166754034002.html"/>
+    <updated>2018-01-23T10:43:23+08:00</updated>
+    <id>https://cshishaliu.github.io/15166754034002.html</id>
+    <content type="html"><![CDATA[
+<p>在 \(\triangle ABC\) 中, \(\angle A = 4 \angle C\), \(\angle B = 2 \angle C\), 试证: \((BC+CA) \cdot AB = BC \cdot CA\).</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">三角证法</h2>
+
+<p>记 \(\alpha = \angle C = \dfrac\pi7\), 则 \(7\alpha = \pi\). 运用正弦定理, 待证等式等价于<br/>
+\[<br/>
+(\sin 2\alpha + \sin 4\alpha) \cdot \sin\alpha = \sin 2\alpha \cdot \sin 4\alpha<br/>
+\]<br/>
+而<br/>
+\[<br/>
+\begin{aligned}<br/>
+&amp;(\sin 2\alpha + \sin 4\alpha) \cdot \sin\alpha \\<br/>
+&amp;= [ \sin (3\alpha - \alpha) + \sin (3\alpha + \alpha) ] \cdot \sin\alpha \\<br/>
+&amp;= 2\sin 3\alpha \cos \alpha \sin\alpha \\<br/>
+&amp;= \sin 3\alpha \sin2\alpha \\<br/>
+&amp;= \sin (\pi-4\alpha) \sin2\alpha \\<br/>
+&amp;= \sin 2\alpha \cdot \sin 4\alpha<br/>
+\end{aligned}<br/>
+\]<br/>
+得证.</p>
+
+<h2 id="toc_1">几何证法</h2>
+
+<p>还是记 \(\alpha = \angle C\). 如图, 在 \(BA\) 延长线上取点 \(D\) 两点, 满足 \(AD = AC\), 则 <br/>
+\[<br/>
+\begin{gathered}<br/>
+\angle ADC = \angle ACD = \dfrac12 \angle CAB = \angle ABC = 2\alpha\\<br/>
+CD = BC<br/>
+\end{gathered}<br/>
+\]<br/>
+又在 \(AD​\) 延长线上取点 \(E​\), 满足 \(DE = CD = BC​\), 则<br/>
+\[<br/>
+\angle DEC = \angle DCE = \dfrac12 \angle ADC = \angle ACB = \alpha<br/>
+\]</p>
+
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fnqcj9me3hj30as0h70ta.jpg" alt=""/></p>
+
+<p>由 \(\angle DEC = \angle ACB\) 知<br/>
+\[<br/>
+\begin{aligned}<br/>
+BC^2 &amp;= BA \cdot BE \\<br/>
+&amp;= AB \cdot (AB + AD + AE) \\<br/>
+&amp;= AB \cdot (AB + BC + CA)<br/>
+\end{aligned}<br/>
+\]<br/>
+故<br/>
+\[<br/>
+(BC + CA) \cdot AB = BC^2 - AB^2<br/>
+\]<br/>
+又过点 \(B\) 作 \(AC\) 的平行线, 交 \(\triangle ABC\) 外接圆于 \(F\), 则四边形 \(ABFC\) 是等腰梯形, 且不难得到 \(CF = AB\), \(\angle CBF = \alpha\), \(\angle BCF = \angle BFC = 3\alpha\), \(BF = BC = AF\). 在圆内接四边形 \(ABFC\) 中运用托勒密定理得<br/>
+\[<br/>
+AB \cdot CF + AC \cdot BF = BC \cdot AF<br/>
+\]<br/>
+即 <br/>
+\[<br/>
+AB^2 + AC \cdot BC = BC^2<br/>
+\]<br/>
+故<br/>
+\[<br/>
+BC^2 - AB^2 = AC \cdot BC<br/>
+\]<br/>
+因此<br/>
+\[<br/>
+(BC + CA) \cdot AB = AC \cdot BC<br/>
+\]</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[一个`多项式`版本的线性空间问题]]></title>
+    <link href="https://cshishaliu.github.io/15158198616473.html"/>
+    <updated>2018-01-13T13:04:21+08:00</updated>
+    <id>https://cshishaliu.github.io/15158198616473.html</id>
+    <content type="html"><![CDATA[
+<p>试求所有的实系数多项式 \(p(x)\), 使得对满足 \(ab + bc + ca = 0\) 的所有实数 \(a、b、c\), 均有: <br/>
+\[<br/>
+p(a - b) + p(b - c) + p(c - a) = 2p(a + b + c).<br/>
+\]</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">先给解答</h2>
+
+<blockquote>
+<p>令 \(a=b=c=0\), 有 <br/>
+\[<br/>
+p(0)=0 .<br/>
+\] <br/>
+令 \(b=c=0\), 有 <br/>
+\[<br/>
+p(a)=p(-a),\quad \forall a \in \mathbb R .<br/>
+\]<br/>
+故 \(p(x)\) 是偶函数, 所有奇次项系数为 \(0\). 不妨设 <br/>
+\[<br/>
+p(x) = a_nx^{2n} +a_{n-1}x^{2n-2}+\cdots +a_1x^2, \quad a_n \ne 0 .<br/>
+\]</p>
+
+<p><mark><strong>【前方高能预警】</strong></mark></p>
+
+<p>令 \(b=2a\), \(c=-\dfrac 23a\), 有 <br/>
+\[<br/>
+p(-a) + p \left( \dfrac 83 a \right) + p \left( -\dfrac 53a \right) = 2p \left( \dfrac 73a \right),<br/>
+\]<br/>
+即<br/>
+\[<br/>
+a_n \cdot \left[1+ \left(\dfrac83\right)^{2n} + \left(\dfrac 53\right)^{2n} - 2 \left(\dfrac 73\right)^{2n} \right] \cdot a^{2n} <br/>
++ \cdots + a_1 \cdot \left[ 1 + \left(\dfrac 83\right)^{2} + \left(\dfrac 53\right)^{2} - 2 \left(\dfrac 73\right)^{2} \right] \cdot a^2 = 0<br/>
+\]<br/>
+这个等式对任意 \(a\in \mathbb R\) 都成立, 故所有 \(a^k\) 项的系数均为 \(0\).</p>
+
+<p>注意到 \(8^6&gt;2\times 7^6\), 故当 \(n\ge 3\) 时, \(\left(\dfrac87\right)^{2n}\ge \left(\dfrac87\right)^6&gt;2\), 故 \(8^{2n}&gt;2\times 7^{2n}\), 从而 \(1 + \left(\dfrac83\right)^{2n} + \left(\dfrac53\right)^{2n} - 2\left(\dfrac73\right)^{2n} &gt; 0\). 因此必须是相应的 \(a_n = 0\).</p>
+
+<p><mark><strong>【预警解除】</strong>可以放松一下</mark></p>
+
+<p>也就是说 \(p(x)\) 中不可能有 \(6\) 次或更高次的项, 可设 \(p(x) =\alpha x^4 +\beta x^2\), 不难验证无论 \(\alpha,\beta\) 取何值, 这个式子都满足要求.</p>
+</blockquote>
+
+<h2 id="toc_1">简析</h2>
+
+<p>上面解答中的这一步</p>
+
+<blockquote>
+<p>令 \(b=2a\), \(c=-\dfrac 23a\), 有 ...</p>
+</blockquote>
+
+<p>这种做法不太像是正常人能想出来的. 其实这个题在高等数学里面有更一般的处理方法: <strong>线性空间理论</strong>. </p>
+
+<h3 id="toc_2">基本思路</h3>
+
+<p>注意题中的函数方程 <br/>
+\[<br/>
+p(a - b) + p(b - c) + p(c - a) = 2p(a + b + c)<br/>
+\]<br/>
+是<strong>线性齐次</strong>的, 即</p>
+
+<blockquote>
+<p>如果有两个多项式 \(p_1 (x)\) 和 \(p_2 (x)\) 都满足此函数方程, 则它们的任意线性叠加 \(\lambda_1 p_1 (x) + \lambda_2 p_2 (x)\) 也满足这个方程. </p>
+
+<p>(<em>这个线性齐次性质甚至都不依赖于 \(ab+bc+ca=0\) 这个约束条件.</em>)</p>
+</blockquote>
+
+<p>这样, 我们只需要考虑最基本, 最简单的多项式 \(x^n\) (\(n=1,2,\dots\)) 即可.</p>
+
+<p>这种处理方法实际上是将全体多项式构造成一个无穷维线性空间, 以 \(\{1,x,x^2,x^3,\dots\}\) 作为基底; 然后将函数方程的解空间看作上述多项式空间的子空间, 尝试确定这个子空间的基底. 根据这里已经得到的结论, 这个解空间是 2 维的, 基底是 \(\{x^2, x^4\}\). 下面我们用正常一点的方法 (但是也不算简单) 来导出这个结论.</p>
+
+<h3 id="toc_3">确定满足条件的基本多项式</h3>
+
+<p>其实要做的事情也很简单, 就是把 \(p(x) = x^n\), \(n=1,2,\dots\), 一个一个代进去尝试, 看看在<br/>
+\[<br/>
+\sum_{cyc} ab = 0<br/>
+\]<br/>
+的条件下, 下面这个等式<br/>
+\[<br/>
+\sum_{cyc} p(a-b) = 2 p \left( \sum_{cyc} a \right)<br/>
+\] <br/>
+是否成立. 其中 \(\sum\limits_{cyc}\) 表示按 \(a,b,c\) 轮换的循环和.</p>
+
+<p>上面的解答过程中已经证明了 \(p(x)\) 必须是偶函数, 故只需要考虑 \(p(x) = x^{2n}\) 的情形即可.</p>
+
+<p>首先看 \(p(x) = x^2\) 的情形,<br/>
+\[<br/>
+\begin{aligned}<br/>
+\sum_{cyc} p(a-b)<br/>
+&amp;= \sum_{cyc} (a-b)^2 \\<br/>
+&amp;= 2 \sum_{cyc} a^2 - 2 \sum_{cyc} ab = 2 \sum_{cyc} a^2 \\<br/>
+&amp;= 2 \sum_{cyc} a^2 + 4 \sum_{cyc} ab \\<br/>
+&amp;= 2 \left( \sum_{cyc} a \right)^2 = 2 p \left( \sum_{cyc} a \right)<br/>
+\end{aligned}<br/>
+\]<br/>
+\(p(x) = x^2\) 满足条件.</p>
+
+<p>再看 \(p(x) = x^4\) 的情形. 在上一种情形中, 我们已经得到了<br/>
+\[<br/>
+\sum_{cyc} (a-b)^2 = 2 \sum_{cyc} a^2 = 2 \left( \sum_{cyc} a \right)^2<br/>
+\]<br/>
+各式同时平方可得<br/>
+\[<br/>
+\begin{aligned}<br/>
+\left( \sum_{cyc} (a-b)^2 \right)^2 <br/>
+&amp;= \sum_{cyc} (a-b)^4 + 2\sum_{cyc} (a-b)^2 (b-c)^2 \\<br/>
+&amp;= 4 \left( \sum_{cyc} a^2 \right)^2 = 4 \left( \sum_{cyc} a \right)^4<br/>
+\end{aligned}<br/>
+\]<br/>
+接下来看 (第一行右侧第二项)<br/>
+\[<br/>
+\begin{aligned}<br/>
+\sum_{cyc} (a-b)^2 (b-c)^2<br/>
+&amp;= \sum_{cyc} (ab+bc-ac-b^2)^2 = \sum_{cyc} (-2ac-b^2)^2 \\<br/>
+&amp;= \sum_{cyc} (4a^2c^2+4ab^2c+b^4) \\<br/>
+&amp;= \left( 2 \sum_{cyc} a^2c^2 + 4 \sum_{cyc} ab^2c \right) + \left( \sum_{cyc} a^4 + \sum_{cyc} 2 a^2b^2 \right) \\<br/>
+&amp;= 2 \left( \sum_{cyc} (ab)^2 + 2 \sum_{cyc} ab \cdot bc \right) + \left( \sum_{cyc} (a^2)^2 + 2 \sum_{cyc} a^2b^2 \right) \\<br/>
+&amp;= 2 \left( \sum_{cyc} ab \right)^2 + \left( \sum_{cyc} a^2 \right)^2 = \left( \sum_{cyc} a^2 \right)^2<br/>
+\end{aligned}<br/>
+\]<br/>
+于是<br/>
+\[<br/>
+\left( \sum_{cyc} (a-b)^2 \right)^2 = 2 \left( \sum_{cyc} a^2 \right)^2 = 2 \left( \sum_{cyc} a \right)^4<br/>
+\]<br/>
+\(p(x) = x^4\) 也满足条件.</p>
+
+<p><mark><em>待续</em></mark></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[kongyuqing 20180106]]></title>
+    <link href="https://cshishaliu.github.io/15152159707290.html"/>
+    <updated>2018-01-06T13:19:30+08:00</updated>
+    <id>https://cshishaliu.github.io/15152159707290.html</id>
+    <content type="html"><![CDATA[
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fn6tewfvhij310406m0wj.jpg" alt=""/></p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">三角法</h2>
+
+<p>记 \(\theta = \arccos \dfrac13\), 于是 \(\cos\theta = \dfrac13\), \(\sin\theta = \dfrac{2\sqrt2}3\), \(a_1 = 3 \cos\theta = 1\).<br/>
+\[<br/>
+\begin{aligned}<br/>
+a_n <br/>
+&amp;= 3^n \cos n\theta = 3^n \cos [(n-1)\theta + \theta] \\<br/>
+&amp;= 3^n (\cos (n-1)\theta \cos\theta - \sin (n-1)\theta \sin\theta) \\<br/>
+&amp;= 3^{n-1} \cos (n-1)\theta - 2\sqrt2 \cdot 3^{n-1} \sin(n-1) \theta \\<br/>
+&amp;= a_{n-1} - 2\sqrt2 \cdot 3^{n-1} \sin(n-1) \theta<br/>
+\end{aligned}<br/>
+\]</p>
+
+<p>若另取数列 \(\{b_n\}\), 其通项公式 \(b_n = 3^n \sin n\theta\), 则 \(b_1 = 3 \sin\theta = 2\sqrt2\), 上面的 \(a_n\) 可以写成<br/>
+\[<br/>
+a_n = a_{n-1} - 2\sqrt2 b_{n-1}<br/>
+\]<br/>
+而另一方面<br/>
+\[<br/>
+\begin{aligned}<br/>
+b_n <br/>
+&amp;= 3^n \sin [(n-1)\theta + \theta] \\<br/>
+&amp;= 3^n (\sin (n-1)\theta \cos\theta + \cos (n-1)\theta \sin\theta) \\<br/>
+&amp;= 3^{n-1} \sin (n-1)\theta + 2\sqrt2 \cdot 3^{n-1} \cos(n-1) \theta \\<br/>
+&amp;= b_{n-1} + 2\sqrt2 a_{n-1}<br/>
+\end{aligned}<br/>
+\]<br/>
+于是<br/>
+\[<br/>
+\begin{aligned}<br/>
+b_n <br/>
+&amp;= b_1 + 2\sqrt2 a_1 + 2\sqrt2 a_2 + \dots + 2\sqrt2 a_{n-1} \\<br/>
+&amp;= 2\sqrt2 \cdot (1 + S_{n-1})<br/>
+\end{aligned}<br/>
+\]<br/>
+其中, \(S_n\) 表示数列 \(\{a_n\}\) 的前 \(n\) 项和. 那么 <br/>
+\[<br/>
+a_n = a_{n-1} - 8 (1 + S_{n-2})<br/>
+\]<br/>
+下面可以转而考虑 \(\{S_n\}\) 数列, 根据上式, <br/>
+\[<br/>
+S_n - S_{n-1} = (S_{n-1} - S_{n-2}) - 8 (1 + S_{n-2})<br/>
+\]<br/>
+化简后得 <br/>
+\[<br/>
+S_n = 2 S_{n-1} - 9 S_{n-2} - 8<br/>
+\]<br/>
+因此<br/>
+\[<br/>
+S_n \equiv 2 S_{n-1} - 2 \pmod 3<br/>
+\]<br/>
+于是<br/>
+\[<br/>
+a_n = S_n - S_{n-1} \equiv (2 S_{n-1} - 2) - (2 S_{n-2} - 2) = 2 a_{n-1} \pmod 3<br/>
+\]<br/>
+也就是说, 数列 \(\{a_n\}\) 中, 后一项与前一项的两倍除以 3 的余数相同. 而 \(a_1 = 1\), 因而此数列中不可能有 3 的倍数.</p>
+
+<h2 id="toc_1">复数法</h2>
+
+<p>采用复数法, 在寻找数列递推关系时会比三角法更好用, 并且能够给出更简洁, 但更有启发性的思路和过程.</p>
+
+<p>还是记 \(\theta = \arccos \dfrac13\), 那么 \(\dfrac13 = \cos\theta = \Re(e^{i\theta})\), 其中 \(i\) 是虚数单位, \(\Re(z)\) 表示复数 \(z\) 的实部. 于是,<br/>
+\[<br/>
+a_n <br/>
+= 3^n \cos n\theta <br/>
+= 3^n \cdot \Re(e^{in\theta}) <br/>
+= \Re(3^n \cdot e^{in\theta}) <br/>
+= \Re( (3 e^{i\theta})^n )<br/>
+\]<br/>
+这样可以考虑定义复数列 \(\{z_n\}\), 其通项公式为 \(z_n = (3 e^{i\theta})^n\), 分别考虑其实部数列 (即 \(\{a_n\}\)) 和虚部数列, 寻找好用的递推关系即可. 其实剩下的过程跟上面的三角法没有太大区别.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[一个很有意思的数列变换问题]]></title>
@@ -189,35 +677,6 @@ a_0 \\ a_1 \\ a_2 \\ a_3<br/>
 \end{pmatrix}<br/>
 \]<br/>
 这就意味着 \(\mathbf A_3 \cdot \mathbf A_3\) 应该是 4 阶单位矩阵. 进一步我们知道所有的 \(\mathbf A_n \cdot \mathbf A_n\) 应该是 4 阶单位矩阵.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Todo (at github.io)]]></title>
-    <link href="https://cshishaliu.github.io/15117517873127.html"/>
-    <updated>2017-11-27T11:03:07+08:00</updated>
-    <id>https://cshishaliu.github.io/15117517873127.html</id>
-    <content type="html"><![CDATA[
-<h2 id="toc_0">To be solved</h2>
-
-<h3 id="toc_1">zhangboxin 20171125</h3>
-
-<p><code>高斯函数, 不等式</code></p>
-
-<p>证明不等式: <br/>
-\[<br/>
-[nx] \ge \dfrac{[x]}1 + \dfrac{[2x]}2 + \dfrac{[3x]}3 + \dots +\dfrac{[nx]}n<br/>
-\]<br/>
-其中, \(n \in \mathbb N^*\), \([x]\) 表示不大于 \(x\) 的最大整数.</p>
-
-<span id="more"></span><!-- more -->
-
-<h3 id="toc_2">duyan 20171127</h3>
-
-<p>设 \(M = \dfrac{a^2+b^2+c^2}{abc+1}\) (\(a,b,c \in \mathbb R^+\)). 若 \(a+b \le c+1\), \(b+c \le a+1\), \(c+a \le b+1\), 求 \(M\) 的最大值.</p>
-
-<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1flwztpr8esj30y80hu7wh.jpg" alt=""/></p>
 
 ]]></content>
   </entry>
@@ -1200,378 +1659,6 @@ y&amp;=\frac12 \sin\alpha + \frac{\sqrt3}6 \cos\alpha - \frac12<br/>
 \sum \left( ac - \dfrac12 ab - \dfrac12 bc + b^2 \right) = \sum b^2<br/>
 \end{aligned}<br/>
 \]</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[201710月考复习 高一]]></title>
-    <link href="https://cshishaliu.github.io/15072010715807.html"/>
-    <updated>2017-10-05T18:57:51+08:00</updated>
-    <id>https://cshishaliu.github.io/15072010715807.html</id>
-    <content type="html"><![CDATA[
-<span id="more"></span><!-- more -->
-
-<h5 id="toc_0">一、选择题</h5>
-
-<ol>
-<li><p>若集合 \(A = \{ x | x^2 - 1 &lt; 0 \}\), \(B = \{ x | 0 &lt; x &lt; 4 \}\), 则 \(A \cup B = \) <code>(    )</code></p>
-
-<p>A. \(\{x| 0&lt;x&lt;1 \}\)<br/>
-B. \(\{x| -1&lt;x&lt;1 \}\)<br/>
-C. \(\{x| -1&lt;x&lt;4 \}\)<br/>
-D. \(\{x| 1&lt;x&lt;4 \}\)</p></li>
-<li><p>设集合 \(A = \{ x | 0 \le x \le 3 \}\), \(B = \{ y| y \le 0 \le 1\}\), 则下列对应法则中, 是从 \(A\) 到 \(B\) 的映射的是 <code>(    )</code></p>
-
-<p>A. \(x \to y = \sqrt{x}\)<br/>
-B. \(x \to y^2 = \dfrac12 x\)<br/>
-C. \(x \to y = \dfrac13 x​\) <br/>
-D. \(x \to y = \dfrac1{2^x - 1}\)</p></li>
-<li><p>已知函数 \(f(x) = \begin{cases} \sqrt{x} , &amp; x \ge 2 \\ 3-x ,&amp; x &lt; 2 \end{cases}\), 则 \(f(f(-1)) = \) <code>(    )</code></p>
-
-<p>A. \(-1\)<br/>
-B. \(0\)<br/>
-C. \(1\)<br/>
-D. \(2\)</p></li>
-<li><p>设 \(A = \{ x \in \mathbb Z | |x| \le 2 \}\), \(B = \{ y | y = x^2 + 1, x \in A \}\), 则 \(B\) 中的元素个数是 <code>(    )</code></p>
-
-<p>A. \(5\)<br/>
-B. \(4\)<br/>
-C. \(3\)<br/>
-D. 无数个</p></li>
-<li><p>已知 \(P = \{a,b\}\), \(Q = \{ -1,0,1,2 \}\), \(f\) 是从 \(P\) 到 \(Q\) 的映射, 则满足 \(f(a) = 0\) 的映射个数为 <code>(    )</code></p>
-
-<p>A. \(3\)<br/>
-B. \(4\)<br/>
-C. \(6\)<br/>
-D. \(8\)</p></li>
-<li><p>若函数 \(f(x) = \dfrac{x-1}x\), 则方程 \(f(4x) = x\) 的根是 <code>(    )</code></p>
-
-<p>A. \(\dfrac12\)<br/>
-B. \(-\dfrac12\)<br/>
-C. \(2\)<br/>
-D. \(-2\)</p></li>
-<li><p>已知 \(f(x) = \begin{cases} x+2, &amp; x \le -1 \\ x^2, &amp; -1 &lt; x &lt; 2 \\ 2x, &amp; x \ge 2 \end{cases}\), 若 \(f(x)  = 3\), 则 \(x\) 的值是 <code>(    )</code></p>
-
-<p>A. \(1\)<br/>
-B. \(\sqrt3\)<br/>
-C. \(1\), \(\dfrac32\) 或 \(\pm \sqrt3\)<br/>
-D. \(\sqrt3\) 或 \(\dfrac32\)</p></li>
-<li><p>设 \(U\) 为全集, \(P\), \(Q\) 为非空集合, 且 \(P \subsetneqq Q \subsetneqq U\), 下面结论中不正确的是 <code>(    )</code></p>
-
-<p>A. \((\complement_U P) \cup Q = U\)<br/>
-B. \((\complement_U Q) \cap P = \varnothing\)<br/>
-C. \(P \cup Q = Q\)<br/>
-D. \((\complement_U P) \cap Q = \varnothing\)</p></li>
-<li><p>已知函数 \(f(x)\) 是定义在 \(\mathbb R\) 上的奇函数, 它的图像关于直线 \(x = 1\) 对称, 且 \(f(x) = x\) (\(0 &lt; x \le 1\)), 则当 \(x \in (5,7]\) 时, \(y = f(x)\) 的解析式是 <code>(    )</code></p>
-
-<p>A. \(f(x) = 2 - x\)<br/>
-B. \(f(x) = x - 4\)<br/>
-C. \(f(x) = 6-x\)<br/>
-D. \(f(x) = x - 8\)</p></li>
-<li><p>已知函数 \(f(x)\) 是奇函数, 且在 \((0, +\infty)\) 上单调递增, 则以下结论正确的是 <code>(    )</code></p>
-
-<p>A. 函数 \(f(|x|)\) 为奇函数, 且在 \((0, +\infty)\) 上单调递增<br/>
-B. 函数 \(f(|x|)\) 为偶函数, 且在 \((0, +\infty)\) 上单调递增<br/>
-C. 函数 \(|f(x)|\) 为偶函数, 且在 \((-\infty, 0)\) 上单调递增<br/>
-D. 函数 \(|f(x)|\) 为奇函数, 且在 \((-\infty, 0)\) 上单调递增</p></li>
-</ol>
-
-<h5 id="toc_1">二、填空题</h5>
-
-<ol>
-<li><p>已知集合 \(M = \{ (x,y) | x+y=2 \}\), \(N = \{ (x,y) | x-y=4 \}\), 则集合 \(M \cup N =\) <code>________</code>.</p></li>
-<li><p>已知函数 \(f(x) = \dfrac{\sqrt{1-2x}}{x^2 - 1}\) 的定义域是 <code>________</code>.</p></li>
-<li><p>已知集合 \(A = \{ x | x^2 - 2x - 3 \le 0, x \in \mathbb R \}\), \(B = \{ x | m - 2 \le x \le m + 2 \}\). 若 \(A \subseteq \complement_{\mathbb R} B\), 则实数 \(m\) 的取值的范围是 <code>________</code>.</p></li>
-<li><p>已知函数 \(f(x) = -x^2 + 4x\), \(x \in [m,5]\) 的值域是 \([-5,4]\), 则实数 \(m\) 的取值范围是 <code>________</code>.</p></li>
-<li><p>已知函数 \(f(x) = ax^3 + bx - 4\), 若 \(f(2) = 6\), 则 \(f(-2) = \) <code>________</code>.</p></li>
-<li><p>已知函数 \(f(\sqrt{x} + 1) = x+1\), 则 \(f(2) = \) <code>________</code>.</p></li>
-<li><p>已知函数 \(f(x)\) 是定义在 \(\mathbb R\) 上的奇函数, 且当 \(x &gt; 0\) 时, \(f(x) = x-1\), 则不等式 \(f(x) \ge 0\) 的解集为 <code>________</code>.</p></li>
-<li><p>某市出租汽车收费标准如下:<br/>
-① \(3\) 公里以内收费 \(12\) 元;<br/>
-② 超过 \(3\) 公里但不超过 \(15\) 公里, 超过的部分每公里收费 \(2.4\) 元;<br/>
-③ 超过 \(15\) 公里, 超过的部分每公里收费 \(3.6\) 元.<br/>
-张先生某次乘坐出租车结算时, 发现出租车费恰好平均每公里 \(3\) 元, 则张先生乘坐出租车行驶的里程为 <code>________</code> 公里.</p></li>
-<li><p>已知函数 \(f(x) = |x^2 - 2ax + b|\) (\(x \in \mathbb R\)). 给出下列命题:<br/>
-① \(f(x)\) 是偶函数;<br/>
-② 当 \(f(0) = f(2)\) 时, \(f(x)\) 的图像关于直线 \(x = 1\) 对称;<br/>
-③ 若 \(a^2 - b \le 0\), 则 \(f(x)\) 在区间 \([a, +\infty)\) 上是增函数;<br/>
-④ \(f(x)\) 有最小值 \(|a^2-b|\);<br/>
-⑤ 若方程 \(f(x) = 3\) 恰有 \(3\) 个不相等的实数根, 则 \(a^2 = b+3\).<br/>
-其中正确命题的序号是 <code>________</code>.</p></li>
-<li><p>德国著名数学家狄利克雷 (Dirichlet) 在数学领域成就显著, 以其名命名的函数 \(f(x) = \begin{cases} 1, &amp; x \in \mathbb Q \\ 0, &amp; x \in \complement_{\mathbb R} \mathbb Q \end{cases}\) 被称为狄利克雷函数. 其中, \(\mathbb R\) 为实数集, \(\mathbb Q\) 为有理数集. 则关于函数 \(f(x)\) 的如下四个命题:<br/>
-① \(f(f(x)) = 0\);<br/>
-② 函数 \(f(x)\) 是偶函数;<br/>
-③ 任取一个不为零的有理数 \(T\), \(f(x+T) = f(x)\) 对任意的 \(x \in \mathbb R\) 恒成立;<br/>
-④ 存在三个点 \(A (x_1, f(x_1))\), \(B (x_2, f(x_2))\), \(C (x_3, f(x_3))\), 使得 \(\triangle ABC\) 为等边三角形.<br/>
-其中, 真命题的序号是 <code>________</code>.</p></li>
-</ol>
-
-<h5 id="toc_2">三、解答题</h5>
-
-<ol>
-<li><p>已知集合 \(A = \{ -1, a^2 + 1, a^2 - 3 \}\), \(B = \{ a-3, a-1, a+1 \}\), \(A \cap B = \{-2\}\), 求实数 \(a\) 的值.</p></li>
-<li><p>设集合 \(A = \{ x | x^2 - 8x + 15 = 0 \}\), \(B = \{ x | ax - 1 = 0\}\).<br/>
-(1) 若 \(a = \dfrac15\), 判断集合 \(A\) 与 \(B\) 的关系;<br/>
-(2) 若 \(A \cap B = B\), 求实数 \(a\) 组成的集合 \(C\).</p></li>
-<li><p>已知函数 \(f(x) = x^2 + ax + b\) 是偶函数, 且 \(f(2) = 0\).<br/>
-(1) 求实数 \(a,b\) 的值;<br/>
-(2) 若 \(g(x) = f(x) - kx\) 在 \([0,3]\) 上的最小值为 \(-5\), 求实数 \(k\) 的值.</p></li>
-<li><p>已知二次函数 \(y = f(x)\) 满足: \(f(0) = 1\), \(f(x+1) - f(x) = 2x\).<br/>
-(1) 求 \(f(x)\) 的解析式;<br/>
-(2) 当 \(f(x) \ge 3\) 时, 求实数 \(x\) 的取值范围.</p></li>
-<li><p>已知函数 \(y = f(x)\) 的定义域为 \(D\), 若存在区间 \([a,b] \subseteq D\), 使得 \(\{ y | y = f(x), x \in [a,b] \} = [a,b]\), 称区间 \([a,b]\) 为函数 \(y=f(x)\) 的“和谐区间”.<br/>
-(1) 请直接写出函数 \(f(x) = x^3\) 的所有和谐区间;<br/>
-(2) 若 \([0,m]\) (\(m&gt;0\)) 是函数 \(f(x) = \left| \dfrac32 x - 1 \right|\) 的一个和谐区间, 求 \(m\) 的值;<br/>
-(3) 求函数 \(f(x) = x^2-2x\) 的所有和谐区间.</p></li>
-<li><p>已知函数 \(f(x) = \begin{cases} |x|, &amp; x \in P \\ -x^2+2x, &amp; x \in M \end{cases}\), 其中 \(P,M\) 是非空数集, 且 \(P \cap M = \varnothing\), 设 \(f(P) = \{ y | y = f(x), x \in P\}\), \(f(M) = \{ y | y = f(x), x \in M\}\).<br/>
-(1) 若 \(P = (-\infty,0)\), \(M = [0,4]\), 求 \(f(P) \cup f(M)\);<br/>
-(2) 是否存在实数 \(a &gt; -3\), 使得 \(P \cup M = [-3, a]\), 且 \(f(P) \cup f(M) = [-3, 2a-3]\)? 若存在, 请求出满足条件的实数 \(a\); 若不存在, 请说明理由;<br/>
-(3) 若 \(P \cup M  = \mathbb R\), 且 \(0 \in M, 1\in P\), \(f(x)\) 是单调递增函数, 求集合 \(P,M\).</p></li>
-</ol>
-
-<h4 id="toc_3">答案</h4>
-
-<h5 id="toc_4">一、选择题</h5>
-
-<table>
-<thead>
-<tr>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-<th>5</th>
-<th>6</th>
-<th>7</th>
-<th>8</th>
-<th>9</th>
-<th>10</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>C</td>
-<td>C</td>
-<td>D</td>
-<td>C</td>
-<td>B</td>
-<td>A</td>
-<td>B</td>
-<td>D</td>
-<td>C</td>
-<td>B</td>
-</tr>
-</tbody>
-</table>
-
-<h5 id="toc_5">二、填空题</h5>
-
-<ol>
-<li>\(\{ (3,-1) \}\).</li>
-<li>\((-\infty, -1) \cup \left( -1, \dfrac12 \right]\).</li>
-<li>\((-\infty, -3) \cup (5, +\infty)\).</li>
-<li>\([-1,2]\).</li>
-<li>\(-14\).</li>
-<li>\(2\).</li>
-<li>\([-1,0] \cup [1, +\infty)\).</li>
-<li>\(8\) 或 \(22\).</li>
-<li>③⑤.</li>
-<li>②③④.</li>
-</ol>
-
-<h5 id="toc_6">三、解答题</h5>
-
-<ol>
-<li>\(a = -1\). (\(a = 1\) 时， \(A \cap B = \{ 2, -2\}\) 不合题意)</li>
-<li>(1) \(A = \{3,5\}\), \(B = \{ 5\}\), \(A \supsetneqq B\).
-(2) \(A \cup B = B \Rightarrow B \subset A\). \(B = \{3\}\) 时, \(a = \dfrac13\); \(B = \{5\}\) 时, \(a = \dfrac15\);  \(B = \varnothing\) 时, \(a = 0\). 故所求的 \(C = \left\{ 0, \dfrac13, \dfrac15 \right\}\).</li>
-<li>(1) \(a = 0, b = 4\).
-(2) \(g(x) = x^2 - kx +4\) 在 \([0,3]\) 上的最小值为 \(-5\), 按对称轴位置讨论. \(k \le 0\) 时 \(g(0) = -5\) 不成立; \(k \ge 6\) 时, \(g(3) = -5\) 可得 \(k = 6\); \(0 &lt; k &lt; 6\) 时, \(g \left(\dfrac{k}2\right) = -5\) 可得 \(k^2 = 36\) 不成立. 故 \(k = 6\).</li>
-<li>(1) 设 \(f(x) = ax^2 + bx +1\), \(f(x+1) - f(x) = 2ax + a + b = 2x \Rightarrow a = 1, b = -1\). \(f(x) = x^2 - x + 1\).
-(2) \(x^2 - x + 1 \ge 3\) 解得 \(x \le -1\) 或 \(x \ge 2\).</li>
-<li>(1) \([-1,0]\), \([0,1]\), \([-1,1]\).
-(2) \(x \in [0,m]\) 时, \(f(x) \in [0,m]\). \(f(x)\) 能取到的最小值是 \(0\), 故其唯一的零点 \(\dfrac23 \in [0,m]\), \(m \ge \dfrac23\). \(f(x)\) 能取到的最大值是 \(m\), 最大值可能在 \(x = 0\) 或 \(x = m\) 处取得, 即有 \(f(1) = m \ge f(m)\) 及 \(f(m) = m \ge f(1)\) 这两种情况, 可得 \(m = 1\) 或 \(2\).
-(3) 二次函数 \(f(x)\) 顶点为 \((1, -1)\), 设 \([a,b]\) (\(a&lt;b\)) 是它的和谐区间.
-若 \(b \le 1\), 则 \(f(a) = b, f(b) = a\), 可解得 \(a = \dfrac{1 - \sqrt5}2\), \(b = \dfrac{1+\sqrt5}2 &gt; 1\), 这种情况不成立;
-若 \(a \ge 1\), 则 \(f(a) = a, f(b) = b\), 解得 \(a = 0 &lt; 1\), \(b = 3\), 这种情况也不成立;
-若 \(a &lt; 1 &lt; b\), 则 \(a = f(1) = -1\), \(b = \max \{f(a), f(b)\}\), 有两种情况: \(b = f(a) \ge f(b)\) 或 \(b = f(b) \ge f(a)\). 而此时 \(f(a) = f(-1) = 3\), 两种情况得到的都是 \(b = 3\). 故所求的和谐区间只有一个, \([-1,3]\).</li>
-<li>(1) \(f(P) = (0,+\infty)\), \(f(M) = [-8,1]\), \(f(P) \cup f(M) = [-8, +\infty)\).
-(2) <mark>待补充</mark></li>
-</ol>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[201710月考复习 高二]]></title>
-    <link href="https://cshishaliu.github.io/15072010188759.html"/>
-    <updated>2017-10-05T18:56:58+08:00</updated>
-    <id>https://cshishaliu.github.io/15072010188759.html</id>
-    <content type="html"><![CDATA[
-<span id="more"></span><!-- more -->
-
-<h5 id="toc_0">一、选择题</h5>
-
-<ol>
-<li><p>若下列命题正确的是 <code>(    )</code></p>
-
-<p>A. 两两相交且不共点的三条直线确定一个平面<br/>
-B. 经过一条直线和一个点确定一个平面<br/>
-C. 经过三点确定一个平面<br/>
-D. 四边形确定一个平面</p></li>
-<li><p>若直线 \(l_1\) 和 \(l_2\) 是异面直线, \(l_1\) 在平面 \(\alpha\) 内, \(l_2\) 在平面 \(\beta\) 内, \(l\) 是平面 \(\alpha\) 与平面 \(\beta\) 的交线, 则下列命题正确的是 <code>(    )</code></p>
-
-<p>A. \(l\) 与 \(l_1, l_2\) 都不相交<br/>
-B. \(l\) 与 \(l_1, l_2\) 都相交<br/>
-C. \(l\) 至多与 \(l_1, l_2\) 中的一条相交<br/>
-D. \(l\) 至少与 \(l_1, l_2\) 中的一条相交</p></li>
-<li><p>如图所示, \(O\) 是正方体 \(ABCD-A_1B_1C_1D_1\) 的中心, \(E\) 为棱 \(BB_1\) 的中点, 则空间四边形 \(OEC_1D_1\) 在正方体各个面上的投影不可能是 <code>(    )</code></p>
-
-<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fk7p818t7bj30rs067jrw.jpg" alt=""/></p></li>
-<li><p>已知一个水平放置的正方形用斜二测画法做出的直观图是一个平行四边形, 平行四边形有一条边长是 \(4\), 则此正方形的面积是 <code>(    )</code></p>
-
-<p>A. \(16\)<br/>
-B. \(64\)<br/>
-C. \(16\) 或 \(64\)<br/>
-D. \(8\sqrt2\)</p></li>
-<li><p>如图, 在平行四边形 \(ABCD\) 中, \(AD = 2AB = 2\), \(\angle BAC = 90^\circ\). 将 \(\triangle ACD\) 沿 \(AC\) 折起, 使得 \(BD = \sqrt5\). 在三棱锥 \(D-ABC\) 的四个面中, 下列结论错误的是 <code>(    )</code></p>
-
-<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fk7p9kichbj30fl064jrm.jpg" alt="M11F5"/></p>
-
-<p>A. 面 \(ABD \perp\) 面 \(BCD\)<br/>
-B. 面 \(ABD \perp\) 面 \(ACD\)<br/>
-C. 面 \(ABC \perp\) 面 \(ACD\)<br/>
-D. 面 \(ABC \perp\) 面 \(BCD\)</p></li>
-<li><p>正方体 \(ABCD-A_1B_1C_1D_1\) 棱长为 \(1\), 线段 \(B_1D_1\) 上有两个动点 \(E\), \(F\), 且 \(EF = \dfrac12\), 则下列结论错误的是 <code>(    )</code></p>
-
-<p>A. \(AC \perp BE\)<br/>
-B. \(EF \parallel {}\) 平面 \(ABCD\)<br/>
-C. 三棱锥 \(A-BEF\) 的体积为定值<br/>
-D. \(\triangle AEF\) 的面积与 \(\triangle BEF\) 的面积相等</p></li>
-<li><p>某空间几何体的三视图如图所示, 则此几何体的体积 <code>(    )</code></p>
-
-<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fk7pbodn3uj305g066wel.jpg" alt="M11F7"/></p>
-
-<p>A. 有最小值 \(2\)<br/>
-B. 有最大值 \(2\)<br/>
-C. 有最大值 \(6\)<br/>
-D. 有最大值 \(4\)</p></li>
-<li><p>三棱锥 \(P-ABC\) 的侧棱 \(PA,PB,PC\) 两两垂直, 侧面积分别是 \(6,4,3\), 则三棱锥的体积是 <code>(    )</code></p>
-
-<p>A. \(4\)<br/>
-B. \(6\)<br/>
-C. \(8\)<br/>
-D. \(10\)</p></li>
-<li><p>在四面体 \(ABCD\) 中, 界面 \(PQMN\) 是正方形, 则下列结论错误的是 <code>(    )</code></p>
-
-<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fk7pcmfwiej306t05ot8u.jpg" alt=""/></p>
-
-<p>A. \(AC=BD\)<br/>
-B. \(PM\) 与 \(BD\) 异面<br/>
-C. \(AC \parallel{}\) 截面 \(PQMN\)<br/>
-D.  \(AC \perp BD\)</p></li>
-<li><p>已知直线 \(l_1 \parallel {}\) 平面 \(\alpha\), 直线 \(l_2 \subset \alpha\), 且 \(l_1 \parallel l_2\), 点 \(A \in l_1\), 点 \(B \in l_2\). 记 \(A\) 到 \(\alpha\) 的距离为 \(a\), \(A\) 到 \(l_2\) 的距离为 \(b\), \(A,B\) 两点间的距离为 \(c\), 则 <code>(____)</code></p>
-
-<p>A. \(b \le a \le c\)<br/>
-B. \(b \le c \le a\)<br/>
-C. \(a \le b \le c\)<br/>
-D. \(a \le c \le b\)</p></li>
-</ol>
-
-<h5 id="toc_1">二、填空题</h5>
-
-<ol>
-<li><p>已知 \(a \parallel \alpha\), \(b \parallel \alpha\), 则直线 \(a,b\) 的位置关系①平行; ②相交; ③异面. 其中可能成立的序号为 <code>________</code>.</p></li>
-<li><p>若正三棱柱所有棱长都为 \(a\) 且体积为 \(16\sqrt3\), 则 \(a = \) <code>________</code>.</p></li>
-<li><p>已知正四棱锥的底面边长和高均为 \(2\), 则它的侧棱长等于 <code>________</code>.</p></li>
-<li><p>三棱锥 \(D-ABC\) 中, \(E,F,G\) 分别在侧棱 \(DA,DB,DC\) 上, 且平面 \(EFG \parallel {}\) 平面 \(ABC\), 给出下列三个结论:<br/>
-① \(EF \parallel AB\);<br/>
-② \(BC \parallel{}\) 平面 \(EFG\);<br/>
-③ \(EF \parallel {}\) 平面 \(ABC\).<br/>
-其中正确的命题序号是 <code>________</code>. </p></li>
-<li><p>点 \(P\) 是正方体 \(ABCD-A&#39;B&#39;C&#39;D&#39;\) 的棱 \(DD&#39;\) 上一点, 若平面 \(APC&#39; \perp\) 平面 \(ACC&#39;\), 则 \(\dfrac{D&#39;P}{D&#39;D} = \) <code>________</code>.</p></li>
-<li><p>在四面体 \(ABCD\) 中, 以 \(A\) 为顶点的三条棱两两垂直, 其长分别为 \(1, \sqrt6,3\), 则这个四面体的外接球体积为 <code>________</code>.</p></li>
-</ol>
-
-<h5 id="toc_2">三、解答题</h5>
-
-<ol>
-<li><p>四棱锥 \(P-ABCD\) 底面是正方形, \(PA \perp\) 底面 \(ABCD\), \(\angle PDA = 45^\circ\), \(E,F\) 分别为棱 \(AB, PD\) 的中点. 求证: (1) \(AF \parallel{}\) 平面 \(PCE\); (2) 平面 \(PCE \perp\) 平面 \(PCD\).</p></li>
-<li><p>已知一个正三棱锥 \(P-ABC\) 的正视图如图所示, 若图中 \(AC = BC = \dfrac32\), \(PC = \sqrt6\), 求此正三棱锥的表面积.</p>
-
-<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fk7pf1hykvj307407274d.jpg" alt=""/></p></li>
-<li><p>如图, 在四棱锥 \(P-ABCD\) 中, 底面 \(ABCD\) 是平行四边形, 点 \(M\) 为棱 \(AB\) 上一点, 且 \(AM = 2MB\), 点 \(N\) 为棱 \(PC\) 上一点.<br/>
-(1) 若 \(PN = 2NC\), 求证: \(MN \parallel {}\) 平面 \(PAD\);<br/>
-(2) 若 \(MN \parallel {}\) 平面 \(PAD\), 求证: \(PN = 2NC\).</p>
-
-<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fk7pg67k22j3063065dfy.jpg" alt=""/></p></li>
-<li><p>如图, 直三棱柱 \(ABC-A_1B_1C_1\) 中, \(\angle BAC = 90^\circ\), \(AB = AC = 2\), \(AA_1 = \sqrt3\), \(M,N\) 分别为 \(BC\) 和 \(CC_1\) 的中点, \(P\) 为侧棱 \(BB_1\) 上的动点.<br/>
-(1) 求证: 平面 \(APM \perp\) 平面 \(BB_1C_1C\);<br/>
-(2) 若 \(P\) 为线段 \(BB_1\) 的中点, 求证: \(A_1N \parallel{}\) 平面 \(APM\);<br/>
-(3) 试判断直线 \(BC_1\) 与平面 \(APM\) 是否能够垂直. 若能垂直, 求 \(PB\) 的值; 若不能垂直, 请说明理由.</p>
-
-<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fk7ph723j7j309708uq3b.jpg" alt=""/></p></li>
-</ol>
-
-<h4 id="toc_3">答案</h4>
-
-<h5 id="toc_4">一、选择题</h5>
-
-<table>
-<thead>
-<tr>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-<th>5</th>
-<th>6</th>
-<th>7</th>
-<th>8</th>
-<th>9</th>
-<th>10</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>A</td>
-<td>D</td>
-<td>A</td>
-<td>C</td>
-<td>A</td>
-<td>D</td>
-<td>B</td>
-<td>A</td>
-<td>A</td>
-<td>C</td>
-</tr>
-</tbody>
-</table>
-
-<h5 id="toc_5">二、填空题</h5>
-
-<ol>
-<li>①②③.</li>
-<li>\(4\).</li>
-<li>\(\sqrt6\).</li>
-<li>①②③.</li>
-<li>\(\dfrac12\).</li>
-<li>\(\dfrac{32\pi}3\).</li>
-</ol>
-
-<h5 id="toc_6">三、解答题</h5>
-
-<ol>
-<li>提示: 取 \(PC\) 中点 \(G\), 则 \(EG \parallel AF\), (1) 得证; 又 \(AF \perp\) 平面 \(PCD\), (2) 得证.</li>
-<li>\(9\sqrt3\).</li>
-<li>提示: 取棱 \(CD\) 上对应的三等分点 \(Q\), 利用平面 \(QMN\) 和平面 \(PAD\) 之间的平行关系.</li>
-<li>(1) 注意 \(AM \perp\) 平面 \(BB_1C_1C\), 即证;
-(2) 取 \(B_1C_1\) 中点 \(Q\), 证明平面 \(QA_1N \parallel{}\) 平面 \(APM\);
-(3) \(PB = \dfrac43\sqrt3\).</li>
-</ol>
 
 ]]></content>
   </entry>

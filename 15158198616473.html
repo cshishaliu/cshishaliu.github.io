@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>  
 	  
-  	Todo (at github.io) - Gnoloac发布资料的地方。。。
+  	一个`多项式`版本的线性空间问题 - Gnoloac发布资料的地方。。。
   	
 	</title>
 
@@ -122,17 +122,135 @@
 			<div class="mid-col-container"> <div id="content" class="inner">
 
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-		<h1 class="title" itemprop="name">Todo (at github.io)</h1>
+		<h1 class="title" itemprop="name">一个`多项式`版本的线性空间问题</h1>
 		<div class="entry-content" itemprop="articleBody">
-			<h2 id="toc_0">To be solved</h2>
-
-<h3 id="toc_1">duyan 20171127</h3>
-
-<p>设 \(M = \dfrac{a^2+b^2+c^2}{abc+1}\) (\(a,b,c \in \mathbb R^+\)). 若 \(a+b \le c+1\), \(b+c \le a+1\), \(c+a \le b+1\), 求 \(M\) 的最大值.</p>
+			<p>试求所有的实系数多项式 \(p(x)\), 使得对满足 \(ab + bc + ca = 0\) 的所有实数 \(a、b、c\), 均有: <br/>
+\[<br/>
+p(a - b) + p(b - c) + p(c - a) = 2p(a + b + c).<br/>
+\]</p>
 
 <span id="more"></span><!-- more -->
 
-<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1flwztpr8esj30y80hu7wh.jpg" alt=""/></p>
+<h2 id="toc_0">先给解答</h2>
+
+<blockquote>
+<p>令 \(a=b=c=0\), 有 <br/>
+\[<br/>
+p(0)=0 .<br/>
+\] <br/>
+令 \(b=c=0\), 有 <br/>
+\[<br/>
+p(a)=p(-a),\quad \forall a \in \mathbb R .<br/>
+\]<br/>
+故 \(p(x)\) 是偶函数, 所有奇次项系数为 \(0\). 不妨设 <br/>
+\[<br/>
+p(x) = a_nx^{2n} +a_{n-1}x^{2n-2}+\cdots +a_1x^2, \quad a_n \ne 0 .<br/>
+\]</p>
+
+<p><mark><strong>【前方高能预警】</strong></mark></p>
+
+<p>令 \(b=2a\), \(c=-\dfrac 23a\), 有 <br/>
+\[<br/>
+p(-a) + p \left( \dfrac 83 a \right) + p \left( -\dfrac 53a \right) = 2p \left( \dfrac 73a \right),<br/>
+\]<br/>
+即<br/>
+\[<br/>
+a_n \cdot \left[1+ \left(\dfrac83\right)^{2n} + \left(\dfrac 53\right)^{2n} - 2 \left(\dfrac 73\right)^{2n} \right] \cdot a^{2n} <br/>
++ \cdots + a_1 \cdot \left[ 1 + \left(\dfrac 83\right)^{2} + \left(\dfrac 53\right)^{2} - 2 \left(\dfrac 73\right)^{2} \right] \cdot a^2 = 0<br/>
+\]<br/>
+这个等式对任意 \(a\in \mathbb R\) 都成立, 故所有 \(a^k\) 项的系数均为 \(0\).</p>
+
+<p>注意到 \(8^6&gt;2\times 7^6\), 故当 \(n\ge 3\) 时, \(\left(\dfrac87\right)^{2n}\ge \left(\dfrac87\right)^6&gt;2\), 故 \(8^{2n}&gt;2\times 7^{2n}\), 从而 \(1 + \left(\dfrac83\right)^{2n} + \left(\dfrac53\right)^{2n} - 2\left(\dfrac73\right)^{2n} &gt; 0\). 因此必须是相应的 \(a_n = 0\).</p>
+
+<p><mark><strong>【预警解除】</strong>可以放松一下</mark></p>
+
+<p>也就是说 \(p(x)\) 中不可能有 \(6\) 次或更高次的项, 可设 \(p(x) =\alpha x^4 +\beta x^2\), 不难验证无论 \(\alpha,\beta\) 取何值, 这个式子都满足要求.</p>
+</blockquote>
+
+<h2 id="toc_1">简析</h2>
+
+<p>上面解答中的这一步</p>
+
+<blockquote>
+<p>令 \(b=2a\), \(c=-\dfrac 23a\), 有 ...</p>
+</blockquote>
+
+<p>这种做法不太像是正常人能想出来的. 其实这个题在高等数学里面有更一般的处理方法: <strong>线性空间理论</strong>. </p>
+
+<h3 id="toc_2">基本思路</h3>
+
+<p>注意题中的函数方程 <br/>
+\[<br/>
+p(a - b) + p(b - c) + p(c - a) = 2p(a + b + c)<br/>
+\]<br/>
+是<strong>线性齐次</strong>的, 即</p>
+
+<blockquote>
+<p>如果有两个多项式 \(p_1 (x)\) 和 \(p_2 (x)\) 都满足此函数方程, 则它们的任意线性叠加 \(\lambda_1 p_1 (x) + \lambda_2 p_2 (x)\) 也满足这个方程. </p>
+
+<p>(<em>这个线性齐次性质甚至都不依赖于 \(ab+bc+ca=0\) 这个约束条件.</em>)</p>
+</blockquote>
+
+<p>这样, 我们只需要考虑最基本, 最简单的多项式 \(x^n\) (\(n=1,2,\dots\)) 即可.</p>
+
+<p>这种处理方法实际上是将全体多项式构造成一个无穷维线性空间, 以 \(\{1,x,x^2,x^3,\dots\}\) 作为基底; 然后将函数方程的解空间看作上述多项式空间的子空间, 尝试确定这个子空间的基底. 根据这里已经得到的结论, 这个解空间是 2 维的, 基底是 \(\{x^2, x^4\}\). 下面我们用正常一点的方法 (但是也不算简单) 来导出这个结论.</p>
+
+<h3 id="toc_3">确定满足条件的基本多项式</h3>
+
+<p>其实要做的事情也很简单, 就是把 \(p(x) = x^n\), \(n=1,2,\dots\), 一个一个代进去尝试, 看看在<br/>
+\[<br/>
+\sum_{cyc} ab = 0<br/>
+\]<br/>
+的条件下, 下面这个等式<br/>
+\[<br/>
+\sum_{cyc} p(a-b) = 2 p \left( \sum_{cyc} a \right)<br/>
+\] <br/>
+是否成立. 其中 \(\sum\limits_{cyc}\) 表示按 \(a,b,c\) 轮换的循环和.</p>
+
+<p>上面的解答过程中已经证明了 \(p(x)\) 必须是偶函数, 故只需要考虑 \(p(x) = x^{2n}\) 的情形即可.</p>
+
+<p>首先看 \(p(x) = x^2\) 的情形,<br/>
+\[<br/>
+\begin{aligned}<br/>
+\sum_{cyc} p(a-b)<br/>
+&amp;= \sum_{cyc} (a-b)^2 \\<br/>
+&amp;= 2 \sum_{cyc} a^2 - 2 \sum_{cyc} ab = 2 \sum_{cyc} a^2 \\<br/>
+&amp;= 2 \sum_{cyc} a^2 + 4 \sum_{cyc} ab \\<br/>
+&amp;= 2 \left( \sum_{cyc} a \right)^2 = 2 p \left( \sum_{cyc} a \right)<br/>
+\end{aligned}<br/>
+\]<br/>
+\(p(x) = x^2\) 满足条件.</p>
+
+<p>再看 \(p(x) = x^4\) 的情形. 在上一种情形中, 我们已经得到了<br/>
+\[<br/>
+\sum_{cyc} (a-b)^2 = 2 \sum_{cyc} a^2 = 2 \left( \sum_{cyc} a \right)^2<br/>
+\]<br/>
+各式同时平方可得<br/>
+\[<br/>
+\begin{aligned}<br/>
+\left( \sum_{cyc} (a-b)^2 \right)^2 <br/>
+&amp;= \sum_{cyc} (a-b)^4 + 2\sum_{cyc} (a-b)^2 (b-c)^2 \\<br/>
+&amp;= 4 \left( \sum_{cyc} a^2 \right)^2 = 4 \left( \sum_{cyc} a \right)^4<br/>
+\end{aligned}<br/>
+\]<br/>
+接下来看 (第一行右侧第二项)<br/>
+\[<br/>
+\begin{aligned}<br/>
+\sum_{cyc} (a-b)^2 (b-c)^2<br/>
+&amp;= \sum_{cyc} (ab+bc-ac-b^2)^2 = \sum_{cyc} (-2ac-b^2)^2 \\<br/>
+&amp;= \sum_{cyc} (4a^2c^2+4ab^2c+b^4) \\<br/>
+&amp;= \left( 2 \sum_{cyc} a^2c^2 + 4 \sum_{cyc} ab^2c \right) + \left( \sum_{cyc} a^4 + \sum_{cyc} 2 a^2b^2 \right) \\<br/>
+&amp;= 2 \left( \sum_{cyc} (ab)^2 + 2 \sum_{cyc} ab \cdot bc \right) + \left( \sum_{cyc} (a^2)^2 + 2 \sum_{cyc} a^2b^2 \right) \\<br/>
+&amp;= 2 \left( \sum_{cyc} ab \right)^2 + \left( \sum_{cyc} a^2 \right)^2 = \left( \sum_{cyc} a^2 \right)^2<br/>
+\end{aligned}<br/>
+\]<br/>
+于是<br/>
+\[<br/>
+\left( \sum_{cyc} (a-b)^2 \right)^2 = 2 \left( \sum_{cyc} a^2 \right)^2 = 2 \left( \sum_{cyc} a \right)^4<br/>
+\]<br/>
+\(p(x) = x^4\) 也满足条件.</p>
+
+<p><mark><em>待续</em></mark></p>
 
 		</div>
 	</article>
