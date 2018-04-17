@@ -4,7 +4,7 @@
   <title><![CDATA[Gnoloac发布资料的地方。。。]]></title>
   <link href="https://cshishaliu.github.io/atom.xml" rel="self"/>
   <link href="https://cshishaliu.github.io/"/>
-  <updated>2018-01-23T15:59:54+08:00</updated>
+  <updated>2018-01-23T16:01:15+08:00</updated>
   <id>https://cshishaliu.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,106 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[zhangboxin 20180409]]></title>
+    <link href="https://cshishaliu.github.io/15238569346799.html"/>
+    <updated>2018-04-16T13:35:34+08:00</updated>
+    <id>https://cshishaliu.github.io/15238569346799.html</id>
+    <content type="html"><![CDATA[
+<p>已知圆 \(C_1 \colon x^2+y^2 = 1\) 和抛物线 \(C_2 \colon y = x^2 - 2\). \(P,Q,R\) 是抛物线 \(C_2\) 上的三个不同的点, 且直线 \(PQ\) 和 \(PR\) 都是圆 \(C_1\) 的切线. 求证: \(QR\) 也是圆 \(C_1\) 的切线.</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">解答</h2>
+
+<p>首先给出如下引理 (证明放在最后面): </p>
+
+<blockquote>
+<p>对于抛物线 \(C_2 \colon y = x^2 - 2\) 上的两个不同的点 \(M(s, s^2 - 2)\) 和 \(N(t, t^2-2)\) (其中 \(s \ne t\)), <br/>
+直线 \(MN\) 与圆 \(C_1 \colon x^2+y^2 = 1\) 相切的充分必要条件是<br/>
+\[<br/>
+s^2 t^2 - s^2 - t^2 + 2st + 3 = 0<br/>
+\]</p>
+</blockquote>
+
+<p><strong>原题证明如下:</strong></p>
+
+<p>设 \(P,Q,R\) 三点的坐标分别为 \(P(p, p^2 - 2)\), \(Q(q, q^2 - 2)\) 和 \(R(r, r^2 - 2)\) (其中 \(p,q,r\) 两两互不相等).</p>
+
+<p>则由 \(PQ,PR\) 与圆 \(C_1\) 相切得<br/>
+\[<br/>
+\begin{cases}<br/>
+p^2 q^2 - p^2 - q^2 + 2pq + 3 = 0 \\<br/>
+p^2 r^2 - p^2 - r^2 + 2pr + 3 = 0<br/>
+\end{cases}<br/>
+\]<br/>
+将这两个等式变形为<br/>
+\[<br/>
+\begin{cases}<br/>
+(p^2 - 1) q^2+ 2pq - (p^2 - 3) = 0 \\<br/>
+(p^2 - 1) r^2+ 2pr - (p^2 - 3) = 0<br/>
+\end{cases}<br/>
+\]<br/>
+由于 \(q \ne r\), 故可将 \(q,r\) 看做二次方程<br/>
+\[<br/>
+(p^2 - 1) x^2+ 2px - (p^2 - 3) = 0 <br/>
+\]<br/>
+的两根, 因此由韦达定理<br/>
+\[<br/>
+\begin{cases}<br/>
+q+r = -\dfrac{2p}{p^2-1} \\<br/>
+qr = -\dfrac{p^2-3}{p^2-1}<br/>
+\end{cases}<br/>
+\]<br/>
+于是<br/>
+\[<br/>
+\begin{aligned}<br/>
+&amp;\phantom{{}={}} q^2 r^2 - q^2 - r^2 + 2qr + 3 \\<br/>
+&amp;= (qr)^2 - (q+r)^2 + 4qr + 3 \\<br/>
+&amp;= \left( -\dfrac{p^2-3}{p^2-1} \right)^2 - \left( -\dfrac{2p}{p^2-1} \right)^2 + 4 \left( -\dfrac{p^2-3}{p^2-1} \right) + 3 \\<br/>
+&amp;= \cdots \\<br/>
+&amp;= 0<br/>
+\end{aligned}<br/>
+\]<br/>
+因此根据引理知, 直线 \(QR\) 与圆 \(C_1\) 相切.</p>
+
+<h3 id="toc_1">引理的证明</h3>
+
+<p>对于抛物线 \(C_2 \colon y = x^2 - 2\) 上的两个不同的点 \(M(s, s^2 - 2)\) 和 \(N(t, t^2-2)\) (其中 \(s \ne t\)), 直线 \(MN\) 的方程为<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup><br/>
+\[<br/>
+MN \colon (s+t)x - y - (st+2) = 0<br/>
+\]</p>
+
+<p>直线 \(MN\) 与圆 \(C_1 \colon x^2+y^2 = 1\) 相切的充分必要条件是<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup><br/>
+\[<br/>
+\dfrac{|st+2|}{\sqrt{(s+t)^2+1}} = 1<br/>
+\]</p>
+
+<p>这个关系式可等价的变形为<br/>
+\[<br/>
+s^2 t^2 - s^2 - t^2 + 2st + 3 = 0<br/>
+\]</p>
+
+<p>即证.</p>
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>写出两点式化简, 即可得到.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>即圆心 \(O(0,0)\) 到直线 \(MN\) 的距离等于半径 \(1\).&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Todo (at github.io)]]></title>
@@ -1621,44 +1721,6 @@ y&amp;=\frac12 \sin\alpha + \frac{\sqrt3}6 \cos\alpha - \frac12<br/>
 <p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fkbsksvoczj30fy0cwdgq.jpg" alt=""/></p>
 
 <p>从图中能很明显看到，这条曲线上的点，横、纵坐标都在 \(0.08\) 以内，而在第一问中，我们已经得到点 \(T\) 的横、纵坐标取值范围的上限是 \(\frac{2\sqrt3 - 3}6 \approx 0.07735\)，这一结论也与图像吻合。</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[mawentao 20170914]]></title>
-    <link href="https://cshishaliu.github.io/15075145910644.html"/>
-    <updated>2017-10-09T10:03:11+08:00</updated>
-    <id>https://cshishaliu.github.io/15075145910644.html</id>
-    <content type="html"><![CDATA[
-<p><code>问题</code> \(a,b,c \ge 0\), 求证:<br/>
-\[<br/>
-\begin{aligned}<br/>
-&amp;\sqrt{a^2 - ab + b^2} \cdot \sqrt{b^2 - bc + c^2} \\<br/>
-&amp;{}+ \sqrt{b^2 - bc + c^2} \cdot \sqrt{c^2 - ca + a^2} \\<br/>
-&amp;{}+ \sqrt{c^2 - ca + a^2} \cdot \sqrt{a^2 - ab + b^2}<br/>
-\ge a^2 + b^2 + c^2<br/>
-\end{aligned}<br/>
-\]</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">解答 (By Tr. J. R. Guo)</h2>
-
-<p>\[<br/>
-\begin{aligned}<br/>
-&amp;<br/>
-\sum \sqrt{a^2 - ab + b^2} \cdot \sqrt{b^2 - bc + c^2} \\<br/>
-{}={}&amp;<br/>
-\sum \sqrt{ \left( a - \dfrac{b}2\right)^2 + \dfrac34 b^2 } \cdot \sqrt{\left( c - \dfrac{b}2\right)^2 + \dfrac34 b^2 } \\<br/>
-{}\ge{}&amp;<br/>
-\sum \sqrt{\left[ \left( a - \dfrac{b}2\right) \cdot \left( c - \dfrac{b}2\right) + \dfrac34 b^2 \right]^2} \\<br/>
-{}={} &amp;<br/>
-\sum \left| ac - \dfrac12 ab - \dfrac12 bc + b^2 \right| \\<br/>
-{} \ge {}&amp;<br/>
-\sum \left( ac - \dfrac12 ab - \dfrac12 bc + b^2 \right) = \sum b^2<br/>
-\end{aligned}<br/>
-\]</p>
 
 ]]></content>
   </entry>
