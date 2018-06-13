@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>  
 	  
-  	zhangboxin 20180409 - Gnoloac发布资料的地方。。。
+  	zhangboxin 20180516 - Gnoloac发布资料的地方。。。
   	
 	</title>
 
@@ -122,97 +122,48 @@
 			<div class="mid-col-container"> <div id="content" class="inner">
 
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-		<h1 class="title" itemprop="name">zhangboxin 20180409</h1>
+		<h1 class="title" itemprop="name">zhangboxin 20180516</h1>
 		<div class="entry-content" itemprop="articleBody">
-			<p>已知圆 \(C_1 \colon x^2+y^2 = 1\) 和抛物线 \(C_2 \colon y = x^2 - 2\). \(P,Q,R\) 是抛物线 \(C_2\) 上的三个不同的点, 且直线 \(PQ\) 和 \(PR\) 都是圆 \(C_1\) 的切线. 求证: \(QR\) 也是圆 \(C_1\) 的切线.</p>
+			<p>这是二试难度的问题 (rdf 20180516 高联选拔题)</p>
 
 <span id="more"></span><!-- more -->
 
-<h2 id="toc_0">解答</h2>
+<h2 id="toc_0">题 1</h2>
 
-<p>首先给出如下引理 (证明放在最后面): </p>
+<p>已知 \(I\) 为 \(\triangle ABC\) 的内心, \(D\) 为 \(AI\) 延长线上一点, 且有 \(DI=DB\), \(IB \parallel CD\), 在 \(BC\) 边上取点 \(E,F\), 使得 \(\angle BAF = \angle CAE = \dfrac12 \angle BAC\), 再取 \(AE\) 延长线上一点 \(M\), 使得 \(\angle AMC = \angle ABC\), \(G\) 为 \(IF\) 的中点, \(MI\), \(DG\) 延长线相交于 \(H\). 求证: \(A,H,B,D,M,C\) 六点共圆.</p>
 
-<blockquote>
-<p>对于抛物线 \(C_2 \colon y = x^2 - 2\) 上的两个不同的点 \(M(s, s^2 - 2)\) 和 \(N(t, t^2-2)\) (其中 \(s \ne t\)), <br/>
-直线 \(MN\) 与圆 \(C_1 \colon x^2+y^2 = 1\) 相切的充分必要条件是<br/>
-\[<br/>
-s^2 t^2 - s^2 - t^2 + 2st + 3 = 0<br/>
-\]</p>
-</blockquote>
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1frefcquz4dj30a00b0jxe.jpg" alt=""/></p>
 
-<p><strong>原题证明如下:</strong></p>
+<h3 id="toc_1">解答</h3>
 
-<p>设 \(P,Q,R\) 三点的坐标分别为 \(P(p, p^2 - 2)\), \(Q(q, q^2 - 2)\) 和 \(R(r, r^2 - 2)\) (其中 \(p,q,r\) 两两互不相等).</p>
+<p>\(D, M\) 在 \(\triangle ABC\) 外接圆上不难证明, 下面只证明 \(H\) 也在外接圆上.<br/>
+对 \(\triangle AFI\) 和 <mark>TODO</mark></p>
 
-<p>则由 \(PQ,PR\) 与圆 \(C_1\) 相切得\[<br/>
-\begin{cases}<br/>
-p^2 q^2 - p^2 - q^2 + 2pq + 3 = 0 \\<br/>
-p^2 r^2 - p^2 - r^2 + 2pr + 3 = 0<br/>
-\end{cases}<br/>
-\]<br/>
-将这两个等式变形为<br/>
-\[<br/>
-\begin{cases}<br/>
-(p^2 - 1) q^2+ 2pq - (p^2 - 3) = 0 \\<br/>
-(p^2 - 1) r^2+ 2pr - (p^2 - 3) = 0<br/>
-\end{cases}<br/>
-\]<br/>
-由于 \(q \ne r\), 故可将 \(q,r\) 看做二次方程<br/>
-\[<br/>
-(p^2 - 1) x^2+ 2px - (p^2 - 3) = 0 <br/>
-\]<br/>
-的两根, 因此由韦达定理<br/>
-\[<br/>
-\begin{cases}<br/>
-q+r = -\dfrac{2p}{p^2-1} \\<br/>
-qr = -\dfrac{p^2-3}{p^2-1}<br/>
-\end{cases}<br/>
-\]<br/>
-于是<br/>
+<h2 id="toc_2">题 2</h2>
+
+<p>已知实数 \(a,b,c\) 满足 \(abc = -1\), 求证: \(\dfrac{a^{10}}{a^6 + 1} + \dfrac{b^{10}}{b^6 + 1} + \dfrac{c^{10}}{c^6 + 1} \ge \dfrac32\).</p>
+
+<h3 id="toc_3">解答</h3>
+
+<p>我们证明这样一个不等式问题: 若实数 \(a,b,c\) 满足 \(abc = 1\), 则 \(\dfrac{a^5}{a^3 + 1} + \dfrac{b^5}{b^3 + 1} + \dfrac{c^5}{c^3 + 1} \ge \dfrac32\).</p>
+
+<p>事实上, 若 \(abc=1\), 则 \(\dfrac{a^5}{a^3+1} = \dfrac{a^5}{a^3+abc} = \dfrac{a^4}{a^2+bc}\), 而 \(\dfrac{a^4}{a^2+bc} + \dfrac{a^2+bc}4 \ge a^2\), 有 \(\dfrac{a^4}{a^2+bc} \ge \dfrac{3a^2-bc}4\), 故<br/>
 \[<br/>
 \begin{aligned}<br/>
-&amp;\phantom{{}={}} q^2 r^2 - q^2 - r^2 + 2qr + 3 \\<br/>
-&amp;= (qr)^2 - (q+r)^2 + 4qr + 3 \\<br/>
-&amp;= \left( -\dfrac{p^2-3}{p^2-1} \right)^2 - \left( -\dfrac{2p}{p^2-1} \right)^2 + 4 \left( -\dfrac{p^2-3}{p^2-1} \right) + 3 \\<br/>
-&amp;= \cdots \\<br/>
-&amp;= 0<br/>
+\sum \dfrac{a^4}{a^2+bc} <br/>
+&amp;\ge \sum \dfrac{3a^2-bc}4 = \dfrac{a^2+b^2+c^2}2 + \dfrac{a^2+b^2+c^2 - ab - bc - ca}4 \\<br/>
+&amp;\ge \dfrac{a^2+b^2+c^2}2 \ge \dfrac{3 \sqrt[3]{a^2b^2c^2}}2 = \dfrac32<br/>
 \end{aligned}<br/>
 \]<br/>
-因此根据引理知, 直线 \(QR\) 与圆 \(C_1\) 相切.</p>
+其中 \(\sum\) 表示循环和, 等号成立的充分必要条件是 \(a=b=c=1\).</p>
 
-<h3 id="toc_1">引理的证明</h3>
+<h2 id="toc_4">题 3</h2>
 
-<p>对于抛物线 \(C_2 \colon y = x^2 - 2\) 上的两个不同的点 \(M(s, s^2 - 2)\) 和 \(N(t, t^2-2)\) (其中 \(s \ne t\)), 直线 \(MN\) 的方程为<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup><br/>
-\[<br/>
-MN \colon (s+t)x - y - (st+2) = 0<br/>
-\]</p>
+<p>平面上任给 5 个点, 其中任意 3 点不共线, 任意 4 点不共圆. 若某三个点所组成三角形的外接圆, 使得另外两点分别在圆的内外, 则称这个三角形是“好的”, 设“好的”三角形的个数为 \(n\), 求 \(n\) 的所有可能值.</p>
 
-<p>直线 \(MN\) 与圆 \(C_1 \colon x^2+y^2 = 1\) 相切的充分必要条件是<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup><br/>
-\[<br/>
-\dfrac{|st+2|}{\sqrt{(s+t)^2+1}} = 1<br/>
-\]</p>
+<h2 id="toc_5">题 4</h2>
 
-<p>这个关系式可等价的变形为<br/>
-\[<br/>
-s^2 t^2 - s^2 - t^2 + 2st + 3 = 0<br/>
-\]</p>
-
-<p>即证.</p>
-
-<div class="footnotes">
-<hr/>
-<ol>
-
-<li id="fn1">
-<p>写出两点式化简, 即可得到.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
-</li>
-
-<li id="fn2">
-<p>即圆心 \(O(0,0)\) 到直线 \(MN\) 的距离等于半径 \(1\).&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
-</li>
-
-</ol>
-</div>
+<p>对于任意正整数 \(n\), 定义 \(a_n^{(i)} = \left| \left\{ t \middle| t = C_n^k, t \mod 3 = i, 0 \le i \le n \right\} \right|\), 求证: \(a_n^{(1)} &gt; a_n^{(2)}\).</p>
 
 		</div>
 	</article>

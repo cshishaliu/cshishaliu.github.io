@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>  
 	  
-  	zhangboxin 20180409 - Gnoloac发布资料的地方。。。
+  	zhangboxin 20180612 - Gnoloac发布资料的地方。。。
   	
 	</title>
 
@@ -122,97 +122,61 @@
 			<div class="mid-col-container"> <div id="content" class="inner">
 
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-		<h1 class="title" itemprop="name">zhangboxin 20180409</h1>
+		<h1 class="title" itemprop="name">zhangboxin 20180612</h1>
 		<div class="entry-content" itemprop="articleBody">
-			<p>已知圆 \(C_1 \colon x^2+y^2 = 1\) 和抛物线 \(C_2 \colon y = x^2 - 2\). \(P,Q,R\) 是抛物线 \(C_2\) 上的三个不同的点, 且直线 \(PQ\) 和 \(PR\) 都是圆 \(C_1\) 的切线. 求证: \(QR\) 也是圆 \(C_1\) 的切线.</p>
+			<p>已知 \(A,B,C\) 为三角形三内角. 求 \(\dfrac{\cos^2 A}{1+\cos A} + \dfrac{\cos^2 B}{1+\cos B} + \dfrac{\cos^2 C}{1+\cos C}\) 的最小值.</p>
 
 <span id="more"></span><!-- more -->
 
 <h2 id="toc_0">解答</h2>
 
-<p>首先给出如下引理 (证明放在最后面): </p>
-
-<blockquote>
-<p>对于抛物线 \(C_2 \colon y = x^2 - 2\) 上的两个不同的点 \(M(s, s^2 - 2)\) 和 \(N(t, t^2-2)\) (其中 \(s \ne t\)), <br/>
-直线 \(MN\) 与圆 \(C_1 \colon x^2+y^2 = 1\) 相切的充分必要条件是<br/>
+<p>设 \(t_1 = \tan \dfrac A2\), \(t_2 = \tan \dfrac B2\), \(t_3 = \tan \dfrac C2\). 则由 \(A + B + C = \pi\) 可导出<br/>
 \[<br/>
-s^2 t^2 - s^2 - t^2 + 2st + 3 = 0<br/>
-\]</p>
-</blockquote>
-
-<p><strong>原题证明如下:</strong></p>
-
-<p>设 \(P,Q,R\) 三点的坐标分别为 \(P(p, p^2 - 2)\), \(Q(q, q^2 - 2)\) 和 \(R(r, r^2 - 2)\) (其中 \(p,q,r\) 两两互不相等).</p>
-
-<p>则由 \(PQ,PR\) 与圆 \(C_1\) 相切得\[<br/>
-\begin{cases}<br/>
-p^2 q^2 - p^2 - q^2 + 2pq + 3 = 0 \\<br/>
-p^2 r^2 - p^2 - r^2 + 2pr + 3 = 0<br/>
-\end{cases}<br/>
+t_1 t_2 + t_2 t_3 + t_3 t_1 = 1<br/>
 \]<br/>
-将这两个等式变形为<br/>
+有<br/>
 \[<br/>
-\begin{cases}<br/>
-(p^2 - 1) q^2+ 2pq - (p^2 - 3) = 0 \\<br/>
-(p^2 - 1) r^2+ 2pr - (p^2 - 3) = 0<br/>
-\end{cases}<br/>
+1 + t_1^2 = t_1 t_2 + t_2 t_3 + t_3 t_1 + t_1^2 = (t_1+t_2)(t_1+t_3)<br/>
 \]<br/>
-由于 \(q \ne r\), 故可将 \(q,r\) 看做二次方程<br/>
+以及<br/>
 \[<br/>
-(p^2 - 1) x^2+ 2px - (p^2 - 3) = 0 <br/>
+t_1^2 + t_2^2 + t_3^2 = (t_1 + t_2 + t_3)^2 - 2<br/>
 \]<br/>
-的两根, 因此由韦达定理<br/>
+又由 \(t_1^2 + t_2^2 + t_3^2 \ge \dfrac13  (t_1 + t_2 + t_3)^2\) 知<br/>
 \[<br/>
-\begin{cases}<br/>
-q+r = -\dfrac{2p}{p^2-1} \\<br/>
-qr = -\dfrac{p^2-3}{p^2-1}<br/>
-\end{cases}<br/>
+(t_1 + t_2 + t_3)^2 \ge 3<br/>
 \]<br/>
-于是<br/>
+当且仅当 \(t_1 = t_2 = t_3 = \dfrac{\sqrt3}3\) 时取等号.</p>
+
+<p>由万能公式<br/>
+\[<br/>
+\dfrac{\cos^2 A}{1 + \cos A} = \dfrac{(1-t_1^2)^2}{2(1+t_1^2)} = \dfrac{t_1^2 - 3}2 + \dfrac2{t_1^2 + 1} = \dfrac{t_1^2}2 + \dfrac2{(t_1+t_2)(t_1+t_3)} - \dfrac32<br/>
+\]<br/>
+从而<br/>
 \[<br/>
 \begin{aligned}<br/>
-&amp;\phantom{{}={}} q^2 r^2 - q^2 - r^2 + 2qr + 3 \\<br/>
-&amp;= (qr)^2 - (q+r)^2 + 4qr + 3 \\<br/>
-&amp;= \left( -\dfrac{p^2-3}{p^2-1} \right)^2 - \left( -\dfrac{2p}{p^2-1} \right)^2 + 4 \left( -\dfrac{p^2-3}{p^2-1} \right) + 3 \\<br/>
-&amp;= \cdots \\<br/>
-&amp;= 0<br/>
+\text{原式} <br/>
+&amp;= \dfrac{t_1^2 + t_2^2 + t_3^2}2 + \dfrac{2[(t_2+t_3)+(t_3+t_1)+(t_1+t_2)]}{(t_1+t_2)(t_2+t_3)(t_3+t_1)} - \dfrac92 \\<br/>
+&amp;= \dfrac{(t_1 + t_2 + t_3)^2}2 + \dfrac{4(t_1+t_2+t_3)}{(t_1+t_2)(t_2+t_3)(t_3+t_1)} - \dfrac{11}2 \\<br/>
 \end{aligned}<br/>
 \]<br/>
-因此根据引理知, 直线 \(QR\) 与圆 \(C_1\) 相切.</p>
-
-<h3 id="toc_1">引理的证明</h3>
-
-<p>对于抛物线 \(C_2 \colon y = x^2 - 2\) 上的两个不同的点 \(M(s, s^2 - 2)\) 和 \(N(t, t^2-2)\) (其中 \(s \ne t\)), 直线 \(MN\) 的方程为<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup><br/>
+由于<br/>
 \[<br/>
-MN \colon (s+t)x - y - (st+2) = 0<br/>
-\]</p>
-
-<p>直线 \(MN\) 与圆 \(C_1 \colon x^2+y^2 = 1\) 相切的充分必要条件是<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup><br/>
+\begin{aligned}<br/>
+(t_1+t_2)(t_2+t_3)(t_3+t_1) <br/>
+&amp;\le \left[ \dfrac{(t_1+t_2)+(t_2+t_3)+(t_3+t_1)}3 \right]^3 \\<br/>
+&amp; = \dfrac8{27} (t_1+t_2+t_3)^3<br/>
+\end{aligned}<br/>
+\]<br/>
+当且仅当 \(t_1 = t_2 = t_3\) 时取等号. 所以<br/>
 \[<br/>
-\dfrac{|st+2|}{\sqrt{(s+t)^2+1}} = 1<br/>
-\]</p>
-
-<p>这个关系式可等价的变形为<br/>
+\text{原式} \ge \dfrac{(t_1 + t_2 + t_3)^2}2 + \dfrac{27}{2(t_1+t_2+t_3)^2} - \dfrac{11}2<br/>
+\]<br/>
+又由于 \((t_1 + t_2 + t_3)^2 \ge 3\), 故<br/>
 \[<br/>
-s^2 t^2 - s^2 - t^2 + 2st + 3 = 0<br/>
-\]</p>
-
-<p>即证.</p>
-
-<div class="footnotes">
-<hr/>
-<ol>
-
-<li id="fn1">
-<p>写出两点式化简, 即可得到.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
-</li>
-
-<li id="fn2">
-<p>即圆心 \(O(0,0)\) 到直线 \(MN\) 的距离等于半径 \(1\).&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
-</li>
-
-</ol>
-</div>
+\text{原式} \ge \dfrac32 + \dfrac{27}{2\times3} - \dfrac{11}2 = \dfrac12<br/>
+\]<br/>
+当且仅当 \(t_1 = t_2 = t_3 = \dfrac{\sqrt3}3\) 时取等号, 此时 \(A = B = C = \dfrac\pi3\).</p>
 
 		</div>
 	</article>
