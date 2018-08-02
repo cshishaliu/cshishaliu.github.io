@@ -138,11 +138,10 @@
 <li>鲁列斯三角形与正方形的四边都各有一个公共点；</li>
 <li>通常鲁列斯三角形只有两个顶点在正方形的两条临边上，而这两个顶点的对弧分别于正方形的另外两条边相切，如下左图，而原来题图中三个顶点都在正方形边上的情况只是一种（比较少见的）临界情况；</li>
 <li>如下左图，
-
 <ul>
 <li>图示情况中，顶点 \(A\)、\(B\) 在正方形的边上，有 \(\angle ABH \ge 30^\circ\)，\(\angle BAH \ge 30^\circ\)，而顶点 \(C\) 在正方形内部，边 \(AC\) 和 \(BC\) 均与正方形某条边的夹角在 \(30^\circ\) 以内；</li>
 <li>角 \(\alpha\) 和 \(\beta\) 定义如图，\(\alpha + \beta = \angle BAC = 60^\circ\)，图示情况中 \(AC\) 与 \(EF\) 不接触，必定有 \(\beta &lt; 30^\circ &lt; \alpha\)，考虑如果 \(\beta\) 增加，\(\alpha\) 减小（相应的点 \(A\) 向下移动），当 \(\beta\) 增加到比 \(30^\circ\) 大时，\(\alpha\) 就比 \(30^\circ\) 小，此时顶点 \(C\) 将与 \(EF\) 接触上，而顶点 \(B\) 则将脱离 \(HG\)；</li>
-<li>_你应该自己认真琢磨一下鲁列斯三角形完整旋转一周的过程当中，旋转到不同方位时，它的顶点和弧边与外界正方形的位置关系，以及正 \(\triangle ABC\) 的三条边与正方形各边的角度关系，注意体会当正三角形一边与正方形一边成 \(30^\circ\) 角时的临界情。_</li>
+<li><u>你应该自己认真琢磨一下鲁列斯三角形完整旋转一周的过程当中，旋转到不同方位时，它的顶点和弧边与外界正方形的位置关系，以及正 \(\triangle ABC\) 的三条边与正方形各边的角度关系，注意体会当正三角形一边与正方形一边成 \(30^\circ\) 角时的临界情。</u></li>
 </ul></li>
 </ul>
 
@@ -200,26 +199,29 @@ y&amp;=\frac12 \sin\alpha + \frac{\sqrt3}6 \cos\alpha - \frac12<br/>
 \end{cases}<br/>
 \]<br/>
 由 \(\sin^2\alpha + \cos^2 \alpha = 1\) 可得 \((x,y)\) 满足的方程为<br/>
-\[<br/>
-\left[ 3 \left(x + \frac12 \right) -\sqrt3  \left(y + \frac12 \right) \right]^2<br/>
-+ \left[ 3 \left(y + \frac12 \right)-\sqrt3  \left(x + \frac12 \right) \right]^2<br/>
+$$<br/>
+\left[ 3 \left(x + \frac12 \right) -\sqrt3  \left(y + \frac12 \right) \right]<sup>2</sup></p>
+
+<ul>
+<li>\left[ 3 \left(y + \frac12 \right)-\sqrt3  \left(x + \frac12 \right) \right]<sup>2</sup><br/>
 =1<br/>
-\]<br/>
+\[<br/>
 化简得<br/>
-\[<br/>
+\]<br/>
 12 \left[<br/>
-\left(x + \frac12\right)^2<br/>
-- \sqrt3 \left(x + \frac12\right) \left(y  + \frac12\right)<br/>
-+ \left(y + \frac12\right)^2<br/>
+\left(x + \frac12\right)<sup>2</sup></li>
+<li>\sqrt3 \left(x + \frac12\right) \left(y  + \frac12\right)</li>
+<li>\left(y + \frac12\right)<sup>2</sup><br/>
 \right] = 1<br/>
-\]<br/>
-或<br/>
 \[<br/>
-12 \left( x^2 - \sqrt3 xy + y^2 \right)<br/>
-+ 6 \left( 2 - \sqrt3 \right) \left( x + y \right)<br/>
-+ 3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
+或<br/>
 \]<br/>
-以上讨论仅限于“<strong>三角形有两个顶点位于 \(HG\)、\(EH\) 边上</strong>”时才成立，从第一问的讨论过程中，不难推断此时点 \(T\) 位于第一象限，因而对应的轨迹是上述方程所定义的曲线位于第一象限的部分。</p>
+12 \left( x<sup>2</sup> - \sqrt3 xy + y<sup>2</sup> \right)</li>
+<li>6 \left( 2 - \sqrt3 \right) \left( x + y \right)</li>
+<li>3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
+$\(<br/>
+以上讨论仅限于“**三角形有两个顶点位于 \)HG\(、\)EH\( 边上**”时才成立，从第一问的讨论过程中，不难推断此时点 \)T$ 位于第一象限，因而对应的轨迹是上述方程所定义的曲线位于第一象限的部分。</li>
+</ul>
 
 <p>【​<mark>高能预警</mark>​】</p>
 
@@ -229,55 +231,55 @@ y&amp;=\frac12 \sin\alpha + \frac{\sqrt3}6 \cos\alpha - \frac12<br/>
 <li>三角形有两个顶点位于 \(HG\)、\(FG\) 边上时，轨迹是</li>
 </ul>
 
-<p>\[<br/>
-12 \left( x^2 + \sqrt3 xy + y^2 \right)<br/>
-+ 6 \left( 2 - \sqrt3 \right) \left( x - y \right)<br/>
-+ 3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
-\]</p>
+<p>$$<br/>
+12 \left( x<sup>2</sup> + \sqrt3 xy + y<sup>2</sup> \right)</p>
 
+<ul>
+<li>6 \left( 2 - \sqrt3 \right) \left( x - y \right)</li>
+<li><p>3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
+$$</p>
 <p>在第二象限的部分；</p>
-
-<p>（根据对称性，把原来曲线方程中的 \(y\) 换成 \(-y\)，想一想为什么？）</p>
-
-<ul>
-<li>三角形有两个顶点位于 \(EF\)、\(FG\) 边上时，轨迹是</li>
+<p>（根据对称性，把原来曲线方程中的 \(y\) 换成 \(-y\)，想一想为什么？）</p></li>
+<li><p>三角形有两个顶点位于 \(EF\)、\(FG\) 边上时，轨迹是</p></li>
 </ul>
 
-<p>\[<br/>
-12 \left( x^2 - \sqrt3 xy + y^2 \right)<br/>
-- 6 \left( 2 - \sqrt3 \right) \left( x + y \right)<br/>
-+ 3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
-\]</p>
+<p>$$<br/>
+12 \left( x<sup>2</sup> - \sqrt3 xy + y<sup>2</sup> \right)</p>
 
+<ul>
+<li>6 \left( 2 - \sqrt3 \right) \left( x + y \right)</li>
+<li><p>3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
+$$</p>
 <p>在第三象限的部分；</p>
-
-<p>（根据对称性，把原来曲线方程中的 \(x\) 换成 \(-x\)，\(y\) 换成 \(-y\)）</p>
-
-<ul>
-<li>三角形有两个顶点位于 \(EF\)、\(EH\) 边上时，轨迹是</li>
+<p>（根据对称性，把原来曲线方程中的 \(x\) 换成 \(-x\)，\(y\) 换成 \(-y\)）</p></li>
+<li><p>三角形有两个顶点位于 \(EF\)、\(EH\) 边上时，轨迹是</p></li>
 </ul>
 
-<p>\[<br/>
-12 \left( x^2 + \sqrt3 xy + y^2 \right)<br/>
-+ 6 \left( 2 - \sqrt3 \right) \left( -x + y \right)<br/>
-+ 3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
-\]</p>
+<p>$$<br/>
+12 \left( x<sup>2</sup> + \sqrt3 xy + y<sup>2</sup> \right)</p>
 
+<ul>
+<li>6 \left( 2 - \sqrt3 \right) \left( -x + y \right)</li>
+<li><p>3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
+$$</p>
 <p>在第四象限的部分。</p>
-
-<p>（根据对称性，把原来曲线方程中的 \(x\) 换成 \(-x\)）</p>
+<p>（根据对称性，把原来曲线方程中的 \(x\) 换成 \(-x\)）</p></li>
+</ul>
 
 <p><u>如果你不知道应该怎么用对称性推导这些结论，那就按照前面的方法，分别把这三种情况的图形画出来，做三次详细的推导计算</u></p>
 
 <h2 id="toc_4">\(T\) 的轨迹的形状【<mark>超高能预警</mark>】</h2>
 
 <p>三角形有两个顶点位于 \(HG\)、\(EH\) 边上时，方程<br/>
-\[<br/>
-12 \left( x^2 - \sqrt3 xy + y^2 \right)<br/>
-+ 6 \left( 2 - \sqrt3 \right) \left( x + y \right)<br/>
-+ 3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
-\]<br/>
-描述的是一个椭圆，如下图中左下侧的椭圆，它在第一象限的部分其实只占整个椭圆的很小一部分。下图中的另外三个椭圆则分别是另外三种情况下，所得到的轨迹方程对应的曲线图像。</p>
+$$<br/>
+12 \left( x<sup>2</sup> - \sqrt3 xy + y<sup>2</sup> \right)</p>
+
+<ul>
+<li>6 \left( 2 - \sqrt3 \right) \left( x + y \right)</li>
+<li>3 \left( 2 - \sqrt3 \right) - 1 = 0<br/>
+$$<br/>
+描述的是一个椭圆，如下图中左下侧的椭圆，它在第一象限的部分其实只占整个椭圆的很小一部分。下图中的另外三个椭圆则分别是另外三种情况下，所得到的轨迹方程对应的曲线图像。</li>
+</ul>
 
 <p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fkbskw7draj30g00cwgm5.jpg" alt=""/></p>
 

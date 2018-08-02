@@ -4,7 +4,7 @@
   <title><![CDATA[Gnoloac发布资料的地方。。。]]></title>
   <link href="https://cshishaliu.github.io/atom.xml" rel="self"/>
   <link href="https://cshishaliu.github.io/"/>
-  <updated>2018-04-17T11:43:24+08:00</updated>
+  <updated>2018-08-02T11:35:38+08:00</updated>
   <id>https://cshishaliu.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,158 @@
   </author>
   <generator uri="http://www.coderforart.com/">CoderForArt</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[liujihang 20180801]]></title>
+    <link href="https://cshishaliu.github.io/15331333919370.html"/>
+    <updated>2018-08-01T22:23:11+08:00</updated>
+    <id>https://cshishaliu.github.io/15331333919370.html</id>
+    <content type="html"><![CDATA[
+<p>无穷数列 \(P \colon a_1, a_2, \dots, a_n, \dots\) 满足 \(a_i \in \mathbb N^*\), 且 \(a_i \le a_{i+1}\) (\(i\in \mathbb N^*\)). 对于数列 \(P\), 记 \(T_k (P) = \min \{ n | a_n \ge k \}\) (\(k\in \mathbb N^*\)), 其中 \(\min \{ n | a_n \ge k \}\) 表示集合 \(\{ n | a_n \ge k \}\) 中最小的数.</p>
+
+<ol>
+<li>若数列 \(P\colon 1,3,4,7,\dots\), 写出 \(T_1(P), T_2(P), \dots, T_5(P)\);</li>
+<li>若 \(T_k (P) = 2k-1\), 求数列 \(P\) 的前 \(n\) 项之和;</li>
+<li>已知 \(a_{20} = 46\), 求 \(s = a_1 + a_2 + \dots + a_{20} + T_1 (P) + T_2 (P) + \dots + T_{46} (P)\) 的值.</li>
+</ol>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">解答</h2>
+
+<ol>
+<li><p>\(T_1(P) = 1\), \(T_2(P) = 2\), \(T_3(P)=2\), \(T_4(P)=3\), \(T_5(P) = 4\).</p></li>
+<li><p>不难得出满足 \(T_k (P) = 2k-1\) 的数列为 \(P\colon 1,1,2,2,3,3,4,4,\dots\), 其通项公式可以写作 \(a_n = \dfrac{2n+1-(-1)^n}4\). 其前 \(n\) 项的和为 \(S_n = \dfrac{2n^2 + 4n + 1 - (-1)^n}8\).</p></li>
+<li><p>我们证明一个更一般的结论: 记<br/>
+\[<br/>
+s_n = a_1 + a_2 + \dots + a_n + T_1(P) + T_2(P) + \dots  + T_{a_n}(P)<br/>
+\]<br/>
+则<br/>
+\[<br/>
+s_n = (n+1) a_n<br/>
+\]<br/>
+采用数学归纳法证明.</p>
+<ol>
+<li><p>\(n=1\) 时,<br/>
+\[<br/>
+s_1 = a_1 + T_1(P) + T_2(P) + \dots  + T_{a_1}(P) = a_1 + \underbrace{1+1+\dots+1}_{a_1~\text{个}~1} = 2 a_1<br/>
+\]<br/>
+结论成立.</p></li>
+<li><p>假设 \(n = m-1\) 时结论成立, 即有<br/>
+\[<br/>
+s_{m-1} = a_1 + a_2 + \dots + a_{m-1} + T_1(P) + T_2(P) + \dots  + T_{a_{m-1}}(P) = m a_{m-1}<br/>
+\]<br/>
+则 \(n = m\) 时, 若 \(a_m = a_{m-1}\), 则 \(s_m\) 相比于 \(s_{m-1}\) 中只增加了一项 \(a_m\) (注意此时 \(T_{a_m}(P)\) 就是 \(T_{a_{m-1}}(P)\)), 因此<br/>
+\[<br/>
+s_m = s_{m-1} + a_m = m a_{m-1} + a_m = (m+1) a_m<br/>
+\]<br/>
+若 \(a_m &gt; a_{m-1}\), 则 \(s_m\) 相比于 \(s_{m-1}\) 中增加的项有: \(a_m\), \(T_{a_{m-1}+1}(P), T_{a_{m-1}+2}(P), \dots, T_{a_m}(P)\), 共有 \(a_m - a_{m-1} + 1\) 项. 其中, \(T_{a_{m-1}+1}(P) = T_{a_{m-1}+2}(P) = \dots = T_{a_m}(P) = m\), 因此<br/>
+\[<br/>
+s_m = s_{m-1} + a_m + (a_m - a_{m-1}) m = (m+1) a_m<br/>
+\]<br/>
+证毕.</p></li>
+</ol>
+<p>因此, 原题中要求的和数为 \(s_{20} = (20+1) \times 46 = 966\).</p></li>
+</ol>
+
+<h2 id="toc_1">附图: 本题的几何意义</h2>
+
+<p><img src="https://ws4.sinaimg.cn/large/006tKfTcly1ftv63sr7qqj30i70h7myl.jpg" alt=""/></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[数列、递推、求和、复数不动点]]></title>
+    <link href="https://cshishaliu.github.io/15327863271008.html"/>
+    <updated>2018-07-28T21:58:47+08:00</updated>
+    <id>https://cshishaliu.github.io/15327863271008.html</id>
+    <content type="html"><![CDATA[
+<p>正数数列 \(\{a_n\}\) 满足 \(S_n + 1 = \dfrac{S_n+4}{2a_n - S_n}\), 其中 \(S_n\) 是 \(\{a_n\}\) 的前 \(n\) 项和, 求 \(\{a_n\}\) 的通项公式.</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">分析和解答</h2>
+
+<p>不难计算得到 \(a_1 = S_1 = 2\). 另根据已知条件, \(S_n + 1 = \dfrac{S_n+4}{S_n - 2S_{n-1}}\), 可变形得<br/>
+\[<br/>
+S_{n-1} = \dfrac{S_n^2 - 4}{2(S_n+1)}<br/>
+\]<br/>
+直接处理数列 \(\{S_n\}\), 其不动点方程为 \(x = \dfrac{x^2-4}{2(x+1)}\), 解得 \(x = -1 \pm \sqrt3 i = 2 e^{i \cdot \frac{\pm 2\pi}3}\). 记 \(\omega_1 = e^{i \cdot \frac{2\pi}3}\), \(\omega_2 = e^{i \cdot \frac{-2\pi}3}\), 则不动点方程的两根分别为 \(2\omega_1\) 和 \(2\omega_2\).</p>
+
+<blockquote>
+<p>\(\omega_{1,2}\) 为三次单位根, 有</p>
+
+<ol>
+<li>\(\omega_1^2 + \omega_1 + 1 = \omega_2^2 + \omega_2 + 1 = 0\);</li>
+<li>\(\omega_1 = \omega_2^2\), \(\omega_2 = \omega_1^2\);</li>
+<li>\(\omega_1 = \overline{\omega_2}\)</li>
+</ol>
+</blockquote>
+
+<p>分别用两个不动点处理数列 \(\{S_n\}\) 的递推关系, 有<br/>
+\[<br/>
+\begin{aligned}<br/>
+S_{n-1} -  2 \omega_1 &amp;= \dfrac{(S_n - 2 \omega_1)^2}{2(S_n+1)} \\<br/>
+S_{n-1} -  2 \omega_2 &amp;= \dfrac{(S_n - 2 \omega_2)^2}{2(S_n+1)}<br/>
+\end{aligned}<br/>
+\]<br/>
+两式相除得<br/>
+\[<br/>
+\dfrac{S_{n-1} -  2 \omega_1}{S_{n-1} -  2 \omega_2} = \left( \dfrac{S_n -  2 \omega_1}{S_n -  2 \omega_2} \right)^2<br/>
+\]</p>
+
+<p>比较两边的模和辐角主值. 由于 \(\forall n \in \mathbb N^*, S_n \in \mathbb R\), 故 \(S_n - 2\omega_1 = \overline{S_n - 2\omega_2}\), 于是 \(\left| \dfrac{S_n -  2 \omega_1}{S_n -  2 \omega_2} \right| = 1\), 模的条件自然满足.</p>
+
+<p>设 \(S_n - 2\omega_1\) 的辐角主值为 \(\theta_n\), 则 \(S_n - 2\omega_2\) 的辐角主值为 \(-\theta_n\), 于是<br/>
+\[<br/>
+\dfrac{S_n -  2 \omega_1}{S_n -  2 \omega_2} = e^{i \cdot 2\theta_n}<br/>
+\]<br/>
+因此<br/>
+\[<br/>
+e^{i \cdot 2\theta_{n-1}} = e^{i \cdot 4\theta_n}, \quad 2\theta_{n-1} = 4\theta_n + 2k\pi<br/>
+\]<br/>
+由于 \(\{a_n\}\) 是正数数列, \(\{S_n\}\) 也是正数数列且单调递增, 故复数 \(S_n - 2\omega_1\) 的实部 \(\Re(S_n - 2\omega_1) = S_n+1\) 恒为正且单调递增, 而虚部 \(\Im (S_n - 2\omega_1) = -\sqrt3\) 为负数常值, 故 \(\{\theta_n\}\) 都是第四象限角且单调递增, 因而只能是<br/>
+\[<br/>
+2\theta_{n-1} = 4\theta_n, \quad \theta_n = \dfrac1{2^{n-1}} \cdot \theta_1<br/>
+\]<br/>
+其中, \(\theta_1\) 是 \(S_1 -  2 \omega_1 = 2 - 2 \omega_1 = 3-\sqrt3i\) 的辐角, \(\theta_1 = -\dfrac\pi6\). 于是 \(\theta_n = -\dfrac\pi{3\cdot 2^n}\).</p>
+
+<p>由 \(\dfrac{S_n -  2 \omega_1}{S_n -  2 \omega_2} = e^{i \cdot 2\theta_n}\) 反推得<br/>
+\[<br/>
+\begin{aligned}<br/>
+S_n &amp;= \dfrac{2 (\omega_1 - \omega_2 \cdot e^{i \cdot 2\theta_n})}{1 - e^{i \cdot 2\theta_n}} \\<br/>
+&amp;= 2\cdot \dfrac{(\omega_1 - \omega_2 \cdot e^{i \cdot 2\theta_n})(1 - e^{-i \cdot 2\theta_n})}{(1 - e^{i \cdot 2\theta_n})(1 - e^{-i \cdot 2\theta_n})} \\<br/>
+&amp;= 2\cdot \dfrac{\omega_1 + \omega_2 - \omega_1 \cdot e^{-i \cdot 2\theta_n} - \omega_2 \cdot e^{i \cdot 2\theta_n}}{1 - e^{i \cdot 2\theta_n} - e^{-i \cdot 2\theta_n} + 1} \\<br/>
+&amp;= 2\cdot \dfrac{ -1 -2 \cos \left( \dfrac{2\pi}3 - 2\theta_n \right)}{2 - 2\cos2\theta_n} \\<br/>
+&amp;= \dfrac{-1+\cos2\theta_n - \sqrt3 \sin2\theta_n}{1-\cos2\theta_n} \\<br/>
+&amp;= \dfrac{-\sqrt3 \sin2\theta_n}{1-\cos2\theta_n} -1 \\<br/>
+&amp;= -\sqrt3 \cot \theta_n - 1 \\<br/>
+&amp;= \sqrt3 \cot \dfrac\pi{3\cdot 2^n} - 1<br/>
+\end{aligned}<br/>
+\]<br/>
+注意到 \(S_0 = \sqrt3 \cot \dfrac\pi3 - 1 = 0\), 有 \(\forall n \in \mathbb N^*\), 都有<br/>
+\[<br/>
+\begin{aligned}<br/>
+a_n &amp;= S_n - S_{n-1} \\<br/>
+&amp;= \sqrt3 \left( \cot \dfrac\pi{3\cdot 2^n} - \cot \dfrac\pi{3\cdot 2^{n-1}} \right) <br/>
+= \dfrac{\sqrt3}{\sin\dfrac\pi{3\cdot2^{n-1}}}<br/>
+\end{aligned}<br/>
+\]</p>
+
+<blockquote>
+<p>注意到<br/>
+\[<br/>
+\begin{aligned}<br/>
+\cot \theta - \cot 2\theta &amp;= \dfrac{\cos\theta}{\sin\theta} - \dfrac{\cos2\theta}{\sin2\theta} \\<br/>
+&amp;= \dfrac{\sin2\theta\cos\theta - \cos2\theta\sin\theta}{\sin\theta \sin2\theta} \\<br/>
+&amp;= \dfrac{\sin\theta}{\sin\theta \sin2\theta} = \dfrac1{\sin2\theta}<br/>
+\end{aligned}<br/>
+\]</p>
+</blockquote>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[zhangboxin 20180612]]></title>
@@ -121,7 +273,7 @@ t_1^2 + t_2^2 + t_3^2 = (t_1 + t_2 + t_3)^2 - 2<br/>
 
 <h2 id="toc_5">题 4</h2>
 
-<p>对于任意正整数 \(n\), 定义 \(a_n^{(i)} = \left| \left\{ t \middle| t = C_n^k, t \mod 3 = i, 0 \le i \le n \right\} \right|\), 求证: \(a_n^{(1)} &gt; a_n^{(2)}\).</p>
+<p>对于任意正整数 \(n\), 定义 \(a_n^{(i)} = \left| \left\{ t \middle| t = C_n^k, t \mod 3 = i, 0 \le k \le n \right\} \right|\), 求证: \(a_n^{(1)} &gt; a_n^{(2)}\).</p>
 
 ]]></content>
   </entry>
@@ -528,11 +680,14 @@ p(x) = a_nx^{2n} +a_{n-1}x^{2n-2}+\cdots +a_1x^2, \quad a_n \ne 0 .<br/>
 p(-a) + p \left( \dfrac 83 a \right) + p \left( -\dfrac 53a \right) = 2p \left( \dfrac 73a \right),<br/>
 \]<br/>
 即<br/>
-\[<br/>
-a_n \cdot \left[1+ \left(\dfrac83\right)^{2n} + \left(\dfrac 53\right)^{2n} - 2 \left(\dfrac 73\right)^{2n} \right] \cdot a^{2n} <br/>
-+ \cdots + a_1 \cdot \left[ 1 + \left(\dfrac 83\right)^{2} + \left(\dfrac 53\right)^{2} - 2 \left(\dfrac 73\right)^{2} \right] \cdot a^2 = 0<br/>
-\]<br/>
-这个等式对任意 \(a\in \mathbb R\) 都成立, 故所有 \(a^k\) 项的系数均为 \(0\).</p>
+$$<br/>
+a_n \cdot \left[1+ \left(\dfrac83\right)<sup>{2n}</sup> + \left(\dfrac 53\right)<sup>{2n}</sup> - 2 \left(\dfrac 73\right)<sup>{2n}</sup> \right] \cdot a<sup>{2n}</sup> </p>
+
+<ul>
+<li>\cdots + a_1 \cdot \left[ 1 + \left(\dfrac 83\right)<sup>{2}</sup> + \left(\dfrac 53\right)<sup>{2}</sup> - 2 \left(\dfrac 73\right)<sup>{2}</sup> \right] \cdot a<sup>2</sup> = 0<br/>
+$\(<br/>
+这个等式对任意 \)a\in \mathbb R\( 都成立, 故所有 \)a<sup>k$</sup> 项的系数均为 \(0\).</li>
+</ul>
 
 <p>注意到 \(8^6&gt;2\times 7^6\), 故当 \(n\ge 3\) 时, \(\left(\dfrac87\right)^{2n}\ge \left(\dfrac87\right)^6&gt;2\), 故 \(8^{2n}&gt;2\times 7^{2n}\), 从而 \(1 + \left(\dfrac83\right)^{2n} + \left(\dfrac53\right)^{2n} - 2\left(\dfrac73\right)^{2n} &gt; 0\). 因此必须是相应的 \(a_n = 0\).</p>
 
@@ -946,7 +1101,6 @@ a_4 &amp;= \dfrac{17}{24} + \dfrac{12}{17} = \dfrac{289+288}{24 \times 17} = \cd
 
 <ol>
 <li><p>对于 \(a_{n+1}\), 应该有 \(a_{n+1} = \dfrac{p_{n+1}}{q_{n+1}} = \dfrac{p_n^2 + 2 q_n^2}{2 p_n q_n}\), 那么这里我们是否就一定可以说 \(p_{n+1} = p_n^2 + 2 q_n^2\) 而 \(q_{n+1} = 2 p_n q_n\)?  </p>
-
 <ul>
 <li>或者说 \(p_n^2 + 2 q_n^2\) 和 \(2 p_n q_n\) 是否总是互质? 万一出现不互质的情况, \(\{p_n\}\) 和 \(\{q_n\}\) 的递推关系就有可能会变得很复杂.</li>
 </ul></li>
@@ -1118,11 +1272,9 @@ f(x) = \dfrac{\left( \sqrt{x^2+1} - x \right) \left( \sqrt{x^2+1} + x \right)}{\
 
 <ol>
 <li><p>上一稿中, 我将第二问的题干错看成了</p>
-
 <blockquote>
 <p>求实数 \(a\) 的取值范围, 使得函数 \(f(x)\) 在 \(\mathbb R^+\) 上是单调<mark><strong>增</strong></mark>函数.</p>
 </blockquote>
-
 <p>而得到了错误的结论, 在这里更正;</p></li>
 <li><p>Z. Q. Ren 老师提供了一种三角换元的方法, 使得这个题在不用导数的情况下, 有另一种更“优雅”的方法, 这里也分享一下.</p></li>
 </ol>
@@ -1193,7 +1345,6 @@ f(x_1) - f(x_2) <br/>
 <img src="https://ws2.sinaimg.cn/large/006tKfTcly1flnt0l6sh0j31kw0vw0xd.jpg" alt=""/></p></li>
 <li><p>再来一张局部放大.<br/>
 <img src="https://ws1.sinaimg.cn/large/006tKfTcly1flnt60j5gxj31kw0vrn1c.jpg" alt=""/></p>
-
 <ul>
 <li>注意这张放大图要看清 \(x,y\) 轴上的刻度位置.</li>
 <li>另外注意图中的蓝色线 (\(x = \dfrac1{10}\) 的情形) 在 \((0,\dfrac1{10})\) 这个区间上确实是单调减的, 但是由于这个区间太短, 函数下降的趋势也不是很明显, 因此必须得把图像放大足够倍数才能看出来.</li>
@@ -1340,10 +1491,8 @@ f(x) <br/>
 
 <ol>
 <li><p>这个数列中的所有项之和必须为负. </p>
-
 <p>将题设的所有不等式条件累加可得 \(\displaystyle \sum a_i &gt; 2 \cdot \sum a_i \), 因此必有 \(\displaystyle \sum a_i &lt; 0\).</p></li>
 <li><p>进一步, 数列中的所有奇数项之和必须为负, 所有偶数项之和也是. </p>
-
 <p>将题设的所有偶数项的不等式条件累加可得 \(\displaystyle \sum_{i = 2,4,6,\dots} a_i &gt; \sum_{i = 1,2,3,\dots} a_i \), 因此 \(\displaystyle \sum_{i = 1,3,5,\dots} a_i &lt; 0\). 同理不难证明 \(\displaystyle \sum_{i = 2,4,6,\dots} a_i &lt; 0\).</p></li>
 <li><p>数列中, 不能有连续两项为正. 否则, 它们的下一项必须是正的 (因为大于两个正数之和), 以此类推, 下下一项, 再下一项, … 也都必须是正的, 那么数列中的所有项都必须是正的, 与上面的结论矛盾.</p></li>
 </ol>
@@ -1414,10 +1563,13 @@ f(x) <br/>
 \vec{OM} - \left( -\dfrac23 + 3 + m \right) \vec{OM} = -\dfrac23 (\vec{OA} - \vec{OM}) + 3 (\vec{OB} - \vec{OM}) + m (\vec{OC} - \vec{OM})<br/>
 \]<br/>
 即<br/>
-\[<br/>
-- \left( \dfrac43 + m \right) \vec{OM} = -\dfrac23 \vec{MA} + 3 \vec{MB} + m \vec{MC}<br/>
-\]<br/>
-注意到上式等号右边的向量一定在平面 \(ABC\) 内, 而左边的 \(\vec{OM}\) 不在该平面内, 故两边都必须等于零向量. 因此 \(\dfrac43 + m = 0\), \(m = \dfrac43\).</p>
+$$</p>
+
+<ul>
+<li>\left( \dfrac43 + m \right) \vec{OM} = -\dfrac23 \vec{MA} + 3 \vec{MB} + m \vec{MC}<br/>
+$\(<br/>
+注意到上式等号右边的向量一定在平面 \)ABC\( 内, 而左边的 \)\vec{OM}\( 不在该平面内, 故两边都必须等于零向量. 因此 \)\dfrac43 + m = 0\(, \)m = \dfrac43$.</li>
+</ul>
 
 <h2 id="toc_2">关于向量的一个重要结论</h2>
 
@@ -1540,78 +1692,6 @@ x_1 x_2 = \dfrac{4(8k^2-1)}{2k^2+1}<br/>
 \end{aligned}<br/>
 \]<br/>
 \(a = 1\) 时, 上式恒成立. 因此存在这样的点 \(Q\), 其坐标为 \((1,0)\).</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[duyan 20171012]]></title>
-    <link href="https://cshishaliu.github.io/15078172804643.html"/>
-    <updated>2017-10-12T22:08:00+08:00</updated>
-    <id>https://cshishaliu.github.io/15078172804643.html</id>
-    <content type="html"><![CDATA[
-<p>已知 \(S_n\) 为数列 \(\{a_n\}\) 的前 \(n\) 项和, 规定 \(S_0 = 0\), 若对任意 \(n \in \mathbb N^*\), 均有 \(\dfrac{a_n}{2017} = - \dfrac{2017+S_{n-1}}{n}\), 则 \(\sum\limits_{n=1}^{2017} 2^n a_n = \) <code>______</code>.</p>
-
-<p><img src="https://ws4.sinaimg.cn/large/006tKfTcly1fkftf2gjegj315g07k41b.jpg" alt=""/></p>
-
-<span id="more"></span><!-- more -->
-
-<p>根据已知条件, \(n a_n = -2017^2 - 2017 S_{n-1}\),</p>
-
-<p>于是 \((n+1) a_{n+1} = -2017^2 - 2017 S_{n}\),</p>
-
-<p>两式相减得 \((n+1) a_{n+1} - n a_n = -2017 (S_n - S_{n-1}) = -2017 a_n\),</p>
-
-<p>变形得 \(a_{n+1} = \dfrac{n-2017}{n+1} \cdot a_n\),</p>
-
-<p>于是 \(a_n = \dfrac{n-2018}{n} \cdot \dfrac{n-2019}{n-1} \cdot \dots \cdot \dfrac{-2016}{2} \cdot a_1\).</p>
-
-<p>注意从递推公式中就可以看到这个数列从 \(2018\) 项开始，后面全部等于 \(0\), 通项公式中也能看到这一点.</p>
-
-<p>不过, 通项公式可以进一步简化. 在 \(n \le 2017\) 时,<br/>
-\[<br/>
-\begin{aligned}<br/>
-a_n &amp;= \dfrac{n-2018}{n} \cdot \dfrac{n-2019}{n-1} \cdot \dots \cdot \dfrac{-2016}{2} \cdot a_1 \\<br/>
-&amp; = (-1)^{n-1} \cdot \dfrac{(2018-n) \cdot (2019-n) \cdot \dots \cdot 2016}{n \cdot (n-1) \cdot \dots \cdot 2} \cdot \dfrac{2017}1 \cdot \dfrac{a_1}{2017} \\<br/>
-&amp; = (-1)^{n-1} \cdot C_{2017}^n \cdot \dfrac{a_1}{2017}<br/>
-\end{aligned}<br/>
-\]<br/>
-其中, \(a_1 = -2017^2 - 2017 S_0 = -2017^2\), 故 \(a_n = 2017 \cdot C_{2017}^n \cdot (-1)^n\). 要求的式子为,<br/>
-\[<br/>
-\sum_{n=1}^{2017} 2^n a_n = 2017 \cdot \sum_{n=1}^{2017} C_{2017}^n \cdot (-2)^n = 2017 \cdot [(1-2)^{2017} - 1] = -4034<br/>
-\]</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[zhuxirun 20171008]]></title>
-    <link href="https://cshishaliu.github.io/15075212298147.html"/>
-    <updated>2017-10-09T11:53:49+08:00</updated>
-    <id>https://cshishaliu.github.io/15075212298147.html</id>
-    <content type="html"><![CDATA[
-<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fkbuvmlkh4j311c0emwh1.jpg" alt=""/></p>
-
-<span id="more"></span><!-- more -->
-
-<p>(1) \(c = \sqrt3\), \(a = 2\), \(a = 1\). 椭圆方程为 \(\dfrac{x^2}4 + y^2 = 1\).</p>
-
-<p>(2) 设 \(M\) 的坐标为 \((x, y)\), 则 \(P\) 的坐标为 \(\left( 2x-1, 2y - \dfrac12 \right)\).<br/>
-由于点 \(P\) 在椭圆上, 故<br/>
-\[<br/>
-\dfrac{(2x-1)^2}4 + \left(2y - \dfrac12 \right)^2 = 1<br/>
-\]<br/>
-或<br/>
-\[<br/>
-x^2 - x + 4y^2 - 2y - \dfrac12 = 0<br/>
-\]</p>
-
-<p>(3) 显然 \(B, C\) 两点关于圆点 \(O\) 对称, 故 \(S_{\triangle ABC} = 2 S_{\triangle AOB}\).<br/>
-\(|OA| = \dfrac{\sqrt5}2\), \(OA\) 所在直线方程为 \(x - 2y = 0\), 设点 \(B\) 的坐标为 \((2\cos\theta, \sin\theta)\), 则 \(B\) 到直线 \(OA\) 的距离为<br/>
-\[<br/>
-d = \dfrac{|2\cos\theta - 2\sin\theta|}{\sqrt5} = \dfrac2{\sqrt5} |\cos\theta - \sin\theta| \le \dfrac2{\sqrt5} \cdot \sqrt2<br/>
-\]<br/>
-故 \(S_{\triangle AOB} = \dfrac12 \cdot |AO| \cdot d \le \dfrac{\sqrt2}2\), \(\triangle ABC\) 面积的最大值为 \(\sqrt2\).</p>
 
 ]]></content>
   </entry>
