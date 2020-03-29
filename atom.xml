@@ -1,17 +1,713 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Gnoloac发布资料的地方。。。]]></title>
+  <title><![CDATA[语时lab]]></title>
   <link href="https://cshishaliu.github.io/atom.xml" rel="self"/>
   <link href="https://cshishaliu.github.io/"/>
-  <updated>2018-08-02T11:35:38+08:00</updated>
+  <updated>2020-03-29T23:23:49+08:00</updated>
   <id>https://cshishaliu.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
-  <generator uri="http://www.coderforart.com/">CoderForArt</generator>
+  <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[一个来自 QQ 群的问题 20200317-0721]]></title>
+    <link href="https://cshishaliu.github.io/15840603466913.html"/>
+    <updated>2020-03-13T08:45:46+08:00</updated>
+    <id>https://cshishaliu.github.io/15840603466913.html</id>
+    <content type="html"><![CDATA[
+<p>已知 \(x,y &gt; 0\), 求 <br/>
+\[<br/>
+\frac{(2x+1) (y+1)}{2x^2 + 5y^2 + 7}<br/>
+\]<br/>
+的最大值.</p>
 
+<span id="more"></span><!-- more -->
+
+<blockquote>
+<p>来自: <a href="QQ%20Group:533503621">中国数学竞赛交流群</a></p>
+</blockquote>
+
+<h2 id="toc_0">解答</h2>
+
+<p>设 \(t = \frac{2x^2 + 5y^2 + 7}{(2x+1) (y+1)}\), 显然 \(t&gt;0\), 且去分母并移项有<br/>
+\[<br/>
+2x^2 - 2txy + 5y^2 - 2t x - t y - t + 7 = 0<br/>
+\]<br/>
+此式可变形为<br/>
+\[<br/>
+2x^2 - 2t (y+1) x + [5y^2 + 7 - t(y+1)] = 0<br/>
+\]<br/>
+从而视作关于 \(x\) 的一元二次方程, 于是应有<br/>
+\[<br/>
+\Delta_1 = 4t^2(y+1)^2 - 8 [5y^2 + 7 - t(y+1)] \ge 0<br/>
+\]<br/>
+整理得<br/>
+\[<br/>
+(t^2 - 10) y^2+ (2t^2 +2t) y + (t^2 + 2t - 14) \ge 0<br/>
+\]<br/>
+将它视作关于 \(y\) 的一元二次不等式, 则当 \(t &lt; \sqrt{10}\) 时, 由于二次项系数 \(t^2 - 10 \le 0\), 应有<br/>
+\[<br/>
+\Delta_2 = (2t^2 + 2t)^2 - 4(t^2-10)(t^2+2t-14) \ge 0<br/>
+\]<br/>
+化简可得<br/>
+\[<br/>
+5t^2 + 4t - 28 \ge 0<br/>
+\]<br/>
+解得<br/>
+\[<br/>
+t \le -\frac{14}5 ~\text{或}~ t \ge 2<br/>
+\]<br/>
+因此, 当 \(t &lt; \sqrt{10}\) 时, \(t\) 的最小正值为 \(2\), 此时由<br/>
+\[<br/>
+\begin{aligned}\Delta_1 &amp;= 4t^2(y+1)^2 - 8 [5y^2 + 7 - t(y+1)] \\&amp;= 16 (y+1)^2 - 8 [5y^2 + 7 - 2(y+1)] \ge 0\end{aligned}<br/>
+\]<br/>
+可解得 \(y=1\), 进一步由 \(t=2,y=1\) 可计算得到 \(x=2\).</p>
+
+<p>综上所述, 在 \(t&lt;\sqrt{10}\) 的前提条件下, \(t\) 在 \(x=2,y=1\) 时取得最小值 \(2\). 于是 \(t \ge \sqrt{10}\) 的情况就不用再讨论了.</p>
+
+<h3 id="toc_1">快速解法</h3>
+
+<p>由于<br/>
+\[<br/>
+\begin{aligned}<br/>
+2x^2 + 5y^2 + 7<br/>
+&amp;= (x^2 + 4y^2) + (x^2 + 4) + (y^2 + 1) + 2 \\<br/>
+&amp;\ge 4xy + 4x + 2y + 2 \\<br/>
+&amp;= 2(2x+1) (y+1)<br/>
+\end{aligned}<br/>
+\]<br/>
+当且仅当 \(x = 2y = 2\) 时取等号, 因此<br/>
+\[<br/>
+\frac{(2x+1) (y+1)}{2x^2 + 5y^2 + 7} \le \frac12<br/>
+\]</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[qiqi 20200313]]></title>
+    <link href="https://cshishaliu.github.io/15582753348629.html"/>
+    <updated>2019-05-19T22:15:34+08:00</updated>
+    <id>https://cshishaliu.github.io/15582753348629.html</id>
+    <content type="html"><![CDATA[
+<p><mark>TODO 本篇尚未完成</mark></p>
+
+<p><img src="https://i.loli.net/2020/03/13/Mgn5Ni7fQorOx9h.png" alt="image-20200313084831995"/><br/>
+<span id="more"></span><!-- more --></p>
+
+<h2 id="toc_0">Answer</h2>
+
+<h3 id="toc_1">(a)</h3>
+
+<h4 id="toc_2">(a).i</h4>
+
+<p>Consider a permutation starts with \(m\), if it has head length \(1\), then \(m\) must be greater than \(1\), and the second term of the permutation must be less than \(m\). </p>
+
+<p>Therefore, the total number of permutations starts with \(m\) and has head length \(1\) is<br/>
+\[<br/>
+(m-1) \cdot A_{n-2}^{n-2} = (m-1) \cdot (n-2)!<br/>
+\]<br/>
+And the total number of permutations (starts with whatever and) has head length \(1\) is<br/>
+\[<br/>
+\sum_{m=2}^n (m-1) \cdot (n-2)! = \frac{n(n-1)}2 \cdot (n-2)! = \frac{n!}2<br/>
+\]<br/>
+This seems to be reasonable. Because, consider two permutations, of which the first two terms exchange their order and the rest are all the same, one of them has head length \(1\), and the other does not. So, exactly <strong>a half</strong> of all the permutations has head length \(1\).</p>
+
+<h4 id="toc_3">(a).ii</h4>
+
+<h4 id="toc_4">(a).iii</h4>
+
+<h3 id="toc_5">(b)</h3>
+
+<p>记 head length 为 \(k\), 显然 \(k \le n+1\).</p>
+
+<ul>
+<li><p>当 \(k = n+1\) 时, 这种排列只有一个: \(1,1,2,3,\dots,n\);</p></li>
+<li><p>当 \(k &lt; n+1\) 即 \(k \le n\) 时, 第 \(k\) 项记作 \(m\), 它必须严格大于第 \(k+1\) 项, 且不小于第 \(1,2, \dots, k-1\) 项, 因此必定有 \(m \ge k\).</p>
+<p>讨论可得, head length 为 \(k\), 且第 \(k\) 项等于 \(m\) 的 permutation 的个数为<br/>
+\[<br/>
+f(k,m) = C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k<br/>
+\]<br/>
+其中 \(1 \le k \le m \le n\).</p></li>
+</ul>
+
+<p>于是, 所有 permutation 的总个数为<br/>
+\[<br/>
+1 + \sum_{k=1}^n \left( \sum_{m=k}^n f(k,m) \right),<br/>
+\]<br/>
+这个和式的化简结果应该是 \(\frac{(n+1)!}2\) (<mark>此结论待验证</mark>), 即 \(1,1,2,\dots,n\) 所能形成的所有排列个数.</p>
+
+<p>考虑<br/>
+\[<br/>
+\begin{aligned}<br/>
+\sum_{k=1}^n \left( \sum_{m=k}^n f(k,m) \right)<br/>
+&amp;= \sum_{k=1}^n \sum_{m=k}^n \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \\<br/>
+&amp;= \sum_{m=1}^n \sum_{k=1}^m \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \\<br/>
+\end{aligned}<br/>
+\]</p>
+
+<p>另一方面, 所有 permutation 的 head length 的总和为<br/>
+\[<br/>
+(n+1) + \sum_{k=1}^n \left( k \cdot \sum_{m=k}^n f(k,m) \right)<br/>
+\]</p>
+
+<p>\[<br/>
+\begin{aligned}<br/>
+\sum_{k=1}^n \left( \frac kn \cdot \sum_{m=k}^n f(k,m) \right)<br/>
+&amp;= \sum_{k=1}^n \left( \frac kn \cdot \sum_{m=k}^n \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \right) \\<br/>
+&amp;= \frac1n \cdot \sum_{k=1}^n \sum_{m=k}^n \left( k \cdot \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \right) \\<br/>
+&amp;= \frac1n \cdot \sum_{m=1}^n \sum_{k=1}^m \left( k \cdot \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \right)<br/>
+\end{aligned}<br/>
+\]</p>
+
+<p>\[<br/>
+\begin{aligned}<br/>
+\sum_{k=1}^m \left( k \cdot \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \right)<br/>
+&amp;= \sum_{k=1}^m \left( C_{m-2}^{k-2} \cdot k(k-1) + C_{m-1}^k \cdot k^2 \right)<br/>
+\end{aligned}<br/>
+\]</p>
+
+<p>\[<br/>
+\begin{aligned}<br/>
+C_{m-2}^{k-2} \cdot k(k-1)<br/>
+&amp;= C_{m-2}^{k-2} \cdot (k^2-k) \\<br/>
+&amp;= C_{m-2}^{k-2} \cdot [(k^2 - 5k + 6) + (4k - 8) + 2] \\<br/>
+&amp;= C_{m-2}^{k-2} \cdot (k-2)(k-3) + 4 C_{m-2}^{k-2} \cdot (k-2) + 2 C_{m-2}^{k-2} \\<br/>
+&amp;= (m-2)(m-3) C_{m-4}^{k-4} + 4 (m-2) C_{m-3}^{k-3} + 2 C_{m-2}^{k-2} <br/>
+\\[1em]<br/>
+C_{m-1}^k \cdot k^2<br/>
+&amp;= C_{m-1}^k \cdot [(k^2 - k) + k] \\<br/>
+&amp;= C_{m-1}^k \cdot k (k - 1) + C_{m-1}^k \cdot k \\<br/>
+&amp;= (m-1)(m-2) C_{m-3}^{k-2} + (m-1) C_{m-2}^{k-1}<br/>
+\end{aligned}<br/>
+\]</p>
+
+<p>\[<br/>
+\begin{aligned}<br/>
+&amp;\sum_{k=1}^m \left( C_{m-2}^{k-2} \cdot k(k-1) + C_{m-1}^k \cdot k^2 \right)\\<br/>
+{}={}<br/>
+&amp;\sum_{k=1}^m (m-2)(m-3) C_{m-4}^{k-4} + <br/>
+\sum_{k=1}^m 4 (m-2) C_{m-3}^{k-3} + <br/>
+\sum_{k=1}^m 2 C_{m-2}^{k-2} \\<br/>
+&amp;{} + \sum_{k=1}^m (m-1)(m-2) C_{m-3}^{k-2} + <br/>
+\sum_{k=1}^m (m-1) C_{m-2}^{k-1} \\<br/>
+{}={}<br/>
+&amp;(m-2)(m-3) \sum_{k=1}^m C_{m-4}^{k-4} + <br/>
+4 (m-2) \sum_{k=1}^m C_{m-3}^{k-3} + <br/>
+2 \sum_{k=1}^m C_{m-2}^{k-2} \\<br/>
+&amp;{} + (m-1)(m-2) \sum_{k=1}^m C_{m-3}^{k-2} + <br/>
+(m-1) \sum_{k=1}^m C_{m-2}^{k-1} \\<br/>
+{}={}<br/>
+&amp; (m-2)(m-3) \cdot 2^{m-4} + 4 (m-2) \cdot 2^{m-3} + 2 \cdot 2^{m-2} \\<br/>
+&amp;{} + (m-1)(m-2) \cdot 2^{m-3} + (m-1) 2^{m-2} \\<br/>
+{}={}<br/>
+&amp; 2^{m-4} [(m-2)(m-3) + 8(m-2) + 8 + 2(m-1)(m-2) + 4(m-1)] \\<br/>
+{}={}<br/>
+&amp; (3m^2 + m - 2) \cdot 2^{m-4}<br/>
+\end{aligned}<br/>
+\]</p>
+
+<p>\[<br/>
+\begin{aligned}<br/>
+\sum_{k=1}^n \left( \frac kn \cdot \sum_{m=k}^n f(k,m) \right)<br/>
+&amp;= \sum_{k=1}^n \left( \frac kn \cdot \sum_{m=k}^n \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \right) \\<br/>
+&amp;= \frac1n \cdot \sum_{k=1}^n \sum_{m=k}^n \left( k \cdot \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \right) \\<br/>
+&amp;= \frac1n \cdot \sum_{m=1}^n \sum_{k=1}^m \left( k \cdot \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \right) \\<br/>
+&amp;= \frac1n \cdot \sum_{m=2}^n (3m^2 + m - 2) \cdot 2^{m-4}<br/>
+\end{aligned}<br/>
+\]<br/>
+设数列 \(S_n\) 满足 \(S_n = (x n^2 + yn + z) \cdot 2^{n-4}\) 且<br/>
+\[<br/>
+S_{m+1} - S_m = (3m^2 + m - 2) \cdot 2^{m-4}<br/>
+\]<br/>
+而<br/>
+\[<br/>
+\begin{aligned}<br/>
+S_{m+1} - S_m <br/>
+&amp;= [x(m+1)^2 + y(m+1) + z] \cdot 2^{m-3} - (xm^2 + ym + z) \cdot 2^{m-4} \\<br/>
+&amp;= [2x(m+1)^2 + 2y(m+1) + 2z - (xm^2 + ym + z) ] \cdot 2^{m-4} \\<br/>
+&amp;= [x m^2 + (4x+y) m + (2x + 2y + z)] \cdot 2^{m-4}<br/>
+\end{aligned}<br/>
+\]<br/>
+因此 <br/>
+\[<br/>
+\begin{cases}<br/>
+x = 3 \\<br/>
+4x+y = 1 \\<br/>
+2x+2y+z = -2<br/>
+\end{cases}<br/>
+\]<br/>
+解得<br/>
+\[<br/>
+\begin{cases}<br/>
+x = 3 \\<br/>
+y = -11 \\<br/>
+z = 14<br/>
+\end{cases}<br/>
+\]<br/>
+也就是说, 令 \(S_n = (3n^2 - 11 n + 14) \cdot 2^{n-4}\), 即有<br/>
+\[<br/>
+S_{m+1} - S_m = (3m^2 + m - 2) \cdot 2^{m-4}<br/>
+\]</p>
+
+<p>那么<br/>
+\[<br/>
+\begin{aligned}<br/>
+\sum_{m=2}^n (3m^2 + m - 2) \cdot 2^{m-4} <br/>
+&amp;= \sum_{m=2}^n (S_{m+1} - S_n) \\<br/>
+&amp;= S_{n+1} - S_2 \\<br/>
+&amp;= (3n^2 - 5n + 6) \cdot 2^{n-3} - 1<br/>
+\end{aligned}<br/>
+\]</p>
+
+<p>\[<br/>
+[3(n+1)^2 - 11(n+1)+ 14] \cdot 2^{n-3} - 1 \\<br/>
+(3n^2 - 5n + 6) \cdot 2^{n-3} - 1<br/>
+\]</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[xieshunfu 20190201]]></title>
+    <link href="https://cshishaliu.github.io/15490078791835.html"/>
+    <updated>2019-02-01T15:57:59+08:00</updated>
+    <id>https://cshishaliu.github.io/15490078791835.html</id>
+    <content type="html"><![CDATA[
+<ol>
+<li>已知实数 \(x_1, x_2, \dots, x_{10}​\), \(\sum\limits_{k=1}^{10} k x_k = 1​\). 求 \(\left( \sum\limits_{k=1}^{10} x_k \right)^2 + \sum\limits_{k=1}^{10} x_k^2​\) 的最小值.</li>
+<li>设 \(a_n = 1 + \dfrac12 + \dfrac13 + \dots + \dfrac1n\). 求证: 对 \(n\ge 2\) 有 \(a_n^2 &lt; 2 \left( \dfrac{a_2}2 + \dfrac{a_3}3 + \dots \dfrac{a_n}n \right) + \dfrac{n+3}{2n+2}\).</li>
+</ol>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">解答</h2>
+
+<h3 id="toc_1">题 1</h3>
+
+<p>对于任意实数 \(t\), 均有 (Cauchy 不等式):<br/>
+\[<br/>
+\begin{aligned}<br/>
+\left[ \left( \sum_{k=1}^{10} x_k \right)^2 + \sum_{k=1}^{10} x_k^2 \right]<br/>
+\left[ t^2 + \sum_{k=1}^{10} (k-t)^2 \right] <br/>
+&amp;\ge<br/>
+\left[ \left( \sum_{k=1}^{10} x_k \right) \cdot t + \sum_{k=1}^{10} (k-t) x_k \right]^2 \\<br/>
+&amp;= \left( \sum_{k=1}^{10} k x_k \right)^2 = 1<br/>
+\end{aligned}<br/>
+\]<br/>
+即<br/>
+\[<br/>
+\left[ \left( \sum_{k=1}^{10} x_k \right)^2 + \sum_{k=1}^{10} x_k^2 \right]<br/>
+\cdot (11 t^2 - 110 t + 385) \ge 1<br/>
+\]<br/>
+或<br/>
+\[<br/>
+\left( \sum_{k=1}^{10} x_k \right)^2 + \sum_{k=1}^{10} x_k^2 <br/>
+\ge \dfrac1{11 t^2 - 110 t + 385}<br/>
+\]<br/>
+此不等式对一切 \(t \in \mathbb R\) 都成立. 因此<br/>
+\[<br/>
+\left( \sum_{k=1}^{10} x_k \right)^2 + \sum_{k=1}^{10} x_k^2 <br/>
+\ge \left( \dfrac1{11 t^2 - 110 t + 385} \right)_{\max} = <br/>
+\left( \dfrac1{11 t^2 - 110 t + 385} \right)_{t=5} = \dfrac1{110}<br/>
+\]<br/>
+当且仅当 <br/>
+\[<br/>
+\begin{aligned}<br/>
+\left( \sum_{k=1}^{10} x_k \right) : x_1 : x_2 : \dots : x_{10} <br/>
+&amp;= t : (1-t) : (2-t) : \dots : (10-t) \\ <br/>
+&amp;= 5 : (-4) : (-3) : \dots : 5<br/>
+\end{aligned}<br/>
+\]<br/>
+时取等号.</p>
+
+<h3 id="toc_2">题 2</h3>
+
+<blockquote>
+<p>数学归纳法, 不难!</p>
+</blockquote>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CMO 2018 题 3]]></title>
+    <link href="https://cshishaliu.github.io/15421980305249.html"/>
+    <updated>2018-11-14T20:20:30+08:00</updated>
+    <id>https://cshishaliu.github.io/15421980305249.html</id>
+    <content type="html"><![CDATA[
+<p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
+
+<p>\(\triangle ABC\) 中, \(AB &lt; AC\), \(O\) 为外心, \(D\) 是 \(\angle BAC\) 平分线上一点, \(E\) 在 \(BC\) 上, 满足 \(OE \parallel AD\), \(DE \perp BC\). 在射线 \(EB\) 上取点 \(K\) 满足 \(EK = EA\), \(\triangle ADK\) 外接圆与 \(BC\) 交于另一点 \(P \ne K\), \(\triangle ADK\) 外接圆与 \(\triangle ABC\) 外接圆交于另一点 \(Q \ne A\). 求证: \(PQ\) 与 \(\triangle ABC\) 外接圆相切.</p>
+
+<span id="more"></span><!-- more -->
+
+<blockquote>
+<p>题目来源: <a href="https://mp.weixin.qq.com/s/Lk68mFHaHnc0Rly4F2nEwQ">2018冬令营首日学生回忆版试题 (爱尖子发布)</a></p>
+
+<p><img src="https://ws2.sinaimg.cn/large/006tNbRwly1fx7tzuhui2j30uk0i879u.jpg" alt=""/></p>
+</blockquote>
+
+<h2 id="toc_0">解答</h2>
+
+<p>设 \(\triangle ABC\) 的外心为 \(O\), \(\triangle ADK\) 的外心为 \(O_1\). 连结 \(AO\), \(DO\), \(AO_1\), \(KO_1\) 和 \(EO_1\). 设 \(OD\) 与 \(BC\) 的交点为 \(F\).</p>
+
+<p><img src="https://ws4.sinaimg.cn/large/006tNbRwly1fx7v0jv000j30hd0h7mye.jpg" alt=""/></p>
+
+<p>不难证明 \(\angle OAD = \angle ADE = \dfrac{B-C}2\), 故 \(ADEO\) 是等腰梯形.</p>
+
+<p>于是由 \(O_1A = O_1D\) 知 \(O_1O = O_1E\), 且 \(OD = AE = EK\). </p>
+
+<p>因此, \(\triangle O_1KE \cong \triangle D_1DO\), 故 \(\angle KO_1D = \angle KFD = \angle EO_1O\).</p>
+
+<p>因为 \(EO_1\) 垂直平分 \(AK\), 且 \(O_1O\) 垂直平分 \(AQ\), 所以 \(\angle EO_1O = \angle KAQ = 180^\circ - \angle KPQ\).</p>
+
+<p>于是 \(\angle KFO = 180^\circ - \angle KFD = 180^\circ - \angle EO_1O = \angle KPQ\), 故有 \(OD \parallel PQ\). </p>
+
+<p>另外, 由 \(\angle KFD = \angle KO_1D = 2 \angle KPD\) 知 \(\angle FPD = \angle FDP\), \(FP = FD\).</p>
+
+<p>因此, 点 \(P\) 到 \(FD\) 的距离与点 \(D\) 到 \(FP\) 的距离相同, 都等于 \(DE = OA\). </p>
+
+<p>即, 平行线 \(OD\) 与 \(PQ\) 之间的距离等于 \(\triangle ABC\) 外接圆 (圆 \(O\)) 的半径, 因此 \(PQ\) 与圆 \(O\) 相切.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[XUC 20181014 几个二次函数问题]]></title>
+    <link href="https://cshishaliu.github.io/15395877048195.html"/>
+    <updated>2018-10-15T15:15:04+08:00</updated>
+    <id>https://cshishaliu.github.io/15395877048195.html</id>
+    <content type="html"><![CDATA[
+<ol>
+<li>已知二次函数 \(f(x) = a x^2 + b x + c\) 的图象过点 \((2,8)\), 且对一切实数 \(x\) 恒有 \(2x + 3 \le f(x) \le 2x^2 - 2x + 5\), 求 \(f(x)\).</li>
+<li>在平面直角坐标系中, 不论 \(m\) 取何值时, 抛物线 \(y = mx^2 + (2m+1) x - (3m+2)\) 都不通过的直线 \(y = -x+1\) 上的点有哪些? (写出全部符合条件点的坐标)</li>
+</ol>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">题 1</h2>
+
+<p>依题意, \(f(2) = 4a + 2b + c = 8\). 另外, 在已知条件中令 \(x = 1\), 有 \(5 \le f(1) \le 5\), 因此, \(f(1) = a+b+c = 5\). 这两组等式可解得 \(\begin{cases} b = 3-3a \\ c = 2+2a \end{cases}\), 于是 \(f(x) = ax^2 + (3-3a)x + (2+2a)\).</p>
+
+<p>又依题意 \(f(x) - (2x+3) = a x^2 + (1-3a) x + (-1+2a) \ge 0\) 恒成立, 于是 \(a &gt; 0\) 且<br/>
+\[<br/>
+\Delta = (1-3a)^2 - 4a(-1+2a) = a^2 - 2a + 1 \le 0<br/>
+\]<br/>
+因此, \(a = 1\). 故 \(b=0\), \(c=4\), \(f(x) = x^2 +4\). </p>
+
+<blockquote>
+<p>另外, 又 \(f(x) - (2x^2 - 2x + 5) = (a-2) x^2 + (5-3a) x + (-3+2a) \le 0\) 恒成立, 有 \(a-2 &lt; 0\) 且<br/>
+\[<br/>
+\Delta = (5-3a)^2 - 4(a-2)(-3+2a) = a^2 - 2a +1 \le 0<br/>
+\]<br/>
+解得的也是 \(a = 1\). </p>
+</blockquote>
+
+<h2 id="toc_1">题 2</h2>
+
+<p>联立抛物线和直线方程, 变形可得<br/>
+\[<br/>
+m (x^2 + 2x - 3) = -2x + 3<br/>
+\]<br/>
+将它视作关于 \(m\) 的一元一次方程, 则 \(x = 1\) 或 \(-3\) 时, 此方程无解. 这个结果可以解释为: <br/>
+<strong>无论 \(m\) 取何值, 抛物线和直线的交点横坐标都不可能是 \(1\) 或 \(-3\); 而对于其它可能的交点横坐标值, 都有合适的 \(m\) 取值与之对应</strong>. </p>
+
+<p>直线 \(y = -x+1\) 上, 横坐标 \(1\) 和 \(-3\) 所对应的纵坐标分别是 \(0\) 和 \(4\), 因此抛物线不会通过的直线上的点只有 \((1,0)\) 和 \((-3,4)\) 两个.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[XUC 20181008 一道构图诡异到令人发指的几何题]]></title>
+    <link href="https://cshishaliu.github.io/15389866005751.html"/>
+    <updated>2018-10-08T16:16:40+08:00</updated>
+    <id>https://cshishaliu.github.io/15389866005751.html</id>
+    <content type="html"><![CDATA[
+<p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
+
+<p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fw0vxksxfij30ua0gkmy7.jpg" alt=""/></p>
+
+<p>🆘👉 第 (1) 问的方法十分诡异, 但暂未找到更好的方法 😂</p>
+
+<p>🆘👉 第 (2) 问还没做出来 😂😂😂</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">第 (1) 问分析</h2>
+
+<p>第一问只需证明 \(\angle LFH = \angle HIA = \angle EID\) 即可, 而对比 \(\angle LFH\) 和 \(\angle EID\) 的位置关系不难发现可以构造四点共圆 (如下图中的 \(E,F,K,I\)), 而这组四点共圆将导致 \(\angle EKI = \angle EFI = \angle EHI\), 于是 \(BC\) 垂直平分 \(HK\) 于 \(D\). 又 \(B,C,H,I\) 构成垂心四点组, 这样又可以得到很多新的角边关系, 其中包括 \(B,I,C,K\) 四点共圆.</p>
+
+<p><img src="https://ws3.sinaimg.cn/large/006tNbRwly1fw4c14txo4j30ox0sg75o.jpg" alt=""/></p>
+
+<p>这样看上去初步的思路就是要证明 \(LF\) 与 \(HD\) 的交点 \(K\) 与 \(E,F,I\) 四点共圆, 而显然题干中的 \(IJ = 2ID\) 是十分关键条件. 但这个条件非常的不好用. 几经尝试, 这里最终打算采用同一法的思路, 即先得到点 \(K\), 再由点 \(K\) 来构造点 \(L\) 和 \(J\), 证明这样得到的点 \(J\) 满足 \(IJ = 2ID\). </p>
+
+<h2 id="toc_1">第 (1) 问证明</h2>
+
+<p>这里证明下面这个等价的问题:</p>
+
+<blockquote>
+<p>在 \(\triangle ABC\) 中, \(I\) 是内心, \(D\) 是 \(I\) 在 \(BC\) 上的射影, \(AI,BC\) 交于 \(E\). \(H\) 是 \(\triangle BIC\) 的垂心, \(Q\) 是 \(\triangle BIC\) 外接圆的外心, \(HD\) 再次交 \(\triangle BIC\) 外接圆于点 \(K\). 以 \(I\) 为圆心, \(IH\) 为半径作圆, \(HE\) 再次交圆 \(I\) 于点 \(F\); \(KF\) 再次交圆 \(I\) 于 \(L\). \(E,F,L\) 三点所确定的圆 \(P\) 与 \(IF\) 再次交于点 \(J\). 证明: \(IJ = 2ID\). </p>
+</blockquote>
+
+<p>记 \(HK\) 与圆 \(I\) 的另一个交点是 \(M\). 由 \(H\) 是 \(\triangle BIC\) 的垂心, 而 \(K\) 是高 \(ID\) 与 \(\triangle BIC\) 外接圆的交点不难证明 \(DK = DH\), 于是 \(\angle EKD = \angle EHD = \angle EFI\), 因此 \(E,F,K,I\) 四点共圆.</p>
+
+<p>为得到 \(IJ\) 的长度, 我们强行暴算点 \(I\) 关于圆 \(P\) (\(L,E,F,J\) 所共之圆) 的幂. 为了得到这个幂, 可借助 \(H\) 和 \(K\) 两点关于圆 \(P\) 的幂.</p>
+
+<p>将 \(H,I,K\) 三点关于圆 \(P\) 的幂分别记作 \(p(H), p(I), p(K)\), 则其中<br/>
+\[<br/>
+\begin{aligned}<br/>
+p(H) &amp;= HE \cdot HF = HI \cdot HK \\<br/>
+p(K) &amp;= KF \cdot KL = KM \cdot KH<br/>
+\end{aligned}<br/>
+\]<br/>
+为方便计算, 设 \(ID = r\), \(IH = t\), 则 \(HK = 2HD = 2(r+t)\), \(KM = HK - HM = 2(r+t) - 2t = 2r\), 于是 <br/>
+\[<br/>
+\begin{aligned}<br/>
+p(H) &amp;= 2t(r+t) \\<br/>
+p(K) &amp;= 2r(2r+2t) = 4r(r+t)<br/>
+\end{aligned}<br/>
+\]<br/>
+考虑 \(\triangle PIH\), 由余弦定理可得 <br/>
+\[<br/>
+\begin{aligned}<br/>
+\cos \angle PIH <br/>
+&amp;= \dfrac{PI^2 + IH^2 - PH^2}{2 PI \cdot IH} \\<br/>
+&amp;= \dfrac{(PI^2 - r_P^2) + IH^2 - (PH^2 - r_P^2)}{2 PI \cdot IH} \\<br/>
+&amp;= \dfrac{p(I) + IH^2 - p(H)}{2 PI \cdot IH}<br/>
+\end{aligned}<br/>
+\]<br/>
+其中, \(r_P\) 是圆 \(P\) 的半径. 同理, 在 \(\triangle PIK\) 有<br/>
+\[<br/>
+\cos \angle PIK = \dfrac{p(I) + IK^2 - p(K)}{2 PI \cdot IK}<br/>
+\]</p>
+
+<p>\(\angle PIH\) 与 \(\angle PIK\) 互补, 故两个余弦值互为相反数, 即有<br/>
+\[<br/>
+\dfrac{p(I) + IH^2 - p(H)}{2 PI \cdot IH} + \dfrac{p(I) + IK^2 - p(K)}{2 PI \cdot IK} = 0<br/>
+\]<br/>
+消去分母中的 \(PI\), 并将含有 \(r,t\) 的表达式代入得 <br/>
+\[<br/>
+\dfrac{p(I) + t^2 - 2t(r + t)}{t} + \dfrac{p(I) + (2r + t)^2 - 4r(r + t)}{2r + t} = 0<br/>
+\]<br/>
+最终可解得<br/>
+\[<br/>
+p(I) = 2rt<br/>
+\]<br/>
+即 \(IJ \cdot IF = 2rt\), 又由于其中 \(IF = t\), 所以 \(IJ = 2r = 2ID\), 证毕. </p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[构造高次多项式解决多元方程问题]]></title>
+    <link href="https://cshishaliu.github.io/15355292847712.html"/>
+    <updated>2018-08-29T15:54:44+08:00</updated>
+    <id>https://cshishaliu.github.io/15355292847712.html</id>
+    <content type="html"><![CDATA[
+<p>已知 \(x_1, x_2, \dots, x_9\) 满足方程组<br/>
+\[<br/>
+\begin{cases}<br/>
+\dfrac{x_1}{11} + \dfrac{x_2}{12} + \dots + \dfrac{x_9}{19} = 1 \\<br/>
+\dfrac{x_1}{21} + \dfrac{x_2}{22} + \dots + \dfrac{x_9}{29} = 1 \\<br/>
+\dfrac{x_1}{31} + \dfrac{x_2}{32} + \dots + \dfrac{x_9}{39} = 1 \\<br/>
+\dfrac{x_1}{41} + \dfrac{x_2}{42} + \dots + \dfrac{x_9}{49} = 1 \\<br/>
+\dfrac{x_1}{51} + \dfrac{x_2}{52} + \dots + \dfrac{x_9}{59} = 1 \\<br/>
+\dfrac{x_1}{61} + \dfrac{x_2}{62} + \dots + \dfrac{x_9}{69} = 1 \\<br/>
+\dfrac{x_1}{71} + \dfrac{x_2}{72} + \dots + \dfrac{x_9}{79} = 1 \\<br/>
+\dfrac{x_1}{81} + \dfrac{x_2}{82} + \dots + \dfrac{x_9}{89} = 1 \\<br/>
+\dfrac{x_1}{91} + \dfrac{x_2}{92} + \dots + \dfrac{x_9}{99} = 1 \\<br/>
+\end{cases}<br/>
+\]<br/>
+试求 \(x_1 + x_2 + \dots + x_9\).</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">解答</h2>
+
+<p>构造 (关于 \(n\) 的) 多项式<br/>
+\[<br/>
+f(n) = \left[1 - \left(\dfrac{x_1}{n+1} + \dfrac{x_2}{n+2} + \dots + \dfrac{x_9}{n+9}\right)\right](n+1)(n+2)\cdots(n+9)<br/>
+\]<br/>
+则<br/>
+\[<br/>
+f(10) = f(20) = \dots = f(90) = 0<br/>
+\]<br/>
+这样 \(9\) 次多项式 \(f(n)\) 根全部确定, 因此可以假设<br/>
+\[<br/>
+f(n) = a(n-10) (n-20) \dots (n-90)<br/>
+\]<br/>
+对比最高次项 (\(9\) 次项) 的系数可得 \(a = 1\), 即<br/>
+\[<br/>
+\left[1 - \left(\dfrac{x_1}{n+1} + \dfrac{x_2}{n+2} + \dots + \dfrac{x_9}{n+9}\right)\right](n+1)(n+2)\cdots(n+9) = (n-10) (n-20) \dots (n-90)<br/>
+\]<br/>
+又对比 \(8\) 次项的系数可得<br/>
+\[<br/>
+(1 + 2 + \dots + 9) - (x_1 + x_2+ \dots + x_9) = (-10) + (-20) + \dots + (-90)<br/>
+\]<br/>
+所以 \(x_1 + x_2 + \dots + x_9 = 495\).</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[zhangboxin 20180821]]></title>
+    <link href="https://cshishaliu.github.io/15348999728702.html"/>
+    <updated>2018-08-22T09:06:12+08:00</updated>
+    <id>https://cshishaliu.github.io/15348999728702.html</id>
+    <content type="html"><![CDATA[
+<p>已知函数 \(f(x,y)\) 定义在正整数集上, 满足 \(\forall x,y \in \mathbb N^*\),</p>
+
+<ol>
+<li>\(f(x,x) = x\),</li>
+<li>\(f(x,y) = f(y,x)\),</li>
+<li>\((x+y) \cdot f(x,y) = y \cdot f(x, x+y)\).</li>
+</ol>
+
+<p>求证: \(f(x,y) = [x,y]\) (这里, \([x,y]\) 表示 \(x\) 与 \(y\) 的最小公倍数).</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">探究</h2>
+
+<blockquote>
+<p>这道题出成证明题已经大大降低了难度, 如果出成解答题, 要求 \(f(x,y)\) 的解析式, 就会难很多.</p>
+</blockquote>
+
+<p>这是一个数论和函数方程的问题, 作为函数方程的问题, 标准的上手思路当然还是代入一些特殊值来寻找规律并验证结论. 这里代值的方法当然主要是针对已知条件 3, 令 \(y = x\) 有<br/>
+\[<br/>
+2x \cdot f(x,x) = x \cdot f(x, 2x) \Rightarrow f(x, 2x) = 2 f(x,x) = 2x<br/>
+\]<br/>
+又令 \(y = 2x\), 有<br/>
+\[<br/>
+3x \cdot f(x, 2x) = 2x \cdot f(x, 3x) \Rightarrow f(x, 3x) = \dfrac32 f(x,2x) = 3x<br/>
+\]<br/>
+以此类推, 不难证明<br/>
+\[<br/>
+\forall n, x \in \mathbb N^*, f(x, nx) = nx<br/>
+\]<br/>
+再结合条件 2 知, 当 \(x\) 和 \(y\) 有倍数关系 (即 \(y=nx\) 或 \(x=ny\)) 的时候, 结论 \(f(x,y) = [x,y]\) 是成立的. 那么, 它们没有倍数关系的时候呢? 这时可以考虑利用条件 3 来对 \(f(x,y)\) 做变形和转换, 设法使得两个数变得有倍数关系.</p>
+
+<p>在条件 3 中用 \(x+y\) 替换 \(y\) 有<br/>
+\[<br/>
+(2x+y) \cdot f(x,x+y) = (x+y) \cdot f(x, 2x+y)<br/>
+\]<br/>
+两边同时乘以 \(y\), 再结合条件 3 本身, 有<br/>
+\[<br/>
+(x+y) \cdot y \cdot f(x, 2x+y) = (2x+y) \cdot y \cdot f(x,x+y) = (2x+y) (x+y) f(x,y)<br/>
+\]<br/>
+由于 \(x+y\) 是正整数, 大于零, 因此<br/>
+\[<br/>
+(2x+y) \cdot f(x,y) = y \cdot f(x, 2x+y)<br/>
+\]<br/>
+类似的, 依次用 \(2x+y, 3x+y, \dots\) 替换 \(y\) 可以得到<br/>
+\[<br/>
+\forall n \in \mathbb N^*, (nx + y) \cdot f(x,y) = y \cdot f(x, nx+y)<br/>
+\]<br/>
+事实上, 这个式子不仅对于正整数 \(n\) 成立, 在 \(y &gt; x\) 时对于负的整数 \(n\) 也是成立的, 只要确保 \(nx + y &gt; 0\) 这个前提. 这就让人联想到可以借助辗转相除法.</p>
+
+<p>另外, 如果注意到条件 3 形式上的对称性, 将其乘式形式变成除式形式, 并做适当变形, 可以得到一个更容易处理的形式:<br/>
+\[<br/>
+\dfrac{f(x,y)}{x \cdot y} = \dfrac{f(x, x+y)}{x \cdot (x+y)}<br/>
+\]<br/>
+显然, 需要把 \(\dfrac{f(x,y)}{x \cdot y}\) 视作一个整体, 那么这个等式其实也在提醒我们使用辗转相除法.</p>
+
+<h2 id="toc_1">解答</h2>
+
+<p>构造函数 \(g(x,y) = \dfrac{f(x,y)}{x \cdot y}\), 则</p>
+
+<ol>
+<li>\(g(x,x) = \dfrac1x\);</li>
+<li>\(g(x,y) = g(y,x)\);</li>
+<li>\(g(x,y) = g(x, x+y)\).</li>
+</ol>
+
+<p>为证明 \(f(x,y) = [x,y]\), 只需证明 \(g(x,y) = \dfrac1{(x,y)}\), 这里 \((x,y)\) 表示 \(x\) 与 \(y\) 的最大公约数.</p>
+
+<p>对于任意 \(x,y \in \mathbb N^*\), 若 \(x = y\), 则结论显然成立. 否则, 不妨设 \(x &lt; y\), 则可作带余除法 \(y = x \cdot q_1 + r_1\) (其中 \(q_1, r_1 \in \mathbb N^*\) 且 \(r_1 &lt; x\)), 于是由等式 3 有<br/>
+\[<br/>
+g(x, r_1) = g(x, x+r_1) = g(x, 2x+r_1) = \dots = g(x, q_1 \cdot x + r_1) = g(x, y)<br/>
+\]<br/>
+若 \(r_1 | x\), 则<br/>
+\[<br/>
+g(r_1, r_1) = g(r_1, 2r_1) = g(r_1, 3r_1) = \dots = g(r_1, x)<br/>
+\]<br/>
+因此<br/>
+\[<br/>
+g(x,y) = g(x, r_1) = g(r_1, x) = g(r_1, r_1) = \dfrac1{r_1}<br/>
+\]<br/>
+而不难证明此时 \(r_1 = (x,y)\), 因而结论成立.</p>
+
+<p>否则 (若 \(r_1 \nmid x\)) 可继续作带余除法 \(x = r_1 \cdot q_2 + r_2\) (其中 \(q_2, r_2 \in \mathbb N^*\) 且 \(r_2 &lt; r_1\)), 于是<br/>
+\[<br/>
+g(r_1, r_2) = g(r_1, r_1 + r_2) = <br/>
+g(r_1, 2r_1 + x_2) = \dots = g(r_1, q_2 \cdot r_1 + r_2) = g(r_1, x)<br/>
+\]<br/>
+而 \(g(x,y)  = g(x, r_1) = g(r_1, x) = g(r_1, r_2) = g(r_2, r_1)\). 若 \(r_2 | r_1\), 则不难证明这个值是 \(\dfrac1{r_2}\), 且此时 \(r_2 = (x,y)\). 否则 (若 \(r_2 \nmid r_1\)) 继续作带余除法 \(r_1 = r_2 \cdot q_3 + r_3\)... </p>
+
+<p>以此类推, 这样继续下去可以得到一个有限项的恒为正值且单调递减的余数数列 \(r_1 &gt; r_2 &gt; \dots &gt; r_{n-1} &gt; r_n\), 满足 \(r_{k-2} = r_{k-1} \cdot q_k + r_k\) (\(k = 3,4,\dots,n\)), 这个数列在第 \(n\) 项终止当且仅当 \(r_n | r_{n-1}\). 不难证明 <br/>
+\[<br/>
+g(x, y) = g(x, r_1) = g(r_1, r_2) = g(r_2, r_3) = \dots = g(r_{n-1}, r_n) = \dfrac1{r_n}<br/>
+\]<br/>
+且<br/>
+\[<br/>
+(x, y) = (x, r_1) = (r_1, r_2) = (r_2, r_3) = \dots = (r_{n-1}, r_n) = r_n<br/>
+\]<br/>
+因而结论成立.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[zhaozhe 20180807]]></title>
+    <link href="https://cshishaliu.github.io/15337076183356.html"/>
+    <updated>2018-08-08T13:53:38+08:00</updated>
+    <id>https://cshishaliu.github.io/15337076183356.html</id>
+    <content type="html"><![CDATA[
+<p>计算:<br/>
+\[<br/>
+\dfrac{<br/>
+1 + \sqrt{2-\sqrt2} + \sqrt{2-\sqrt3}<br/>
+}{<br/>
+\sqrt3 + \sqrt{2+\sqrt2} + \sqrt{2+\sqrt3}<br/>
+}<br/>
+\]</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">解答</h2>
+
+<p>\[<br/>
+\begin{aligned}<br/>
+\text{原式}<br/>
+&amp;= \dfrac{<br/>
+1 + \sqrt{2-\sqrt2} + \dfrac{\sqrt6-\sqrt2}2<br/>
+}{<br/>
+\sqrt3 + \sqrt{2+\sqrt2} + \dfrac{\sqrt6+\sqrt2}2<br/>
+} \\<br/>
+&amp;= \dfrac{<br/>
+2\sqrt{2-\sqrt2} + 2 + \sqrt6 - \sqrt2<br/>
+}{<br/>
+2\sqrt{2+\sqrt2} + 2\sqrt3 + \sqrt6 + \sqrt2<br/>
+}<br/>
+\end{aligned}<br/>
+\]<br/>
+不难验证, <br/>
+\[<br/>
+(2\sqrt3 + \sqrt6 + \sqrt2) (\sqrt2 - 1) = 2 + \sqrt6 - \sqrt2<br/>
+\]<br/>
+以及<br/>
+\[<br/>
+\dfrac{\sqrt{2-\sqrt2}}{\sqrt{2+\sqrt2}} = <br/>
+\sqrt{\dfrac{2-\sqrt2}{2+\sqrt2}} = \sqrt2 - 1<br/>
+\]<br/>
+因此, 原式 \(=\sqrt2-1\).</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[liujihang 20180801]]></title>
@@ -19,6 +715,8 @@
     <updated>2018-08-01T22:23:11+08:00</updated>
     <id>https://cshishaliu.github.io/15331333919370.html</id>
     <content type="html"><![CDATA[
+<p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
+
 <p>无穷数列 \(P \colon a_1, a_2, \dots, a_n, \dots\) 满足 \(a_i \in \mathbb N^*\), 且 \(a_i \le a_{i+1}\) (\(i\in \mathbb N^*\)). 对于数列 \(P\), 记 \(T_k (P) = \min \{ n | a_n \ge k \}\) (\(k\in \mathbb N^*\)), 其中 \(\min \{ n | a_n \ge k \}\) 表示集合 \(\{ n | a_n \ge k \}\) 中最小的数.</p>
 
 <ol>
@@ -171,6 +869,8 @@ a_n &amp;= S_n - S_{n-1} \\<br/>
     <updated>2018-06-13T18:21:28+08:00</updated>
     <id>https://cshishaliu.github.io/15288852882913.html</id>
     <content type="html"><![CDATA[
+<p><mark>TODO: 本题确认伪证了</mark></p>
+
 <p>已知 \(A,B,C\) 为三角形三内角. 求 \(\dfrac{\cos^2 A}{1+\cos A} + \dfrac{\cos^2 B}{1+\cos B} + \dfrac{\cos^2 C}{1+\cos C}\) 的最小值.</p>
 
 <span id="more"></span><!-- more -->
@@ -234,6 +934,10 @@ t_1^2 + t_2^2 + t_3^2 = (t_1 + t_2 + t_3)^2 - 2<br/>
     <updated>2018-05-17T16:37:21+08:00</updated>
     <id>https://cshishaliu.github.io/15265462412456.html</id>
     <content type="html"><![CDATA[
+<p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
+
+<p><mark>TODO: 本篇内容也还没完成</mark></p>
+
 <p>这是二试难度的问题 (rdf 20180516 高联选拔题)</p>
 
 <span id="more"></span><!-- more -->
@@ -378,30 +1082,13 @@ s^2 t^2 - s^2 - t^2 + 2st + 3 = 0<br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Todo (at github.io)]]></title>
-    <link href="https://cshishaliu.github.io/15117517873127.html"/>
-    <updated>2017-11-27T11:03:07+08:00</updated>
-    <id>https://cshishaliu.github.io/15117517873127.html</id>
-    <content type="html"><![CDATA[
-<h2 id="toc_0">To be solved</h2>
-
-<h3 id="toc_1">duyan 20171127</h3>
-
-<p>设 \(M = \dfrac{a^2+b^2+c^2}{abc+1}\) (\(a,b,c \in \mathbb R^+\)). 若 \(a+b \le c+1\), \(b+c \le a+1\), \(c+a \le b+1\), 求 \(M\) 的最大值.</p>
-
-<span id="more"></span><!-- more -->
-
-<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1flwztpr8esj30y80hu7wh.jpg" alt=""/></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[duyan 20180123-2]]></title>
     <link href="https://cshishaliu.github.io/15166882779923.html"/>
     <updated>2018-01-23T14:17:57+08:00</updated>
     <id>https://cshishaliu.github.io/15166882779923.html</id>
     <content type="html"><![CDATA[
+<p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
+
 <p>已知 \(H\) 为 \(\triangle ABC\) 的垂心, 过 \(H\) 的直线交 \(BC, AB\) 于 \(D,Z\), 过 \(H\) 且垂直于 \(ZH\) 的另一条直线交 \(BC, AC\) 于 \(E,X\), 点 \(Y\) 使得 \(DY \parallel AC, EY \parallel AB\). 求证: \(X,Y,Z\) 三点共线.</p>
 
 <p><img src="https://ws2.sinaimg.cn/large/006tKfTcly1fnqjnu4ou9j30iu0h7js7.jpg" alt=""/></p>
@@ -550,6 +1237,8 @@ A_{k+1} \le [(k+1)x]<br/>
     <updated>2018-01-23T11:01:34+08:00</updated>
     <id>https://cshishaliu.github.io/15166764942559.html</id>
     <content type="html"><![CDATA[
+<p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
+
 <p>如图, 已知, \(BH\) 为 \(\triangle ABC\) 的高线, \(D,E\) 为中点, \(H\) 关于 \(DE\) 的对称点为 \(F\), \(O\) 为 \(\triangle ABC\) 的外心. 求证: \(B,O,F\) 三点共线.</p>
 
 <p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fnqczqq9rjj30j60h7dgp.jpg" alt=""/></p>
@@ -650,6 +1339,8 @@ BC^2 - AB^2 = AC \cdot BC<br/>
     <updated>2018-01-13T13:04:21+08:00</updated>
     <id>https://cshishaliu.github.io/15158198616473.html</id>
     <content type="html"><![CDATA[
+<p><mark>TODO: 本篇内容似乎也还没完成</mark></p>
+
 <p>试求所有的实系数多项式 \(p(x)\), 使得对满足 \(ab + bc + ca = 0\) 的所有实数 \(a、b、c\), 均有: <br/>
 \[<br/>
 p(a - b) + p(b - c) + p(c - a) = 2p(a + b + c).<br/>
@@ -680,14 +1371,11 @@ p(x) = a_nx^{2n} +a_{n-1}x^{2n-2}+\cdots +a_1x^2, \quad a_n \ne 0 .<br/>
 p(-a) + p \left( \dfrac 83 a \right) + p \left( -\dfrac 53a \right) = 2p \left( \dfrac 73a \right),<br/>
 \]<br/>
 即<br/>
-$$<br/>
-a_n \cdot \left[1+ \left(\dfrac83\right)<sup>{2n}</sup> + \left(\dfrac 53\right)<sup>{2n}</sup> - 2 \left(\dfrac 73\right)<sup>{2n}</sup> \right] \cdot a<sup>{2n}</sup> </p>
-
-<ul>
-<li>\cdots + a_1 \cdot \left[ 1 + \left(\dfrac 83\right)<sup>{2}</sup> + \left(\dfrac 53\right)<sup>{2}</sup> - 2 \left(\dfrac 73\right)<sup>{2}</sup> \right] \cdot a<sup>2</sup> = 0<br/>
-$\(<br/>
-这个等式对任意 \)a\in \mathbb R\( 都成立, 故所有 \)a<sup>k$</sup> 项的系数均为 \(0\).</li>
-</ul>
+\[<br/>
+a_n \cdot \left[1+ \left(\dfrac83\right)^{2n} + \left(\dfrac 53\right)^{2n} - 2 \left(\dfrac 73\right)^{2n} \right] \cdot a^{2n} + <br/>
+\cdots + a_1 \cdot \left[ 1 + \left(\dfrac 83\right)^{2} + \left(\dfrac 53\right)^{2} - 2 \left(\dfrac 73\right)^{2} \right] \cdot a^2 = 0<br/>
+\]<br/>
+这个等式对任意 \(a\in \mathbb R\) 都成立, 故所有 \(a^k\) 项的系数均为 \(0\).</p>
 
 <p>注意到 \(8^6&gt;2\times 7^6\), 故当 \(n\ge 3\) 时, \(\left(\dfrac87\right)^{2n}\ge \left(\dfrac87\right)^6&gt;2\), 故 \(8^{2n}&gt;2\times 7^{2n}\), 从而 \(1 + \left(\dfrac83\right)^{2n} + \left(\dfrac53\right)^{2n} - 2\left(\dfrac73\right)^{2n} &gt; 0\). 因此必须是相应的 \(a_n = 0\).</p>
 
@@ -790,6 +1478,8 @@ p(a - b) + p(b - c) + p(c - a) = 2p(a + b + c)<br/>
     <updated>2018-01-06T13:19:30+08:00</updated>
     <id>https://cshishaliu.github.io/15152159707290.html</id>
     <content type="html"><![CDATA[
+<p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
+
 <p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fn6tewfvhij310406m0wj.jpg" alt=""/></p>
 
 <span id="more"></span><!-- more -->
@@ -864,834 +1554,6 @@ a_n <br/>
 = \Re( (3 e^{i\theta})^n )<br/>
 \]<br/>
 这样可以考虑定义复数列 \(\{z_n\}\), 其通项公式为 \(z_n = (3 e^{i\theta})^n\), 分别考虑其实部数列 (即 \(\{a_n\}\)) 和虚部数列, 寻找好用的递推关系即可. 其实剩下的过程跟上面的三角法没有太大区别.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[一个很有意思的数列变换问题]]></title>
-    <link href="https://cshishaliu.github.io/15141748760281.html"/>
-    <updated>2017-12-25T12:07:56+08:00</updated>
-    <id>https://cshishaliu.github.io/15141748760281.html</id>
-    <content type="html"><![CDATA[
-<p>已知数列 \(\{a_n\}\) 和 \(\{b_n\}\), 其中 \(n \ge 0\) (即两个数列的首项分别为 \(a_0\) 和 \(b_0\)). 若满足<br/>
-\[<br/>
-b_n = \sum_{k=0}^n (-1)^k C_n^k a_k<br/>
-\,, \quad \forall n \in \mathbb N.<br/>
-\]<br/>
-求证:<br/>
-\[<br/>
-a_n = \sum_{k=0}^n (-1)^k C_n^k b_k<br/>
-\,, \quad \forall n \in \mathbb N.<br/>
-\]</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">证明</h2>
-
-<p>这里先给出证明, 如果你读这个证明过程毫无压力, 那就说明你对 \(\sum\) 求和符号的理解和运用已经非常熟练了. <br/>
-如果觉得看不懂, 那么可以先跳过这一节, 看看后面的文字分析, 理解了以后再回来对照着看这个证明过程.<br/>
-\[<br/>
-\begin{aligned}<br/>
-\sum_{k=0}^n (-1)^k C_n^k b_k<br/>
-&amp;= \sum_{k=0}^n (-1)^k C_n^k \cdot \sum_{l=0}^k (-1)^l C_k^l a_l \\<br/>
-&amp;= \sum_{k=0}^n \sum_{l=0}^k (-1)^k C_n^k \cdot (-1)^l C_k^l a_l \\<br/>
-&amp;= \sum_{\color{red}{l=0}}^n \sum_{\color{red}{k=l}}^n (-1)^k C_n^k \cdot (-1)^l C_k^l a_l \\<br/>
-&amp;= \sum_{l=0}^n (-1)^l a_l \sum_{k=l}^n (-1)^k C_n^k C_k^l \\<br/>
-&amp;= \sum_{l=0}^n (-1)^l a_l \sum_{k=l}^n (-1)^k C_n^l C_{n-l}^{k-l} \\<br/>
-&amp;= \sum_{l=0}^n (-1)^l C_n^l a_l \sum_{k=l}^n (-1)^l (-1)^{k-l} C_{n-l}^{k-l} \\<br/>
-&amp;= \sum_{l=0}^n C_n^l a_l \sum_{k=l}^n (-1)^{k-l} C_{n-l}^{k-l}<br/>
-\end{aligned}<br/>
-\]<br/>
-注意最后一步中最后面的这个表达式 \(\sum\limits_{k=l}^n (-1)^{k-l} C_{n-l}^{k-l}\), 显然它的取值只跟 \(n\) 和 \(l\) 有关, 我们把它记作 \(F(n,l)\), 于是<br/>
-\[ \tag{1}<br/>
-\sum_{k=0}^n (-1)^k C_n^k b_k = \sum_{l=0}^n C_n^l a_l \cdot F(n,l)<br/>
-\]<br/>
-不妨做一下换元 \(j=k-l\), 那么<br/>
-\[<br/>
-F(n,l) = \sum_{j=0}^{n-l} (-1)^j C_{n-l}^j<br/>
-\]<br/>
-注意当 \(n-l &gt; 0\), \(F(n,l) = [1+(-1)]^{n-l} = 0\); 但如果 \(n-l =0\), 情况会有点不一样, 此时 \(F(n,l) = \sum\limits_{j=0}^{0} (-1)^j C_{n-l}^j = (-1)^0 C_0^0 = 1\). 也就是说<br/>
-\[<br/>
-F(n,l) = \begin{cases} 1, &amp; n=l \\ 0, &amp; n&gt;l \end{cases}<br/>
-\]<br/>
-因此, (1) 式右边的 \(\sum\) 和式中只有 \(l=n\) 时的那一项 (也就是最后一项) 非零, 因此<br/>
-\[<br/>
-\sum_{k=0}^n (-1)^k C_n^k b_k = C_n^n a_n \cdot F(n,n) = a_n<br/>
-\]<br/>
-这就完成了证明.</p>
-
-<h2 id="toc_1">问题浅析</h2>
-
-<p>如果你对 \(\sum\) 符号的性质和变换技巧不熟, 那么这个题目最大的问题还是题干的叙述方式看上去很晦涩, 复杂的公式符号隐藏了它想表达的数学本质. </p>
-
-<p>想解决这个问题其实也没有多么大的数学技巧, 就是不厌其烦, 勤勤恳恳, 简单粗暴的把这些公式的初等形式写出来.</p>
-
-<p>题目的已知条件就是: \(\forall n \in \mathbb N\),<br/>
-\[<br/>
-b_n = C_n^0 a_0 - C_n^1 a_1 + C_n^2 a_2 - \dots + (-1)^n C_n^n a_n<br/>
-\]<br/>
-这个式子中恐怕仍看不出什么所以然, 那么只好给 \(n\) 取几个简单值试试, 找找规律了:<br/>
-\[<br/>
-\begin{aligned}<br/>
-b_0 &amp;= a_0 \\<br/>
-b_1 &amp;= a_0 - a_1 \\<br/>
-b_2 &amp;= a_0 - 2 a_1 + a_2 \\<br/>
-b_3 &amp;= a_0 - 3 a_1 + 3 a_2 - a_3 \\<br/>
-&amp; \vdots<br/>
-\end{aligned}<br/>
-\]<br/>
-然后题目需要你证明的是 \(\forall n \in \mathbb N\),<br/>
-\[<br/>
-a_n = C_n^0 b_0 - C_n^1 b_1 + C_n^2 b_2 - \dots + (-1)^n C_n^n b_n<br/>
-\]<br/>
-也就是<br/>
-\[<br/>
-\begin{aligned}<br/>
-a_0 &amp;= b_0 \\<br/>
-a_1 &amp;= b_0 - b_1 \\<br/>
-a_2 &amp;= b_0 - 2 b_1 + b_2 \\<br/>
-a_3 &amp;= b_0 - 3 b_1 + 3 b_2 - b_3 \\<br/>
-&amp; \vdots<br/>
-\end{aligned}<br/>
-\]</p>
-
-<p>稍加尝试就会发现, 上面这组式子中的每一个证明起来都不是很难, 只不过越到后面的式子, 项数越多, 验证起来越繁琐. 并且最麻烦的问题在于, 我们不可能通过逐个一一验证的方式来证明这组式子, 因为它有无穷多个.</p>
-
-<p>所以必须得能够给出一个形式上统一的证明过程, 这个证明过程的每一步变形都会包含字母 \(n\), 从而能适用于待证结论中的所有项.</p>
-
-<p>但写到这里, 你也应该能发现, 这样一个证明过程的思路应该很明确了, 它需要的最关键的东西不是数学技巧, 而是耐心.</p>
-
-<p>要证明<br/>
-\[<br/>
-a_n = C_n^0 b_0 - C_n^1 b_1 + C_n^2 b_2 - \dots + (-1)^n C_n^n b_n<br/>
-\]<br/>
-这个式子的右边等于<br/>
-\[<br/>
-\begin{aligned}<br/>
-&amp; \phantom{{}+{}} C_n^0 (C_0^0 a_0) \\<br/>
-&amp; - C_n^1 (C_1^0 a_0 - C_1^1 a_1) \\<br/>
-&amp; + C_n^2 (C_2^0 a_0 - C_2^1 a_1 + C_2^2 a_2) \\<br/>
-&amp; - C_n^3 (C_3^0 a_0 - C_3^1 a_1 + C_3^2 a_2 - C_3^3 a_3) \\<br/>
-&amp; \vdots \\<br/>
-&amp; + (-1)^n C_n^n (C_n^0 a_0 - C_n^1 a_1 + C_n^2 a_2 - \dots + (-1)^n C_n^n a_n)<br/>
-\end{aligned}<br/>
-\]<br/>
-接下来显然应该按照数列 \(\{a_n\}\) 的项重新合并同类项<br/>
-\[<br/>
-\begin{aligned}<br/>
-&amp; \phantom{{}+{}} (C_n^0 C_0^0 - C_n^1 C_1^0 + C_n^2 C_2^0 - C_n^3 C_3^0 + \dots + (-1)^n C_n^n C_n^0) \cdot a_0 \\<br/>
-&amp; + (C_n^1 C_1^1 - C_n^2 C_2^1 + C_n^3 C_3^1 - \dots + (-1)^{n-1} C_n^n C_n^1) \cdot a_1 \\<br/>
-&amp; + (C_n^2 C_2^2 - C_n^3 C_3^2 + \dots + (-1)^{n-2} C_n^n C_n^2) \cdot a_2 \\<br/>
-&amp; \vdots \\<br/>
-&amp; + (C_n^{n-1} C_{n-1}^{n-1} - C_n^n C_n^{n-1}) \cdot a_{n-1} \\<br/>
-&amp; + (C_n^n C_n^n) \cdot a_n<br/>
-\end{aligned}<br/>
-\]<br/>
-这样, 我们需要证明的就是除了最后一项 \(a_n\) 以外, 其余各项的系数都恰好能抵消为零. 这些不用 \(\sum\) 符号的初等形式虽然繁琐, 但能帮助我们找到问题的本质. 上一小节中的那个晦涩的证明过程其实也就是在完成这些证明工作.</p>
-
-<h2 id="toc_2">一个有意思的矩阵性质</h2>
-
-<p>这个题目中所描述的两个数列之间的变换关系, 如果用矩阵形式来表示, 会得到一个有意思的结论. </p>
-
-<p>考虑两个数列的前 \(n+1\) 项 (\(a_0, \dots, a_n\) 以及 \(b_0, \dots, b_n\)), 根据已知条件有<br/>
-\[<br/>
-\begin{pmatrix}<br/>
-b_0 \\ b_1 \\ b_2 \\ \vdots \\ b_n<br/>
-\end{pmatrix}<br/>
-= \begin{pmatrix}<br/>
-C_0^0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\<br/>
-C_1^0 &amp; -C_1^1 &amp; 0 &amp; \cdots &amp; 0 \\<br/>
-C_2^0 &amp; -C_2^1 &amp; C_2^2 &amp; \cdots &amp; 0 \\<br/>
-\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\<br/>
-C_n^0 &amp; -C_n^1 &amp; C_n^2 &amp; \cdots &amp; C_n^n<br/>
-\end{pmatrix}<br/>
-\begin{pmatrix}<br/>
-a_0 \\ a_1 \\ a_2 \\ \vdots \\ a_n<br/>
-\end{pmatrix}<br/>
-\]<br/>
-下面把中间这个矩阵记作 \(\mathbf A_n\). 例如 \(\mathbf A_0 = \begin{pmatrix} 1 \end{pmatrix}\), \(\mathbf A_1 = \begin{pmatrix} 1 &amp; 0 \\ 1 &amp; -1\end{pmatrix}\), \(\mathbf A_2 = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 1 &amp; -1 &amp; 0 \\ 1 &amp; -2 &amp; 1 \end{pmatrix}\); 对于 \(n=3\) 的情况有<br/>
-\[<br/>
-\mathbf A_3 = \begin{pmatrix}<br/>
-1 &amp; 0 &amp; 0 &amp; 0 \\<br/>
-1 &amp; -1 &amp; 0 &amp; 0 \\<br/>
-1 &amp; -2 &amp; 1 &amp; 0 \\<br/>
-1 &amp; -3 &amp; 3 &amp; -1<br/>
-\end{pmatrix}<br/>
-\]<br/>
-根据已知条件有<br/>
-\[<br/>
-\begin{pmatrix}<br/>
-b_0 \\ b_1 \\ b_2 \\ b_3<br/>
-\end{pmatrix}<br/>
-= \mathbf A_3<br/>
-\begin{pmatrix}<br/>
-a_0 \\ a_1 \\ a_2 \\ a_3<br/>
-\end{pmatrix}<br/>
-\]<br/>
-而如果待证结论成立, 就有<br/>
-\[<br/>
-\begin{pmatrix}<br/>
-a_0 \\ a_1 \\ a_2 \\ a_3<br/>
-\end{pmatrix}<br/>
-= \mathbf A_3<br/>
-\begin{pmatrix}<br/>
-b_0 \\ b_1 \\ b_2 \\ b_3<br/>
-\end{pmatrix}<br/>
-= \mathbf A_3 \cdot \mathbf A_3<br/>
-\begin{pmatrix}<br/>
-a_0 \\ a_1 \\ a_2 \\ a_3<br/>
-\end{pmatrix}<br/>
-\]<br/>
-这就意味着 \(\mathbf A_3 \cdot \mathbf A_3\) 应该是 4 阶单位矩阵. 进一步我们知道所有的 \(\mathbf A_n \cdot \mathbf A_n\) 应该是 4 阶单位矩阵.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[zhangzhiyuan 20171125]]></title>
-    <link href="https://cshishaliu.github.io/15116623932028.html"/>
-    <updated>2017-11-26T10:13:13+08:00</updated>
-    <id>https://cshishaliu.github.io/15116623932028.html</id>
-    <content type="html"><![CDATA[
-<p>数列 \(\{a_n\}\) 满足 \(a_1 = 2\), \(a_{n+1} = \dfrac{a_n}2 + \dfrac1{a_n}\), 求其通项公式.</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">“不动点法”好像不好用</h2>
-
-<p>尝试采用不动点法: </p>
-
-<p>不动点方程为 <br/>
-\[<br/>
-x = \dfrac x2 + \dfrac1x<br/>
-\]<br/>
-解得 \(x = \pm \sqrt2\). 取不动点 \(\sqrt2\), 将递推公式改写为<br/>
-\[<br/>
-a_{n+1} - \sqrt2 = \dfrac{a_n}2 + \dfrac1{a_n} - \sqrt2 = \dfrac{(a_n - \sqrt2)^2}{2 a_n}<br/>
-\]<br/>
-到这里仍然没有特别好的办法.</p>
-
-<h2 id="toc_1">研究一下这个数列的前几项</h2>
-
-<p>已知 \(a_1 = 2\), 那么数列紧接下来的几项是<br/>
-\[<br/>
-\begin{aligned}<br/>
-a_2 &amp;= \dfrac22 + \dfrac12 = \dfrac32 \\<br/>
-a_3 &amp;= \dfrac34 + \dfrac23 = \dfrac{9+8}{4 \times 3} = \dfrac{17}{12}\\<br/>
-a_4 &amp;= \dfrac{17}{24} + \dfrac{12}{17} = \dfrac{289+288}{24 \times 17} = \cdots<br/>
-\end{aligned}<br/>
-\]</p>
-
-<p>显然, 这个数列中的每一项都是有理数, 但是到 \(a_4\) 的时候, 分子和分母都已经是非常大的数.</p>
-
-<p>观察一下 \(a_3\) 和 \(a_4\) 的计算过程, 会注意到一个有趣的现象, 就是通分以后的分子总是两个相邻的整除之和 (\(a_3\) 中是 \(9+8\), \(a_4\) 中是 \(289+288\)), 并且这两个相邻整数都跟前一项的分子和分母相关. 这就提示我们应该把 \(a_n\) 的分子和分母分开做一下研究.</p>
-
-<p>设 \(a_n = \dfrac{p_n}{q_n}\), \(p_n\) 和 \(q_n\) 都是正整数. 对于数列的前几项:<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> </p>
-
-<ul>
-<li>\(p_2 = 3\), \(q_2 = 2\), \(a_2 = \dfrac32\); </li>
-<li>\(p_3 = 17\), \(q_3 = 12\), \(a_3 = \dfrac{17}{12}\); </li>
-<li>\(p_4 = 289+288 = 577\), \(q_4 = 24 \times 17 = 408\), \(a_4 = \dfrac{577}{408}\) 等等.</li>
-</ul>
-
-<p>根据数列 \(\{a_n\}\) 的递推公式, <br/>
-\[a_{n+1} = \dfrac{a_n}2 + \dfrac1{a_n} = \dfrac{p_n}{2 q_n} + \dfrac{q_n}{p_n} = \dfrac{p_n^2 + 2 q_n^2}{2 p_n q_n}\]<br/>
-于是接下来有这么两个问题:</p>
-
-<ol>
-<li><p>对于 \(a_{n+1}\), 应该有 \(a_{n+1} = \dfrac{p_{n+1}}{q_{n+1}} = \dfrac{p_n^2 + 2 q_n^2}{2 p_n q_n}\), 那么这里我们是否就一定可以说 \(p_{n+1} = p_n^2 + 2 q_n^2\) 而 \(q_{n+1} = 2 p_n q_n\)?  </p>
-<ul>
-<li>或者说 \(p_n^2 + 2 q_n^2\) 和 \(2 p_n q_n\) 是否总是互质? 万一出现不互质的情况, \(\{p_n\}\) 和 \(\{q_n\}\) 的递推关系就有可能会变得很复杂.</li>
-</ul></li>
-<li><p>根据上面总结出来的规律, 这里分子中的 \(p_n^2\) 和 \(2 q_n^2\) 应该是两个相邻的整数. 这个结论是否总是成立呢?</p></li>
-</ol>
-
-<p>这两个问题单独拿出来都很难回答, 但如果注意到它们之间有联系, 问题其实要好解决的多.</p>
-
-<p>首先, 我们姑且忽略 \(p_n^2 + 2 q_n^2\) 和 \(2 p_n q_n\) 是否互质的问题, 强行采用这个递推关系: <br/>
-\[<br/>
-\begin{cases}<br/>
-p_{n+1} = p_n^2 + 2 q_n^2 \\<br/>
-q_{n+1} = 2 p_n q_n<br/>
-\end{cases}<br/>
-\]<br/>
-那么,<br/>
-\[<br/>
-p_{n+1}^2 - 2 q_{n+1}^2 = (p_n^2 + 2 q_n^2)^2 - 2 (2 p_n q_n)^2 = (p_n^2 - 2 q_n^2)^2<br/>
-\]<br/>
-于是, 只要一开始 \(p_n^2 - 2 q_n^2\) 等于 \(1\), 那么后面的 \(p_{n+1}^2 - 2 q_{n+1}^2\) 永远等于 \(1\). 而这个题里“凑巧”有<br/>
-\[<br/>
-p_2^2 - 2 q_3^2 = 3^2 - 2 \times 2^2 = 1<br/>
-\]<br/>
-也就是说, \(p_n^2\) 和 \(2 q_n^2\) 确实总是两个相邻的整数.</p>
-
-<p>有了这个结论, 也就不难证明 \(p_n^2 + 2 q_n^2\) 和 \(2 p_n q_n\) 是互质的. 但是, 当我们发现 \(\{p_n\}\) 和 \(\{q_n\}\) 的递推关系所具有的性质以后, 上面这两个问题其实也就不是那么重要了, 我们可以就研究这组递推数列, 看是否又能够借此找到 \(\{a_n\}\) 的通项公式.</p>
-
-<h2 id="toc_2">寻找通项公式</h2>
-
-<p>下面我们要研究这样一个递推数列组 \(\{p_n\}, \{q_n\}\), (\(n \in \mathbb N^*, n \ge 2\))<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>: \(p_2 = 3, q_2 = 2\), 且<br/>
-\[<br/>
-\begin{cases}<br/>
-p_{n+1} = p_n^2 + 2 q_n^2 \\<br/>
-q_{n+1} = 2 p_n q_n<br/>
-\end{cases}<br/>
-\]</p>
-
-<p>这组递推公式, 它的形式能够给我们的另一个提示就是, 可以设法构造完全平方公式. 只是这样的构造有一个代价, 就是会引入无理数. 但是我们尝试一下, 很快就能发现这个代价不算什么.<br/>
-\[<br/>
-p_{n+1} + \sqrt2 q_{n+1} <br/>
-= p_n^2 + 2 q_n^2 + 2 \sqrt2 p_n q_n <br/>
-= (p_n + \sqrt2 q_n)^2 <br/>
-\]<br/>
-另外还有一个是<br/>
-\[<br/>
-p_{n+1} - \sqrt2 q_{n+1} <br/>
-= p_n^2 + 2 q_n^2 - 2 \sqrt2 p_n q_n <br/>
-= (p_n - \sqrt2 q_n)^2 <br/>
-\]<br/>
-这两个递推关系都可以算是极为简单的<sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup>, 根据它们都可以直接写出 \(p_n \pm \sqrt2 q_n\) 的通项公式了:</p>
-
-<p>\[<br/>
-\begin{aligned}<br/>
-p_n + \sqrt2 q_n<br/>
-&amp;= (p_{n-1} + \sqrt2 q_{n-1})^2 \\<br/>
-&amp;= [(p_{n-2} + \sqrt2 q_{n-2})^2]^2 = (p_{n-2} + \sqrt2 q_{n-2})^{2^2} \\<br/>
-&amp;= \cdots \\<br/>
-&amp;= (p_2 + \sqrt2 q_2)^{2^{n-2}} = (3 + 2\sqrt2)^{2^{n-2}} = (\sqrt2+1)^{2^{n-1}} <br/>
-\\[1em]<br/>
-p_n - \sqrt2 q_n <br/>
-&amp;= (p_2 - \sqrt2 q_2)^{2^{n-2}} = (3 - 2\sqrt2)^{2^{n-2}} = (\sqrt2-1)^{2^{n-1}}<br/>
-\end{aligned}<br/>
-\]<br/>
-因此, <br/>
-\[<br/>
-\begin{cases}<br/>
-p_n = \dfrac{(\sqrt2+1)^{2^{n-1}} + (\sqrt2-1)^{2^{n-1}}}2 \\<br/>
-q_n = \dfrac{(\sqrt2+1)^{2^{n-1}} - (\sqrt2-1)^{2^{n-1}}}<br/>
-{2\sqrt2}<br/>
-\end{cases}<br/>
-\]<br/>
-于是,<br/>
-\[<br/>
-\begin{aligned}<br/>
-a_n = \dfrac{p_n}{q_n} <br/>
-&amp;= \sqrt2 \cdot \dfrac{(\sqrt2+1)^{2^{n-1}} + (\sqrt2-1)^{2^{n-1}}}{(\sqrt2+1)^{2^{n-1}} - (\sqrt2-1)^{2^{n-1}}} \\<br/>
-&amp;= \sqrt2 \cdot \dfrac{(\sqrt2+1)^{2^n} + 1}{(\sqrt2+1)^{2^n} - 1} \\<br/>
-\end{aligned}<br/>
-\]</p>
-
-<p>按照上面的推导过程, 这些递推公式仅对 \(n \ge 2\) 的情况成立, 但是我们可以强行计算一下 \(n=1\) 的情况, 此时<br/>
-\[<br/>
-p_1 = \sqrt2, q_1 = \dfrac1{\sqrt2}, a_1 = 2<br/>
-\]</p>
-
-<p>可以看到 \(a_n\) 的通项公式在 \(n = 1\) 的时候仍然满足, 只是 \(p_n\)  和 \(q_n\) 的通项公式会导致 \(p_1\) 和 \(q_1\) 计算出来都是无理数. 但就这个题目本身的要求而言, 我们的目标已经达到了.</p>
-
-<h2 id="toc_3">采用不动点法的快速解法</h2>
-
-<blockquote>
-<p>update 20111128</p>
-
-<p>被同事老师提醒, 这个题其实还是不动点方法, 只是不动点法中的另一种技巧.</p>
-</blockquote>
-
-<p>上面已经得到过, 取不动点 \(\sqrt2\), 将递推公式改写为<br/>
-\[<br/>
-a_{n+1} - \sqrt2 = \dfrac{(a_n - \sqrt2)^2}{2 a_n}<br/>
-\]<br/>
-另取不动点 \(-\sqrt2\), 将递推公式改写为<br/>
-\[<br/>
-a_{n+1} + \sqrt2 = \dfrac{(a_n + \sqrt2)^2}{2 a_n}<br/>
-\]<br/>
-两式相除可得<br/>
-\[<br/>
-\dfrac{a_{n+1} - \sqrt2}{a_{n+1} + \sqrt2} = \left( \dfrac{a_n - \sqrt2}{a_n + \sqrt2} \right)^2<br/>
-\]<br/>
-因此,<br/>
-\[<br/>
-\dfrac{a_n - \sqrt2}{a_n + \sqrt2} = \left( \dfrac{a_1 - \sqrt2}{a_1 + \sqrt2} \right)^{2^{n-1}} = \left( \dfrac{2 - \sqrt2}{2 + \sqrt2} \right)^{2^{n-1}} = \left( \sqrt2-1 \right)^{2^n}<br/>
-\]<br/>
-将 \(a_n\) 反解出来即可.</p>
-
-<div class="footnotes">
-<hr/>
-<ol>
-
-<li id="fn1">
-<p>注意 \(a_1 = 2\) 似乎找不到对应的比较合理的整数 \(p_1\) 和 \(q_1\), 但这并不是一个特别致命的问题, 我们暂且忽略它.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
-</li>
-
-<li id="fn2">
-<p>是的, 这个数列没有第“一”项, 但如上所述, 这个问题不致命.&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
-</li>
-
-<li id="fn3">
-<p>但是依然有两件事情非常值得注意: 一是, 把这两个递推式相乘得到的就是 \(p_{n+1}^2 - 2 q_{n+1}^2 = (p_n^2 - 2 q_n^2)^2\), 这个等式在前面推导过; 另外, 注意由于所有的 \(p_n,q_n\) 都是整数, 所以其实由 \(p_{n+1} + \sqrt2 q_{n+1} = (p_n + \sqrt2 q_n)^2\) 也能直接推导出 \(p_{n+1} - \sqrt2 q_{n+1} = (p_n - \sqrt2 q_n)^2\).&nbsp;<a href="#fnref3" rev="footnote">&#8617;</a></p>
-</li>
-
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[lixinyi 20171119]]></title>
-    <link href="https://cshishaliu.github.io/15111000681752.html"/>
-    <updated>2017-11-19T22:01:08+08:00</updated>
-    <id>https://cshishaliu.github.io/15111000681752.html</id>
-    <content type="html"><![CDATA[
-<p>已知函数 \(f(x) = \sqrt{x^2+1}-ax\) (\(a \in \mathbb R\)).</p>
-
-<p>(1) 当 \(a=1\) 时, 判断 \(f(x)\) 在 \(\mathbb R\) 上的点调性;<br/>
-(2) 求实数 \(a\) 的取值范围, 使得函数 \(f(x)\) 在 \(\mathbb R^+\) 上是单调函数.</p>
-
-<p><img src="https://ws2.sinaimg.cn/large/006tKfTcly1flnqqalu54j315207earo.jpg" alt=""/></p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">第 (1) 问</h2>
-
-<p>第 (1) 问应该还比较简单, \(a=1\) 时, 函数 \(f(x) = \sqrt{x^2+1} - x\).</p>
-
-<p>这个函数在 \(x \ge 0\) 时, \(\sqrt{x^2+1}\) 跟 \(x\) 的单调性趋势相同, 因此它们的差并不能直接判断单调性. 但是可以做“分子有理化”的变形:<br/>
-\[<br/>
-f(x) = \dfrac{\left( \sqrt{x^2+1} - x \right) \left( \sqrt{x^2+1} + x \right)}{\sqrt{x^2+1} + x} = \dfrac1{\sqrt{x^2+1} + x}<br/>
-\]<br/>
-那么就能明显看出来是单调减了. 需要注意的是, 以上的讨论只对 \(x \ge 0\) 的情况成立.</p>
-
-<p>在 \(x \le 0\) 时, 这个函数的单调性其实是非常好讨论的, 因为这个时候, \(x\) 越大, \(\sqrt{x^2+1}\) 和 \(-x\) 都会越小, 于是 \(f(x) = \sqrt{x^2+1} + (-x)\) 当然也就越小.</p>
-
-<p>于是综上所述, \(f(x) = \sqrt{x^2+1} - x\) 在整个实数集 \(\mathbb R\) 上都是单调递减的.</p>
-
-<h2 id="toc_1">第 (2) 问</h2>
-
-<blockquote>
-<p><code>update 20171127</code></p>
-
-<ol>
-<li><p>上一稿中, 我将第二问的题干错看成了</p>
-<blockquote>
-<p>求实数 \(a\) 的取值范围, 使得函数 \(f(x)\) 在 \(\mathbb R^+\) 上是单调<mark><strong>增</strong></mark>函数.</p>
-</blockquote>
-<p>而得到了错误的结论, 在这里更正;</p></li>
-<li><p>Z. Q. Ren 老师提供了一种三角换元的方法, 使得这个题在不用导数的情况下, 有另一种更“优雅”的方法, 这里也分享一下.</p></li>
-</ol>
-</blockquote>
-
-<p>第 (2) 问的难度可能相对就较大了. 有了第 (1) 问的结论，首先应该很容易判断: </p>
-
-<ul>
-<li>\(a \ge 1\) 时, \(f(x)\) 一定单调减,</li>
-<li>\(a \le 0\) 时, \(f(x)\) 一定单调增.</li>
-</ul>
-
-<p>因此, 这两个取值范围肯定可以. 所以接下来的问题在于 \((0,1)\) 区间中的值能不能取? </p>
-
-<p>对于一般的 (暂不知具体取值的) \(a\) 值, 没有比较好的技巧可用, 我们只能是从<strong>单调性的定义</strong>出发来研究一下.</p>
-
-<p>设 \(x_1, x_2 \in \mathbb R^+\), \(x_1&lt;x_2\). 可以先做下面的计算:<br/>
-\[<br/>
-\begin{aligned}<br/>
-f(x_1) - f(x_2) <br/>
-&amp;= \left( \sqrt{x_1^2+1} - a x_1 \right) - \left( \sqrt{x_2^2+1} - ax_2 \right) \\<br/>
-&amp;= \left( \sqrt{x_1^2+1} - \sqrt{x_2^2+1} \right) - a(x_1 - x_2) \\<br/>
-&amp;= \dfrac{x_1^2 - x_2^2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}} - a(x_1 - x_2) \\<br/>
-&amp;= \left( \dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}} - a \right) (x_1 - x_2)<br/>
-\end{aligned}<br/>
-\]<br/>
-最后的结果中, 第二个括号里的值确定是小于 \(0\) 的, 所以我们也就希望第一个括号里的数在区间 \(\mathbb R^+\) 上不会变号. </p>
-
-<p>就是说 \(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}}\) 要么永远大于 \(a\), 要么永远小于 \(a\). 但在函数 \(f(x)\) 里, \(a\) 是一个常数, 只是取值待定. 因此, 上面的结论可以说成:</p>
-
-<blockquote>
-<p>\(a\) 得大于 \(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}}\) 能取到的最大值, 或者小于它能取到的最小值.</p>
-</blockquote>
-
-<p>于是接下来的问题就变成了 \(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}}\) 的取值范围. 这个问题看上去好像不是很容易, 但回顾一下我们已经得到过哪些结论? </p>
-
-<p>前面我们已经得到 \(a\ge1\) 或 \(a\le0\) 的时候, 都是满足题目要求的. 那么也就是说:</p>
-
-<blockquote>
-<p>\(a\ge1\) 或 \(a\le0\) 的时候, \(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}} - a\) 要么恒为正数值, 要么恒为负数值 ( \(\forall x_1,x_2 \in \mathbb R^+, x_1 &lt; x_2\)). </p>
-</blockquote>
-
-<p>或者说</p>
-
-<blockquote>
-<p>\(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}}\) 的最大值一定小于 \(1\), 而最小值一定大于 \(0\).</p>
-</blockquote>
-
-<p>仔细思考一下当 \(x_1\) 和 \(x_2\) 在 \(\mathbb R^+\) 上取不同值的时候, 不难发现 \(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}}\) 的取值确实总在 \((0,1)\) 上, 并且它能够取遍 \((0,1)\) 区间上的所有数值. 具体来说, </p>
-
-<ul>
-<li>当 \(x_1,x_2\) 取值无限小 (无限接近于零) 的时候,这个分式的值就会无限接近于 \(0\); </li>
-<li>而当 \(x_1,x_2\) 取值无限大, 越来越大的时候, 分母中两个根号下的 \(1\) 相对于 \(x_1\) 和 \(x_2\) 来说, 变得越来越微不足道, 分母与分子的值就会越来越接近, 分式值会无限接近于 \(1\) (但是永远小于 \(1\)).</li>
-</ul>
-
-<p>有了这些分析, 大致可以确认 \(\dfrac{x_1 + x_2}{\sqrt{x_1^2+1} + \sqrt{x_2^2+1}}\) 的最值范围就是 \((0,1)\). 因此, 为使得函数 \(f(x)\) 单调, \(a\) 的取值范围应该是 \((-\infty, 0] \cup [1, +\infty)\).</p>
-
-<h3 id="toc_2">补记</h3>
-
-<p>这个题的第 (2) 问, 我觉得应该是在学完<strong>导数</strong>以后再来做, 才是比较合理的. 不用导数的话, 大概只能做成上面这个样子, 有些勉强. 虽然题目还算能做, 但是这个思路和写出来的解题过程看上去就有点不是正常人能想出来的.</p>
-
-<p>并且, 事实上我写的这个思考和分析过程, 带有很强的高等数学的研究学习技巧, 一个中学生很难面面俱到的思考出的所有方面. 如果能看懂这个这个分析过程, 并且在以后的学习和做题中加以模仿, 那就很好了.</p>
-
-<p>最后, 补两张函数图像, 增强一下直观感受.</p>
-
-<ul>
-<li><p>分别是 \(a=0\), \(a=1\) 和 \(a = \dfrac1{10}\) 的情形.<br/>
-<img src="https://ws2.sinaimg.cn/large/006tKfTcly1flnt0l6sh0j31kw0vw0xd.jpg" alt=""/></p></li>
-<li><p>再来一张局部放大.<br/>
-<img src="https://ws1.sinaimg.cn/large/006tKfTcly1flnt60j5gxj31kw0vrn1c.jpg" alt=""/></p>
-<ul>
-<li>注意这张放大图要看清 \(x,y\) 轴上的刻度位置.</li>
-<li>另外注意图中的蓝色线 (\(x = \dfrac1{10}\) 的情形) 在 \((0,\dfrac1{10})\) 这个区间上确实是单调减的, 但是由于这个区间太短, 函数下降的趋势也不是很明显, 因此必须得把图像放大足够倍数才能看出来.</li>
-</ul></li>
-</ul>
-
-<h3 id="toc_3">Z. Q. Ren 老师提供的三角换元法</h3>
-
-<p>注意到函数 \(f(x) = \sqrt{x^2+1}-ax\) 的形式, 可以设 \(x = \tan\theta\). 我们讨论的 \(x\) 的取值范围是 \(\mathbb R^+\), 因此只需关注 \(\theta \in (0, \dfrac\pi2)\) 这个区间即可. 那么 <br/>
-\[<br/>
-f(x) <br/>
-= \sqrt{\tan^2\theta+1} - a \tan\theta <br/>
-= \dots<br/>
-= (-a) \cdot \dfrac{\sin\theta - \frac1a}{\cos\theta - 0}<br/>
-\]<br/>
-由于 \(x\) 关于 \(\theta\) 的变化趋势是单调的 (\(x\) 是 \(\theta\) 的单调增函数), 因此只需 \(f(x)\) 关于 \(\theta\) 单调即可 (无论单调增或单调减都行), 或者其实只需 \(\dfrac{\sin\theta - \frac1a}{\cos\theta - 0}\) 关于 \(\theta\) 单调即可.</p>
-
-<p>而 \(\dfrac{\sin\theta - \frac1a}{\cos\theta - 0}\) 可以看成是平面直角坐标系上 \((\cos\theta, \sin\theta)\) 和 \(\left( 0, \dfrac1a \right)\) 两点连线的斜率. <strong>仔细</strong><sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>的考察并利用这个几何意义, 最终应该能得出结论: 只要第二个点的纵坐标 \(\dfrac1a \le 1\), 这个连线斜率随 \(\theta\) 的变化就是单调的. 因此, \(a\le 0\) 或 \(a\ge1\).<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup></p>
-
-<div class="footnotes">
-<hr/>
-<ol>
-
-<li id="fn1">
-<p>真的得非常非常非常仔细.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
-</li>
-
-<li id="fn2">
-<p>注意由 \(\dfrac1a \le 1\) 直接能够导出的结果只是 \(a &lt; 0\) 或 \(a \ge 1\), 因此采用这种方法的时候, 应该先单独讨论 \(a=0\) 的情形.&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
-</li>
-
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[libinglun 20171112]]></title>
-    <link href="https://cshishaliu.github.io/15107317542032.html"/>
-    <updated>2017-11-15T15:42:34+08:00</updated>
-    <id>https://cshishaliu.github.io/15107317542032.html</id>
-    <content type="html"><![CDATA[
-<p>设 \(p\) 和 \(q\) 是两个质数, 求不能表示为 \(mp + nq\) (其中, \(m,n\) 是自然数) 的最大正整数 (用 \(p\) 和 \(q\) 表示).</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">解答</h2>
-
-<p><strong>结论</strong>: 所求的最大正整数值为 \(pq - p - q\).</p>
-
-<ul>
-<li><p>首先证明 \(pq - p - q\) 无法表示为 \(mp + nq\), 且 \(m,n\) 是自然数.<br/>
-否则, 若 \(pq - p - q = mp + nq\), 则 \((m+1) p = (p-n-1) q\), 由于 \(p,q\) 都是质数, 必有 \(p | p-n-1\).<br/>
-若 \(n \ge 0\), 则设 \(p-n-1 = kp\) 时, \(kp &lt; p\), 有 \(k \le 0\), 于是 \(m+1 \le 0\), \(m \le -1\).<br/>
-否则 \(n \le -1\), 也就是说将 \(pq - p - q\) 表示为 \(mp + nq\) 时, \(m\) 和 \(n\) 中一定有一个是负数.</p></li>
-<li><p>下面证明大于 \(pq - p - q\) 的数都能表示为 \(mp + nq\), 且 \(m,n\) 是自然数.<br/>
-考虑 \(pq-p-q+r = mp+nq\), 其中 \(r \ge 1\). 有 \((m+1)p = r + (p-n-1) q\).<br/>
-考虑 \(n=0,1,2,\dots,p-1\) 时, 等号右边的值分别是 \(r + (p-1) q, r + (p-2) q, r + (p-3) q, \dots, r + 0 \cdot q\), 这 \(p\) 个数除以 \(p\) 的余数各不相同 (为什么?), 故其中必有一个是 \(p\) 的倍数, 它即所对应着我们需要的自然数 \(m,n\) 值. </p></li>
-</ul>
-
-<h2 id="toc_1">后记</h2>
-
-<p>这个问题需要对裴蜀定理有比较深的理解. 裴蜀定理的内容很简洁:</p>
-
-<ul>
-<li>\((p,q) = 1\) 的充分必要条件是存在正数 \(m,n\) 使得 \(mp+nq = 1\).</li>
-</ul>
-
-<p>充分性用反证法很容易证明. 若 \((p,q) = t &gt; 1\), 则无论 \(m,n\) 取何值, 都必有 \(t \mid mp+nq\), 故不可能有 \(mp+nq=1\).</p>
-
-<p>必要性稍稍难想一点点, 跟上面这道题用到的一个小技巧相同.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[kongyuqing 20171024]]></title>
-    <link href="https://cshishaliu.github.io/15088927359289.html"/>
-    <updated>2017-10-25T08:52:15+08:00</updated>
-    <id>https://cshishaliu.github.io/15088927359289.html</id>
-    <content type="html"><![CDATA[
-<p>100 个数围成一圈, \(a_{3} &gt; a_{2} + a_{1}\), \(a_{4} &gt; a_{3} + a_{2}\), \(\dots\) , \(a_{100} &gt; a_{99} + a_{98}\), \(a_{1} &gt; a_{100} + a_{99}\), \(a_{2} &gt; a_{1} + a_{100}\), 问其中最多有多少个正数?</p>
-
-<p><img src="https://ws2.sinaimg.cn/large/006tKfTcly1fku7jcph7zj318005gwfr.jpg" alt=""/></p>
-
-<span id="more"></span><!-- more -->
-
-<blockquote>
-<p>图中题干里的“整数”一词其实没有必要, 可能有一点点提示作用吧.</p>
-</blockquote>
-
-<p>这个题可以由简单情况逐渐推广而来，即先考虑一下 4 个数, 6 个数, 8 个数的情形, 总结一下规律.</p>
-
-<p>4 个数的情形比较好构造, 6 个和 8 个的情形稍微麻烦一点, 但最终应该也能构造出来. 下面给出一组精心设计的例子<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>.</p>
-
-<ul>
-<li><strong>4 个数</strong>: \(-8, 1, -6, -4\)</li>
-<li><strong>6 个数</strong>: \(-12, 1, -10, 1, -8, -6\)</li>
-<li><strong>8 个数</strong>: \(-16, 1, -14, 1, -12, 1, -10, -8\)</li>
-</ul>
-
-<p>有了这些例子以后, 就能够总结出这样一个规律:</p>
-
-<blockquote>
-<p>\(2n\) 个数按照题述不等式规则围成一圈, 里面可以包含 \(n-1\) 个正数.</p>
-</blockquote>
-
-<p>对于 100 个数来说, 可以构造出下面这个数列, 其中包含 49 个正数.</p>
-
-<table>
-<thead>
-<tr>
-<th style="text-align: center">1</th>
-<th style="text-align: center">2</th>
-<th style="text-align: center">3</th>
-<th style="text-align: center">4</th>
-<th style="text-align: center">5</th>
-<th style="text-align: center">6</th>
-<th style="text-align: center">\(\dots\)</th>
-<th style="text-align: center">98</th>
-<th style="text-align: center">99</th>
-<th style="text-align: center">100</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td style="text-align: center">\(-200\)</td>
-<td style="text-align: center">\(1\)</td>
-<td style="text-align: center">\(-198\)</td>
-<td style="text-align: center">\(1\)</td>
-<td style="text-align: center">\(-196\)</td>
-<td style="text-align: center">\(1\)</td>
-<td style="text-align: center">\(\dots\)</td>
-<td style="text-align: center">\(1\)</td>
-<td style="text-align: center">\(-102\)</td>
-<td style="text-align: center">\(-100\)</td>
-</tr>
-</tbody>
-</table>
-
-<p>那么, 里面是否有可能包含 50 个正数呢? 在构造的过程中, 你可能已经发现了下面这些规律.</p>
-
-<ol>
-<li><p>这个数列中的所有项之和必须为负. </p>
-<p>将题设的所有不等式条件累加可得 \(\displaystyle \sum a_i &gt; 2 \cdot \sum a_i \), 因此必有 \(\displaystyle \sum a_i &lt; 0\).</p></li>
-<li><p>进一步, 数列中的所有奇数项之和必须为负, 所有偶数项之和也是. </p>
-<p>将题设的所有偶数项的不等式条件累加可得 \(\displaystyle \sum_{i = 2,4,6,\dots} a_i &gt; \sum_{i = 1,2,3,\dots} a_i \), 因此 \(\displaystyle \sum_{i = 1,3,5,\dots} a_i &lt; 0\). 同理不难证明 \(\displaystyle \sum_{i = 2,4,6,\dots} a_i &lt; 0\).</p></li>
-<li><p>数列中, 不能有连续两项为正. 否则, 它们的下一项必须是正的 (因为大于两个正数之和), 以此类推, 下下一项, 再下一项, … 也都必须是正的, 那么数列中的所有项都必须是正的, 与上面的结论矛盾.</p></li>
-</ol>
-
-<p>综合上面的结论, 可以断言, 对于 100 个数的情况, 正数必须少于 50 个<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>.</p>
-
-<p>综上, 我们证明了:</p>
-
-<ul>
-<li>100 个数中可以包含 49 个正数 (\(2n\) 个数中可以包含 \(n-1\) 个正数);</li>
-<li>100 个数中不能包含 50 或更多正数 (\(2n\) 个数中不能包含大于等于 \(n\) 个正数).</li>
-</ul>
-
-<p>因此, 所求的最大正数个数就是 49.</p>
-
-<div class="footnotes">
-<hr/>
-<ol>
-
-<li id="fn1">
-<p>可能需要总结很久才能得到这么整的例子, 但构造出跟它们等价的, 数字看上去不是那么好的例子应该不是很难的事情.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
-</li>
-
-<li id="fn2">
-<p>否则要么有两个正数相邻, 要么所有正数正好相间分布, 导致所有奇数项 (或偶数项) 全为正. &nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
-</li>
-
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[zhuxirun 20171022]]></title>
-    <link href="https://cshishaliu.github.io/15087673055315.html"/>
-    <updated>2017-10-23T22:01:45+08:00</updated>
-    <id>https://cshishaliu.github.io/15087673055315.html</id>
-    <content type="html"><![CDATA[
-<p>两道关于向量定比分点的题</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">题 1</h2>
-
-<p><img src="https://ws4.sinaimg.cn/large/006tKfTcly1fksj1kpmh3j314403e74z.jpg" alt=""/></p>
-
-<p>已知条件可变形为<br/>
-\[<br/>
-(1+\alpha-\beta) \vec{PA} + \alpha (\vec{PB} - \vec{PA}) = \beta (\vec{PC} - \vec{PA})<br/>
-\]<br/>
-即 \((1+\alpha-\beta) \vec{PA} + \alpha \vec{AB} = \beta \vec{AC}\), 故<br/>
-\[<br/>
-(1+\alpha-\beta) \vec{PA} = - \alpha \vec{AB} + \beta \vec{AC}<br/>
-\]<br/>
-由于 \(\vec{AB}\) 与 \(\vec{AC}\) 共线, 而它们与 \(\vec{PA}\) 都不共线, 故只能是<br/>
-\[<br/>
-(1+\alpha-\beta) \vec{PA} = \beta \vec{AC} - \alpha \vec{AB} = \vec 0<br/>
-\]<br/>
-因而 \(1 + \alpha - \beta = 0\), \(\alpha - \beta = -1\).</p>
-
-<h2 id="toc_1">题 2</h2>
-
-<p><img src="https://ws1.sinaimg.cn/large/006tKfTcly1fksja3t4fwj316604it9i.jpg" alt=""/></p>
-
-<p>类似于上一题的方法, 已知条件可以变形为<br/>
-\[<br/>
-\vec{OM} - \left( -\dfrac23 + 3 + m \right) \vec{OM} = -\dfrac23 (\vec{OA} - \vec{OM}) + 3 (\vec{OB} - \vec{OM}) + m (\vec{OC} - \vec{OM})<br/>
-\]<br/>
-即<br/>
-$$</p>
-
-<ul>
-<li>\left( \dfrac43 + m \right) \vec{OM} = -\dfrac23 \vec{MA} + 3 \vec{MB} + m \vec{MC}<br/>
-$\(<br/>
-注意到上式等号右边的向量一定在平面 \)ABC\( 内, 而左边的 \)\vec{OM}\( 不在该平面内, 故两边都必须等于零向量. 因此 \)\dfrac43 + m = 0\(, \)m = \dfrac43$.</li>
-</ul>
-
-<h2 id="toc_2">关于向量的一个重要结论</h2>
-
-<p>向量中, 关于三点共线, 有如下结论:</p>
-
-<blockquote>
-<p>在已知 \(\vec{PA} = \lambda \vec{PB} + \mu \vec{PC}\) 的前提下,<br/>
-\(A,B,C\) 三点共线的<strong>充分必要条件</strong>是\(\lambda + \mu = 1\).</p>
-</blockquote>
-
-<p>此结论不仅对于平面中的三点共线是成立的, 对于空间中的三点共线也成立.</p>
-
-<p>另外, 对于空间中的四点共面问题也有一个极为类似的结论:</p>
-
-<blockquote>
-<p>在已知 \(\vec{PA} = \lambda \vec{PB} + \mu \vec{PC} + \nu \vec{PD}\) 的前提下,<br/>
-\(A,B,C,D\) 三点共面的<strong>充分必要条件</strong>是\(\lambda + \mu + \nu = 1\).</p>
-</blockquote>
-
-<p>用这两个结论解上面两道题, 几乎可以秒解 (自己试试看?).</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[wangzhuoqi 20171016]]></title>
-    <link href="https://cshishaliu.github.io/15084225305350.html"/>
-    <updated>2017-10-19T22:15:30+08:00</updated>
-    <id>https://cshishaliu.github.io/15084225305350.html</id>
-    <content type="html"><![CDATA[
-<p><em>《奥数教程》<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>上的一个不详细到诡异的答案</em></p>
-
-<span id="more"></span><!-- more -->
-
-<blockquote>
-<p>原题<br/>
-<img src="https://ws1.sinaimg.cn/large/006tKfTcly1fknx08as0vj31kw0fh0xq.jpg" alt=""/></p>
-
-<p>原答案<br/>
-<img src="https://ws4.sinaimg.cn/large/006tKfTcly1fknwzebuarj31020eowhx.jpg" alt=""/></p>
-</blockquote>
-
-<hr/>
-
-<p>这道题的这个答案貌似“省略”了很多话.</p>
-
-<p>首先是, 不妨设 \(a_1 \le a_2 \le \dots \le a_n\), 于是 \(A_1 \ge A_2 \ge \dots \ge A_n\).</p>
-
-<p>然后是, 假设 \(b_1, b_2, \dots, b_n\), 按从大到小的顺序重排为 \(c_1, c_2, \dots, c_n\).</p>
-
-<p>那么排序不等式告诉我们<br/>
-\[<br/>
-\sum b_i A_i \le \sum c_i A_i<br/>
-\]</p>
-
-<p>按照题意, \(\{c_i\}\) 中的最大项 \(c_1 \le p\). 假设其前 \(k-1\) 项相加不大于 \(p\), 但再加上 \(k\) 项就大于 \(p\), 即<br/>
-\[<br/>
-c_1 + c_2 + \dots + c_{k-1} \le p &lt; c_1 + c_2 + \dots + c_{k-1} + c_{k}<br/>
-\]<br/>
-可以把 \(c_{k}\) 拆成 \(c&#39;+c&#39;&#39;\), 使得 \(c_1 + c_2 + \dots + c_{k-1} + c&#39; = p\), 于是 \(c&#39;&#39; + c_{k+1} + \dots c_n = 1-p\).</p>
-
-<p>那么<br/>
-\[<br/>
-\begin{aligned}<br/>
-\sum c_i A_i &amp;= c_1 A_1 + c_2 A_2 + \dots + c_k A_k + \dots + c_n A_n \\<br/>
-&amp;= (c_1 A_1 + c_2 A_2 + \dots + c&#39; A_k) + (c&#39;&#39; A_k + \dots + c_n A_n) \\<br/>
-&amp;\le (c_1 A_1 +  c_2 A_1 + \dots + c&#39; A_1) + (c&#39;&#39; A_k + \dots + c_n A_k) \\<br/>
-&amp;= (c_1 + c_2 + \dots + c&#39;) A_1 + (c&#39;&#39; + \dots + c_n) A_k \\<br/>
-&amp;= p A_1 + (1-p) A_k \le p A_1 + (1-p) A_2<br/>
-\end{aligned}<br/>
-\]</p>
-
-<div class="footnotes">
-<hr/>
-<ol>
-
-<li id="fn1">
-<p>来源待确认, 不过我也懒得确认了, 姑且当做是《奥数教程》吧...&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
-</li>
-
-</ol>
-</div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[zhuxirun 20171019]]></title>
-    <link href="https://cshishaliu.github.io/15084207024735.html"/>
-    <updated>2017-10-19T21:45:02+08:00</updated>
-    <id>https://cshishaliu.github.io/15084207024735.html</id>
-    <content type="html"><![CDATA[
-<p><img src="https://ws2.sinaimg.cn/large/006tKfTcly1fknw2i04aaj31gk0eatbt.jpg" alt=""/></p>
-
-<span id="more"></span><!-- more -->
-
-<p><strong>第 (II) 问:</strong></p>
-
-<p>设直线 \(l\) 的斜率为 \(k\), 它过点 \(P(4,0)\), 方程可写为 \(y = k(x-4)\). 与椭圆方程联立消去 \(y\) 可得<br/>
-\[<br/>
-\left( \dfrac14 + \dfrac{k^2}2\right)x^2 - 4k^2 x + (8k^2 -1) = 0<br/>
-\]<br/>
-设 \(M(x_1, y_1)\), \(N(x_2, y_2)\), 则 \(x_1, x_2\) 是上述二次方程的根, 有<br/>
-\[<br/>
-x_1 + x_2 = \dfrac{16 k^2}{2k^2+1}, \quad<br/>
-x_1 x_2 = \dfrac{4(8k^2-1)}{2k^2+1}<br/>
-\]</p>
-
-<p>设 \(Q(a,0)\), 根据已知条件, \(QM\), \(QN\) 两条直线斜率互为相反数, 即<br/>
-\[<br/>
-\dfrac{y_1}{x_1-a} + \dfrac{y_2}{x_2-a} = 0<br/>
-\]<br/>
-由于 \(M,N\) 都在直线 \(l\) 上, \(y_1 = k(x_1-4)\), \(y_2 = k(x_2-4)\), 于是<br/>
-\[<br/>
-\begin{aligned}<br/>
-0 &amp;= k \cdot \left( \dfrac{x_1-4}{x_1-a} + \dfrac{x_2-4}{x_2-a} \right) \\<br/>
-&amp;= k \cdot \dfrac{(x_1-4)(x_2-a) + (x_1-a)(x_2-4)}{(x_1-a)(x_2-a)} \\<br/>
-&amp;= k \cdot \dfrac{2 x_1 x_2 - (a+4)(x_1+x_2) + 8a}{(x_1-a)(x_2-a)} \\<br/>
-&amp;= \dfrac{8k(a-1)}{(x_1-a)(x_2-a)}<br/>
-\end{aligned}<br/>
-\]<br/>
-\(a = 1\) 时, 上式恒成立. 因此存在这样的点 \(Q\), 其坐标为 \((1,0)\).</p>
 
 ]]></content>
   </entry>

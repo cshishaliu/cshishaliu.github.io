@@ -1,130 +1,136 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>  
-	  
-  	一个`多项式`版本的线性空间问题 - Gnoloac发布资料的地方。。。
-  	
-	</title>
-
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href="atom.xml" rel="alternate" title="Gnoloac发布资料的地方。。。" type="application/atom+xml">
-
-	<link href="asset/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-	<link href="asset/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
-	<script src="asset/javascripts/jquery.min.js"></script>
-	<script src="asset/highlightjs/highlight.pack.js"></script>
-	<link href="asset/highlightjs/styles/solarized_dark.css" media="screen, projection" rel="stylesheet" type="text/css">
-<script>hljs.initHighlightingOnLoad();</script>
-
-	<!--[if lt IE 9]><script src="asset/javascripts/html5.js"></script><![endif]-->
-	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'> -->
-	<style type="text/css">
-/* latin */
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Nunito-Light'), url(asset/font/1TiHc9yag0wq3lDO9cw0voX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* latin */
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Nunito-Regular'), url(asset/font/6TbRXKWJjpj6V2v_WyRbMX-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-/* latin */
-@font-face {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Nunito-Bold'), url(asset/font/TttUCfJ272GBgSKaOaD7KoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-	</style>
-	
-	<style type="text/css">
-	.container .left-col{ opacity: 1;}
-	#pagenavi a{ font-size: 1.3em;}
-	#pagenavi .next:before{ top: 3px;}
-	#pagenavi .prev:before{ top: 3px;}
-	.container .mid-col .mid-col-container #content .archives .title{ font-size: 1.5em;}
-	.container .mid-col .mid-col-container #content article{ padding: 15px 0px;}
-	#header .subtitle {
-		line-height: 1.2em;
-		padding-top: 8px;
-	}
-	article pre{ background: none; border: none; padding: 0;}
-	article .entry-content{text-align: left;}
-	.share-comment{ padding: 25px 0px; clear: both;}
-	hr{ margin: 20px 0px;border: 0; border-top:solid 1px #ddd;}
-	</style>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  一个`多项式`版本的线性空间问题 - 语时lab
   
-
-</head>
-
-
-<body>
-	<div class="container">
-		<div class="left-col">
-			<div class="intrude-less">
-				<header id="header" class="inner">
-				 
-				 	<div class="profilepic">
-						<img src="https://ws3.sinaimg.cn/large/006tKfTcly1fkny3ca7s1j30qm0qmadi.jpg" style="width:160px;">
-					</div>
-            	
-					
-					<h1><a href="index.html">Gnoloac发布资料的地方。。。</a></h1>
-					<p class="subtitle">就是Gnoloac发布各种资料的地方。。。</p>
-					<nav id="main-nav">
-						<ul class="main">
-						
-						  <li id=""><a target="self" href="index.html">Home</a></li>
-						
-						  <li id=""><a target="_self" href="archives.html">Archives</a></li>
-						
-						</ul>
-					</nav>
-
-					<nav id="sub-nav">
-						<div class="social">
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="语时lab" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:cshishaliu.github.io ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
 
 
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
 
 
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id=""><a target="_self" href="index.html">Home</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id=""><a target="_self" href="todo.html">todo</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; 语时lab</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="_self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li><a target="_self" href="todo.html">todo</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="To%20be%20accomplished.html">To be accomplished</a></li>
+        
+            <li><a href="To%20be%20fixed.html">To be fixed</a></li>
+        
+            <li><a href="Long%20long%20ago.html">Long long ago</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
 
 
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
 
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>一个`多项式`版本的线性空间问题</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2018/01/13</span>
 
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='To%20be%20accomplished.html'>To be accomplished</a></span>
+           
+         
+          <span class="comments">
+            
 
+            
+          </span>
 
+        </div>
+      </div><!-- article -->
 
-<a target="_blank" class="email" href="mailto:cshishaliu@163.com" title="Email">Email</a>
+      <div class="article-content">
+      <p><mark>TODO: 本篇内容似乎也还没完成</mark></p>
 
-								
-
-								<a class="rss" href="atom.xml" title="RSS">RSS</a>
-							
-						</div>
-					</nav>
-				</header>				
-			</div>
-		</div>	
-		<div class="mid-col">
-			<div class="mid-col-container"> <div id="content" class="inner">
-
-	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-		<h1 class="title" itemprop="name">一个`多项式`版本的线性空间问题</h1>
-		<div class="entry-content" itemprop="articleBody">
-			<p>试求所有的实系数多项式 \(p(x)\), 使得对满足 \(ab + bc + ca = 0\) 的所有实数 \(a、b、c\), 均有: <br/>
+<p>试求所有的实系数多项式 \(p(x)\), 使得对满足 \(ab + bc + ca = 0\) 的所有实数 \(a、b、c\), 均有: <br/>
 \[<br/>
 p(a - b) + p(b - c) + p(c - a) = 2p(a + b + c).<br/>
 \]</p>
@@ -154,14 +160,11 @@ p(x) = a_nx^{2n} +a_{n-1}x^{2n-2}+\cdots +a_1x^2, \quad a_n \ne 0 .<br/>
 p(-a) + p \left( \dfrac 83 a \right) + p \left( -\dfrac 53a \right) = 2p \left( \dfrac 73a \right),<br/>
 \]<br/>
 即<br/>
-$$<br/>
-a_n \cdot \left[1+ \left(\dfrac83\right)<sup>{2n}</sup> + \left(\dfrac 53\right)<sup>{2n}</sup> - 2 \left(\dfrac 73\right)<sup>{2n}</sup> \right] \cdot a<sup>{2n}</sup> </p>
-
-<ul>
-<li>\cdots + a_1 \cdot \left[ 1 + \left(\dfrac 83\right)<sup>{2}</sup> + \left(\dfrac 53\right)<sup>{2}</sup> - 2 \left(\dfrac 73\right)<sup>{2}</sup> \right] \cdot a<sup>2</sup> = 0<br/>
-$\(<br/>
-这个等式对任意 \)a\in \mathbb R\( 都成立, 故所有 \)a<sup>k$</sup> 项的系数均为 \(0\).</li>
-</ul>
+\[<br/>
+a_n \cdot \left[1+ \left(\dfrac83\right)^{2n} + \left(\dfrac 53\right)^{2n} - 2 \left(\dfrac 73\right)^{2n} \right] \cdot a^{2n} + <br/>
+\cdots + a_1 \cdot \left[ 1 + \left(\dfrac 83\right)^{2} + \left(\dfrac 53\right)^{2} - 2 \left(\dfrac 73\right)^{2} \right] \cdot a^2 = 0<br/>
+\]<br/>
+这个等式对任意 \(a\in \mathbb R\) 都成立, 故所有 \(a^k\) 项的系数均为 \(0\).</p>
 
 <p>注意到 \(8^6&gt;2\times 7^6\), 故当 \(n\ge 3\) 时, \(\left(\dfrac87\right)^{2n}\ge \left(\dfrac87\right)^6&gt;2\), 故 \(8^{2n}&gt;2\times 7^{2n}\), 从而 \(1 + \left(\dfrac83\right)^{2n} + \left(\dfrac53\right)^{2n} - 2\left(\dfrac73\right)^{2n} &gt; 0\). 因此必须是相应的 \(a_n = 0\).</p>
 
@@ -255,28 +258,203 @@ p(a - b) + p(b - c) + p(c - a) = 2p(a + b + c)<br/>
 
 <p><mark><em>待续</em></mark></p>
 
-		</div>
-	</article>
-	<div class="share-comment">
-	 
 
-	  
+    
 
-	  
+      </div>
 
-	</div>
-</div>        </div>
-			<footer id="footer" class="inner">Copyright &copy; 2014
-Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a> &nbsp;&nbsp; 
-Theme by <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a>
-      </footer>
-		</div>
-	</div>
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="15166754034002.html" 
+          title="Previous Post: zhangboxin 20171218">&laquo; zhangboxin 20171218</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="15152159707290.html" 
+          title="Next Post: kongyuqing 20180106">kongyuqing 20180106 &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="https://i.loli.net/2020/02/26/hjpG5rStAgRYm9P.jpg" /></div>
+            
+                <h1>语时lab</h1>
+                <div class="site-des">Gnoloac 发文的地方</div>
+                <div class="social">
+
+
+
+
+
+
+
+
+
+<a target="_blank" class="github" target="_blank" href="https://github.com/cshishaliu" title="GitHub">GitHub</a>
+<a target="_blank" class="email" href="mailto:cshishaliu@163.com" title="Email">Email</a>
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
+                
+              	 </div>
+          	</div>
+
+             
+
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Categories</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="To%20be%20accomplished.html"><strong>To be accomplished</strong></a>
+        
+            <a href="To%20be%20fixed.html"><strong>To be fixed</strong></a>
+        
+            <a href="Long%20long%20ago.html"><strong>Long long ago</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>Recent Posts</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="15840603466913.html">一个来自 QQ 群的问题 20200317-0721</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15582753348629.html">qiqi 20200313</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15490078791835.html">xieshunfu 20190201</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15421980305249.html">CMO 2018 题 3</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15395877048195.html">XUC 20181014 几个二次函数问题</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
 
   
     
-<script src="asset/chart/all-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
 
-</body>
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+    <script src="asset/chart/all-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_SVG-full"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
+
+
+  </body>
 </html>

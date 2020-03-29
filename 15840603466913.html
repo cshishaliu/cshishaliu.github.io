@@ -1,0 +1,391 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  一个来自 QQ 群的问题 20200317-0721 - 语时lab
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="语时lab" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:cshishaliu.github.io ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id=""><a target="_self" href="index.html">Home</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id=""><a target="_self" href="todo.html">todo</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; 语时lab</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="_self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li><a target="_self" href="todo.html">todo</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="To%20be%20accomplished.html">To be accomplished</a></li>
+        
+            <li><a href="To%20be%20fixed.html">To be fixed</a></li>
+        
+            <li><a href="Long%20long%20ago.html">Long long ago</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>一个来自 QQ 群的问题 20200317-0721</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2020/03/13</span>
+
+          
+           
+         
+          <span class="comments">
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <p>已知 \(x,y &gt; 0\), 求 <br/>
+\[<br/>
+\frac{(2x+1) (y+1)}{2x^2 + 5y^2 + 7}<br/>
+\]<br/>
+的最大值.</p>
+
+<span id="more"></span><!-- more -->
+
+<blockquote>
+<p>来自: <a href="QQ%20Group:533503621">中国数学竞赛交流群</a></p>
+</blockquote>
+
+<h2 id="toc_0">解答</h2>
+
+<p>设 \(t = \frac{2x^2 + 5y^2 + 7}{(2x+1) (y+1)}\), 显然 \(t&gt;0\), 且去分母并移项有<br/>
+\[<br/>
+2x^2 - 2txy + 5y^2 - 2t x - t y - t + 7 = 0<br/>
+\]<br/>
+此式可变形为<br/>
+\[<br/>
+2x^2 - 2t (y+1) x + [5y^2 + 7 - t(y+1)] = 0<br/>
+\]<br/>
+从而视作关于 \(x\) 的一元二次方程, 于是应有<br/>
+\[<br/>
+\Delta_1 = 4t^2(y+1)^2 - 8 [5y^2 + 7 - t(y+1)] \ge 0<br/>
+\]<br/>
+整理得<br/>
+\[<br/>
+(t^2 - 10) y^2+ (2t^2 +2t) y + (t^2 + 2t - 14) \ge 0<br/>
+\]<br/>
+将它视作关于 \(y\) 的一元二次不等式, 则当 \(t &lt; \sqrt{10}\) 时, 由于二次项系数 \(t^2 - 10 \le 0\), 应有<br/>
+\[<br/>
+\Delta_2 = (2t^2 + 2t)^2 - 4(t^2-10)(t^2+2t-14) \ge 0<br/>
+\]<br/>
+化简可得<br/>
+\[<br/>
+5t^2 + 4t - 28 \ge 0<br/>
+\]<br/>
+解得<br/>
+\[<br/>
+t \le -\frac{14}5 ~\text{或}~ t \ge 2<br/>
+\]<br/>
+因此, 当 \(t &lt; \sqrt{10}\) 时, \(t\) 的最小正值为 \(2\), 此时由<br/>
+\[<br/>
+\begin{aligned}\Delta_1 &amp;= 4t^2(y+1)^2 - 8 [5y^2 + 7 - t(y+1)] \\&amp;= 16 (y+1)^2 - 8 [5y^2 + 7 - 2(y+1)] \ge 0\end{aligned}<br/>
+\]<br/>
+可解得 \(y=1\), 进一步由 \(t=2,y=1\) 可计算得到 \(x=2\).</p>
+
+<p>综上所述, 在 \(t&lt;\sqrt{10}\) 的前提条件下, \(t\) 在 \(x=2,y=1\) 时取得最小值 \(2\). 于是 \(t \ge \sqrt{10}\) 的情况就不用再讨论了.</p>
+
+<h3 id="toc_1">快速解法</h3>
+
+<p>由于<br/>
+\[<br/>
+\begin{aligned}<br/>
+2x^2 + 5y^2 + 7<br/>
+&amp;= (x^2 + 4y^2) + (x^2 + 4) + (y^2 + 1) + 2 \\<br/>
+&amp;\ge 4xy + 4x + 2y + 2 \\<br/>
+&amp;= 2(2x+1) (y+1)<br/>
+\end{aligned}<br/>
+\]<br/>
+当且仅当 \(x = 2y = 2\) 时取等号, 因此<br/>
+\[<br/>
+\frac{(2x+1) (y+1)}{2x^2 + 5y^2 + 7} \le \frac12<br/>
+\]</p>
+
+
+    
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="15582753348629.html" 
+          title="Next Post: qiqi 20200313">qiqi 20200313 &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="https://i.loli.net/2020/02/26/hjpG5rStAgRYm9P.jpg" /></div>
+            
+                <h1>语时lab</h1>
+                <div class="site-des">Gnoloac 发文的地方</div>
+                <div class="social">
+
+
+
+
+
+
+
+
+
+<a target="_blank" class="github" target="_blank" href="https://github.com/cshishaliu" title="GitHub">GitHub</a>
+<a target="_blank" class="email" href="mailto:cshishaliu@163.com" title="Email">Email</a>
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
+                
+              	 </div>
+          	</div>
+
+             
+
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Categories</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="To%20be%20accomplished.html"><strong>To be accomplished</strong></a>
+        
+            <a href="To%20be%20fixed.html"><strong>To be fixed</strong></a>
+        
+            <a href="Long%20long%20ago.html"><strong>Long long ago</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>Recent Posts</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="15840603466913.html">一个来自 QQ 群的问题 20200317-0721</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15582753348629.html">qiqi 20200313</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15490078791835.html">xieshunfu 20190201</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15421980305249.html">CMO 2018 题 3</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15395877048195.html">XUC 20181014 几个二次函数问题</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+    <script src="asset/chart/all-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_SVG-full"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
+
+
+  </body>
+</html>

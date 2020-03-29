@@ -1,0 +1,402 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  XUC 20181008 一道构图诡异到令人发指的几何题 - 语时lab
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="语时lab" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:cshishaliu.github.io ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id=""><a target="_self" href="index.html">Home</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li id=""><a target="_self" href="todo.html">todo</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; 语时lab</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="_self" href="index.html">Home</a></li>
+        
+        <li><a target="_self" href="archives.html">Archives</a></li>
+        
+        <li><a target="_self" href="todo.html">todo</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="To%20be%20accomplished.html">To be accomplished</a></li>
+        
+            <li><a href="To%20be%20fixed.html">To be fixed</a></li>
+        
+            <li><a href="Long%20long%20ago.html">Long long ago</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>XUC 20181008 一道构图诡异到令人发指的几何题</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2018/10/08</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='To%20be%20fixed.html'>To be fixed</a></span>
+           
+         
+          <span class="comments">
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
+
+<p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fw0vxksxfij30ua0gkmy7.jpg" alt=""/></p>
+
+<p>🆘👉 第 (1) 问的方法十分诡异, 但暂未找到更好的方法 😂</p>
+
+<p>🆘👉 第 (2) 问还没做出来 😂😂😂</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">第 (1) 问分析</h2>
+
+<p>第一问只需证明 \(\angle LFH = \angle HIA = \angle EID\) 即可, 而对比 \(\angle LFH\) 和 \(\angle EID\) 的位置关系不难发现可以构造四点共圆 (如下图中的 \(E,F,K,I\)), 而这组四点共圆将导致 \(\angle EKI = \angle EFI = \angle EHI\), 于是 \(BC\) 垂直平分 \(HK\) 于 \(D\). 又 \(B,C,H,I\) 构成垂心四点组, 这样又可以得到很多新的角边关系, 其中包括 \(B,I,C,K\) 四点共圆.</p>
+
+<p><img src="https://ws3.sinaimg.cn/large/006tNbRwly1fw4c14txo4j30ox0sg75o.jpg" alt=""/></p>
+
+<p>这样看上去初步的思路就是要证明 \(LF\) 与 \(HD\) 的交点 \(K\) 与 \(E,F,I\) 四点共圆, 而显然题干中的 \(IJ = 2ID\) 是十分关键条件. 但这个条件非常的不好用. 几经尝试, 这里最终打算采用同一法的思路, 即先得到点 \(K\), 再由点 \(K\) 来构造点 \(L\) 和 \(J\), 证明这样得到的点 \(J\) 满足 \(IJ = 2ID\). </p>
+
+<h2 id="toc_1">第 (1) 问证明</h2>
+
+<p>这里证明下面这个等价的问题:</p>
+
+<blockquote>
+<p>在 \(\triangle ABC\) 中, \(I\) 是内心, \(D\) 是 \(I\) 在 \(BC\) 上的射影, \(AI,BC\) 交于 \(E\). \(H\) 是 \(\triangle BIC\) 的垂心, \(Q\) 是 \(\triangle BIC\) 外接圆的外心, \(HD\) 再次交 \(\triangle BIC\) 外接圆于点 \(K\). 以 \(I\) 为圆心, \(IH\) 为半径作圆, \(HE\) 再次交圆 \(I\) 于点 \(F\); \(KF\) 再次交圆 \(I\) 于 \(L\). \(E,F,L\) 三点所确定的圆 \(P\) 与 \(IF\) 再次交于点 \(J\). 证明: \(IJ = 2ID\). </p>
+</blockquote>
+
+<p>记 \(HK\) 与圆 \(I\) 的另一个交点是 \(M\). 由 \(H\) 是 \(\triangle BIC\) 的垂心, 而 \(K\) 是高 \(ID\) 与 \(\triangle BIC\) 外接圆的交点不难证明 \(DK = DH\), 于是 \(\angle EKD = \angle EHD = \angle EFI\), 因此 \(E,F,K,I\) 四点共圆.</p>
+
+<p>为得到 \(IJ\) 的长度, 我们强行暴算点 \(I\) 关于圆 \(P\) (\(L,E,F,J\) 所共之圆) 的幂. 为了得到这个幂, 可借助 \(H\) 和 \(K\) 两点关于圆 \(P\) 的幂.</p>
+
+<p>将 \(H,I,K\) 三点关于圆 \(P\) 的幂分别记作 \(p(H), p(I), p(K)\), 则其中<br/>
+\[<br/>
+\begin{aligned}<br/>
+p(H) &amp;= HE \cdot HF = HI \cdot HK \\<br/>
+p(K) &amp;= KF \cdot KL = KM \cdot KH<br/>
+\end{aligned}<br/>
+\]<br/>
+为方便计算, 设 \(ID = r\), \(IH = t\), 则 \(HK = 2HD = 2(r+t)\), \(KM = HK - HM = 2(r+t) - 2t = 2r\), 于是 <br/>
+\[<br/>
+\begin{aligned}<br/>
+p(H) &amp;= 2t(r+t) \\<br/>
+p(K) &amp;= 2r(2r+2t) = 4r(r+t)<br/>
+\end{aligned}<br/>
+\]<br/>
+考虑 \(\triangle PIH\), 由余弦定理可得 <br/>
+\[<br/>
+\begin{aligned}<br/>
+\cos \angle PIH <br/>
+&amp;= \dfrac{PI^2 + IH^2 - PH^2}{2 PI \cdot IH} \\<br/>
+&amp;= \dfrac{(PI^2 - r_P^2) + IH^2 - (PH^2 - r_P^2)}{2 PI \cdot IH} \\<br/>
+&amp;= \dfrac{p(I) + IH^2 - p(H)}{2 PI \cdot IH}<br/>
+\end{aligned}<br/>
+\]<br/>
+其中, \(r_P\) 是圆 \(P\) 的半径. 同理, 在 \(\triangle PIK\) 有<br/>
+\[<br/>
+\cos \angle PIK = \dfrac{p(I) + IK^2 - p(K)}{2 PI \cdot IK}<br/>
+\]</p>
+
+<p>\(\angle PIH\) 与 \(\angle PIK\) 互补, 故两个余弦值互为相反数, 即有<br/>
+\[<br/>
+\dfrac{p(I) + IH^2 - p(H)}{2 PI \cdot IH} + \dfrac{p(I) + IK^2 - p(K)}{2 PI \cdot IK} = 0<br/>
+\]<br/>
+消去分母中的 \(PI\), 并将含有 \(r,t\) 的表达式代入得 <br/>
+\[<br/>
+\dfrac{p(I) + t^2 - 2t(r + t)}{t} + \dfrac{p(I) + (2r + t)^2 - 4r(r + t)}{2r + t} = 0<br/>
+\]<br/>
+最终可解得<br/>
+\[<br/>
+p(I) = 2rt<br/>
+\]<br/>
+即 \(IJ \cdot IF = 2rt\), 又由于其中 \(IF = t\), 所以 \(IJ = 2r = 2ID\), 证毕. </p>
+
+
+    
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="15395877048195.html" 
+          title="Previous Post: XUC 20181014 几个二次函数问题">&laquo; XUC 20181014 几个二次函数问题</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="15355292847712.html" 
+          title="Next Post: 构造高次多项式解决多元方程问题">构造高次多项式解决多元方程问题 &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="https://i.loli.net/2020/02/26/hjpG5rStAgRYm9P.jpg" /></div>
+            
+                <h1>语时lab</h1>
+                <div class="site-des">Gnoloac 发文的地方</div>
+                <div class="social">
+
+
+
+
+
+
+
+
+
+<a target="_blank" class="github" target="_blank" href="https://github.com/cshishaliu" title="GitHub">GitHub</a>
+<a target="_blank" class="email" href="mailto:cshishaliu@163.com" title="Email">Email</a>
+  <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a>
+                
+              	 </div>
+          	</div>
+
+             
+
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>Categories</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="To%20be%20accomplished.html"><strong>To be accomplished</strong></a>
+        
+            <a href="To%20be%20fixed.html"><strong>To be fixed</strong></a>
+        
+            <a href="Long%20long%20ago.html"><strong>Long long ago</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>Recent Posts</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="15840603466913.html">一个来自 QQ 群的问题 20200317-0721</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15582753348629.html">qiqi 20200313</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15490078791835.html">xieshunfu 20190201</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15421980305249.html">CMO 2018 题 3</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15395877048195.html">XUC 20181014 几个二次函数问题</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+    <script src="asset/chart/all-min.js"></script><script type="text/javascript">$(function(){    var mwebii=0;    var mwebChartEleId = 'mweb-chart-ele-';    $('pre>code').each(function(){        mwebii++;        var eleiid = mwebChartEleId+mwebii;        if($(this).hasClass('language-sequence')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = Diagram.parse($(this).text());            diagram.drawSVG(eleiid,{theme: 'simple'});        }else if($(this).hasClass('language-flow')){            var ele = $(this).addClass('nohighlight').parent();            $('<div id="'+eleiid+'"></div>').insertAfter(ele);            ele.hide();            var diagram = flowchart.parse($(this).text());            diagram.drawSVG(eleiid);        }    });});</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_SVG-full"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({TeX: { equationNumbers: { autoNumber: "AMS" } }});</script>
+
+
+  </body>
+</html>
