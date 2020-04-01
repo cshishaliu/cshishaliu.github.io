@@ -4,13 +4,101 @@
   <title><![CDATA[语时lab]]></title>
   <link href="https://cshishaliu.github.io/atom.xml" rel="self"/>
   <link href="https://cshishaliu.github.io/"/>
-  <updated>2020-03-29T23:23:49+08:00</updated>
+  <updated>2020-04-01T15:54:49+08:00</updated>
   <id>https://cshishaliu.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[Books]]></title>
+    <link href="https://cshishaliu.github.io/book.html"/>
+    <updated>2020-04-01T15:18:10+08:00</updated>
+    <id>https://cshishaliu.github.io/book.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li>
+<a href="#toc_0">思考的乐趣, 顾森</a>
+</li>
+</ul>
+
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">思考的乐趣, 顾森</h2>
+
+<p><img src="https://img3.doubanio.com/view/subject/s/public/s10323913.jpg" alt=""/></p>
+
+<p><a href="https://book.douban.com/subject/10779597/">豆瓣评分: 8.2</a>.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Links]]></title>
+    <link href="https://cshishaliu.github.io/links.html"/>
+    <updated>2020-04-01T11:50:30+08:00</updated>
+    <id>https://cshishaliu.github.io/links.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li>
+<a href="#toc_0">matrix67 blog</a>
+</li>
+<li>
+<a href="#toc_1">Art of Problem Solving</a>
+</li>
+</ul>
+
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">matrix67 blog</h2>
+
+<p>名噪一时的 <a href="http://www.matrix67.com/blog/">matrix67 数学博客: http://www.matrix67.com/blog/</a></p>
+
+<p>matrix67<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> 是<strong>北大中文系</strong>本科生, 相传是信息学竞赛保送去的. 一位信息竞赛选手去了中文系是一件让人很费解的事情, 有一个合理的解释: 是当年的北大中文系和计算机系合办了一个交叉学科专业, 叫做<em>应用语言学</em>, 然后就把他忽悠去了. </p>
+
+<p>matrix67 数学博客貌似早在作者本人高中阶段就办起来了, 持续更新了十多年. 截止目前<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>, 最后一篇更新文章「<a href="http://www.matrix67.com/blog/archives/6947">Lissajous 曲线的动画演示</a>」的发布时间为 2016-10-18, 且其短无比, 摘录如下.</p>
+
+<blockquote>
+<p>随着常数 m 和 n 的变化，参数方程 x = sin(m · t), y = sin(n · t) 将会画出一系列漂亮的曲线。法国物理学家 Jules Antoine Lissajous 曾在 1857 年研究过这类曲线，因此人们把它叫做 Lissajous 曲线。我在 <a href="https://www.reddit.com/r/oddlysatisfying/comments/57iff3/the_lissajous_curve/">reddit</a> 上看到了一个 Lissajous 曲线的动画演示，觉得看起来确实非常爽；但那个动画里没有解释曲线的生成方法，很多细节也有让人不太满意的地方，于是决定自己制作一个。这个动画展示的是 m = 13, n = 18 时的 Lissajous 曲线。</p>
+
+<p><img src="http://www.matrix67.com/blogimage_2016/201610181.gif" alt=""/></p>
+</blockquote>
+
+<p>但总的来说, matrix67 数学博客上的文章质量大都很高, 也基本没有特别高深的数学理论, 特别适合基础一般且对数学有特殊兴趣的中学生和业余数学爱好者.</p>
+
+<p><img src="https://img3.doubanio.com/view/subject/s/public/s10323913.jpg" alt=""/></p>
+
+<p>在 matrix67 小有名气以后, 人民邮电出版社联系他出版了一本书「<strong>思考的乐趣</strong>」, 这本书写得也很棒, 目前<sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup>的<a href="https://book.douban.com/subject/10779597/">豆瓣评分 8.2</a>.</p>
+
+<h2 id="toc_1">Art of Problem Solving</h2>
+
+<p>大名鼎鼎的 <a href="https://artofproblemsolving.com">Art of Problem Solving: https://artofproblemsolving.com</a>. 这个网站在数竞圈里应该是无人不知无人不晓了.</p>
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>相传 matrix 67 给自己取了这么一个 ID 的原因, 不是因为他有多么喜欢线性代数或者矩阵理论, 而是喜欢一部名叫「matrix」的电影. 于是在给自己的 blog 注册域名的时候, 他尝试了 matrix, matrix123 和 matrix45, 发现这些域名都已经被注册了, 一直到 matrix67 才是空闲的.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>这里的「目前」, 日期是 2020-04-01.&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn3">
+<p>这里的「目前」, 日期是 2020-04-01.&nbsp;<a href="#fnref3" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[一个来自 QQ 群的问题 20200317-0721]]></title>
@@ -938,7 +1026,7 @@ t_1^2 + t_2^2 + t_3^2 = (t_1 + t_2 + t_3)^2 - 2<br/>
 
 <p><mark>TODO: 本篇内容也还没完成</mark></p>
 
-<p>这是二试难度的问题 (rdf 20180516 高联选拔题)</p>
+<p>这是二试难度的问题 (rdfz 20180516 高联选拔题)</p>
 
 <span id="more"></span><!-- more -->
 
@@ -1329,231 +1417,6 @@ BC^2 - AB^2 = AC \cdot BC<br/>
 \[<br/>
 (BC + CA) \cdot AB = AC \cdot BC<br/>
 \]</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[一个`多项式`版本的线性空间问题]]></title>
-    <link href="https://cshishaliu.github.io/15158198616473.html"/>
-    <updated>2018-01-13T13:04:21+08:00</updated>
-    <id>https://cshishaliu.github.io/15158198616473.html</id>
-    <content type="html"><![CDATA[
-<p><mark>TODO: 本篇内容似乎也还没完成</mark></p>
-
-<p>试求所有的实系数多项式 \(p(x)\), 使得对满足 \(ab + bc + ca = 0\) 的所有实数 \(a、b、c\), 均有: <br/>
-\[<br/>
-p(a - b) + p(b - c) + p(c - a) = 2p(a + b + c).<br/>
-\]</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">先给解答</h2>
-
-<blockquote>
-<p>令 \(a=b=c=0\), 有 <br/>
-\[<br/>
-p(0)=0 .<br/>
-\] <br/>
-令 \(b=c=0\), 有 <br/>
-\[<br/>
-p(a)=p(-a),\quad \forall a \in \mathbb R .<br/>
-\]<br/>
-故 \(p(x)\) 是偶函数, 所有奇次项系数为 \(0\). 不妨设 <br/>
-\[<br/>
-p(x) = a_nx^{2n} +a_{n-1}x^{2n-2}+\cdots +a_1x^2, \quad a_n \ne 0 .<br/>
-\]</p>
-
-<p><mark><strong>【前方高能预警】</strong></mark></p>
-
-<p>令 \(b=2a\), \(c=-\dfrac 23a\), 有 <br/>
-\[<br/>
-p(-a) + p \left( \dfrac 83 a \right) + p \left( -\dfrac 53a \right) = 2p \left( \dfrac 73a \right),<br/>
-\]<br/>
-即<br/>
-\[<br/>
-a_n \cdot \left[1+ \left(\dfrac83\right)^{2n} + \left(\dfrac 53\right)^{2n} - 2 \left(\dfrac 73\right)^{2n} \right] \cdot a^{2n} + <br/>
-\cdots + a_1 \cdot \left[ 1 + \left(\dfrac 83\right)^{2} + \left(\dfrac 53\right)^{2} - 2 \left(\dfrac 73\right)^{2} \right] \cdot a^2 = 0<br/>
-\]<br/>
-这个等式对任意 \(a\in \mathbb R\) 都成立, 故所有 \(a^k\) 项的系数均为 \(0\).</p>
-
-<p>注意到 \(8^6&gt;2\times 7^6\), 故当 \(n\ge 3\) 时, \(\left(\dfrac87\right)^{2n}\ge \left(\dfrac87\right)^6&gt;2\), 故 \(8^{2n}&gt;2\times 7^{2n}\), 从而 \(1 + \left(\dfrac83\right)^{2n} + \left(\dfrac53\right)^{2n} - 2\left(\dfrac73\right)^{2n} &gt; 0\). 因此必须是相应的 \(a_n = 0\).</p>
-
-<p><mark><strong>【预警解除】</strong>可以放松一下</mark></p>
-
-<p>也就是说 \(p(x)\) 中不可能有 \(6\) 次或更高次的项, 可设 \(p(x) =\alpha x^4 +\beta x^2\), 不难验证无论 \(\alpha,\beta\) 取何值, 这个式子都满足要求.</p>
-</blockquote>
-
-<h2 id="toc_1">简析</h2>
-
-<p>上面解答中的这一步</p>
-
-<blockquote>
-<p>令 \(b=2a\), \(c=-\dfrac 23a\), 有 ...</p>
-</blockquote>
-
-<p>这种做法不太像是正常人能想出来的. 其实这个题在高等数学里面有更一般的处理方法: <strong>线性空间理论</strong>. </p>
-
-<h3 id="toc_2">基本思路</h3>
-
-<p>注意题中的函数方程 <br/>
-\[<br/>
-p(a - b) + p(b - c) + p(c - a) = 2p(a + b + c)<br/>
-\]<br/>
-是<strong>线性齐次</strong>的, 即</p>
-
-<blockquote>
-<p>如果有两个多项式 \(p_1 (x)\) 和 \(p_2 (x)\) 都满足此函数方程, 则它们的任意线性叠加 \(\lambda_1 p_1 (x) + \lambda_2 p_2 (x)\) 也满足这个方程. </p>
-
-<p>(<em>这个线性齐次性质甚至都不依赖于 \(ab+bc+ca=0\) 这个约束条件.</em>)</p>
-</blockquote>
-
-<p>这样, 我们只需要考虑最基本, 最简单的多项式 \(x^n\) (\(n=1,2,\dots\)) 即可.</p>
-
-<p>这种处理方法实际上是将全体多项式构造成一个无穷维线性空间, 以 \(\{1,x,x^2,x^3,\dots\}\) 作为基底; 然后将函数方程的解空间看作上述多项式空间的子空间, 尝试确定这个子空间的基底. 根据这里已经得到的结论, 这个解空间是 2 维的, 基底是 \(\{x^2, x^4\}\). 下面我们用正常一点的方法 (但是也不算简单) 来导出这个结论.</p>
-
-<h3 id="toc_3">确定满足条件的基本多项式</h3>
-
-<p>其实要做的事情也很简单, 就是把 \(p(x) = x^n\), \(n=1,2,\dots\), 一个一个代进去尝试, 看看在<br/>
-\[<br/>
-\sum_{cyc} ab = 0<br/>
-\]<br/>
-的条件下, 下面这个等式<br/>
-\[<br/>
-\sum_{cyc} p(a-b) = 2 p \left( \sum_{cyc} a \right)<br/>
-\] <br/>
-是否成立. 其中 \(\sum\limits_{cyc}\) 表示按 \(a,b,c\) 轮换的循环和.</p>
-
-<p>上面的解答过程中已经证明了 \(p(x)\) 必须是偶函数, 故只需要考虑 \(p(x) = x^{2n}\) 的情形即可.</p>
-
-<p>首先看 \(p(x) = x^2\) 的情形,<br/>
-\[<br/>
-\begin{aligned}<br/>
-\sum_{cyc} p(a-b)<br/>
-&amp;= \sum_{cyc} (a-b)^2 \\<br/>
-&amp;= 2 \sum_{cyc} a^2 - 2 \sum_{cyc} ab = 2 \sum_{cyc} a^2 \\<br/>
-&amp;= 2 \sum_{cyc} a^2 + 4 \sum_{cyc} ab \\<br/>
-&amp;= 2 \left( \sum_{cyc} a \right)^2 = 2 p \left( \sum_{cyc} a \right)<br/>
-\end{aligned}<br/>
-\]<br/>
-\(p(x) = x^2\) 满足条件.</p>
-
-<p>再看 \(p(x) = x^4\) 的情形. 在上一种情形中, 我们已经得到了<br/>
-\[<br/>
-\sum_{cyc} (a-b)^2 = 2 \sum_{cyc} a^2 = 2 \left( \sum_{cyc} a \right)^2<br/>
-\]<br/>
-各式同时平方可得<br/>
-\[<br/>
-\begin{aligned}<br/>
-\left( \sum_{cyc} (a-b)^2 \right)^2 <br/>
-&amp;= \sum_{cyc} (a-b)^4 + 2\sum_{cyc} (a-b)^2 (b-c)^2 \\<br/>
-&amp;= 4 \left( \sum_{cyc} a^2 \right)^2 = 4 \left( \sum_{cyc} a \right)^4<br/>
-\end{aligned}<br/>
-\]<br/>
-接下来看 (第一行右侧第二项)<br/>
-\[<br/>
-\begin{aligned}<br/>
-\sum_{cyc} (a-b)^2 (b-c)^2<br/>
-&amp;= \sum_{cyc} (ab+bc-ac-b^2)^2 = \sum_{cyc} (-2ac-b^2)^2 \\<br/>
-&amp;= \sum_{cyc} (4a^2c^2+4ab^2c+b^4) \\<br/>
-&amp;= \left( 2 \sum_{cyc} a^2c^2 + 4 \sum_{cyc} ab^2c \right) + \left( \sum_{cyc} a^4 + \sum_{cyc} 2 a^2b^2 \right) \\<br/>
-&amp;= 2 \left( \sum_{cyc} (ab)^2 + 2 \sum_{cyc} ab \cdot bc \right) + \left( \sum_{cyc} (a^2)^2 + 2 \sum_{cyc} a^2b^2 \right) \\<br/>
-&amp;= 2 \left( \sum_{cyc} ab \right)^2 + \left( \sum_{cyc} a^2 \right)^2 = \left( \sum_{cyc} a^2 \right)^2<br/>
-\end{aligned}<br/>
-\]<br/>
-于是<br/>
-\[<br/>
-\left( \sum_{cyc} (a-b)^2 \right)^2 = 2 \left( \sum_{cyc} a^2 \right)^2 = 2 \left( \sum_{cyc} a \right)^4<br/>
-\]<br/>
-\(p(x) = x^4\) 也满足条件.</p>
-
-<p><mark><em>待续</em></mark></p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[kongyuqing 20180106]]></title>
-    <link href="https://cshishaliu.github.io/15152159707290.html"/>
-    <updated>2018-01-06T13:19:30+08:00</updated>
-    <id>https://cshishaliu.github.io/15152159707290.html</id>
-    <content type="html"><![CDATA[
-<p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
-
-<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fn6tewfvhij310406m0wj.jpg" alt=""/></p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">三角法</h2>
-
-<p>记 \(\theta = \arccos \dfrac13\), 于是 \(\cos\theta = \dfrac13\), \(\sin\theta = \dfrac{2\sqrt2}3\), \(a_1 = 3 \cos\theta = 1\).<br/>
-\[<br/>
-\begin{aligned}<br/>
-a_n <br/>
-&amp;= 3^n \cos n\theta = 3^n \cos [(n-1)\theta + \theta] \\<br/>
-&amp;= 3^n (\cos (n-1)\theta \cos\theta - \sin (n-1)\theta \sin\theta) \\<br/>
-&amp;= 3^{n-1} \cos (n-1)\theta - 2\sqrt2 \cdot 3^{n-1} \sin(n-1) \theta \\<br/>
-&amp;= a_{n-1} - 2\sqrt2 \cdot 3^{n-1} \sin(n-1) \theta<br/>
-\end{aligned}<br/>
-\]</p>
-
-<p>若另取数列 \(\{b_n\}\), 其通项公式 \(b_n = 3^n \sin n\theta\), 则 \(b_1 = 3 \sin\theta = 2\sqrt2\), 上面的 \(a_n\) 可以写成<br/>
-\[<br/>
-a_n = a_{n-1} - 2\sqrt2 b_{n-1}<br/>
-\]<br/>
-而另一方面<br/>
-\[<br/>
-\begin{aligned}<br/>
-b_n <br/>
-&amp;= 3^n \sin [(n-1)\theta + \theta] \\<br/>
-&amp;= 3^n (\sin (n-1)\theta \cos\theta + \cos (n-1)\theta \sin\theta) \\<br/>
-&amp;= 3^{n-1} \sin (n-1)\theta + 2\sqrt2 \cdot 3^{n-1} \cos(n-1) \theta \\<br/>
-&amp;= b_{n-1} + 2\sqrt2 a_{n-1}<br/>
-\end{aligned}<br/>
-\]<br/>
-于是<br/>
-\[<br/>
-\begin{aligned}<br/>
-b_n <br/>
-&amp;= b_1 + 2\sqrt2 a_1 + 2\sqrt2 a_2 + \dots + 2\sqrt2 a_{n-1} \\<br/>
-&amp;= 2\sqrt2 \cdot (1 + S_{n-1})<br/>
-\end{aligned}<br/>
-\]<br/>
-其中, \(S_n\) 表示数列 \(\{a_n\}\) 的前 \(n\) 项和. 那么 <br/>
-\[<br/>
-a_n = a_{n-1} - 8 (1 + S_{n-2})<br/>
-\]<br/>
-下面可以转而考虑 \(\{S_n\}\) 数列, 根据上式, <br/>
-\[<br/>
-S_n - S_{n-1} = (S_{n-1} - S_{n-2}) - 8 (1 + S_{n-2})<br/>
-\]<br/>
-化简后得 <br/>
-\[<br/>
-S_n = 2 S_{n-1} - 9 S_{n-2} - 8<br/>
-\]<br/>
-因此<br/>
-\[<br/>
-S_n \equiv 2 S_{n-1} - 2 \pmod 3<br/>
-\]<br/>
-于是<br/>
-\[<br/>
-a_n = S_n - S_{n-1} \equiv (2 S_{n-1} - 2) - (2 S_{n-2} - 2) = 2 a_{n-1} \pmod 3<br/>
-\]<br/>
-也就是说, 数列 \(\{a_n\}\) 中, 后一项与前一项的两倍除以 3 的余数相同. 而 \(a_1 = 1\), 因而此数列中不可能有 3 的倍数.</p>
-
-<h2 id="toc_1">复数法</h2>
-
-<p>采用复数法, 在寻找数列递推关系时会比三角法更好用, 并且能够给出更简洁, 但更有启发性的思路和过程.</p>
-
-<p>还是记 \(\theta = \arccos \dfrac13\), 那么 \(\dfrac13 = \cos\theta = \Re(e^{i\theta})\), 其中 \(i\) 是虚数单位, \(\Re(z)\) 表示复数 \(z\) 的实部. 于是,<br/>
-\[<br/>
-a_n <br/>
-= 3^n \cos n\theta <br/>
-= 3^n \cdot \Re(e^{in\theta}) <br/>
-= \Re(3^n \cdot e^{in\theta}) <br/>
-= \Re( (3 e^{i\theta})^n )<br/>
-\]<br/>
-这样可以考虑定义复数列 \(\{z_n\}\), 其通项公式为 \(z_n = (3 e^{i\theta})^n\), 分别考虑其实部数列 (即 \(\{a_n\}\)) 和虚部数列, 寻找好用的递推关系即可. 其实剩下的过程跟上面的三角法没有太大区别.</p>
 
 ]]></content>
   </entry>
