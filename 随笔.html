@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  duyan 20180123-2 - 语时lab
+  随笔 - 语时lab
   
   </title>
   
@@ -119,145 +119,151 @@
        
 
  <script type="text/javascript">
-  $(function(){
-    $('#menu_item_index').addClass('is_active');
-  });
+	$(function(){
+		$('#menu_item_index').addClass('is_active');
+	});
 </script>
 <div class="row">
-  <div class="large-8 medium-8 columns">
-      <div class="markdown-body article-wrap">
-       <div class="article">
-          
-          <h1>duyan 20180123-2</h1>
-     
-        <div class="read-more clearfix">
-          <span class="date">2018/01/23</span>
+	<div class="large-8 medium-8 columns">
+		<div class="markdown-body home-categories">
+		
+			<div class="article">
+                <a class="clearlink" href="15158198616473.html">
+                
+                  <h1>一个`多项式`版本的线性空间问题</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p><mark>TODO: 本篇内容似乎也还没完成</mark></p>
 
-          <span>posted in&nbsp;</span> 
-          
-              <span class="posted-in"><a href='To%20be%20fixed.html'>To be fixed</a></span>
-          
-              <span class="posted-in"><a href='%E7%AD%94%E7%96%91&%E8%A7%A3%E9%A2%98.html'>答疑&解题</a></span>
-           
-         
-          <span class="comments">
-            
-
-            
-          </span>
-
-        </div>
-      </div><!-- article -->
-
-      <div class="article-content">
-      <p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
-
-<p>已知 \(H\) 为 \(\triangle ABC\) 的垂心, 过 \(H\) 的直线交 \(BC, AB\) 于 \(D,Z\), 过 \(H\) 且垂直于 \(ZH\) 的另一条直线交 \(BC, AC\) 于 \(E,X\), 点 \(Y\) 使得 \(DY \parallel AC, EY \parallel AB\). 求证: \(X,Y,Z\) 三点共线.</p>
-
-<p><img src="https://ws2.sinaimg.cn/large/006tKfTcly1fnqjnu4ou9j30iu0h7js7.jpg" alt=""/></p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">解答</h2>
-
-<p>延长 \(YD\) 交 \(AB\) 于 \(G\), 延长 \(YE\) 交 \(AC\) 于 \(F\). 比较 \(\triangle GYZ\) 和 \(\triangle FXY\), 已有两边对应平行, 故只需证明它们相似即可. 下面设法证明 \(\dfrac{GZ}{GY} = \dfrac{FY}{FX}\), 亦即证明 \(GZ \cdot FX = GY \cdot FY\).</p>
-
-<p>记 \(\angle HDE = \alpha\), \(\angle HED = \beta\), 有 \(\alpha + \beta = 90^\circ\). 另外, 下面直接将 \(\triangle ABC\) 的三内角简记为 \(A,B,C\).</p>
-
-<p><img src="https://ws1.sinaimg.cn/large/006tKfTcly1fnqjnwnkb2j30iu0h70to.jpg" alt=""/></p>
-
-<p>在 \(\triangle GDZ\) 中, 有 <br/>
+<p>试求所有的实系数多项式 \(p(x)\), 使得对满足 \(ab + bc + ca = 0\) 的所有实数 \(a、b、c\), 均有: <br/>
 \[<br/>
-\dfrac{GZ}{GD} = \dfrac{\sin \angle GDZ}{\sin \angle GZD} = \dfrac{\sin (C+\alpha)}{\sin(B-\alpha)}<br/>
-\]<br/>
-在 \(\triangle FEX\) 中, 有<br/>
-\[<br/>
-\dfrac{FX}{FE} = \dfrac{\sin \angle FEX}{\sin \angle FXE} = \dfrac{\sin (B+\beta)}{\sin(C-\beta)}<br/>
-\]<br/>
-故<br/>
-\[<br/>
-\begin{aligned}<br/>
-\dfrac{GZ}{GD} \cdot \dfrac{FX}{FE} <br/>
-&amp;= \dfrac{\sin (C+\alpha)}{\sin(B-\alpha)} \cdot \dfrac{\sin (B+\beta)}{\sin(C-\beta)} = \dfrac{\cos (C-\beta)}{\sin(B-\alpha)} \cdot \dfrac{\cos (B-\alpha)}{\sin(C-\beta)} \\<br/>
-&amp;= \dfrac{\cos(B-C) + \cos(B+C-90^\circ)}{\cos(B-C) - \cos(B+C-90^\circ)} \\<br/>
-&amp;= \dfrac{\cos(B-C) + \sin A}{\cos(B-C) - \sin A}<br/>
-\end{aligned}<br/>
-\]<br/>
-下面只需证明 \(\dfrac{GY}{GD} \cdot \dfrac{FY}{FE} = \dfrac{\cos(B-C) + \sin A}{\cos(B-C) - \sin A}\).</p>
-
-<p>显然, \(\dfrac{GY}{GD} \cdot \dfrac{FY}{FE} = \dfrac{BE}{BD} \cdot \dfrac{CE}{CE}\), 考虑 \(B,D,E,C\) 四点的交比<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>, 有</p>
-
-<p>\[<br/>
-\begin{aligned}<br/>
-\dfrac{ED}{BD} \cdot \dfrac{BC}{EC} <br/>
-&amp;= \dfrac{\sin \angle EHD}{\sin \angle BHD} \cdot \dfrac{\sin \angle BHC}{\sin \angle EHC} \\<br/>
-&amp;= \dfrac{\sin 90^\circ}{\sin (\alpha-90^\circ+C)} \cdot \dfrac{\sin (180^\circ - A)}{\sin (\beta-90^\circ+B)} \\<br/>
-&amp;= \dfrac{\sin A}{\sin (B-\alpha) \sin (C-\beta)} \\<br/>
-&amp;= \dfrac{2\sin A}{\cos (B-C) - \sin A}<br/>
-\end{aligned}<br/>
+p(a - b) + p(b - c) + p(c - a) = 2p(a + b + c).<br/>
 \]</p>
 
-<p>因此<br/>
+
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                   <a href="15158198616473.html">Read more</a>&nbsp;&nbsp; 
+                    <span class="date">2018/01/13</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='To%20be%20accomplished.html'>To be accomplished</a></span>
+          				  
+          					    <span class="posted-in"><a href='%E9%9A%8F%E7%AC%94.html'>随笔</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15141748760281.html">
+                
+                  <h1>一个很有意思的数列变换问题</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p>已知数列 \(\{a_n\}\) 和 \(\{b_n\}\), 其中 \(n \ge 0\) (即两个数列的首项分别为 \(a_0\) 和 \(b_0\)). 若满足<br/>
 \[<br/>
-\begin{aligned}<br/>
-\dfrac{BE}{BD} \cdot \dfrac{CE}{CE} <br/>
-&amp;= \dfrac{(BD+ED) \cdot (DE+EC)}{BD \cdot EC} \\<br/>
-&amp;= \dfrac{ED \cdot (BD+DE+EC) + BD \cdot EC}{BD \cdot EC} \\<br/>
-&amp;= \dfrac{ED \cdot BC}{BD \cdot EC} +1 \\<br/>
-&amp;= \dfrac{2\sin A}{\cos (B-C) - \sin A} + 1 \\<br/>
-&amp;= \dfrac{\cos (B-C) + \sin A}{\cos (B-C) - \sin A}<br/>
-\end{aligned}<br/>
+b_n = \sum_{k=0}^n (-1)^k C_n^k a_k<br/>
+\,, \quad \forall n \in \mathbb N.<br/>
 \]<br/>
-证毕.</p>
-
-<div class="footnotes">
-<hr/>
-<ol>
-
-<li id="fn1">
-<p>交比的相关结论可用正弦定理证明.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
-</li>
-
-</ol>
-</div>
+求证:<br/>
+\[<br/>
+a_n = \sum_{k=0}^n (-1)^k C_n^k b_k<br/>
+\,, \quad \forall n \in \mathbb N.<br/>
+\]</p>
 
 
-    
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                   <a href="15141748760281.html">Read more</a>&nbsp;&nbsp; 
+                    <span class="date">2017/12/25</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='%E9%9A%8F%E7%AC%94.html'>随笔</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
 
-      </div>
-
-      <div class="row">
-        <div class="large-6 columns">
-        <p class="text-left" style="padding:15px 0px;">
-      
-          <a href="15238569346799.html" 
-          title="Previous Post: zhangboxin 20180409">&laquo; zhangboxin 20180409</a>
-      
-        </p>
-        </div>
-        <div class="large-6 columns">
-      <p class="text-right" style="padding:15px 0px;">
-      
-          <a  href="15166821516457.html" 
-          title="Next Post: zhangboxin 20171125">zhangboxin 20171125 &raquo;</a>
-      
-      </p>
-        </div>
-      </div>
-      <div class="comments-wrap">
-        <div class="share-comments">
-          
-
-          
-
-          
-        </div>
-      </div>
-    </div><!-- article-wrap -->
-  </div><!-- large 8 -->
-
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15075156363610.html">
+                
+                  <h1>鲁列斯三角形问题</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	<p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
 
 
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                   <a href="15075156363610.html">Read more</a>&nbsp;&nbsp; 
+                    <span class="date">2017/10/09</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='To%20be%20fixed.html'>To be fixed</a></span>
+          				  
+          					    <span class="posted-in"><a href='%E9%9A%8F%E7%AC%94.html'>随笔</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
+
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+              
+
+
+			<div class="row">
+			  <div class="large-6 columns">
+			  <p class="text-left" style="padding-top:25px;">
+			   
+			  </p>
+			  </div>
+			  <div class="large-6 columns">
+			<p class="text-right" style="padding-top:25px;">
+			
+			</p>
+			  </div>
+			</div>
+		</div>
+	</div><!-- large 8 -->
 
  <div class="large-4 medium-4 columns">
   <div class="hide-for-small">
