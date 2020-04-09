@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  递推数列推出组合数的问题 `duyan@bj#4|20171012` - 语时lab
+  obsolete - 语时lab
   
   </title>
   
@@ -115,107 +115,95 @@
        
 
  <script type="text/javascript">
-  $(function(){
-    $('#menu_item_index').addClass('is_active');
-  });
+	$(function(){
+		$('#menu_item_index').addClass('is_active');
+	});
 </script>
 <div class="row">
-  <div class="large-8 medium-8 columns">
-      <div class="markdown-body article-wrap">
-       <div class="article">
-          
-          <h1>递推数列推出组合数的问题 `duyan@bj#4|20171012`</h1>
-     
-        <div class="read-more clearfix">
-          <span class="date">2017/10/12</span>
+	<div class="large-8 medium-8 columns">
+		<div class="markdown-body home-categories">
+		
+			<div class="article">
+                <a class="clearlink" href="15072010715807.html">
+                
+                  <h1>201710月考复习 高一</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                   <a href="15072010715807.html">Read more</a>&nbsp;&nbsp; 
+                    <span class="date">2017/10/05</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='obsolete.html'>obsolete</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
 
-          <span>posted in&nbsp;</span> 
-          
-              <span class="posted-in"><a href='problemsolving.html'>解题</a></span>
-           
-         
-          <span class="comments">
-            
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+			<div class="article">
+                <a class="clearlink" href="15072010188759.html">
+                
+                  <h1>201710月考复习 高二</h1>
+                  <div class="a-content">
+                      
+                      <div class="a-content-text">
+                        
+                        	
+                        
+                      </div>
+                  </div>
+                </a>
+                <div class="read-more clearfix">
+                  <div class="more-left left">
+                   <a href="15072010188759.html">Read more</a>&nbsp;&nbsp; 
+                    <span class="date">2017/10/05</span>
+                    <span>posted in&nbsp;</span> 
+          				  
+          					    <span class="posted-in"><a href='obsolete.html'>obsolete</a></span>
+          				   
+                  </div>
+                  <div class="more-right right">
+                  <span class="comments">
+                      
 
-            
-          </span>
-
-        </div>
-      </div><!-- article -->
-
-      <div class="article-content">
-      <p>已知 \(S_n\) 为数列 \(\{a_n\}\) 的前 \(n\) 项和, 规定 \(S_0 = 0\), 若对任意 \(n \in \mathbb N^*\), 均有 \(\dfrac{a_n}{2017} = - \dfrac{2017+S_{n-1}}{n}\), 则 \(\sum\limits_{n=1}^{2017} 2^n a_n = \) <code>______</code>.</p>
-
-<span id="more"></span><!-- more -->
-
-<blockquote>
-<p>Qer: duyan@bj#4 20171012</p>
-</blockquote>
-
-<h2 id="toc_0">解答</h2>
-
-<p>根据已知条件, \(n a_n = -2017^2 - 2017 S_{n-1}\),</p>
-
-<p>于是 \((n+1) a_{n+1} = -2017^2 - 2017 S_{n}\),</p>
-
-<p>两式相减得 \((n+1) a_{n+1} - n a_n = -2017 (S_n - S_{n-1}) = -2017 a_n\),</p>
-
-<p>变形得 \(a_{n+1} = \dfrac{n-2017}{n+1} \cdot a_n\),</p>
-
-<p>于是 \(a_n = \dfrac{n-2018}{n} \cdot \dfrac{n-2019}{n-1} \cdot \dots \cdot \dfrac{-2016}{2} \cdot a_1\).</p>
-
-<p>注意从递推公式中就可以看到这个数列从 \(2018\) 项开始，后面全部等于 \(0\), 通项公式中也能看到这一点.</p>
-
-<p>不过, 通项公式可以进一步简化. 在 \(n \le 2017\) 时,<br/>
-\[<br/>
-\begin{aligned}<br/>
-a_n &amp;= \dfrac{n-2018}{n} \cdot \dfrac{n-2019}{n-1} \cdot \dots \cdot \dfrac{-2016}{2} \cdot a_1 \\<br/>
-&amp; = (-1)^{n-1} \cdot \dfrac{(2018-n) \cdot (2019-n) \cdot \dots \cdot 2016}{n \cdot (n-1) \cdot \dots \cdot 2} \cdot \dfrac{2017}1 \cdot \dfrac{a_1}{2017} \\<br/>
-&amp; = (-1)^{n-1} \cdot C_{2017}^n \cdot \dfrac{a_1}{2017}<br/>
-\end{aligned}<br/>
-\]<br/>
-其中, \(a_1 = -2017^2 - 2017 S_0 = -2017^2\), 故 \(a_n = 2017 \cdot C_{2017}^n \cdot (-1)^n\). 要求的式子为,<br/>
-\[<br/>
-\sum_{n=1}^{2017} 2^n a_n = 2017 \cdot \sum_{n=1}^{2017} C_{2017}^n \cdot (-2)^n = 2017 \cdot [(1-2)^{2017} - 1] = -4034<br/>
-\]</p>
-
-
-    
-
-      </div>
-
-      <div class="row">
-        <div class="large-6 columns">
-        <p class="text-left" style="padding:15px 0px;">
-      
-          <a href="15088927359289.html" 
-          title="Previous Post: 组合极值/组合构造问题 `kongyuqing|20171024`">&laquo; 组合极值/组合构造问题 `kongyuqing|20171024`</a>
-      
-        </p>
-        </div>
-        <div class="large-6 columns">
-      <p class="text-right" style="padding:15px 0px;">
-      
-          <a  href="15075156363610.html" 
-          title="Next Post: 鲁列斯三角形问题">鲁列斯三角形问题 &raquo;</a>
-      
-      </p>
-        </div>
-      </div>
-      <div class="comments-wrap">
-        <div class="share-comments">
-          
-
-          
-
-          
-        </div>
-      </div>
-    </div><!-- article-wrap -->
-  </div><!-- large 8 -->
+                       
+                  </span>
+                  </div>
+                </div>
+              </div><!-- article -->
+        
+              
 
 
-
+			<div class="row">
+			  <div class="large-6 columns">
+			  <p class="text-left" style="padding-top:25px;">
+			   
+			  </p>
+			  </div>
+			  <div class="large-6 columns">
+			<p class="text-right" style="padding-top:25px;">
+			
+			</p>
+			  </div>
+			</div>
+		</div>
+	</div><!-- large 8 -->
 
  <div class="large-4 medium-4 columns">
   <div class="hide-for-small">

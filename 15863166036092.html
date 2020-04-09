@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  递推数列推出组合数的问题 `duyan@bj#4|20171012` - 语时lab
+  如何判断复合根式是否可以进一步化简 - 语时lab
   
   </title>
   
@@ -124,14 +124,14 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>递推数列推出组合数的问题 `duyan@bj#4|20171012`</h1>
+          <h1>如何判断复合根式是否可以进一步化简</h1>
      
         <div class="read-more clearfix">
-          <span class="date">2017/10/12</span>
+          <span class="date">2020/04/08</span>
 
           <span>posted in&nbsp;</span> 
           
-              <span class="posted-in"><a href='problemsolving.html'>解题</a></span>
+              <span class="posted-in"><a href='mathpost.html'>数学随笔</a></span>
            
          
           <span class="comments">
@@ -144,40 +144,22 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <p>已知 \(S_n\) 为数列 \(\{a_n\}\) 的前 \(n\) 项和, 规定 \(S_0 = 0\), 若对任意 \(n \in \mathbb N^*\), 均有 \(\dfrac{a_n}{2017} = - \dfrac{2017+S_{n-1}}{n}\), 则 \(\sum\limits_{n=1}^{2017} 2^n a_n = \) <code>______</code>.</p>
+      <p><img src="media/15863166036092/15863168475561.jpg" alt="" style="width:324px;"/></p>
 
 <span id="more"></span><!-- more -->
 
-<blockquote>
-<p>Qer: duyan@bj#4 20171012</p>
-</blockquote>
+<p>初学根式 (radical expression) 时, 经常遇到这样一类问题: 形如 \(\sqrt{A \pm \sqrt B}\) 的根式是否需要继续化简. 例如:</p>
 
-<h2 id="toc_0">解答</h2>
+<ul>
+<li>\(\sqrt{3 + 2\sqrt2}\) 可以化简为 \(\sqrt2 + 1\);</li>
+<li>\(\sqrt{2+\sqrt3}\) 可以化简为 \(\frac{\sqrt6 + \sqrt2}2\);</li>
+</ul>
 
-<p>根据已知条件, \(n a_n = -2017^2 - 2017 S_{n-1}\),</p>
+<p>而</p>
 
-<p>于是 \((n+1) a_{n+1} = -2017^2 - 2017 S_{n}\),</p>
-
-<p>两式相减得 \((n+1) a_{n+1} - n a_n = -2017 (S_n - S_{n-1}) = -2017 a_n\),</p>
-
-<p>变形得 \(a_{n+1} = \dfrac{n-2017}{n+1} \cdot a_n\),</p>
-
-<p>于是 \(a_n = \dfrac{n-2018}{n} \cdot \dfrac{n-2019}{n-1} \cdot \dots \cdot \dfrac{-2016}{2} \cdot a_1\).</p>
-
-<p>注意从递推公式中就可以看到这个数列从 \(2018\) 项开始，后面全部等于 \(0\), 通项公式中也能看到这一点.</p>
-
-<p>不过, 通项公式可以进一步简化. 在 \(n \le 2017\) 时,<br/>
-\[<br/>
-\begin{aligned}<br/>
-a_n &amp;= \dfrac{n-2018}{n} \cdot \dfrac{n-2019}{n-1} \cdot \dots \cdot \dfrac{-2016}{2} \cdot a_1 \\<br/>
-&amp; = (-1)^{n-1} \cdot \dfrac{(2018-n) \cdot (2019-n) \cdot \dots \cdot 2016}{n \cdot (n-1) \cdot \dots \cdot 2} \cdot \dfrac{2017}1 \cdot \dfrac{a_1}{2017} \\<br/>
-&amp; = (-1)^{n-1} \cdot C_{2017}^n \cdot \dfrac{a_1}{2017}<br/>
-\end{aligned}<br/>
-\]<br/>
-其中, \(a_1 = -2017^2 - 2017 S_0 = -2017^2\), 故 \(a_n = 2017 \cdot C_{2017}^n \cdot (-1)^n\). 要求的式子为,<br/>
-\[<br/>
-\sum_{n=1}^{2017} 2^n a_n = 2017 \cdot \sum_{n=1}^{2017} C_{2017}^n \cdot (-2)^n = 2017 \cdot [(1-2)^{2017} - 1] = -4034<br/>
-\]</p>
+<ul>
+<li>\(\sqrt{4 +\sqrt2}\) 似乎无法进一步化简.</li>
+</ul>
 
 
     
@@ -188,16 +170,16 @@ a_n &amp;= \dfrac{n-2018}{n} \cdot \dfrac{n-2019}{n-1} \cdot \dots \cdot \dfrac{
         <div class="large-6 columns">
         <p class="text-left" style="padding:15px 0px;">
       
-          <a href="15088927359289.html" 
-          title="Previous Post: 组合极值/组合构造问题 `kongyuqing|20171024`">&laquo; 组合极值/组合构造问题 `kongyuqing|20171024`</a>
+          <a href="15863333927200.html" 
+          title="Previous Post: 数列不等式 `lhc@jinan|20200407`">&laquo; 数列不等式 `lhc@jinan|20200407`</a>
       
         </p>
         </div>
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="15075156363610.html" 
-          title="Next Post: 鲁列斯三角形问题">鲁列斯三角形问题 &raquo;</a>
+          <a  href="15859891289445.html" 
+          title="Next Post: Simon Tatham's Portable Puzzle Collection">Simon Tatham's Portable Puzzle Collection &raquo;</a>
       
       </p>
         </div>

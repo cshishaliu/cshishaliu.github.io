@@ -4,13 +4,94 @@
   <title><![CDATA[语时lab]]></title>
   <link href="https://cshishaliu.github.io/atom.xml" rel="self"/>
   <link href="https://cshishaliu.github.io/"/>
-  <updated>2020-04-04T16:56:37+08:00</updated>
+  <updated>2020-04-09T15:05:13+08:00</updated>
   <id>https://cshishaliu.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[数列不等式 `lhc@jinan|20200407`]]></title>
+    <link href="https://cshishaliu.github.io/15863333927200.html"/>
+    <updated>2020-04-08T16:09:52+08:00</updated>
+    <id>https://cshishaliu.github.io/15863333927200.html</id>
+    <content type="html"><![CDATA[
+<p>已知数列 \(\{a_n\}\) 满足 \(a_1 = 1\), \(a_n a_{n+1} = n\), \(n = 1,2,3,\dots\). 求证: <br/>
+\[<br/>
+\frac1{a_1} + \frac1{a_2} + \frac1{a_3} + \dots + \frac1{a_n} \ge 2 \sqrt n - 1.<br/>
+\]</p>
+
+<span id="more"></span><!-- more -->
+
+<blockquote>
+<p>Qer: lihaocheng@jinan 20200407</p>
+</blockquote>
+
+<h2 id="toc_0">解答</h2>
+
+<p>这里给出一个解法, 过程相当简洁漂亮, 但有一个最大的问题就是, 似乎无法讲清楚这个思路是怎么来的, 这种方法是怎么想到的.</p>
+
+<p>不难确认数列 \(\{a_n\}\) 的所有项都是正的, 由均值不等式<br/>
+\[<br/>
+\frac1{a_n} + \frac1{a_{n+1}} \ge 2 \sqrt{\frac1{a_n a_{n+1}}} = \frac2{\sqrt n}<br/>
+\]<br/>
+事实上, 这个等号也是取不到的, 不过这一点说起来比较费事, 不过后面可以看到也可以先不说这件事情.</p>
+
+<p>于是, <strong>当 \(n \ge 2\) 时</strong>,<br/>
+\[<br/>
+\begin{aligned}<br/>
+&amp;<br/>
+\frac1{a_1} + \frac1{a_2} + \frac1{a_3} + \dots + \frac1{a_n} \\<br/>
+{}={}&amp; <br/>
+\frac12 \left[ <br/>
+\frac1{a_1} + \left( \frac1{a_1} + \frac1{a_2} \right) + \left( \frac1{a_2} + \frac1{a_3} \right) + \dots + \left( \frac1{a_{n-1}} + \frac1{a_n} \right) + \frac1{a_n}<br/>
+\right] \\<br/>
+{}\ge{}&amp;<br/>
+\frac12 \left(<br/>
+\frac1{a_1} + \frac2{\sqrt1} + \frac2{\sqrt2} + \dots + \frac2{\sqrt{n-1}} + \frac1{a_n}<br/>
+\right) \\<br/>
+{}={}&amp;<br/>
+\frac12 + \frac1{\sqrt1} + \frac1{\sqrt2} + \dots + \frac1{\sqrt{n-1}} + \frac1{2a_n}<br/>
+\end{aligned}<br/>
+\]</p>
+
+<p>另一方面, 用数学归纳法不难证明<br/>
+\[<br/>
+\frac1{\sqrt1} + \frac1{\sqrt2} + \dots + \frac1{\sqrt{n-1}} \ge 2 \sqrt n - 1<br/>
+\]</p>
+
+<p>这样就不难证明原题中的不等式.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[如何判断复合根式是否可以进一步化简]]></title>
+    <link href="https://cshishaliu.github.io/15863166036092.html"/>
+    <updated>2020-04-08T11:30:03+08:00</updated>
+    <id>https://cshishaliu.github.io/15863166036092.html</id>
+    <content type="html"><![CDATA[
+<p><img src="media/15863166036092/15863168475561.jpg" alt="" style="width:324px;"/></p>
+
+<span id="more"></span><!-- more -->
+
+<p>初学根式 (radical expression) 时, 经常遇到这样一类问题: 形如 \(\sqrt{A \pm \sqrt B}\) 的根式是否需要继续化简. 例如:</p>
+
+<ul>
+<li>\(\sqrt{3 + 2\sqrt2}\) 可以化简为 \(\sqrt2 + 1\);</li>
+<li>\(\sqrt{2+\sqrt3}\) 可以化简为 \(\frac{\sqrt6 + \sqrt2}2\);</li>
+</ul>
+
+<p>而</p>
+
+<ul>
+<li>\(\sqrt{4 +\sqrt2}\) 似乎无法进一步化简.</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Simon Tatham's Portable Puzzle Collection]]></title>
@@ -131,14 +212,16 @@ And I was also annoyed that every time I found a good game on (say) Unix, it was
     <updated>2020-04-01T15:18:10+08:00</updated>
     <id>https://cshishaliu.github.io/book.html</id>
     <content type="html"><![CDATA[
+<p>这个页面中是我推荐的书籍.</p>
+
+<span id="more"></span><!-- more -->
+
 <ul>
 <li>
 <a href="#toc_0">思考的乐趣, 顾森</a>
 </li>
 </ul>
 
-
-<span id="more"></span><!-- more -->
 
 <h2 id="toc_0">思考的乐趣, 顾森</h2>
 
@@ -155,6 +238,10 @@ And I was also annoyed that every time I found a good game on (say) Unix, it was
     <updated>2020-04-01T11:50:30+08:00</updated>
     <id>https://cshishaliu.github.io/links.html</id>
     <content type="html"><![CDATA[
+<p>这个页面中是一些我比较喜欢的网站.</p>
+
+<span id="more"></span><!-- more -->
+
 <ul>
 <li>
 <a href="#toc_0">matrix67 blog</a>
@@ -164,8 +251,6 @@ And I was also annoyed that every time I found a good game on (say) Unix, it was
 </li>
 </ul>
 
-
-<span id="more"></span><!-- more -->
 
 <h2 id="toc_0">matrix67 blog</h2>
 
@@ -214,7 +299,7 @@ And I was also annoyed that every time I found a good game on (say) Unix, it was
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[一个来自 QQ 群的问题 20200317-0721]]></title>
+    <title type="html"><![CDATA[二元有理函数最值]]></title>
     <link href="https://cshishaliu.github.io/15840603466913.html"/>
     <updated>2020-03-13T08:45:46+08:00</updated>
     <id>https://cshishaliu.github.io/15840603466913.html</id>
@@ -228,7 +313,7 @@ And I was also annoyed that every time I found a good game on (say) Unix, it was
 <span id="more"></span><!-- more -->
 
 <blockquote>
-<p>来自: <a href="QQ%20Group:533503621">中国数学竞赛交流群</a></p>
+<p>Qer: <a href="QQ%20Group%20No.:%20533503621">QQ 群: 中国数学竞赛交流群</a> 20200317</p>
 </blockquote>
 
 <h2 id="toc_0">解答</h2>
@@ -289,191 +374,7 @@ t \le -\frac{14}5 ~\text{或}~ t \ge 2<br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[qiqi 20200313]]></title>
-    <link href="https://cshishaliu.github.io/15582753348629.html"/>
-    <updated>2019-05-19T22:15:34+08:00</updated>
-    <id>https://cshishaliu.github.io/15582753348629.html</id>
-    <content type="html"><![CDATA[
-<p><mark>TODO 本篇尚未完成</mark></p>
-
-<p><img src="https://i.loli.net/2020/03/13/Mgn5Ni7fQorOx9h.png" alt="image-20200313084831995"/><br/>
-<span id="more"></span><!-- more --></p>
-
-<h2 id="toc_0">Answer</h2>
-
-<h3 id="toc_1">(a)</h3>
-
-<h4 id="toc_2">(a).i</h4>
-
-<p>Consider a permutation starts with \(m\), if it has head length \(1\), then \(m\) must be greater than \(1\), and the second term of the permutation must be less than \(m\). </p>
-
-<p>Therefore, the total number of permutations starts with \(m\) and has head length \(1\) is<br/>
-\[<br/>
-(m-1) \cdot A_{n-2}^{n-2} = (m-1) \cdot (n-2)!<br/>
-\]<br/>
-And the total number of permutations (starts with whatever and) has head length \(1\) is<br/>
-\[<br/>
-\sum_{m=2}^n (m-1) \cdot (n-2)! = \frac{n(n-1)}2 \cdot (n-2)! = \frac{n!}2<br/>
-\]<br/>
-This seems to be reasonable. Because, consider two permutations, of which the first two terms exchange their order and the rest are all the same, one of them has head length \(1\), and the other does not. So, exactly <strong>a half</strong> of all the permutations has head length \(1\).</p>
-
-<h4 id="toc_3">(a).ii</h4>
-
-<h4 id="toc_4">(a).iii</h4>
-
-<h3 id="toc_5">(b)</h3>
-
-<p>记 head length 为 \(k\), 显然 \(k \le n+1\).</p>
-
-<ul>
-<li><p>当 \(k = n+1\) 时, 这种排列只有一个: \(1,1,2,3,\dots,n\);</p></li>
-<li><p>当 \(k &lt; n+1\) 即 \(k \le n\) 时, 第 \(k\) 项记作 \(m\), 它必须严格大于第 \(k+1\) 项, 且不小于第 \(1,2, \dots, k-1\) 项, 因此必定有 \(m \ge k\).</p>
-<p>讨论可得, head length 为 \(k\), 且第 \(k\) 项等于 \(m\) 的 permutation 的个数为<br/>
-\[<br/>
-f(k,m) = C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k<br/>
-\]<br/>
-其中 \(1 \le k \le m \le n\).</p></li>
-</ul>
-
-<p>于是, 所有 permutation 的总个数为<br/>
-\[<br/>
-1 + \sum_{k=1}^n \left( \sum_{m=k}^n f(k,m) \right),<br/>
-\]<br/>
-这个和式的化简结果应该是 \(\frac{(n+1)!}2\) (<mark>此结论待验证</mark>), 即 \(1,1,2,\dots,n\) 所能形成的所有排列个数.</p>
-
-<p>考虑<br/>
-\[<br/>
-\begin{aligned}<br/>
-\sum_{k=1}^n \left( \sum_{m=k}^n f(k,m) \right)<br/>
-&amp;= \sum_{k=1}^n \sum_{m=k}^n \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \\<br/>
-&amp;= \sum_{m=1}^n \sum_{k=1}^m \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \\<br/>
-\end{aligned}<br/>
-\]</p>
-
-<p>另一方面, 所有 permutation 的 head length 的总和为<br/>
-\[<br/>
-(n+1) + \sum_{k=1}^n \left( k \cdot \sum_{m=k}^n f(k,m) \right)<br/>
-\]</p>
-
-<p>\[<br/>
-\begin{aligned}<br/>
-\sum_{k=1}^n \left( \frac kn \cdot \sum_{m=k}^n f(k,m) \right)<br/>
-&amp;= \sum_{k=1}^n \left( \frac kn \cdot \sum_{m=k}^n \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \right) \\<br/>
-&amp;= \frac1n \cdot \sum_{k=1}^n \sum_{m=k}^n \left( k \cdot \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \right) \\<br/>
-&amp;= \frac1n \cdot \sum_{m=1}^n \sum_{k=1}^m \left( k \cdot \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \right)<br/>
-\end{aligned}<br/>
-\]</p>
-
-<p>\[<br/>
-\begin{aligned}<br/>
-\sum_{k=1}^m \left( k \cdot \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \right)<br/>
-&amp;= \sum_{k=1}^m \left( C_{m-2}^{k-2} \cdot k(k-1) + C_{m-1}^k \cdot k^2 \right)<br/>
-\end{aligned}<br/>
-\]</p>
-
-<p>\[<br/>
-\begin{aligned}<br/>
-C_{m-2}^{k-2} \cdot k(k-1)<br/>
-&amp;= C_{m-2}^{k-2} \cdot (k^2-k) \\<br/>
-&amp;= C_{m-2}^{k-2} \cdot [(k^2 - 5k + 6) + (4k - 8) + 2] \\<br/>
-&amp;= C_{m-2}^{k-2} \cdot (k-2)(k-3) + 4 C_{m-2}^{k-2} \cdot (k-2) + 2 C_{m-2}^{k-2} \\<br/>
-&amp;= (m-2)(m-3) C_{m-4}^{k-4} + 4 (m-2) C_{m-3}^{k-3} + 2 C_{m-2}^{k-2} <br/>
-\\[1em]<br/>
-C_{m-1}^k \cdot k^2<br/>
-&amp;= C_{m-1}^k \cdot [(k^2 - k) + k] \\<br/>
-&amp;= C_{m-1}^k \cdot k (k - 1) + C_{m-1}^k \cdot k \\<br/>
-&amp;= (m-1)(m-2) C_{m-3}^{k-2} + (m-1) C_{m-2}^{k-1}<br/>
-\end{aligned}<br/>
-\]</p>
-
-<p>\[<br/>
-\begin{aligned}<br/>
-&amp;\sum_{k=1}^m \left( C_{m-2}^{k-2} \cdot k(k-1) + C_{m-1}^k \cdot k^2 \right)\\<br/>
-{}={}<br/>
-&amp;\sum_{k=1}^m (m-2)(m-3) C_{m-4}^{k-4} + <br/>
-\sum_{k=1}^m 4 (m-2) C_{m-3}^{k-3} + <br/>
-\sum_{k=1}^m 2 C_{m-2}^{k-2} \\<br/>
-&amp;{} + \sum_{k=1}^m (m-1)(m-2) C_{m-3}^{k-2} + <br/>
-\sum_{k=1}^m (m-1) C_{m-2}^{k-1} \\<br/>
-{}={}<br/>
-&amp;(m-2)(m-3) \sum_{k=1}^m C_{m-4}^{k-4} + <br/>
-4 (m-2) \sum_{k=1}^m C_{m-3}^{k-3} + <br/>
-2 \sum_{k=1}^m C_{m-2}^{k-2} \\<br/>
-&amp;{} + (m-1)(m-2) \sum_{k=1}^m C_{m-3}^{k-2} + <br/>
-(m-1) \sum_{k=1}^m C_{m-2}^{k-1} \\<br/>
-{}={}<br/>
-&amp; (m-2)(m-3) \cdot 2^{m-4} + 4 (m-2) \cdot 2^{m-3} + 2 \cdot 2^{m-2} \\<br/>
-&amp;{} + (m-1)(m-2) \cdot 2^{m-3} + (m-1) 2^{m-2} \\<br/>
-{}={}<br/>
-&amp; 2^{m-4} [(m-2)(m-3) + 8(m-2) + 8 + 2(m-1)(m-2) + 4(m-1)] \\<br/>
-{}={}<br/>
-&amp; (3m^2 + m - 2) \cdot 2^{m-4}<br/>
-\end{aligned}<br/>
-\]</p>
-
-<p>\[<br/>
-\begin{aligned}<br/>
-\sum_{k=1}^n \left( \frac kn \cdot \sum_{m=k}^n f(k,m) \right)<br/>
-&amp;= \sum_{k=1}^n \left( \frac kn \cdot \sum_{m=k}^n \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \right) \\<br/>
-&amp;= \frac1n \cdot \sum_{k=1}^n \sum_{m=k}^n \left( k \cdot \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \right) \\<br/>
-&amp;= \frac1n \cdot \sum_{m=1}^n \sum_{k=1}^m \left( k \cdot \left( C_{m-2}^{k-2} \cdot (k-1) + C_{m-1}^k \cdot k \right) \right) \\<br/>
-&amp;= \frac1n \cdot \sum_{m=2}^n (3m^2 + m - 2) \cdot 2^{m-4}<br/>
-\end{aligned}<br/>
-\]<br/>
-设数列 \(S_n\) 满足 \(S_n = (x n^2 + yn + z) \cdot 2^{n-4}\) 且<br/>
-\[<br/>
-S_{m+1} - S_m = (3m^2 + m - 2) \cdot 2^{m-4}<br/>
-\]<br/>
-而<br/>
-\[<br/>
-\begin{aligned}<br/>
-S_{m+1} - S_m <br/>
-&amp;= [x(m+1)^2 + y(m+1) + z] \cdot 2^{m-3} - (xm^2 + ym + z) \cdot 2^{m-4} \\<br/>
-&amp;= [2x(m+1)^2 + 2y(m+1) + 2z - (xm^2 + ym + z) ] \cdot 2^{m-4} \\<br/>
-&amp;= [x m^2 + (4x+y) m + (2x + 2y + z)] \cdot 2^{m-4}<br/>
-\end{aligned}<br/>
-\]<br/>
-因此 <br/>
-\[<br/>
-\begin{cases}<br/>
-x = 3 \\<br/>
-4x+y = 1 \\<br/>
-2x+2y+z = -2<br/>
-\end{cases}<br/>
-\]<br/>
-解得<br/>
-\[<br/>
-\begin{cases}<br/>
-x = 3 \\<br/>
-y = -11 \\<br/>
-z = 14<br/>
-\end{cases}<br/>
-\]<br/>
-也就是说, 令 \(S_n = (3n^2 - 11 n + 14) \cdot 2^{n-4}\), 即有<br/>
-\[<br/>
-S_{m+1} - S_m = (3m^2 + m - 2) \cdot 2^{m-4}<br/>
-\]</p>
-
-<p>那么<br/>
-\[<br/>
-\begin{aligned}<br/>
-\sum_{m=2}^n (3m^2 + m - 2) \cdot 2^{m-4} <br/>
-&amp;= \sum_{m=2}^n (S_{m+1} - S_n) \\<br/>
-&amp;= S_{n+1} - S_2 \\<br/>
-&amp;= (3n^2 - 5n + 6) \cdot 2^{n-3} - 1<br/>
-\end{aligned}<br/>
-\]</p>
-
-<p>\[<br/>
-[3(n+1)^2 - 11(n+1)+ 14] \cdot 2^{n-3} - 1 \\<br/>
-(3n^2 - 5n + 6) \cdot 2^{n-3} - 1<br/>
-\]</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[xieshunfu 20190201]]></title>
+    <title type="html"><![CDATA[两个数列不等式问题]]></title>
     <link href="https://cshishaliu.github.io/15490078791835.html"/>
     <updated>2019-02-01T15:57:59+08:00</updated>
     <id>https://cshishaliu.github.io/15490078791835.html</id>
@@ -484,6 +385,10 @@ S_{m+1} - S_m = (3m^2 + m - 2) \cdot 2^{m-4}<br/>
 </ol>
 
 <span id="more"></span><!-- more -->
+
+<blockquote>
+<p>Qer: xieshunfu 20190201</p>
+</blockquote>
 
 <h2 id="toc_0">解答</h2>
 
@@ -578,7 +483,7 @@ S_{m+1} - S_m = (3m^2 + m - 2) \cdot 2^{m-4}<br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[XUC 20181014 几个二次函数问题]]></title>
+    <title type="html"><![CDATA[两个二次函数问题]]></title>
     <link href="https://cshishaliu.github.io/15395877048195.html"/>
     <updated>2018-10-15T15:15:04+08:00</updated>
     <id>https://cshishaliu.github.io/15395877048195.html</id>
@@ -589,6 +494,10 @@ S_{m+1} - S_m = (3m^2 + m - 2) \cdot 2^{m-4}<br/>
 </ol>
 
 <span id="more"></span><!-- more -->
+
+<blockquote>
+<p>Qer: XUC 20181014</p>
+</blockquote>
 
 <h2 id="toc_0">题 1</h2>
 
@@ -618,87 +527,6 @@ m (x^2 + 2x - 3) = -2x + 3<br/>
 <strong>无论 \(m\) 取何值, 抛物线和直线的交点横坐标都不可能是 \(1\) 或 \(-3\); 而对于其它可能的交点横坐标值, 都有合适的 \(m\) 取值与之对应</strong>. </p>
 
 <p>直线 \(y = -x+1\) 上, 横坐标 \(1\) 和 \(-3\) 所对应的纵坐标分别是 \(0\) 和 \(4\), 因此抛物线不会通过的直线上的点只有 \((1,0)\) 和 \((-3,4)\) 两个.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[XUC 20181008 一道构图诡异到令人发指的几何题]]></title>
-    <link href="https://cshishaliu.github.io/15389866005751.html"/>
-    <updated>2018-10-08T16:16:40+08:00</updated>
-    <id>https://cshishaliu.github.io/15389866005751.html</id>
-    <content type="html"><![CDATA[
-<p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
-
-<p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fw0vxksxfij30ua0gkmy7.jpg" alt=""/></p>
-
-<p>🆘👉 第 (1) 问的方法十分诡异, 但暂未找到更好的方法 😂</p>
-
-<p>🆘👉 第 (2) 问还没做出来 😂😂😂</p>
-
-<span id="more"></span><!-- more -->
-
-<h2 id="toc_0">第 (1) 问分析</h2>
-
-<p>第一问只需证明 \(\angle LFH = \angle HIA = \angle EID\) 即可, 而对比 \(\angle LFH\) 和 \(\angle EID\) 的位置关系不难发现可以构造四点共圆 (如下图中的 \(E,F,K,I\)), 而这组四点共圆将导致 \(\angle EKI = \angle EFI = \angle EHI\), 于是 \(BC\) 垂直平分 \(HK\) 于 \(D\). 又 \(B,C,H,I\) 构成垂心四点组, 这样又可以得到很多新的角边关系, 其中包括 \(B,I,C,K\) 四点共圆.</p>
-
-<p><img src="https://ws3.sinaimg.cn/large/006tNbRwly1fw4c14txo4j30ox0sg75o.jpg" alt=""/></p>
-
-<p>这样看上去初步的思路就是要证明 \(LF\) 与 \(HD\) 的交点 \(K\) 与 \(E,F,I\) 四点共圆, 而显然题干中的 \(IJ = 2ID\) 是十分关键条件. 但这个条件非常的不好用. 几经尝试, 这里最终打算采用同一法的思路, 即先得到点 \(K\), 再由点 \(K\) 来构造点 \(L\) 和 \(J\), 证明这样得到的点 \(J\) 满足 \(IJ = 2ID\). </p>
-
-<h2 id="toc_1">第 (1) 问证明</h2>
-
-<p>这里证明下面这个等价的问题:</p>
-
-<blockquote>
-<p>在 \(\triangle ABC\) 中, \(I\) 是内心, \(D\) 是 \(I\) 在 \(BC\) 上的射影, \(AI,BC\) 交于 \(E\). \(H\) 是 \(\triangle BIC\) 的垂心, \(Q\) 是 \(\triangle BIC\) 外接圆的外心, \(HD\) 再次交 \(\triangle BIC\) 外接圆于点 \(K\). 以 \(I\) 为圆心, \(IH\) 为半径作圆, \(HE\) 再次交圆 \(I\) 于点 \(F\); \(KF\) 再次交圆 \(I\) 于 \(L\). \(E,F,L\) 三点所确定的圆 \(P\) 与 \(IF\) 再次交于点 \(J\). 证明: \(IJ = 2ID\). </p>
-</blockquote>
-
-<p>记 \(HK\) 与圆 \(I\) 的另一个交点是 \(M\). 由 \(H\) 是 \(\triangle BIC\) 的垂心, 而 \(K\) 是高 \(ID\) 与 \(\triangle BIC\) 外接圆的交点不难证明 \(DK = DH\), 于是 \(\angle EKD = \angle EHD = \angle EFI\), 因此 \(E,F,K,I\) 四点共圆.</p>
-
-<p>为得到 \(IJ\) 的长度, 我们强行暴算点 \(I\) 关于圆 \(P\) (\(L,E,F,J\) 所共之圆) 的幂. 为了得到这个幂, 可借助 \(H\) 和 \(K\) 两点关于圆 \(P\) 的幂.</p>
-
-<p>将 \(H,I,K\) 三点关于圆 \(P\) 的幂分别记作 \(p(H), p(I), p(K)\), 则其中<br/>
-\[<br/>
-\begin{aligned}<br/>
-p(H) &amp;= HE \cdot HF = HI \cdot HK \\<br/>
-p(K) &amp;= KF \cdot KL = KM \cdot KH<br/>
-\end{aligned}<br/>
-\]<br/>
-为方便计算, 设 \(ID = r\), \(IH = t\), 则 \(HK = 2HD = 2(r+t)\), \(KM = HK - HM = 2(r+t) - 2t = 2r\), 于是 <br/>
-\[<br/>
-\begin{aligned}<br/>
-p(H) &amp;= 2t(r+t) \\<br/>
-p(K) &amp;= 2r(2r+2t) = 4r(r+t)<br/>
-\end{aligned}<br/>
-\]<br/>
-考虑 \(\triangle PIH\), 由余弦定理可得 <br/>
-\[<br/>
-\begin{aligned}<br/>
-\cos \angle PIH <br/>
-&amp;= \dfrac{PI^2 + IH^2 - PH^2}{2 PI \cdot IH} \\<br/>
-&amp;= \dfrac{(PI^2 - r_P^2) + IH^2 - (PH^2 - r_P^2)}{2 PI \cdot IH} \\<br/>
-&amp;= \dfrac{p(I) + IH^2 - p(H)}{2 PI \cdot IH}<br/>
-\end{aligned}<br/>
-\]<br/>
-其中, \(r_P\) 是圆 \(P\) 的半径. 同理, 在 \(\triangle PIK\) 有<br/>
-\[<br/>
-\cos \angle PIK = \dfrac{p(I) + IK^2 - p(K)}{2 PI \cdot IK}<br/>
-\]</p>
-
-<p>\(\angle PIH\) 与 \(\angle PIK\) 互补, 故两个余弦值互为相反数, 即有<br/>
-\[<br/>
-\dfrac{p(I) + IH^2 - p(H)}{2 PI \cdot IH} + \dfrac{p(I) + IK^2 - p(K)}{2 PI \cdot IK} = 0<br/>
-\]<br/>
-消去分母中的 \(PI\), 并将含有 \(r,t\) 的表达式代入得 <br/>
-\[<br/>
-\dfrac{p(I) + t^2 - 2t(r + t)}{t} + \dfrac{p(I) + (2r + t)^2 - 4r(r + t)}{2r + t} = 0<br/>
-\]<br/>
-最终可解得<br/>
-\[<br/>
-p(I) = 2rt<br/>
-\]<br/>
-即 \(IJ \cdot IF = 2rt\), 又由于其中 \(IF = t\), 所以 \(IJ = 2r = 2ID\), 证毕. </p>
 
 ]]></content>
   </entry>
@@ -755,7 +583,7 @@ f(n) = a(n-10) (n-20) \dots (n-90)<br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[zhangboxin 20180821]]></title>
+    <title type="html"><![CDATA[伪装成函数方程的数论问题]]></title>
     <link href="https://cshishaliu.github.io/15348999728702.html"/>
     <updated>2018-08-22T09:06:12+08:00</updated>
     <id>https://cshishaliu.github.io/15348999728702.html</id>
@@ -771,6 +599,10 @@ f(n) = a(n-10) (n-20) \dots (n-90)<br/>
 <p>求证: \(f(x,y) = [x,y]\) (这里, \([x,y]\) 表示 \(x\) 与 \(y\) 的最小公倍数).</p>
 
 <span id="more"></span><!-- more -->
+
+<blockquote>
+<p>Qer: zhangboxin 20180821</p>
+</blockquote>
 
 <h2 id="toc_0">探究</h2>
 
@@ -863,7 +695,7 @@ g(x, y) = g(x, r_1) = g(r_1, r_2) = g(r_2, r_3) = \dots = g(r_{n-1}, r_n) = \dfr
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[zhaozhe 20180807]]></title>
+    <title type="html"><![CDATA[二次根式化简]]></title>
     <link href="https://cshishaliu.github.io/15337076183356.html"/>
     <updated>2018-08-08T13:53:38+08:00</updated>
     <id>https://cshishaliu.github.io/15337076183356.html</id>
@@ -878,6 +710,10 @@ g(x, y) = g(x, r_1) = g(r_1, r_2) = g(r_2, r_3) = \dots = g(r_{n-1}, r_n) = \dfr
 \]</p>
 
 <span id="more"></span><!-- more -->
+
+<blockquote>
+<p>Qer: zhaozhe 20180807</p>
+</blockquote>
 
 <h2 id="toc_0">解答</h2>
 
@@ -973,7 +809,7 @@ s_m = s_{m-1} + a_m + (a_m - a_{m-1}) m = (m+1) a_m<br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[数列、递推、求和、复数不动点]]></title>
+    <title type="html"><![CDATA[不动点为复数值的递推数列问题]]></title>
     <link href="https://cshishaliu.github.io/15327863271008.html"/>
     <updated>2018-07-28T21:58:47+08:00</updated>
     <id>https://cshishaliu.github.io/15327863271008.html</id>
@@ -1065,7 +901,7 @@ a_n &amp;= S_n - S_{n-1} \\<br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[zhangboxin 20180612]]></title>
+    <title type="html"><![CDATA[三角不等式/极值问题]]></title>
     <link href="https://cshishaliu.github.io/15288852882913.html"/>
     <updated>2018-06-13T18:21:28+08:00</updated>
     <id>https://cshishaliu.github.io/15288852882913.html</id>
@@ -1075,6 +911,10 @@ a_n &amp;= S_n - S_{n-1} \\<br/>
 <p>已知 \(A,B,C\) 为三角形三内角. 求 \(\dfrac{\cos^2 A}{1+\cos A} + \dfrac{\cos^2 B}{1+\cos B} + \dfrac{\cos^2 C}{1+\cos C}\) 的最小值.</p>
 
 <span id="more"></span><!-- more -->
+
+<blockquote>
+<p>Qer: zhangboxin 20180612</p>
+</blockquote>
 
 <h2 id="toc_0">解答</h2>
 
@@ -1130,7 +970,7 @@ t_1^2 + t_2^2 + t_3^2 = (t_1 + t_2 + t_3)^2 - 2<br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[zhangboxin 20180516]]></title>
+    <title type="html"><![CDATA[一组高中联赛二试模拟/选拔题 `zhangboxin|20180516`]]></title>
     <link href="https://cshishaliu.github.io/15265462412456.html"/>
     <updated>2018-05-17T16:37:21+08:00</updated>
     <id>https://cshishaliu.github.io/15265462412456.html</id>
@@ -1142,6 +982,10 @@ t_1^2 + t_2^2 + t_3^2 = (t_1 + t_2 + t_3)^2 - 2<br/>
 <p>这是二试难度的问题 (rdfz 20180516 高联选拔题)</p>
 
 <span id="more"></span><!-- more -->
+
+<blockquote>
+<p>Qer: zhangboxin 20180516</p>
+</blockquote>
 
 <h2 id="toc_0">题 1</h2>
 
@@ -1184,7 +1028,7 @@ t_1^2 + t_2^2 + t_3^2 = (t_1 + t_2 + t_3)^2 - 2<br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[zhangboxin 20180409]]></title>
+    <title type="html"><![CDATA[Poncelet 定理: 圆和抛物线 `zhangboxin|20180409`]]></title>
     <link href="https://cshishaliu.github.io/15238569346799.html"/>
     <updated>2018-04-16T13:35:34+08:00</updated>
     <id>https://cshishaliu.github.io/15238569346799.html</id>
@@ -1192,6 +1036,10 @@ t_1^2 + t_2^2 + t_3^2 = (t_1 + t_2 + t_3)^2 - 2<br/>
 <p>已知圆 \(C_1 \colon x^2+y^2 = 1\) 和抛物线 \(C_2 \colon y = x^2 - 2\). \(P,Q,R\) 是抛物线 \(C_2\) 上的三个不同的点, 且直线 \(PQ\) 和 \(PR\) 都是圆 \(C_1\) 的切线. 求证: \(QR\) 也是圆 \(C_1\) 的切线.</p>
 
 <span id="more"></span><!-- more -->
+
+<blockquote>
+<p>Qer: zhangboxin 20180409</p>
+</blockquote>
 
 <h2 id="toc_0">解答</h2>
 
@@ -1283,7 +1131,7 @@ s^2 t^2 - s^2 - t^2 + 2st + 3 = 0<br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[duyan 20180123-2]]></title>
+    <title type="html"><![CDATA[平面几何 `duyan|20180123|2`]]></title>
     <link href="https://cshishaliu.github.io/15166882779923.html"/>
     <updated>2018-01-23T14:17:57+08:00</updated>
     <id>https://cshishaliu.github.io/15166882779923.html</id>
@@ -1295,6 +1143,10 @@ s^2 t^2 - s^2 - t^2 + 2st + 3 = 0<br/>
 <p><img src="https://ws2.sinaimg.cn/large/006tKfTcly1fnqjnu4ou9j30iu0h7js7.jpg" alt=""/></p>
 
 <span id="more"></span><!-- more -->
+
+<blockquote>
+<p>Qer: duyan 20180123</p>
+</blockquote>
 
 <h2 id="toc_0">解答</h2>
 
@@ -1363,7 +1215,7 @@ s^2 t^2 - s^2 - t^2 + 2st + 3 = 0<br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[zhangboxin 20171125]]></title>
+    <title type="html"><![CDATA[USAMO19xx #5, 高斯函数, 不等式, 第二数学归纳法]]></title>
     <link href="https://cshishaliu.github.io/15166821516457.html"/>
     <updated>2018-01-23T12:35:51+08:00</updated>
     <id>https://cshishaliu.github.io/15166821516457.html</id>
@@ -1374,11 +1226,13 @@ s^2 t^2 - s^2 - t^2 + 2st + 3 = 0<br/>
 \]<br/>
 其中, \(n \in \mathbb N^*\), \([x]\) 表示不大于 \(x\) 的最大整数.</p>
 
-<blockquote>
-<p><em>本题为第十届美国数学奥林匹克第五题</em></p>
-</blockquote>
-
 <span id="more"></span><!-- more -->
+
+<blockquote>
+<p><code>src</code> 第十届美国数学奥林匹克第五题</p>
+
+<p>Qer: zhangboxin 20171125</p>
+</blockquote>
 
 <h2 id="toc_0">解答</h2>
 
@@ -1433,26 +1287,84 @@ A_{k+1} \le [(k+1)x]<br/>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[duyan 20180123]]></title>
-    <link href="https://cshishaliu.github.io/15166764942559.html"/>
-    <updated>2018-01-23T11:01:34+08:00</updated>
-    <id>https://cshishaliu.github.io/15166764942559.html</id>
+    <title type="html"><![CDATA[一道难度其实不大的平面几何长度计算类证明题 `zhangboxin|20171218`]]></title>
+    <link href="https://cshishaliu.github.io/15166754034002.html"/>
+    <updated>2018-01-23T10:43:23+08:00</updated>
+    <id>https://cshishaliu.github.io/15166754034002.html</id>
     <content type="html"><![CDATA[
 <p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
 
-<p>如图, 已知, \(BH\) 为 \(\triangle ABC\) 的高线, \(D,E\) 为中点, \(H\) 关于 \(DE\) 的对称点为 \(F\), \(O\) 为 \(\triangle ABC\) 的外心. 求证: \(B,O,F\) 三点共线.</p>
-
-<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fnqczqq9rjj30j60h7dgp.jpg" alt=""/></p>
+<p>在 \(\triangle ABC\) 中, \(\angle A = 4 \angle C\), \(\angle B = 2 \angle C\), 试证: \((BC+CA) \cdot AB = BC \cdot CA\).</p>
 
 <span id="more"></span><!-- more -->
 
-<h2 id="toc_0">解答</h2>
+<blockquote>
+<p>Qer: zhangboxin 20171218</p>
+</blockquote>
 
-<p>连接 \(DH\), \(DF\), \(EF\), \(AF\). 有 \(DA = DB = DH = DF\), 故 \(\angle AFB = 90^\circ\).</p>
+<h2 id="toc_0">三角证法</h2>
 
-<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fnqczwmvw8j30j60h7wfh.jpg" alt=""/></p>
+<p>记 \(\alpha = \angle C = \dfrac\pi7\), 则 \(7\alpha = \pi\). 运用正弦定理, 待证等式等价于<br/>
+\[<br/>
+(\sin 2\alpha + \sin 4\alpha) \cdot \sin\alpha = \sin 2\alpha \cdot \sin 4\alpha<br/>
+\]<br/>
+而<br/>
+\[<br/>
+\begin{aligned}<br/>
+&amp;(\sin 2\alpha + \sin 4\alpha) \cdot \sin\alpha \\<br/>
+&amp;= [ \sin (3\alpha - \alpha) + \sin (3\alpha + \alpha) ] \cdot \sin\alpha \\<br/>
+&amp;= 2\sin 3\alpha \cos \alpha \sin\alpha \\<br/>
+&amp;= \sin 3\alpha \sin2\alpha \\<br/>
+&amp;= \sin (\pi-4\alpha) \sin2\alpha \\<br/>
+&amp;= \sin 2\alpha \cdot \sin 4\alpha<br/>
+\end{aligned}<br/>
+\]<br/>
+得证.</p>
 
-<p>由 \(\angle DFE = \angle DHE = \angle DAE\) 知 \(A,D,E,F\) 四点共圆, 故 \(\angle DAF = \angle DFA = \angle DEA = \angle C\), 因此 \(\angle ABF = 90^\circ - \angle BAF = 90^\circ - \angle C = \angle ABO\), 所以 \(B,O,F\) 三点共线.</p>
+<h2 id="toc_1">几何证法</h2>
+
+<p>还是记 \(\alpha = \angle C\). 如图, 在 \(BA\) 延长线上取点 \(D\) 两点, 满足 \(AD = AC\), 则 <br/>
+\[<br/>
+\begin{gathered}<br/>
+\angle ADC = \angle ACD = \dfrac12 \angle CAB = \angle ABC = 2\alpha\\<br/>
+CD = BC<br/>
+\end{gathered}<br/>
+\]<br/>
+又在 \(AD​\) 延长线上取点 \(E​\), 满足 \(DE = CD = BC​\), 则<br/>
+\[<br/>
+\angle DEC = \angle DCE = \dfrac12 \angle ADC = \angle ACB = \alpha<br/>
+\]</p>
+
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fnqcj9me3hj30as0h70ta.jpg" alt=""/></p>
+
+<p>由 \(\angle DEC = \angle ACB\) 知<br/>
+\[<br/>
+\begin{aligned}<br/>
+BC^2 &amp;= BA \cdot BE \\<br/>
+&amp;= AB \cdot (AB + AD + AE) \\<br/>
+&amp;= AB \cdot (AB + BC + CA)<br/>
+\end{aligned}<br/>
+\]<br/>
+故<br/>
+\[<br/>
+(BC + CA) \cdot AB = BC^2 - AB^2<br/>
+\]<br/>
+又过点 \(B\) 作 \(AC\) 的平行线, 交 \(\triangle ABC\) 外接圆于 \(F\), 则四边形 \(ABFC\) 是等腰梯形, 且不难得到 \(CF = AB\), \(\angle CBF = \alpha\), \(\angle BCF = \angle BFC = 3\alpha\), \(BF = BC = AF\). 在圆内接四边形 \(ABFC\) 中运用托勒密定理得<br/>
+\[<br/>
+AB \cdot CF + AC \cdot BF = BC \cdot AF<br/>
+\]<br/>
+即 <br/>
+\[<br/>
+AB^2 + AC \cdot BC = BC^2<br/>
+\]<br/>
+故<br/>
+\[<br/>
+BC^2 - AB^2 = AC \cdot BC<br/>
+\]<br/>
+因此<br/>
+\[<br/>
+(BC + CA) \cdot AB = AC \cdot BC<br/>
+\]</p>
 
 ]]></content>
   </entry>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  kongyuqing 20171024 - 语时lab
+  组合极值/组合构造问题 `kongyuqing|20171024` - 语时lab
   
   </title>
   
@@ -93,17 +93,13 @@
     <li><label>Categories</label></li>
 
         
-            <li><a href="%E7%AD%94%E7%96%91&%E8%A7%A3%E9%A2%98.html">答疑&解题</a></li>
+            <li><a href="problemsolving.html">解题</a></li>
         
-            <li><a href="%E9%9A%8F%E7%AC%94.html">随笔</a></li>
+            <li><a href="mathpost.html">数学随笔</a></li>
         
             <li><a href="Games.html">Games</a></li>
         
-            <li><a href="To%20be%20accomplished.html">To be accomplished</a></li>
-        
-            <li><a href="To%20be%20fixed.html">To be fixed</a></li>
-        
-            <li><a href="Long%20long%20ago.html">Long long ago</a></li>
+            <li><a href="obsolete.html">obsolete</a></li>
         
             <li><a href="misc.html">misc</a></li>
          
@@ -128,16 +124,14 @@
       <div class="markdown-body article-wrap">
        <div class="article">
           
-          <h1>kongyuqing 20171024</h1>
+          <h1>组合极值/组合构造问题 `kongyuqing|20171024`</h1>
      
         <div class="read-more clearfix">
           <span class="date">2017/10/25</span>
 
           <span>posted in&nbsp;</span> 
           
-              <span class="posted-in"><a href='To%20be%20fixed.html'>To be fixed</a></span>
-          
-              <span class="posted-in"><a href='%E7%AD%94%E7%96%91&%E8%A7%A3%E9%A2%98.html'>答疑&解题</a></span>
+              <span class="posted-in"><a href='problemsolving.html'>解题</a></span>
            
          
           <span class="comments">
@@ -150,13 +144,15 @@
       </div><!-- article -->
 
       <div class="article-content">
-      <p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
-
-<p>100 个数围成一圈, \(a_{3} &gt; a_{2} + a_{1}\), \(a_{4} &gt; a_{3} + a_{2}\), \(\dots\) , \(a_{100} &gt; a_{99} + a_{98}\), \(a_{1} &gt; a_{100} + a_{99}\), \(a_{2} &gt; a_{1} + a_{100}\), 问其中最多有多少个正数?</p>
-
-<p><img src="https://ws2.sinaimg.cn/large/006tKfTcly1fku7jcph7zj318005gwfr.jpg" alt=""/></p>
+      <p>100 个数围成一圈, \(a_{3} &gt; a_{2} + a_{1}\), \(a_{4} &gt; a_{3} + a_{2}\), \(\dots\) , \(a_{100} &gt; a_{99} + a_{98}\), \(a_{1} &gt; a_{100} + a_{99}\), \(a_{2} &gt; a_{1} + a_{100}\), 问其中最多有多少个正数?</p>
 
 <span id="more"></span><!-- more -->
+
+<blockquote>
+<p>Qer: kongyuqing 20171024</p>
+</blockquote>
+
+<h2 id="toc_0">分析和解答</h2>
 
 <blockquote>
 <p>图中题干里的“整数”一词其实没有必要, 可能有一点点提示作用吧.</p>
@@ -180,37 +176,15 @@
 
 <p>对于 100 个数来说, 可以构造出下面这个数列, 其中包含 49 个正数.</p>
 
-<table>
-<thead>
-<tr>
-<th style="text-align: center">1</th>
-<th style="text-align: center">2</th>
-<th style="text-align: center">3</th>
-<th style="text-align: center">4</th>
-<th style="text-align: center">5</th>
-<th style="text-align: center">6</th>
-<th style="text-align: center">\(\dots\)</th>
-<th style="text-align: center">98</th>
-<th style="text-align: center">99</th>
-<th style="text-align: center">100</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td style="text-align: center">\(-200\)</td>
-<td style="text-align: center">\(1\)</td>
-<td style="text-align: center">\(-198\)</td>
-<td style="text-align: center">\(1\)</td>
-<td style="text-align: center">\(-196\)</td>
-<td style="text-align: center">\(1\)</td>
-<td style="text-align: center">\(\dots\)</td>
-<td style="text-align: center">\(1\)</td>
-<td style="text-align: center">\(-102\)</td>
-<td style="text-align: center">\(-100\)</td>
-</tr>
-</tbody>
-</table>
+<p>\[<br/>
+\begin{array}{|c|c|c|c|c|c|c|c|c|c|}<br/>
+\hline<br/>
+1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; \dots &amp; 98 &amp; 99 &amp; 100 \\<br/>
+\hline<br/>
+-200 &amp; 1 &amp; -198 &amp; 1 &amp; -196 &amp; 1 &amp; \dots &amp; 1 &amp; -102 &amp; -100 \\<br/>
+\hline<br/>
+\end{array}<br/>
+\]</p>
 
 <p>那么, 里面是否有可能包含 50 个正数呢? 在构造的过程中, 你可能已经发现了下面这些规律.</p>
 
@@ -265,8 +239,8 @@
         <div class="large-6 columns">
       <p class="text-right" style="padding:15px 0px;">
       
-          <a  href="15087673055315.html" 
-          title="Next Post: zhuxirun 20171022">zhuxirun 20171022 &raquo;</a>
+          <a  href="15078172804643.html" 
+          title="Next Post: 递推数列推出组合数的问题 `duyan@bj#4|20171012`">递推数列推出组合数的问题 `duyan@bj#4|20171012` &raquo;</a>
       
       </p>
         </div>
@@ -322,17 +296,13 @@
 
       	<p class="cat-list">
         
-            <a href="%E7%AD%94%E7%96%91&%E8%A7%A3%E9%A2%98.html"><strong>答疑&解题</strong></a>
+            <a href="problemsolving.html"><strong>解题</strong></a>
         
-            <a href="%E9%9A%8F%E7%AC%94.html"><strong>随笔</strong></a>
+            <a href="mathpost.html"><strong>数学随笔</strong></a>
         
             <a href="Games.html"><strong>Games</strong></a>
         
-            <a href="To%20be%20accomplished.html"><strong>To be accomplished</strong></a>
-        
-            <a href="To%20be%20fixed.html"><strong>To be fixed</strong></a>
-        
-            <a href="Long%20long%20ago.html"><strong>Long long ago</strong></a>
+            <a href="obsolete.html"><strong>obsolete</strong></a>
         
             <a href="misc.html"><strong>misc</strong></a>
          
@@ -351,6 +321,18 @@
 	      
 		      
 			      <li class="post">
+			        <a href="15863333927200.html">数列不等式 `lhc@jinan|20200407`</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15863166036092.html">如何判断复合根式是否可以进一步化简</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
 			        <a href="15859891289445.html">Simon Tatham's Portable Puzzle Collection</a>
 			      </li>
 		     
@@ -364,18 +346,6 @@
 		      
 			      <li class="post">
 			        <a href="links.html">Links</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15840603466913.html">一个来自 QQ 群的问题 20200317-0721</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="15582753348629.html">qiqi 20200313</a>
 			      </li>
 		     
 		  
