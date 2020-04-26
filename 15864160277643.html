@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  数学随笔 - 语时lab
+  平面几何的全等和相似符号到底该怎么写 - 语时lab
   
   </title>
   
@@ -117,229 +117,173 @@
        
 
  <script type="text/javascript">
-	$(function(){
-		$('#menu_item_index').addClass('is_active');
-	});
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
 </script>
 <div class="row">
-	<div class="large-8 medium-8 columns">
-		<div class="markdown-body home-categories">
-		
-			<div class="article">
-                <a class="clearlink" href="15863166036092.html">
-                
-                  <h1>如何判断复合根式是否可以进一步化简</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p><img src="media/15863166036092/15863168475561.jpg" alt="" style="width:324px;"/></p>
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>平面几何的全等和相似符号到底该怎么写</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2020/04/09</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='Dev.html'>Dev</a></span>
+           
+         
+          <span class="comments">
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <blockquote>
+<p>这篇文章的原名本来计划是「\(\rm\LaTeX\) 中怎么输入平面几何的全等和相似符号」, 听上去满满的技术范, 但其实是一篇<mark>吐槽</mark>文章, 只为收集一点<mark>吐槽能量</mark>.</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">问题: 下图中有几种全等和相似符号的写法, 哪种才是对的呢?</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center"><img src="media/15864160277643/15864171158667.jpg" alt="" style="width:399px;"/></td>
+</tr>
+</tbody>
+</table>
+
+<p>我不知道你们看到这个问题的时候是什么感觉, 反正我发现这个居然会成为一个问题的时候, 心里感受到了一整个族群的神兽奔腾而过, 然后默念了一句「<mark>mdzz</mark>」。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">背景简介</h2>
+
+<p>先解释一下这个问题为什么会成为问题, 原因主要有两点:</p>
+
+<ul>
+<li><strong>真的会有 mdzz 老师因为全等或相似符号的“写法不对”而给学生扣分!!!</strong><sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> 而这些老师对此存有执念的原因, 大概主要是由于“官方” (人民教育出版社) 标准教材上, 非常严格且美观的使用了前面这个图中的某一个特定写法.</li>
+<li>目前普通人能用到的计算机排版工具以 <code>Micro$oft</code> Word 居多, 少数另类 (比方说我) 则会偏执的选择 \(\rm\TeX/\LaTeX\). 而似乎人民教育出版社并不使用这两种软件来制作出版物.</li>
+</ul>
+
+<blockquote>
+<p>据说国内主要的出版社和杂志社报社使用的排版系统都是北大方正的产品, 我没见过这到底是一套什么样的排版系统, 只听闻是王选院士的作品. </p>
+
+<p>然而很遗憾的是, 最近听到新闻说北大方正要被破产清算了, 不知道这个民族软件的优秀代表还能走多远, 是否有这样一种可能: 在可见的未来, 人民教育出版社也得另寻跟得上时代潮流的排版系统.</p>
+
+<p>相关链接: <a href="https://finance.sina.com.cn/money/bond/research/2020-02-20/doc-iimxxstf2986461.shtml">[新浪财经] 北大方正破产：除了等待债券持有人还能做哪些事</a></p>
+</blockquote>
+
+<h2 id="toc_1">我的辛路历程</h2>
+
+<p>由于最近写讲义的时候忽然意识到, 如果我写出来的全等符号跟人教版教材不一致, 我可能会被指为「不专业」. 于是, 我开始为这个事情进行了艰难的探索.</p>
+
+<p>在目前的 Word 中, 至少有三种不同的方式来输入这些符号: 最基本的方式就是直接插入特殊符号, 另外就是借助 MathType 或自带的公式编辑器来输入. 我使用过后的感觉是, 这三种方法无论哪种在实际操作起来都谈不上简便的, 并且效果都有明显的瑕疵. 但考虑到用 Word 来排版技术/学术性文档, 尤其是那种带公式的, 本来就会有很多让人膈应但又只能强忍的瑕疵, 所以相比之下, 这三种方法排版出来的效果也都还行.</p>
+
+<p>而在 \(\rm\LaTeX\) 中, 这个问题就要复杂不少, 当然其中一个主要原因是 \(\rm\LaTeX\) 在用起来本来就比 Word 要复杂不少.</p>
+
+<p>在 \(\rm\LaTeX\) 中, 与这些符号相关的有三个命令, 具体名称和排版效果见下表.<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup></p>
+
+<table>
+<thead>
+<tr>
+<th>\(\rm\LaTeX\) 代码</th>
+<th style="text-align: center">效果</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>\cong</code></td>
+<td style="text-align: center">\(\cong\)</td>
+</tr>
+<tr>
+<td><code>\sim</code></td>
+<td style="text-align: center">\(\sim\)</td>
+</tr>
+<tr>
+<td><code>\backsim</code></td>
+<td style="text-align: center">\(\backsim\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>可以看到, 这三个符号的排版效果跟人教版教材上的都有明显差别, 如果细抠的话, 连拐弯方向都是一个需要探讨的问题.</p>
+
+<blockquote>
+<p>相关链接: <a href="https://www.zhihu.com/question/61401308/answer/187478607">[知乎] 中文字体和西文字体中全等号“≌”上半边为什么是反的？但相似号“∽”却是统一的，然而拉泰赫却只有“~”？</a></p>
+</blockquote>
+
+<h2 id="toc_2">最终解决方案</h2>
+
+<h3 id="toc_3">MWE<sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup></h3>
+
+<h2 id="toc_4">结论</h2>
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>我说/写出这句话的时候, 我也感受到了我对这种老师满满的恶意...&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>这三个命令都是 <code>amsmath</code> 包提供的, 另有其它的包 (如 <code>fdsymbols</code>) 提供 <code>\backcong</code> 命令, 从名称上能感觉到 <code>\backcong</code> 与 <code>\cong</code> 的关系应该跟 <code>\backsim</code> 与 <code>\sim</code> 的关系类似.&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn3">
+<p>MWE 的全称是 <em>Minimal Workable Example</em>, 貌似主要是 \(\rm\LaTeX\) 用户之间相互交流时发明的一个术语. &nbsp;<a href="#fnref3" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
 
 
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="15863166036092.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2020/04/08</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='mathpost.html'>数学随笔</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
+    
 
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15355292847712.html">
-                
-                  <h1>构造高次多项式解决多元方程问题</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>已知 \(x_1, x_2, \dots, x_9\) 满足方程组<br/>
-\[<br/>
-\begin{cases}<br/>
-\dfrac{x_1}{11} + \dfrac{x_2}{12} + \dots + \dfrac{x_9}{19} = 1 \\<br/>
-\dfrac{x_1}{21} + \dfrac{x_2}{22} + \dots + \dfrac{x_9}{29} = 1 \\<br/>
-\dfrac{x_1}{31} + \dfrac{x_2}{32} + \dots + \dfrac{x_9}{39} = 1 \\<br/>
-\dfrac{x_1}{41} + \dfrac{x_2}{42} + \dots + \dfrac{x_9}{49} = 1 \\<br/>
-\dfrac{x_1}{51} + \dfrac{x_2}{52} + \dots + \dfrac{x_9}{59} = 1 \\<br/>
-\dfrac{x_1}{61} + \dfrac{x_2}{62} + \dots + \dfrac{x_9}{69} = 1 \\<br/>
-\dfrac{x_1}{71} + \dfrac{x_2}{72} + \dots + \dfrac{x_9}{79} = 1 \\<br/>
-\dfrac{x_1}{81} + \dfrac{x_2}{82} + \dots + \dfrac{x_9}{89} = 1 \\<br/>
-\dfrac{x_1}{91} + \dfrac{x_2}{92} + \dots + \dfrac{x_9}{99} = 1 \\<br/>
-\end{cases}<br/>
-\]<br/>
-试求 \(x_1 + x_2 + \dots + x_9\).</p>
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="15863333927200.html" 
+          title="Next Post: 数列不等式 `lhc@jinan|20200407`">数列不等式 `lhc@jinan|20200407` &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
 
 
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="15355292847712.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2018/08/29</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='mathpost.html'>数学随笔</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
 
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15158198616473.html">
-                
-                  <h1>一个`多项式`版本的线性空间问题</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p><mark>TODO: 本篇内容似乎也还没完成</mark></p>
-
-<p>试求所有的实系数多项式 \(p(x)\), 使得对满足 \(ab + bc + ca = 0\) 的所有实数 \(a、b、c\), 均有: <br/>
-\[<br/>
-p(a - b) + p(b - c) + p(c - a) = 2p(a + b + c).<br/>
-\]</p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="15158198616473.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2018/01/13</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='mathpost.html'>数学随笔</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15141748760281.html">
-                
-                  <h1>一个很有意思的数列变换问题</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>已知数列 \(\{a_n\}\) 和 \(\{b_n\}\), 其中 \(n \ge 0\) (即两个数列的首项分别为 \(a_0\) 和 \(b_0\)). 若满足<br/>
-\[<br/>
-b_n = \sum_{k=0}^n (-1)^k C_n^k a_k<br/>
-\,, \quad \forall n \in \mathbb N.<br/>
-\]<br/>
-求证:<br/>
-\[<br/>
-a_n = \sum_{k=0}^n (-1)^k C_n^k b_k<br/>
-\,, \quad \forall n \in \mathbb N.<br/>
-\]</p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="15141748760281.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2017/12/25</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='mathpost.html'>数学随笔</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="15075156363610.html">
-                
-                  <h1>鲁列斯三角形问题</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="15075156363610.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2017/10/09</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='mathpost.html'>数学随笔</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-              
-
-
-			<div class="row">
-			  <div class="large-6 columns">
-			  <p class="text-left" style="padding-top:25px;">
-			   
-			  </p>
-			  </div>
-			  <div class="large-6 columns">
-			<p class="text-right" style="padding-top:25px;">
-			
-			</p>
-			  </div>
-			</div>
-		</div>
-	</div><!-- large 8 -->
 
  <div class="large-4 medium-4 columns">
   <div class="hide-for-small">

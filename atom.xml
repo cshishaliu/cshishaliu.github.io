@@ -4,13 +4,126 @@
   <title><![CDATA[语时lab]]></title>
   <link href="https://cshishaliu.github.io/atom.xml" rel="self"/>
   <link href="https://cshishaliu.github.io/"/>
-  <updated>2020-04-09T15:05:13+08:00</updated>
+  <updated>2020-04-26T14:53:22+08:00</updated>
   <id>https://cshishaliu.github.io/</id>
   <author>
     <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://www.mweb.im/">MWeb</generator>
+  
+  <entry>
+    <title type="html"><![CDATA[平面几何的全等和相似符号到底该怎么写]]></title>
+    <link href="https://cshishaliu.github.io/15864160277643.html"/>
+    <updated>2020-04-09T15:07:07+08:00</updated>
+    <id>https://cshishaliu.github.io/15864160277643.html</id>
+    <content type="html"><![CDATA[
+<blockquote>
+<p>这篇文章的原名本来计划是「\(\rm\LaTeX\) 中怎么输入平面几何的全等和相似符号」, 听上去满满的技术范, 但其实是一篇<mark>吐槽</mark>文章, 只为收集一点<mark>吐槽能量</mark>.</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">问题: 下图中有几种全等和相似符号的写法, 哪种才是对的呢?</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: center"><img src="media/15864160277643/15864171158667.jpg" alt="" style="width:399px;"/></td>
+</tr>
+</tbody>
+</table>
+
+<p>我不知道你们看到这个问题的时候是什么感觉, 反正我发现这个居然会成为一个问题的时候, 心里感受到了一整个族群的神兽奔腾而过, 然后默念了一句「<mark>mdzz</mark>」。</p>
+
+<span id="more"></span><!-- more -->
+
+<h2 id="toc_0">背景简介</h2>
+
+<p>先解释一下这个问题为什么会成为问题, 原因主要有两点:</p>
+
+<ul>
+<li><strong>真的会有 mdzz 老师因为全等或相似符号的“写法不对”而给学生扣分!!!</strong><sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> 而这些老师对此存有执念的原因, 大概主要是由于“官方” (人民教育出版社) 标准教材上, 非常严格且美观的使用了前面这个图中的某一个特定写法.</li>
+<li>目前普通人能用到的计算机排版工具以 <code>Micro$oft</code> Word 居多, 少数另类 (比方说我) 则会偏执的选择 \(\rm\TeX/\LaTeX\). 而似乎人民教育出版社并不使用这两种软件来制作出版物.</li>
+</ul>
+
+<blockquote>
+<p>据说国内主要的出版社和杂志社报社使用的排版系统都是北大方正的产品, 我没见过这到底是一套什么样的排版系统, 只听闻是王选院士的作品. </p>
+
+<p>然而很遗憾的是, 最近听到新闻说北大方正要被破产清算了, 不知道这个民族软件的优秀代表还能走多远, 是否有这样一种可能: 在可见的未来, 人民教育出版社也得另寻跟得上时代潮流的排版系统.</p>
+
+<p>相关链接: <a href="https://finance.sina.com.cn/money/bond/research/2020-02-20/doc-iimxxstf2986461.shtml">[新浪财经] 北大方正破产：除了等待债券持有人还能做哪些事</a></p>
+</blockquote>
+
+<h2 id="toc_1">我的辛路历程</h2>
+
+<p>由于最近写讲义的时候忽然意识到, 如果我写出来的全等符号跟人教版教材不一致, 我可能会被指为「不专业」. 于是, 我开始为这个事情进行了艰难的探索.</p>
+
+<p>在目前的 Word 中, 至少有三种不同的方式来输入这些符号: 最基本的方式就是直接插入特殊符号, 另外就是借助 MathType 或自带的公式编辑器来输入. 我使用过后的感觉是, 这三种方法无论哪种在实际操作起来都谈不上简便的, 并且效果都有明显的瑕疵. 但考虑到用 Word 来排版技术/学术性文档, 尤其是那种带公式的, 本来就会有很多让人膈应但又只能强忍的瑕疵, 所以相比之下, 这三种方法排版出来的效果也都还行.</p>
+
+<p>而在 \(\rm\LaTeX\) 中, 这个问题就要复杂不少, 当然其中一个主要原因是 \(\rm\LaTeX\) 在用起来本来就比 Word 要复杂不少.</p>
+
+<p>在 \(\rm\LaTeX\) 中, 与这些符号相关的有三个命令, 具体名称和排版效果见下表.<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup></p>
+
+<table>
+<thead>
+<tr>
+<th>\(\rm\LaTeX\) 代码</th>
+<th style="text-align: center">效果</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>\cong</code></td>
+<td style="text-align: center">\(\cong\)</td>
+</tr>
+<tr>
+<td><code>\sim</code></td>
+<td style="text-align: center">\(\sim\)</td>
+</tr>
+<tr>
+<td><code>\backsim</code></td>
+<td style="text-align: center">\(\backsim\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>可以看到, 这三个符号的排版效果跟人教版教材上的都有明显差别, 如果细抠的话, 连拐弯方向都是一个需要探讨的问题.</p>
+
+<blockquote>
+<p>相关链接: <a href="https://www.zhihu.com/question/61401308/answer/187478607">[知乎] 中文字体和西文字体中全等号“≌”上半边为什么是反的？但相似号“∽”却是统一的，然而拉泰赫却只有“~”？</a></p>
+</blockquote>
+
+<h2 id="toc_2">最终解决方案</h2>
+
+<h3 id="toc_3">MWE<sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup></h3>
+
+<h2 id="toc_4">结论</h2>
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>我说/写出这句话的时候, 我也感受到了我对这种老师满满的恶意...&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>这三个命令都是 <code>amsmath</code> 包提供的, 另有其它的包 (如 <code>fdsymbols</code>) 提供 <code>\backcong</code> 命令, 从名称上能感觉到 <code>\backcong</code> 与 <code>\cong</code> 的关系应该跟 <code>\backsim</code> 与 <code>\sim</code> 的关系类似.&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn3">
+<p>MWE 的全称是 <em>Minimal Workable Example</em>, 貌似主要是 \(\rm\LaTeX\) 用户之间相互交流时发明的一个术语. &nbsp;<a href="#fnref3" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[数列不等式 `lhc@jinan|20200407`]]></title>
@@ -77,18 +190,113 @@
 
 <span id="more"></span><!-- more -->
 
-<p>初学根式 (radical expression) 时, 经常遇到这样一类问题: 形如 \(\sqrt{A \pm \sqrt B}\) 的根式是否需要继续化简. 例如:</p>
+<p>初学<strong>根式 (radical expression)</strong> 时, 经常遇到这样一类问题: <em>形如 \(\sqrt{A \pm \sqrt B}\) 的根式是否需要继续化简</em>. 例如:</p>
 
-<ul>
-<li>\(\sqrt{3 + 2\sqrt2}\) 可以化简为 \(\sqrt2 + 1\);</li>
-<li>\(\sqrt{2+\sqrt3}\) 可以化简为 \(\frac{\sqrt6 + \sqrt2}2\);</li>
-</ul>
+<blockquote>
+<p>\(\sqrt{3 + 2\sqrt2}\) 可以化简为 \(\sqrt2 + 1\); \(\sqrt{2+\sqrt3}\) 可以化简为 \(\frac{\sqrt6 + \sqrt2}2\);</p>
+</blockquote>
 
 <p>而</p>
 
-<ul>
-<li>\(\sqrt{4 +\sqrt2}\) 似乎无法进一步化简.</li>
-</ul>
+<blockquote>
+<p>\(\sqrt{4 +\sqrt2}\) 似乎无法进一步化简.</p>
+</blockquote>
+
+<p>这种根号里面还套着根号的式子其实在数学里面没有一个专门的术语名称, 本文中我们就把它叫做<strong>复合根式</strong> (与之相对的, 没有根号嵌套的根式, 我们就称为<strong>简单根式</strong>).</p>
+
+<p>在学生阶段做题的时候, 如果计算结果遇到这种复合根式, 通常是能进一步化简成不是复合形式的根式的. 但事实上, 如果我们能有更多的经验, 会发现「这种复合根式没法进一步化简」好像才是比较正常, 或者说, 比较常见、更容易发生的情况. 这个时候自然就有一个问题: <strong>什么时候这种复合根式是可以继续化简的?</strong></p>
+
+<blockquote>
+<p>其实提到这个问题的时候, 我的内心还是有一点小骄傲的, 这也是我会写这篇文章的原因. </p>
+
+<p>事情是这样的, 在很久很久以前我本人还是初中萌新的那个年代, 有一天数学老师在下课前最后不到一分钟的时间提到了这个问题, 并且以「掩耳不及迅雷之势」提点了一下答案, 但是由于这个过程实在太快, 几乎就没有同学注意到. 而作为极少数注意到这个知识点的同学, 我竟然还在接下来的课间 10 分钟内给出了完整的证明推导. 当时可把我牛 X 坏了, 我要先叉会儿腰去... :P</p>
+</blockquote>
+
+<p>先说结论, 对于如下形式的符合根式<br/>
+\[<br/>
+\sqrt{A \pm \sqrt B}<br/>
+\]<br/>
+这里 \(A\) 和 \(B\) 都是正整数, <strong>当且仅当</strong> \(A^2 - B\) 是一个完全平方数时, 它可以化简成如下形式的简单根式<br/>
+\[<br/>
+\sqrt a \pm \sqrt b<br/>
+\]<br/>
+其中 \(a\) 和 \(b\) 要么是整数, 要么是分母为 \(2\) 的最简分数.</p>
+
+<p>这个结论的证明其实也不难, 比方说我们就先考虑 \(\sqrt{A + \sqrt B}\); 稍微有计算经验的同学就应该能想到减号的情况 \(\sqrt{A - \sqrt B}\) 其实应该是类似的.</p>
+
+<p>如果 \(A^2 - B\) 是一个完全平方数, 我们可以假设<br/>
+\[<br/>
+A^2 - B = n^2<br/>
+\]<br/>
+不难想到, 接下来的任务应该是设法把 \(A + \sqrt B\) 变形成一个完全平方式的样子; 并且主要变形技巧应该是利用上面刚刚设出的字母 \(n\) 来消掉原来的一个字母, 于是目前主要问题就是需要<em>纠结</em>一下到底消 \(A\) 还是消 \(B\).</p>
+
+<blockquote>
+<p>如果你真的很纠结, 那我们就都试一试呗.</p>
+</blockquote>
+
+<p>如果选择消 \(A\), 那就应该用到 \(A^2 = B + n^2 \Rightarrow A = \sqrt{B + n^2}\), 代入我们要研究的式子就有<br/>
+\[<br/>
+A + \sqrt B = \sqrt{B + n^2} + \sqrt B<br/>
+\]<br/>
+不出意外的话, 正常人看到这个式子应该是不会有任何想法的. 看上去此路不通, 那我们走另一条路看看: 要消 \(B\) 就应该用到 \(B = A^2 - n^2\), 于是<br/>
+\[<br/>
+A + \sqrt B = A + \sqrt{A^2 - n^2}<br/>
+\]<br/>
+这个式子乍看上去可能也会让人有点灰心, 但聪明如你应该至少能看出来可以用一次<strong>平方差公式</strong>, <br/>
+\[<br/>
+A + \sqrt{A^2 - n^2} = A + \sqrt{(A+n) (A-n)}<br/>
+\]<br/>
+然后接下来该怎么办就比较体现功底和毅力了. 你需要能想到以下两点, 并注意到它们之间的联系</p>
+
+<ol>
+<li>\(A+n\) 和 \(A-n\) 相加可以消去 \(n\) 得到只包含 \(A\) 的式子;</li>
+<li>如果想让 \(A + \sqrt{(A+n) (A-n)}\) 套上完全平方公式的话, 其根式部分 \(\sqrt{(A+n) (A-n)}\) 似乎应可能是充当<em>交叉项</em>的角色.</li>
+</ol>
+
+<p>然后在这两个点的<em>指导</em>下坚强的计算下去, 就能够成功的做出来.<br/>
+\[<br/>
+\begin{aligned}<br/>
+A + \sqrt{(A+n) (A-n)}<br/>
+&amp;= \frac{(A+n) + (A-n)}2 + \sqrt{(A+n) (A-n)} \\<br/>
+&amp;= \frac{ \left( \sqrt{A+n} \right)^2 + \left( \sqrt{A-n} \right)^2 + 2 \cdot \sqrt{A+n} \cdot \sqrt{A-n}}2 \\<br/>
+&amp;= \frac{\left( \sqrt{A+n} + \sqrt{A-n} \right)^2}2<br/>
+\end{aligned}<br/>
+\]<br/>
+这样就可以得到我们想要的结果<br/>
+\[<br/>
+\sqrt{A + \sqrt B} = \sqrt{\frac{\left( \sqrt{A+n} + \sqrt{A-n} \right)^2}2} = \sqrt{\frac{A+n}2} + \sqrt{\frac{A-n}2}<br/>
+\]<br/>
+类似的, 不难得到<br/>
+\[<br/>
+\sqrt{A - \sqrt B} = \sqrt{\frac{A+n}2} - \sqrt{\frac{A-n}2}<br/>
+\]<br/>
+至此, 我们的证明也基本上就完成了.</p>
+
+<blockquote>
+<p>你还记得我们是想要证明什么吗?</p>
+</blockquote>
+
+<p>不过, 问题到这里其实还可以有后续. 回去翻一下我们对待证结论的陈述方式</p>
+
+<blockquote>
+<p>对于形如 \(\sqrt{A \pm \sqrt B}\) 的符合根式 (这里 \(A\) 和 \(B\) 都是正整数), <strong>当且仅当</strong> \(A^2 - B\) 是一个完全平方数时, 它可以化简成形如 \(\sqrt a \pm \sqrt b\) 的简单根式 (其中 \(a\) 和 \(b\) 要么是整数), 要么是分母为 \(2\) 的最简分数.</p>
+</blockquote>
+
+<p>而目前我们得到的结论是<br/>
+\[<br/>
+\sqrt{A \pm \sqrt B} = \sqrt{\frac{A+n}2} \pm \sqrt{\frac{A-n}2}<br/>
+\]<br/>
+这里有 \(A^2 - B = n^2\). 我们至少还可以思考这么两个问题:</p>
+
+<ol>
+<li>这个「公式」的左边是 \(A,B\) 两个字母, 但右边却「凭空」出现了一个 \(n\), 能不能把式子的形式写的更「合理」一点呢?</li>
+<li><p>注意一下我们前面对待证结论最早的陈述方式, 措辞中用到了一个词: 「当且仅当」. 这里面其实还有一个<em>反问题</em>, 即</p>
+<blockquote>
+<p>如果形如 \(\sqrt{A \pm \sqrt B}\) 的符合根式可以化简成形如 \(\sqrt a \pm \sqrt b\) 的简单根式, 那么 \(A^2 - B\) 是否一定是一个完全平方数?</p>
+</blockquote></li>
+</ol>
+
+<p>各位读者同学, 这两个问题你们都有思路吗?</p>
 
 ]]></content>
   </entry>
@@ -1282,89 +1490,6 @@ A_{k+1} \le [(k+1)x]<br/>
 \end{gathered}<br/>
 \]<br/>
 证毕.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[一道难度其实不大的平面几何长度计算类证明题 `zhangboxin|20171218`]]></title>
-    <link href="https://cshishaliu.github.io/15166754034002.html"/>
-    <updated>2018-01-23T10:43:23+08:00</updated>
-    <id>https://cshishaliu.github.io/15166754034002.html</id>
-    <content type="html"><![CDATA[
-<p><mark>TODO: 微博图床已挂, 本篇缺图, 需要找回</mark></p>
-
-<p>在 \(\triangle ABC\) 中, \(\angle A = 4 \angle C\), \(\angle B = 2 \angle C\), 试证: \((BC+CA) \cdot AB = BC \cdot CA\).</p>
-
-<span id="more"></span><!-- more -->
-
-<blockquote>
-<p>Qer: zhangboxin 20171218</p>
-</blockquote>
-
-<h2 id="toc_0">三角证法</h2>
-
-<p>记 \(\alpha = \angle C = \dfrac\pi7\), 则 \(7\alpha = \pi\). 运用正弦定理, 待证等式等价于<br/>
-\[<br/>
-(\sin 2\alpha + \sin 4\alpha) \cdot \sin\alpha = \sin 2\alpha \cdot \sin 4\alpha<br/>
-\]<br/>
-而<br/>
-\[<br/>
-\begin{aligned}<br/>
-&amp;(\sin 2\alpha + \sin 4\alpha) \cdot \sin\alpha \\<br/>
-&amp;= [ \sin (3\alpha - \alpha) + \sin (3\alpha + \alpha) ] \cdot \sin\alpha \\<br/>
-&amp;= 2\sin 3\alpha \cos \alpha \sin\alpha \\<br/>
-&amp;= \sin 3\alpha \sin2\alpha \\<br/>
-&amp;= \sin (\pi-4\alpha) \sin2\alpha \\<br/>
-&amp;= \sin 2\alpha \cdot \sin 4\alpha<br/>
-\end{aligned}<br/>
-\]<br/>
-得证.</p>
-
-<h2 id="toc_1">几何证法</h2>
-
-<p>还是记 \(\alpha = \angle C\). 如图, 在 \(BA\) 延长线上取点 \(D\) 两点, 满足 \(AD = AC\), 则 <br/>
-\[<br/>
-\begin{gathered}<br/>
-\angle ADC = \angle ACD = \dfrac12 \angle CAB = \angle ABC = 2\alpha\\<br/>
-CD = BC<br/>
-\end{gathered}<br/>
-\]<br/>
-又在 \(AD​\) 延长线上取点 \(E​\), 满足 \(DE = CD = BC​\), 则<br/>
-\[<br/>
-\angle DEC = \angle DCE = \dfrac12 \angle ADC = \angle ACB = \alpha<br/>
-\]</p>
-
-<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fnqcj9me3hj30as0h70ta.jpg" alt=""/></p>
-
-<p>由 \(\angle DEC = \angle ACB\) 知<br/>
-\[<br/>
-\begin{aligned}<br/>
-BC^2 &amp;= BA \cdot BE \\<br/>
-&amp;= AB \cdot (AB + AD + AE) \\<br/>
-&amp;= AB \cdot (AB + BC + CA)<br/>
-\end{aligned}<br/>
-\]<br/>
-故<br/>
-\[<br/>
-(BC + CA) \cdot AB = BC^2 - AB^2<br/>
-\]<br/>
-又过点 \(B\) 作 \(AC\) 的平行线, 交 \(\triangle ABC\) 外接圆于 \(F\), 则四边形 \(ABFC\) 是等腰梯形, 且不难得到 \(CF = AB\), \(\angle CBF = \alpha\), \(\angle BCF = \angle BFC = 3\alpha\), \(BF = BC = AF\). 在圆内接四边形 \(ABFC\) 中运用托勒密定理得<br/>
-\[<br/>
-AB \cdot CF + AC \cdot BF = BC \cdot AF<br/>
-\]<br/>
-即 <br/>
-\[<br/>
-AB^2 + AC \cdot BC = BC^2<br/>
-\]<br/>
-故<br/>
-\[<br/>
-BC^2 - AB^2 = AC \cdot BC<br/>
-\]<br/>
-因此<br/>
-\[<br/>
-(BC + CA) \cdot AB = AC \cdot BC<br/>
-\]</p>
 
 ]]></content>
   </entry>
